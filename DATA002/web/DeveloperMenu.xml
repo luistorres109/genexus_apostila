@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Objects>
+   <Charset>iso-8859-1</Charset>
+   <Path>file:///C:/PROGRA~2/ARTech/GeneXus/GENEXU~2/</Path>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TPessoa</ObjName>
+      <ObjDesc>Cadastro de Pessoas</ObjDesc>
+      <ObjLink>tpessoa.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TFilme</ObjName>
+      <ObjDesc>Cadastro de Filmes</ObjDesc>
+      <ObjLink>tfilme.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TCategoria</ObjName>
+      <ObjDesc>Cadastro de Categorias</ObjDesc>
+      <ObjLink>tcategoria.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TEstado</ObjName>
+      <ObjDesc>Cadastro de Estados</ObjDesc>
+      <ObjLink>testado.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TCidade</ObjName>
+      <ObjDesc>Cadastro de Cidades</ObjDesc>
+      <ObjLink>tcidade.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TMidia</ObjName>
+      <ObjDesc>Cadastro de Mídias</ObjDesc>
+      <ObjLink>tmidia.aspx</ObjLink>
+   </Object>
+</Objects>
