@@ -1,0 +1,16 @@
+current_obj_i(2,trn,2).
+ 
+called_tree_i(0,2,13,8).
+called_tree_i(0,2,13,9).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(tfilme,[],[],[],2).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

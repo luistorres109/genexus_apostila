@@ -1,0 +1,17 @@
+current_obj_i(2,scr,2).
+ 
+called_tree_i(4,2,1,2).
+called_tree_i(4,2,17,1).
+ 
+ 
+ij_main_object(ulocadora,'Cadastro de Locadora','','""','').
+ 
+ 
+ 
+ 
+ij_object_dependency(ulocadora,[],[],[],2).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

@@ -1,0 +1,14 @@
+current_obj_i(2,proc,8).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(pgrvconftipmidia,[],[],[],8).
+ 
+ 
+obj_parms_i([ 'short aP0_MidTipo','int aP1_CatCodigo','decimal aP2_ConfTipoValor' ],[ [ 'Midtipo',in ],[ 'Catcodigo',in ],[ 'Conftipovalor',in ] ]).
+ 
+ 

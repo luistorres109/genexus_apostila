@@ -1,0 +1,14 @@
+current_obj_i(2,proc,12).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(ptoplist,[],[],[ type_SdtSDTFilmes_SDTFilmesItem,'GxObjectCollection' ],12).
+ 
+ 
+obj_parms_i([ 'GxObjectCollection aP0_SDTFilmes' ],[ [ 'Sdtfilmes',in ] ]).
+ 
+ 

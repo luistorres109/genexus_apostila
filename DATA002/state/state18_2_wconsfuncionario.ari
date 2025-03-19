@@ -1,0 +1,14 @@
+current_obj_i(2,scr,32).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(wconsfuncionario,[],[ subwconsfuncionario02 ],[],32).
+ 
+ 
+obj_parms_i([ 'int aP0_PesCodigoRet' ],[ [ 'Pescodigoret',out ] ]).
+ 
+ 

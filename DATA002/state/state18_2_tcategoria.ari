@@ -1,0 +1,14 @@
+current_obj_i(2,trn,3).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(tcategoria,[],[],[],3).
+ 
+ 
+obj_parms_i([ 'int aP0_CatCodigo','String aP1_Gx_mode' ],[ [ 33,in ],[ 'Mode',in ] ]).
+ 
+ 

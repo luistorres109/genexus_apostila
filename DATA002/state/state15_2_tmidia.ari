@@ -1,0 +1,16 @@
+current_obj_i(2,trn,6).
+ 
+called_tree_i(0,6,13,12).
+called_tree_i(0,6,13,8).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(tmidia,[],[],[],6).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

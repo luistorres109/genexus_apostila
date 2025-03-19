@@ -1,0 +1,16 @@
+current_obj_i(2,scr,28).
+ 
+called_tree_i(4,28,1,2).
+called_tree_i(4,28,17,1).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(wlogin,[],[],[],28).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

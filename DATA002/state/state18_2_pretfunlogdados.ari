@@ -1,0 +1,14 @@
+current_obj_i(2,proc,7).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(pretfunlogdados,[],[],[ type_SdtSDTFuncionario,'GxObjectCollection' ],7).
+ 
+ 
+obj_parms_i([ 'SdtSDTFuncionario aP0_Funcionario' ],[ [ 'Funcionario',out ] ]).
+ 
+ 

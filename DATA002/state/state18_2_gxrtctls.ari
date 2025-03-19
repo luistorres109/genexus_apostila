@@ -1,0 +1,14 @@
+current_obj_i(2,proc,1).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(gxrtctls,[],[],[],1).
+ 
+ 
+obj_parms_i([ 'short aP0_Status' ],[ [ 'Status',inout ] ]).
+ 
+ 
