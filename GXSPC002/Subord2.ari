@@ -1,0 +1,19 @@
+dir_subordinates_i(2,13,[ [ 14,[ 83 ] ] ]).
+dir_subordinates_i(2,14,[]).
+dir_subordinates_i(2,6,[ [ 14,[ 37 ] ] ]).
+dir_subordinates_i(2,12,[]).
+dir_subordinates_i(2,3,[ [ 12,[ 33 ] ],[ 2,[ 33 ] ] ]).
+dir_subordinates_i(2,2,[ [ 10,[ 28 ] ],[ 11,[ 28 ] ] ]).
+dir_subordinates_i(2,10,[ [ 6,[ 28,71 ] ] ]).
+dir_subordinates_i(2,11,[]).
+dir_subordinates_i(2,9,[ [ 10,[ 71 ] ],[ 11,[ 73 ] ] ]).
+dir_subordinates_i(2,5,[ [ 7,[ 26 ] ] ]).
+dir_subordinates_i(2,4,[ [ 5,[ 23 ] ] ]).
+dir_subordinates_i(2,7,[ [ 8,[ 12 ] ],[ 8,[ 61 ] ],[ 13,[ 79 ] ],[ 13,[ 81 ] ] ]).
+dir_subordinates_i(2,8,[]).
+dir_subordinates_i(2,513,[ [ 10,[ 71 ] ],[ 11,[ 73 ] ] ]).
+dir_subordinates_i(2,512,[ [ 8,[ 12 ] ],[ 8,[ 61 ] ],[ 13,[ 79 ] ],[ 13,[ 81 ] ] ]).
+dir_subordinates_i(2,514,[ [ 10,[ 71 ] ],[ 11,[ 73 ] ] ]).
+dir_subordinates_i(2,515,[ [ 8,[ 12 ] ],[ 8,[ 61 ] ],[ 13,[ 79 ] ],[ 13,[ 81 ] ] ]).
+dir_subordinates_i(2,516,[ [ 8,[ 12 ] ],[ 8,[ 61 ] ],[ 13,[ 79 ] ],[ 13,[ 81 ] ] ]).
+ 
