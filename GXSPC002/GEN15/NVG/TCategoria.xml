@@ -1,0 +1,127 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>0</ObjCls>
+<ObjId>3</ObjId>
+<ObjName>Categoria</ObjName>
+<ObjDesc>Cadastro de Categorias</ObjDesc>
+<ObjPgmName>TCategoria</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>.NET</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>3</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table></BaseTable>
+<StandAloneRules></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules></StandAloneWithModeRules>
+<Rules></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table>
+<Token>HGx0030</Token>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

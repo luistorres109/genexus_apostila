@@ -1,0 +1,186 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>0</ObjCls>
+<ObjId>6</ObjId>
+<ObjName>Midia</ObjName>
+<ObjDesc>Cadastro de Mídias</ObjDesc>
+<ObjPgmName>TMidia</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>.NET</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>6</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table></BaseTable>
+<StandAloneRules></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></AttributeTo>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>FilNome</AttriName>
+<Description>Nome do Filme</Description></Attribute></Into></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table>
+<Token>HGx0020</Token>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<Token>HGx0060</Token>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

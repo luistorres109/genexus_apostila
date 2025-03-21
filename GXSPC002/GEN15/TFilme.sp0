@@ -1,0 +1,1159 @@
+spec_i([ trn,2,'Cadastro de Filmes','Filme',[],eng,'9_0_6-009' ]).
+ 
+struct_i(2,0,[],[]).
+ 
+level_i(2,[ 2,[ [ 2,many ],[ 3,one ] ],[ 28 ],[],[],[],[ 28 ],'IFILME',[ 2,[] ],[] ]).
+ 
+tw_i(2,[ [ 3,[ [ 2,33,33 ] ] ] ]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 2,28 ],[ 2,29 ],[ 2,30 ],[ 2,31 ],[ 2,32 ],[ 3,34 ],[ 2,33 ] ] ]).
+ 
+las_i(2,[ [ 28,29,30,31,32,33,34 ] ]).
+ 
+lac_i(2,[ [ 28,29,30,31,32,33 ] ]).
+ 
+ 
+lits_i('Código do Filme',5,10).
+lits_i('Nome do Filme',5,10).
+lits_i('Situação do Filme',5,10).
+lits_i('Data do Filme',5,10).
+lits_i('Descrição do Filme',5,10).
+lits_i('Código da Categoria',5,10).
+lits_i('Nome da Categoria',5,10).
+ 
+cls_i([ 0,0 ],[ 5,49 ]).
+ 
+pos_i(28,[ 0,0,0 ]).
+pos_i(29,[ 0,0,0 ]).
+pos_i(30,[ 0,0,0 ]).
+pos_i(31,[ 0,0,0 ]).
+pos_i(32,[ 0,0,0 ]).
+pos_i(33,[ 0,0,0 ]).
+pos_i(34,[ 0,0,0 ]).
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('FIELD_TO_FIELD','UMPV')).
+rule_i(0,prop('MTIER_OPT','Yes')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('AUTOENTER','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('BEEPONERROR','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('WBCHAR','')).
+rule_i(0,prop('WBATTR',none)).
+rule_i(0,prop('WBCOLOR',none)).
+rule_i(0,prop('WNDPOP','NO')).
+rule_i(0,prop('OKBUT','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('DLT_BUTTON','gxconfirm_dlt.gif')).
+rule_i(0,prop('CNF_BUTTON','gxconfirm_cnf.gif')).
+rule_i(0,prop('UPD_BUTTON','gxconfirm_upd.gif')).
+rule_i(0,prop('ADD_BUTTON','gxconfirm_add.gif')).
+rule_i(0,prop('AUTOSCROLL_FORM','UMPV')).
+rule_i(0,prop('SHOW_FRM','UMPV')).
+rule_i(0,prop('MODAL','PARM')).
+rule_i(0,prop('CTRBOX','YES')).
+rule_i(0,prop('ICON','')).
+rule_i(0,prop('S_TASK','YES')).
+rule_i(0,prop('MINBUT','YES')).
+rule_i(0,prop('MAXBUT','YES')).
+rule_i(0,prop('BORSTY','2')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_LAST','UMPV')).
+rule_i(0,prop('KEY_FIRST','UMPV')).
+rule_i(0,prop('KEY_SELECT','UMPV')).
+rule_i(0,prop('KEY_DISPLAY','UMPV')).
+rule_i(0,prop('KEY_DELETE','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_UPDATE','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_RETRIEVE','UMPV')).
+rule_i(0,prop('KEY_NEXT','UMPV')).
+rule_i(0,prop('KEY_PREVIOUS','UMPV')).
+rule_i(0,prop('KEY_INSERT','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_PROMPT','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_CHECK','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('DKL_ACTIONS','')).
+rule_i(0,prop('DKL_BIG_IMAGE','')).
+rule_i(0,prop('DKL_SMALL_IMAGE','')).
+rule_i(0,prop('DKL_IMAGE','')).
+rule_i(0,prop('DKL_READ_UNCOMMITED_BC','Yes')).
+rule_i(0,prop('DKL_REF_BY_CANDIDATE','0')).
+rule_i(0,prop('DKL_COMMAND_TIMEOUT','30')).
+rule_i(0,prop('DKL_OPTIMISTIC_LOCKTYPE','1')).
+rule_i(0,prop('DKL_CACHE_PRIORITY','2')).
+rule_i(0,prop('DKL_CACHE_FREQUENCY','1')).
+rule_i(0,prop('DKL_PERMISSION_BASE_ID','0')).
+rule_i(0,prop('DKL_VERSION','2100')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_LAYOUT','')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','1')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('DwhTrnType','NA')).
+rule_i(0,prop('IsDwhTrn','0')).
+rule_i(0,prop(idDEST_JNDI_Name,'')).
+rule_i(0,prop(idCON_FACTORY_JNDI_Name,'')).
+rule_i(0,prop(idDEST_Type,idDEST_Type_QUEUE)).
+rule_i(0,prop(idJNDI_Name,'ejb/aFilme')).
+rule_i(0,prop(idTRN_Attribute,idTRN_Attribute_REQUIRED)).
+rule_i(0,prop(idTRN_Type,idTRN_Type_CONTAINER)).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('ExternalNamespace','Curso')).
+rule_i(0,prop('ExternalName','Filme')).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISBCWEBSERVICE,'0')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('USE_ENCRYPTION','UMPV')).
+rule_i(0,prop('MasterPage','Default')).
+rule_i(0,prop('URLAccess','No')).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme','*None')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','Filme')).
+rule_i(0,prop('ObjId','0')).
+rule_i(2,prompt([ 3,[ [ 2,33,33 ] ],[ 33 ],[ 33 ],[ t(o(13,'Gx0030'),28),t(33,2) ],[],n,[] ])).
+rule_i(2,rule([ a(23,[ [ 33 ],[ t(o(13,'Gx0030'),28),t(33,2) ] ]) ],[],[],[ 33 ])).
+rule_i(2,prompt([ 2,[ [ [],28,28 ] ],[],[],[ t(o(13,'Gx0020'),28),t(28,2) ],[],n,[] ])).
+rule_i(2,rule([ a(23,[ [ 28 ],[ t(o(13,'Gx0020'),28),t(28,2) ] ]) ],[],[],[ 28 ])).
+rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
+rule_i(0,maingen(15)).
+rule_i(2,rule([ a(1,msg([ t('"Field Data do Filme is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(31,2),t(')',4),t('.OR.',9),t(31,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 31 ])).
+rule_i(2,rule([ a(18,[ [ 33 ] ]) ],[],[ insert,update,delete ],[ 33 ])).
+rule_i(2,rule([ a(19,[ [ 33 ],msg([ t('"No matching ''Cadastro de Categorias''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 33 ])).
+ 
+a_i(1,2,b,0,[],[ [],[ a(1,msg([ t('"Field Data do Filme is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(31,2),t(')',4),t('.OR.',9),t(31,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
+a_i(2,2,t,2,[],[ [ [ [],28,28 ] ],'IFILME',[] ]).
+a_i(3,2,r,3,[],[ [ [ 2,33,33 ] ],'ICATEGORIA',[] ]).
+ 
+v_i(b,i,1,31).
+v_i(b,o,1,[]).
+v_i(t,i,2,28).
+v_i(t,o,2,29).
+v_i(t,o,2,30).
+v_i(t,o,2,31).
+v_i(t,o,2,32).
+v_i(t,o,2,33).
+v_i(r,i,3,33).
+v_i(r,o,3,34).
+ 
+ 
+tbl_to_delete_i(2,[ 6,[ [ 2,28,28 ] ],c,'IMIDIA1',[ [ 6,28 ] ],[ 37 ] ]).
+ 
+ 
+ 
+attri_i(37,[ 'MidCodigo',int,9,0,'ZZZZZZZZ9',0,'Código de Mídia','',0 ]).
+attri_i(34,[ 'CatNome',svchar,50,0,'@!',0,'Nome da Categoria','',0 ]).
+attri_i(33,[ 'CatCodigo',int,9,0,'ZZZZZZZZ9',0,'Código da Categoria','',0 ]).
+attri_i(32,[ 'FIlDescricao',vchar,800,0,'@!',0,'Descrição do Filme','',0 ]).
+attri_i(31,[ 'FilData',date,8,0,'99/99/99',0,'Data do Filme','',0 ]).
+attri_i(30,[ 'FilSituacao',int,1,0,'9',0,'Situação do Filme','',0 ]).
+attri_i(29,[ 'FilNome',svchar,50,0,'@!',0,'Nome do Filme','',0 ]).
+attri_i(28,[ 'FilCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Filme','',0 ]).
+attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'GxRemove','',6 ]).
+attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
+ 
+table_i(6,[ 'MIDIA',[ 37,28 ],'Cadastro de Mídias','Midia' ]).
+table_i(3,[ 'CATEGORIA',[ 33,34 ],'Cadastro de Categorias','Categoria' ]).
+table_i(2,[ 'FILME',[ 28,29,30,31,32,33 ],'Cadastro de Filmes','Filme' ]).
+ 
+index_i(2,[ 'IFILME',u,[ 28 ],'IFilme' ]).
+index_i(3,[ 'ICATEGORIA',u,[ 33 ],'ICategoria' ]).
+index_i(6,[ 'IMIDIA',u,[ 37 ],'IMidia' ]).
+index_i(6,[ 'IMIDIA1',d,[ 28 ],'IMidia1' ]).
+ 
+ 
+ 
+ 
+upd_i(2,2,i,[ [ 29,30,31,32,33 ],[],'IFILME',[ [ [],28,28 ] ] ]).
+upd_i(2,2,u,[ [ 29,30,31,32,33 ],[],'IFILME',[] ]).
+upd_i(2,2,d,[ [],[],'IFILME',[] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,table(2)).
+ 
+html_sub_i(2,0,html_i(0,html('<TR>'))).
+html_sub_i(2,0,html_i(1,html('<TD>'))).
+html_sub_i(2,3,html_i(2,button('First'))).
+html_sub_i(2,4,html_i(3,button('Previous'))).
+html_sub_i(2,5,html_i(4,button('Next'))).
+html_sub_i(2,6,html_i(5,button('Last'))).
+html_sub_i(2,7,html_i(6,button('Select'))).
+html_sub_i(2,0,html_i(7,html('</TD>'))).
+html_sub_i(2,0,html_i(8,html('</TR>'))).
+html_sub_i(2,0,html_i(9,html('<TR>'))).
+html_sub_i(2,0,html_i(10,html('<TD>'))).
+html_sub_i(2,8,html_i(11,comp(errview))).
+html_sub_i(2,0,html_i(12,html('</TD>'))).
+html_sub_i(2,0,html_i(13,html('</TR>'))).
+html_sub_i(2,0,html_i(14,html('<TR>'))).
+html_sub_i(2,0,html_i(15,html('<TD>'))).
+html_sub_i(9,0,html_i(0,html('<TR>'))).
+html_sub_i(9,0,html_i(1,html('<TD>'))).
+html_sub_i(9,10,html_i(2,t('Código do Filme',3))).
+html_sub_i(9,0,html_i(3,html('</TD>'))).
+html_sub_i(9,0,html_i(4,html('<TD>'))).
+html_sub_i(9,11,html_i(5,t(28,2))).
+html_sub_i(9,12,html_i(6,button('Get'))).
+html_sub_i(9,0,html_i(7,html('</TD>'))).
+html_sub_i(9,0,html_i(8,html('</TR>'))).
+html_sub_i(9,0,html_i(9,html('<TR>'))).
+html_sub_i(9,0,html_i(10,html('<TD>'))).
+html_sub_i(9,13,html_i(11,t('Nome do Filme',3))).
+html_sub_i(9,0,html_i(12,html('</TD>'))).
+html_sub_i(9,0,html_i(13,html('<TD>'))).
+html_sub_i(9,14,html_i(14,t(29,2))).
+html_sub_i(9,0,html_i(15,html('</TD>'))).
+html_sub_i(9,0,html_i(16,html('</TR>'))).
+html_sub_i(9,0,html_i(17,html('<TR>'))).
+html_sub_i(9,0,html_i(18,html('<TD>'))).
+html_sub_i(9,15,html_i(19,t('Situação do Filme',3))).
+html_sub_i(9,0,html_i(20,html('</TD>'))).
+html_sub_i(9,0,html_i(21,html('<TD>'))).
+html_sub_i(9,16,html_i(22,t(30,2))).
+html_sub_i(9,0,html_i(23,html('</TD>'))).
+html_sub_i(9,0,html_i(24,html('</TR>'))).
+html_sub_i(9,0,html_i(25,html('<TR>'))).
+html_sub_i(9,0,html_i(26,html('<TD>'))).
+html_sub_i(9,17,html_i(27,t('Data do Filme',3))).
+html_sub_i(9,0,html_i(28,html('</TD>'))).
+html_sub_i(9,0,html_i(29,html('<TD>'))).
+html_sub_i(9,18,html_i(30,t(31,2))).
+html_sub_i(9,0,html_i(31,html('</TD>'))).
+html_sub_i(9,0,html_i(32,html('</TR>'))).
+html_sub_i(9,0,html_i(33,html('<TR>'))).
+html_sub_i(9,0,html_i(34,html('<TD>'))).
+html_sub_i(9,19,html_i(35,t('Descrição do Filme',3))).
+html_sub_i(9,0,html_i(36,html('</TD>'))).
+html_sub_i(9,0,html_i(37,html('<TD>'))).
+html_sub_i(9,20,html_i(38,t(32,2))).
+html_sub_i(9,0,html_i(39,html('</TD>'))).
+html_sub_i(9,0,html_i(40,html('</TR>'))).
+html_sub_i(9,0,html_i(41,html('<TR>'))).
+html_sub_i(9,0,html_i(42,html('<TD>'))).
+html_sub_i(9,21,html_i(43,t('Código da Categoria',3))).
+html_sub_i(9,0,html_i(44,html('</TD>'))).
+html_sub_i(9,0,html_i(45,html('<TD>'))).
+html_sub_i(9,22,html_i(46,t(33,2))).
+html_sub_i(9,0,html_i(47,html('</TD>'))).
+html_sub_i(9,0,html_i(48,html('</TR>'))).
+html_sub_i(9,0,html_i(49,html('<TR>'))).
+html_sub_i(9,0,html_i(50,html('<TD>'))).
+html_sub_i(9,23,html_i(51,t('Nome da Categoria',3))).
+html_sub_i(9,0,html_i(52,html('</TD>'))).
+html_sub_i(9,0,html_i(53,html('<TD>'))).
+html_sub_i(9,24,html_i(54,t(34,2))).
+html_sub_i(9,0,html_i(55,html('</TD>'))).
+html_sub_i(9,0,html_i(56,html('</TR>'))).
+html_sub_i(2,9,html_i(9,table(9))).
+html_sub_i(2,0,html_i(17,html('</TD>'))).
+html_sub_i(2,0,html_i(18,html('</TR>'))).
+html_sub_i(2,0,html_i(19,html('<TR>'))).
+html_sub_i(2,0,html_i(20,html('<TD>'))).
+html_sub_i(2,26,html_i(21,button('Enter'))).
+html_sub_i(2,27,html_i(22,button('Check'))).
+html_sub_i(2,28,html_i(23,button('Cancel'))).
+html_sub_i(2,29,html_i(24,button('Delete'))).
+html_sub_i(2,30,html_i(25,button('Help'))).
+html_sub_i(2,0,html_i(26,html('</TD>'))).
+html_sub_i(2,0,html_i(27,html('</TR>'))).
+ 
+html_tags_i(8,'Style','width: 100%').
+html_tags_i(11,'Style','height: 26px; width: 64px').
+html_tags_i(14,'Style','height: 26px; width: 310px').
+html_tags_i(16,'Style','height: 26px; width: 33px').
+html_tags_i(18,'Style','height: 26px; width: 58px').
+html_tags_i(20,'Style','height: 212px; width: 490px').
+html_tags_i(22,'Style','height: 26px; width: 64px').
+html_tags_i(24,'Style','height: 26px; width: 310px').
+html_tags_i(1,'Class','').
+ 
+html_comp_i(3,'Helpkeyword',55,d,[ num ]).
+html_comp_i(3,'Usermode',1,v,[ num ]).
+html_comp_i(3,'Controlname','Btn_first',v,[ str ]).
+html_comp_i(3,'Class','',v,[ str ]).
+html_comp_i(3,'Event','First',v,[ str ]).
+html_comp_i(3,'Caption','|<',d,[ str ]).
+html_comp_i(3,'Accesskey','',d,[ str ]).
+html_comp_i(3,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(3,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(3,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(3,'Border','2',d,[ str ]).
+html_comp_i(3,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(3,'Type',0,d,[ num ]).
+html_comp_i(4,'Helpkeyword',55,d,[ num ]).
+html_comp_i(4,'Usermode',1,v,[ num ]).
+html_comp_i(4,'Controlname','Btn_previous',v,[ str ]).
+html_comp_i(4,'Class','',v,[ str ]).
+html_comp_i(4,'Event','Previous',v,[ str ]).
+html_comp_i(4,'Caption',<,d,[ str ]).
+html_comp_i(4,'Accesskey','',d,[ str ]).
+html_comp_i(4,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(4,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(4,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(4,'Border','2',d,[ str ]).
+html_comp_i(4,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(4,'Type',0,d,[ num ]).
+html_comp_i(5,'Helpkeyword',55,d,[ num ]).
+html_comp_i(5,'Usermode',1,v,[ num ]).
+html_comp_i(5,'Controlname','Btn_next',v,[ str ]).
+html_comp_i(5,'Class','',v,[ str ]).
+html_comp_i(5,'Event','Next',v,[ str ]).
+html_comp_i(5,'Caption',>,d,[ str ]).
+html_comp_i(5,'Accesskey','',d,[ str ]).
+html_comp_i(5,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(5,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(5,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(5,'Border','2',d,[ str ]).
+html_comp_i(5,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(5,'Type',0,d,[ num ]).
+html_comp_i(6,'Helpkeyword',55,d,[ num ]).
+html_comp_i(6,'Usermode',1,v,[ num ]).
+html_comp_i(6,'Controlname','Btn_last',v,[ str ]).
+html_comp_i(6,'Class','',v,[ str ]).
+html_comp_i(6,'Event','Last',v,[ str ]).
+html_comp_i(6,'Caption','>|',d,[ str ]).
+html_comp_i(6,'Accesskey','',d,[ str ]).
+html_comp_i(6,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(6,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(6,'Border','2',d,[ str ]).
+html_comp_i(6,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(6,'Type',0,d,[ num ]).
+html_comp_i(7,'Helpkeyword',55,d,[ num ]).
+html_comp_i(7,'Usermode',1,v,[ num ]).
+html_comp_i(7,'Controlname','Btn_select',v,[ str ]).
+html_comp_i(7,'Class','',v,[ str ]).
+html_comp_i(7,'Event','Select',v,[ str ]).
+html_comp_i(7,'Caption','Select',d,[ str ]).
+html_comp_i(7,'Accesskey','',d,[ str ]).
+html_comp_i(7,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(7,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(7,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(7,'Border','2',d,[ str ]).
+html_comp_i(7,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(7,'Type',0,d,[ num ]).
+html_comp_i(8,'Helpkeyword',67,d,[ num ]).
+html_comp_i(8,'Usermode',1,v,[ num ]).
+html_comp_i(8,'Controlname','Ctlerror',v,[ str ]).
+html_comp_i(8,'Class','',v,[ str ]).
+html_comp_i(8,'Displaymode',1,d,[ num ]).
+html_comp_i(8,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(8,'Font',font('MS Sans Serif',10,[]),d,[ font ]).
+html_comp_i(8,'Fill',1,d,[ bool ]).
+html_comp_i(8,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(10,'Helpkeyword',64,d,[ num ]).
+html_comp_i(10,'Usermode',1,v,[ num ]).
+html_comp_i(10,'Caption','Código do Filme',v,[ str ]).
+html_comp_i(10,'Id','TextBlock1',v,[ str ]).
+html_comp_i(10,'Class','',v,[ str ]).
+html_comp_i(10,'Gxformat',0,d,[ num ]).
+html_comp_i(10,'Fill',1,d,[ bool ]).
+html_comp_i(10,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(10,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(10,'Font','',d,[ str ]).
+html_comp_i(10,'Returnonclick',0,d,[ bool ]).
+html_comp_i(11,'Helpkeyword',54,d,[ num ]).
+html_comp_i(11,'Usermode',1,v,[ num ]).
+html_comp_i(11,'Atttype',4,d,[ num ]).
+html_comp_i(11,'Baseatttype',4,d,[ num ]).
+html_comp_i(11,'Attname','FilCodigo',d,[ str ]).
+html_comp_i(11,'Fieldspecname','',d,[ str ]).
+html_comp_i(11,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(11,'Gxobjclass',0,d,[ num ]).
+html_comp_i(11,'Isvariable',0,d,[ bool ]).
+html_comp_i(11,'Isattribute',1,d,[ bool ]).
+html_comp_i(11,'Colcount',9,d,[ num ]).
+html_comp_i(11,'Rowcount',1,d,[ num ]).
+html_comp_i(11,'Attid',28,v,[ num ]).
+html_comp_i(11,'Class','',v,[ str ]).
+html_comp_i(11,'Isenumerated',0,d,[ bool ]).
+html_comp_i(11,'Controltype',2,d,[ num ]).
+html_comp_i(11,'Inputtype',0,d,[ num ]).
+html_comp_i(11,'Editautocomplete',0,d,[ num ]).
+html_comp_i(11,'Controlvalues',[],d,[ values ]).
+html_comp_i(11,'Controldirection',1,d,[ num ]).
+html_comp_i(11,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(11,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(11,'Controlitemvalues',28,d,[ num ]).
+html_comp_i(11,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(11,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(11,'Controlwhere','',d,[ str ]).
+html_comp_i(11,'Filteroperator',0,d,[ num ]).
+html_comp_i(11,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(11,'Casesensitive',0,d,[ bool ]).
+html_comp_i(11,'Maxitems',5,d,[ num ]).
+html_comp_i(11,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(11,'Controlname','Filcodigo',d,[ str ]).
+html_comp_i(11,'Rowindex','1',d,[ str ]).
+html_comp_i(11,'Colindex','1',d,[ str ]).
+html_comp_i(11,'Fieldspecifier','',d,[ str ]).
+html_comp_i(11,'Readonly',0,d,[ bool ]).
+html_comp_i(11,'Autocomplete',1,d,[ bool ]).
+html_comp_i(11,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(11,'Ispassword',0,d,[ bool ]).
+html_comp_i(11,'Autoresize',1,d,[ bool ]).
+html_comp_i(11,'Width',measure(64,px),d,[ measure ]).
+html_comp_i(11,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(11,'Fill',1,d,[ bool ]).
+html_comp_i(11,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(11,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(11,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(11,'Gxformat',0,d,[ num ]).
+html_comp_i(11,'Borderstyle',2,d,[ num ]).
+html_comp_i(11,'Border','2',d,[ str ]).
+html_comp_i(11,'Title','',d,[ str ]).
+html_comp_i(11,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(11,'Dimension',0,d,[ num ]).
+html_comp_i(11,'Returnonclick',0,d,[ bool ]).
+html_comp_i(12,'Helpkeyword',55,d,[ num ]).
+html_comp_i(12,'Usermode',1,v,[ num ]).
+html_comp_i(12,'Controlname','Btn_get',v,[ str ]).
+html_comp_i(12,'Class','',v,[ str ]).
+html_comp_i(12,'Event','Get',v,[ str ]).
+html_comp_i(12,'Caption',=>,d,[ str ]).
+html_comp_i(12,'Accesskey','',d,[ str ]).
+html_comp_i(12,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(12,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(12,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(12,'Border','2',d,[ str ]).
+html_comp_i(12,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(12,'Type',0,d,[ num ]).
+html_comp_i(13,'Helpkeyword',64,d,[ num ]).
+html_comp_i(13,'Usermode',1,v,[ num ]).
+html_comp_i(13,'Caption','Nome do Filme',v,[ str ]).
+html_comp_i(13,'Id','TextBlock2',v,[ str ]).
+html_comp_i(13,'Class','',v,[ str ]).
+html_comp_i(13,'Gxformat',0,d,[ num ]).
+html_comp_i(13,'Fill',1,d,[ bool ]).
+html_comp_i(13,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(13,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(13,'Font','',d,[ str ]).
+html_comp_i(13,'Returnonclick',0,d,[ bool ]).
+html_comp_i(14,'Helpkeyword',54,d,[ num ]).
+html_comp_i(14,'Usermode',1,v,[ num ]).
+html_comp_i(14,'Atttype',13,d,[ num ]).
+html_comp_i(14,'Baseatttype',13,d,[ num ]).
+html_comp_i(14,'Attname','FilNome',d,[ str ]).
+html_comp_i(14,'Fieldspecname','',d,[ str ]).
+html_comp_i(14,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(14,'Gxobjclass',0,d,[ num ]).
+html_comp_i(14,'Isvariable',0,d,[ bool ]).
+html_comp_i(14,'Isattribute',1,d,[ bool ]).
+html_comp_i(14,'Colcount',50,d,[ num ]).
+html_comp_i(14,'Rowcount',1,d,[ num ]).
+html_comp_i(14,'Attid',29,v,[ num ]).
+html_comp_i(14,'Class','',v,[ str ]).
+html_comp_i(14,'Isenumerated',0,d,[ bool ]).
+html_comp_i(14,'Controltype',2,d,[ num ]).
+html_comp_i(14,'Inputtype',0,d,[ num ]).
+html_comp_i(14,'Editautocomplete',0,d,[ num ]).
+html_comp_i(14,'Controlvalues',[],d,[ values ]).
+html_comp_i(14,'Controldirection',1,d,[ num ]).
+html_comp_i(14,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(14,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(14,'Controlitemvalues',29,d,[ num ]).
+html_comp_i(14,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(14,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(14,'Controlwhere','',d,[ str ]).
+html_comp_i(14,'Filteroperator',0,d,[ num ]).
+html_comp_i(14,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(14,'Casesensitive',0,d,[ bool ]).
+html_comp_i(14,'Maxitems',5,d,[ num ]).
+html_comp_i(14,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(14,'Controlname','Filnome',d,[ str ]).
+html_comp_i(14,'Rowindex','1',d,[ str ]).
+html_comp_i(14,'Colindex','1',d,[ str ]).
+html_comp_i(14,'Fieldspecifier','',d,[ str ]).
+html_comp_i(14,'Readonly',0,d,[ bool ]).
+html_comp_i(14,'Autocomplete',1,d,[ bool ]).
+html_comp_i(14,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(14,'Ispassword',0,d,[ bool ]).
+html_comp_i(14,'Autoresize',1,d,[ bool ]).
+html_comp_i(14,'Width',measure(310,px),d,[ measure ]).
+html_comp_i(14,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(14,'Fill',1,d,[ bool ]).
+html_comp_i(14,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(14,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(14,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(14,'Gxformat',0,d,[ num ]).
+html_comp_i(14,'Borderstyle',2,d,[ num ]).
+html_comp_i(14,'Border','2',d,[ str ]).
+html_comp_i(14,'Title','',d,[ str ]).
+html_comp_i(14,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(14,'Dimension',0,d,[ num ]).
+html_comp_i(14,'Returnonclick',0,d,[ bool ]).
+html_comp_i(15,'Helpkeyword',64,d,[ num ]).
+html_comp_i(15,'Usermode',1,v,[ num ]).
+html_comp_i(15,'Caption','Situação do Filme',v,[ str ]).
+html_comp_i(15,'Id','TextBlock3',v,[ str ]).
+html_comp_i(15,'Class','',v,[ str ]).
+html_comp_i(15,'Gxformat',0,d,[ num ]).
+html_comp_i(15,'Fill',1,d,[ bool ]).
+html_comp_i(15,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(15,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(15,'Font','',d,[ str ]).
+html_comp_i(15,'Returnonclick',0,d,[ bool ]).
+html_comp_i(16,'Helpkeyword',54,d,[ num ]).
+html_comp_i(16,'Usermode',1,v,[ num ]).
+html_comp_i(16,'Atttype',4,d,[ num ]).
+html_comp_i(16,'Baseatttype',4,d,[ num ]).
+html_comp_i(16,'Attname','FilSituacao',d,[ str ]).
+html_comp_i(16,'Fieldspecname','',d,[ str ]).
+html_comp_i(16,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(16,'Gxobjclass',0,d,[ num ]).
+html_comp_i(16,'Isvariable',0,d,[ bool ]).
+html_comp_i(16,'Isattribute',1,d,[ bool ]).
+html_comp_i(16,'Colcount',4,d,[ num ]).
+html_comp_i(16,'Rowcount',1,d,[ num ]).
+html_comp_i(16,'Attid',30,v,[ num ]).
+html_comp_i(16,'Class','',v,[ str ]).
+html_comp_i(16,'Isenumerated',0,d,[ bool ]).
+html_comp_i(16,'Controltype',0,d,[ num ]).
+html_comp_i(16,'Controlvalues',[ [ 'Ativo','1' ],[ 'Inativo','2' ] ],d,[ values ]).
+html_comp_i(16,'Controldirection',1,d,[ num ]).
+html_comp_i(16,'Controlcheckvalue','2',d,[ str ]).
+html_comp_i(16,'Controluncheckvalue','1',d,[ str ]).
+html_comp_i(16,'Controlitemvalues',30,d,[ num ]).
+html_comp_i(16,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(16,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(16,'Controlwhere','',d,[ str ]).
+html_comp_i(16,'Filteroperator',0,d,[ num ]).
+html_comp_i(16,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(16,'Casesensitive',1,d,[ bool ]).
+html_comp_i(16,'Maxitems',5,d,[ num ]).
+html_comp_i(16,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(16,'Controlname','Filsituacao',d,[ str ]).
+html_comp_i(16,'Rowindex','1',d,[ str ]).
+html_comp_i(16,'Colindex','1',d,[ str ]).
+html_comp_i(16,'Fieldspecifier','',d,[ str ]).
+html_comp_i(16,'Readonly',0,d,[ bool ]).
+html_comp_i(16,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(16,'Ispassword',0,d,[ bool ]).
+html_comp_i(16,'Autoresize',1,d,[ bool ]).
+html_comp_i(16,'Width',measure(33,px),d,[ measure ]).
+html_comp_i(16,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(16,'Fill',1,d,[ bool ]).
+html_comp_i(16,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(16,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(16,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(16,'Gxformat',2,d,[ num ]).
+html_comp_i(16,'Border','2',d,[ str ]).
+html_comp_i(16,'Title','',d,[ str ]).
+html_comp_i(16,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(16,'Dimension',0,d,[ num ]).
+html_comp_i(16,'Returnonclick',0,d,[ bool ]).
+html_comp_i(17,'Helpkeyword',64,d,[ num ]).
+html_comp_i(17,'Usermode',1,v,[ num ]).
+html_comp_i(17,'Caption','Data do Filme',v,[ str ]).
+html_comp_i(17,'Id','TextBlock4',v,[ str ]).
+html_comp_i(17,'Class','',v,[ str ]).
+html_comp_i(17,'Gxformat',0,d,[ num ]).
+html_comp_i(17,'Fill',1,d,[ bool ]).
+html_comp_i(17,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(17,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(17,'Font','',d,[ str ]).
+html_comp_i(17,'Returnonclick',0,d,[ bool ]).
+html_comp_i(18,'Helpkeyword',54,d,[ num ]).
+html_comp_i(18,'Usermode',1,v,[ num ]).
+html_comp_i(18,'Atttype',6,d,[ num ]).
+html_comp_i(18,'Baseatttype',6,d,[ num ]).
+html_comp_i(18,'Attname','FilData',d,[ str ]).
+html_comp_i(18,'Fieldspecname','',d,[ str ]).
+html_comp_i(18,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(18,'Gxobjclass',0,d,[ num ]).
+html_comp_i(18,'Isvariable',0,d,[ bool ]).
+html_comp_i(18,'Isattribute',1,d,[ bool ]).
+html_comp_i(18,'Colcount',8,d,[ num ]).
+html_comp_i(18,'Rowcount',1,d,[ num ]).
+html_comp_i(18,'Attid',31,v,[ num ]).
+html_comp_i(18,'Class','',v,[ str ]).
+html_comp_i(18,'Isenumerated',0,d,[ bool ]).
+html_comp_i(18,'Controltype',2,d,[ num ]).
+html_comp_i(18,'Inputtype',0,d,[ num ]).
+html_comp_i(18,'Editautocomplete',0,d,[ num ]).
+html_comp_i(18,'Controlvalues',[],d,[ values ]).
+html_comp_i(18,'Controldirection',1,d,[ num ]).
+html_comp_i(18,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(18,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(18,'Controlitemvalues',31,d,[ num ]).
+html_comp_i(18,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(18,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(18,'Controlwhere','',d,[ str ]).
+html_comp_i(18,'Filteroperator',0,d,[ num ]).
+html_comp_i(18,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(18,'Casesensitive',0,d,[ bool ]).
+html_comp_i(18,'Maxitems',5,d,[ num ]).
+html_comp_i(18,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(18,'Controlname','Fildata',d,[ str ]).
+html_comp_i(18,'Rowindex','1',d,[ str ]).
+html_comp_i(18,'Colindex','1',d,[ str ]).
+html_comp_i(18,'Fieldspecifier','',d,[ str ]).
+html_comp_i(18,'Readonly',0,d,[ bool ]).
+html_comp_i(18,'Autocomplete',1,d,[ bool ]).
+html_comp_i(18,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(18,'Ispassword',0,d,[ bool ]).
+html_comp_i(18,'Autoresize',1,d,[ bool ]).
+html_comp_i(18,'Width',measure(58,px),d,[ measure ]).
+html_comp_i(18,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(18,'Fill',1,d,[ bool ]).
+html_comp_i(18,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(18,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(18,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(18,'Gxformat',0,d,[ num ]).
+html_comp_i(18,'Borderstyle',2,d,[ num ]).
+html_comp_i(18,'Border','2',d,[ str ]).
+html_comp_i(18,'Title','',d,[ str ]).
+html_comp_i(18,'Use_datepicker',1,d,[ bool ]).
+html_comp_i(18,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(18,'Dimension',0,d,[ num ]).
+html_comp_i(18,'Returnonclick',0,d,[ bool ]).
+html_comp_i(19,'Helpkeyword',64,d,[ num ]).
+html_comp_i(19,'Usermode',1,v,[ num ]).
+html_comp_i(19,'Caption','Descrição do Filme',v,[ str ]).
+html_comp_i(19,'Id','TextBlock5',v,[ str ]).
+html_comp_i(19,'Class','',v,[ str ]).
+html_comp_i(19,'Gxformat',0,d,[ num ]).
+html_comp_i(19,'Fill',1,d,[ bool ]).
+html_comp_i(19,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(19,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(19,'Font','',d,[ str ]).
+html_comp_i(19,'Returnonclick',0,d,[ bool ]).
+html_comp_i(20,'Helpkeyword',54,d,[ num ]).
+html_comp_i(20,'Usermode',1,v,[ num ]).
+html_comp_i(20,'Atttype',8,d,[ num ]).
+html_comp_i(20,'Baseatttype',8,d,[ num ]).
+html_comp_i(20,'Attname','FIlDescricao',d,[ str ]).
+html_comp_i(20,'Fieldspecname','',d,[ str ]).
+html_comp_i(20,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(20,'Gxobjclass',0,d,[ num ]).
+html_comp_i(20,'Isvariable',0,d,[ bool ]).
+html_comp_i(20,'Isattribute',1,d,[ bool ]).
+html_comp_i(20,'Colcount',80,d,[ num ]).
+html_comp_i(20,'Rowcount',10,d,[ num ]).
+html_comp_i(20,'Attid',32,v,[ num ]).
+html_comp_i(20,'Class','',v,[ str ]).
+html_comp_i(20,'Isenumerated',0,d,[ bool ]).
+html_comp_i(20,'Controltype',2,d,[ num ]).
+html_comp_i(20,'Inputtype',0,d,[ num ]).
+html_comp_i(20,'Editautocomplete',0,d,[ num ]).
+html_comp_i(20,'Controlvalues',[],d,[ values ]).
+html_comp_i(20,'Controldirection',1,d,[ num ]).
+html_comp_i(20,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(20,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(20,'Controlitemvalues',32,d,[ num ]).
+html_comp_i(20,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(20,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(20,'Controlwhere','',d,[ str ]).
+html_comp_i(20,'Filteroperator',0,d,[ num ]).
+html_comp_i(20,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(20,'Casesensitive',0,d,[ bool ]).
+html_comp_i(20,'Maxitems',5,d,[ num ]).
+html_comp_i(20,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(20,'Controlname','Fildescricao',d,[ str ]).
+html_comp_i(20,'Rowindex','1',d,[ str ]).
+html_comp_i(20,'Colindex','1',d,[ str ]).
+html_comp_i(20,'Fieldspecifier','',d,[ str ]).
+html_comp_i(20,'Readonly',0,d,[ bool ]).
+html_comp_i(20,'Autocomplete',1,d,[ bool ]).
+html_comp_i(20,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(20,'Ispassword',0,d,[ bool ]).
+html_comp_i(20,'Autoresize',1,d,[ bool ]).
+html_comp_i(20,'Width',measure(490,px),d,[ measure ]).
+html_comp_i(20,'Height',measure(212,px),d,[ measure ]).
+html_comp_i(20,'Fill',1,d,[ bool ]).
+html_comp_i(20,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(20,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(20,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(20,'Gxformat',0,d,[ num ]).
+html_comp_i(20,'Borderstyle',2,d,[ num ]).
+html_comp_i(20,'Border','2',d,[ str ]).
+html_comp_i(20,'Title','',d,[ str ]).
+html_comp_i(20,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(20,'Dimension',0,d,[ num ]).
+html_comp_i(20,'Returnonclick',0,d,[ bool ]).
+html_comp_i(21,'Helpkeyword',64,d,[ num ]).
+html_comp_i(21,'Usermode',1,v,[ num ]).
+html_comp_i(21,'Caption','Código da Categoria',v,[ str ]).
+html_comp_i(21,'Id','TextBlock6',v,[ str ]).
+html_comp_i(21,'Class','',v,[ str ]).
+html_comp_i(21,'Gxformat',0,d,[ num ]).
+html_comp_i(21,'Fill',1,d,[ bool ]).
+html_comp_i(21,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(21,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(21,'Font','',d,[ str ]).
+html_comp_i(21,'Returnonclick',0,d,[ bool ]).
+html_comp_i(22,'Helpkeyword',54,d,[ num ]).
+html_comp_i(22,'Usermode',1,v,[ num ]).
+html_comp_i(22,'Atttype',4,d,[ num ]).
+html_comp_i(22,'Baseatttype',4,d,[ num ]).
+html_comp_i(22,'Attname','CatCodigo',d,[ str ]).
+html_comp_i(22,'Fieldspecname','',d,[ str ]).
+html_comp_i(22,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(22,'Gxobjclass',0,d,[ num ]).
+html_comp_i(22,'Isvariable',0,d,[ bool ]).
+html_comp_i(22,'Isattribute',1,d,[ bool ]).
+html_comp_i(22,'Colcount',9,d,[ num ]).
+html_comp_i(22,'Rowcount',1,d,[ num ]).
+html_comp_i(22,'Attid',33,v,[ num ]).
+html_comp_i(22,'Class','',v,[ str ]).
+html_comp_i(22,'Isenumerated',0,d,[ bool ]).
+html_comp_i(22,'Controltype',2,d,[ num ]).
+html_comp_i(22,'Inputtype',0,d,[ num ]).
+html_comp_i(22,'Editautocomplete',0,d,[ num ]).
+html_comp_i(22,'Controlvalues',[],d,[ values ]).
+html_comp_i(22,'Controldirection',1,d,[ num ]).
+html_comp_i(22,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(22,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(22,'Controlitemvalues',33,d,[ num ]).
+html_comp_i(22,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(22,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(22,'Controlwhere','',d,[ str ]).
+html_comp_i(22,'Filteroperator',0,d,[ num ]).
+html_comp_i(22,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(22,'Casesensitive',0,d,[ bool ]).
+html_comp_i(22,'Maxitems',5,d,[ num ]).
+html_comp_i(22,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(22,'Controlname','Catcodigo',d,[ str ]).
+html_comp_i(22,'Rowindex','1',d,[ str ]).
+html_comp_i(22,'Colindex','1',d,[ str ]).
+html_comp_i(22,'Fieldspecifier','',d,[ str ]).
+html_comp_i(22,'Readonly',0,d,[ bool ]).
+html_comp_i(22,'Autocomplete',1,d,[ bool ]).
+html_comp_i(22,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(22,'Ispassword',0,d,[ bool ]).
+html_comp_i(22,'Autoresize',1,d,[ bool ]).
+html_comp_i(22,'Width',measure(64,px),d,[ measure ]).
+html_comp_i(22,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(22,'Fill',1,d,[ bool ]).
+html_comp_i(22,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(22,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(22,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(22,'Gxformat',0,d,[ num ]).
+html_comp_i(22,'Borderstyle',2,d,[ num ]).
+html_comp_i(22,'Border','2',d,[ str ]).
+html_comp_i(22,'Title','',d,[ str ]).
+html_comp_i(22,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(22,'Dimension',0,d,[ num ]).
+html_comp_i(22,'Returnonclick',0,d,[ bool ]).
+html_comp_i(23,'Helpkeyword',64,d,[ num ]).
+html_comp_i(23,'Usermode',1,v,[ num ]).
+html_comp_i(23,'Caption','Nome da Categoria',v,[ str ]).
+html_comp_i(23,'Id','TextBlock7',v,[ str ]).
+html_comp_i(23,'Class','',v,[ str ]).
+html_comp_i(23,'Gxformat',0,d,[ num ]).
+html_comp_i(23,'Fill',1,d,[ bool ]).
+html_comp_i(23,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(23,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(23,'Font','',d,[ str ]).
+html_comp_i(23,'Returnonclick',0,d,[ bool ]).
+html_comp_i(24,'Helpkeyword',54,d,[ num ]).
+html_comp_i(24,'Usermode',1,v,[ num ]).
+html_comp_i(24,'Atttype',13,d,[ num ]).
+html_comp_i(24,'Baseatttype',13,d,[ num ]).
+html_comp_i(24,'Attname','CatNome',d,[ str ]).
+html_comp_i(24,'Fieldspecname','',d,[ str ]).
+html_comp_i(24,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(24,'Gxobjclass',0,d,[ num ]).
+html_comp_i(24,'Isvariable',0,d,[ bool ]).
+html_comp_i(24,'Isattribute',1,d,[ bool ]).
+html_comp_i(24,'Colcount',50,d,[ num ]).
+html_comp_i(24,'Rowcount',1,d,[ num ]).
+html_comp_i(24,'Attid',34,v,[ num ]).
+html_comp_i(24,'Class','',v,[ str ]).
+html_comp_i(24,'Isenumerated',0,d,[ bool ]).
+html_comp_i(24,'Controltype',2,d,[ num ]).
+html_comp_i(24,'Inputtype',0,d,[ num ]).
+html_comp_i(24,'Editautocomplete',0,d,[ num ]).
+html_comp_i(24,'Controlvalues',[],d,[ values ]).
+html_comp_i(24,'Controldirection',1,d,[ num ]).
+html_comp_i(24,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(24,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(24,'Controlitemvalues',34,d,[ num ]).
+html_comp_i(24,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(24,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(24,'Controlwhere','',d,[ str ]).
+html_comp_i(24,'Filteroperator',0,d,[ num ]).
+html_comp_i(24,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(24,'Casesensitive',0,d,[ bool ]).
+html_comp_i(24,'Maxitems',5,d,[ num ]).
+html_comp_i(24,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(24,'Controlname','Catnome',d,[ str ]).
+html_comp_i(24,'Rowindex','1',d,[ str ]).
+html_comp_i(24,'Colindex','1',d,[ str ]).
+html_comp_i(24,'Fieldspecifier','',d,[ str ]).
+html_comp_i(24,'Readonly',0,d,[ bool ]).
+html_comp_i(24,'Autocomplete',1,d,[ bool ]).
+html_comp_i(24,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(24,'Ispassword',0,d,[ bool ]).
+html_comp_i(24,'Autoresize',1,d,[ bool ]).
+html_comp_i(24,'Width',measure(310,px),d,[ measure ]).
+html_comp_i(24,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(24,'Fill',1,d,[ bool ]).
+html_comp_i(24,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(24,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(24,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(24,'Gxformat',0,d,[ num ]).
+html_comp_i(24,'Borderstyle',2,d,[ num ]).
+html_comp_i(24,'Border','2',d,[ str ]).
+html_comp_i(24,'Title','',d,[ str ]).
+html_comp_i(24,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(24,'Dimension',0,d,[ num ]).
+html_comp_i(24,'Returnonclick',0,d,[ bool ]).
+html_comp_i(9,'Helpkeyword',59,d,[ num ]).
+html_comp_i(9,'Usermode',1,v,[ num ]).
+html_comp_i(9,'Id','Table2',v,[ str ]).
+html_comp_i(9,'Class','',v,[ str ]).
+html_comp_i(9,'Title','',d,[ str ]).
+html_comp_i(9,'Align',left,d,[ str ]).
+html_comp_i(9,'Backgroundgx','',d,[ str ]).
+html_comp_i(9,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(9,'Border','0',d,[ str ]).
+html_comp_i(9,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(9,'Cellpadding','1',d,[ str ]).
+html_comp_i(9,'Cellspacing','2',d,[ str ]).
+html_comp_i(9,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Rules',all,d,[ str ]).
+html_comp_i(26,'Helpkeyword',55,d,[ num ]).
+html_comp_i(26,'Usermode',1,v,[ num ]).
+html_comp_i(26,'Controlname','Btn_enter',v,[ str ]).
+html_comp_i(26,'Class','',v,[ str ]).
+html_comp_i(26,'Event','Enter',v,[ str ]).
+html_comp_i(26,'Caption','Apply Changes',d,[ str ]).
+html_comp_i(26,'Accesskey','',d,[ str ]).
+html_comp_i(26,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(26,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(26,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(26,'Border','2',d,[ str ]).
+html_comp_i(26,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(26,'Type',0,d,[ num ]).
+html_comp_i(27,'Helpkeyword',55,d,[ num ]).
+html_comp_i(27,'Usermode',1,v,[ num ]).
+html_comp_i(27,'Controlname','Btn_check',v,[ str ]).
+html_comp_i(27,'Class','',v,[ str ]).
+html_comp_i(27,'Event','Check',v,[ str ]).
+html_comp_i(27,'Caption','Check',d,[ str ]).
+html_comp_i(27,'Accesskey','',d,[ str ]).
+html_comp_i(27,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(27,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(27,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(27,'Border','2',d,[ str ]).
+html_comp_i(27,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(27,'Type',0,d,[ num ]).
+html_comp_i(28,'Helpkeyword',55,d,[ num ]).
+html_comp_i(28,'Usermode',1,v,[ num ]).
+html_comp_i(28,'Controlname','Btn_cancel',v,[ str ]).
+html_comp_i(28,'Class','',v,[ str ]).
+html_comp_i(28,'Event','Cancel',v,[ str ]).
+html_comp_i(28,'Caption','Close',d,[ str ]).
+html_comp_i(28,'Accesskey','',d,[ str ]).
+html_comp_i(28,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(28,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(28,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(28,'Border','2',d,[ str ]).
+html_comp_i(28,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(28,'Type',0,d,[ num ]).
+html_comp_i(29,'Helpkeyword',55,d,[ num ]).
+html_comp_i(29,'Usermode',1,v,[ num ]).
+html_comp_i(29,'Controlname','Btn_delete',v,[ str ]).
+html_comp_i(29,'Class','',v,[ str ]).
+html_comp_i(29,'Event','Delete',v,[ str ]).
+html_comp_i(29,'Caption','Delete All',d,[ str ]).
+html_comp_i(29,'Accesskey','',d,[ str ]).
+html_comp_i(29,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(29,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(29,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(29,'Border','2',d,[ str ]).
+html_comp_i(29,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(29,'Type',0,d,[ num ]).
+html_comp_i(30,'Helpkeyword',55,d,[ num ]).
+html_comp_i(30,'Usermode',1,v,[ num ]).
+html_comp_i(30,'Controlname','Btn_help',v,[ str ]).
+html_comp_i(30,'Class','',v,[ str ]).
+html_comp_i(30,'Event','Help',v,[ str ]).
+html_comp_i(30,'Caption','Help',d,[ str ]).
+html_comp_i(30,'Accesskey','',d,[ str ]).
+html_comp_i(30,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(30,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(30,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(30,'Border','2',d,[ str ]).
+html_comp_i(30,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(30,'Type',0,d,[ num ]).
+html_comp_i(2,'Helpkeyword',59,d,[ num ]).
+html_comp_i(2,'Usermode',1,v,[ num ]).
+html_comp_i(2,'Id','Table1',v,[ str ]).
+html_comp_i(2,'Class','',v,[ str ]).
+html_comp_i(2,'Title','',d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Backgroundgx','',d,[ str ]).
+html_comp_i(2,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Border','0',d,[ str ]).
+html_comp_i(2,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Cellpadding','1',d,[ str ]).
+html_comp_i(2,'Cellspacing','2',d,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Rules',all,d,[ str ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(3,1,button('First'),[ ctlname('Btn_first'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(4,1,button('Previous'),[ ctlname('Btn_previous'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(5,1,button('Next'),[ ctlname('Btn_next'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(6,1,button('Last'),[ ctlname('Btn_last'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(7,1,button('Select'),[ ctlname('Btn_select'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(8,1,comp(errview),[ ctlname('Ctlerror'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(10,1,t('Código do Filme',3),[ ctlname('Textblock1') ]).
+lit_i(11,1,t(28,2),[ ctlname(28),ctrltype(edit,11),pos(11),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(12,1,button('Get'),[ ctlname('Btn_get'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(13,1,t('Nome do Filme',3),[ ctlname('Textblock2') ]).
+lit_i(14,1,t(29,2),[ ctlname(29),ctrltype(edit,14),pos(14),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(15,1,t('Situação do Filme',3),[ ctlname('Textblock3') ]).
+lit_i(16,1,t(30,2),[ ctlname(30),ctrltype(combo,16),pos(16),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(17,1,t('Data do Filme',3),[ ctlname('Textblock4') ]).
+lit_i(18,1,t(31,2),[ ctlname(31),ctrltype(edit,18),pos(18),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(19,1,t('Descrição do Filme',3),[ ctlname('Textblock5') ]).
+lit_i(20,1,t(32,2),[ ctlname(32),ctrltype(edit,20),pos(20),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(21,1,t('Código da Categoria',3),[ ctlname('Textblock6') ]).
+lit_i(22,1,t(33,2),[ ctlname(33),ctrltype(edit,22),pos(22),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(23,1,t('Nome da Categoria',3),[ ctlname('Textblock7') ]).
+lit_i(24,1,t(34,2),[ ctlname(34),ctrltype(edit,24),pos(24),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(9,1,table(9),[ ctlname('Table2') ]).
+lit_i(26,1,button('Enter'),[ ctlname('Btn_enter'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(27,1,button('Check'),[ ctlname('Btn_check'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(28,1,button('Cancel'),[ ctlname('Btn_cancel'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(29,1,button('Delete'),[ ctlname('Btn_delete'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(30,1,button('Help'),[ ctlname('Btn_help'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(2,1,table(2),[ ctlname('Table1') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ctrl_info_i(1,16,[ [ [ 'Ativo','1' ],[ 'Inativo','2' ] ],[ '' ] ]).
+ 
+ 
+calling_main_i(4,1).
+ 
+att_prop_i(2,28,'AUTONUMBER','-1',d).
+att_prop_i(2,28,'AUTONUMBER_START','1',d).
+att_prop_i(2,28,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,28,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,28,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,28,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,28,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,28,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,28,'FullName','FilCodigo',v).
+att_prop_i(2,29,'AUTONUMBER_START','1',d).
+att_prop_i(2,29,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,29,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,29,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,29,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,29,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,29,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,29,'FullName','FilNome',v).
+att_prop_i(2,30,'AUTONUMBER','0',d).
+att_prop_i(2,30,'AUTONUMBER_START','1',d).
+att_prop_i(2,30,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,30,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,30,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,30,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,30,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,30,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,30,'FullName','FilSituacao',v).
+att_prop_i(2,31,'AUTONUMBER_START','1',d).
+att_prop_i(2,31,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,31,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,31,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,31,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,31,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,31,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,31,'FullName','FilData',v).
+att_prop_i(2,32,'AUTONUMBER_START','1',d).
+att_prop_i(2,32,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,32,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,32,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,32,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,32,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,32,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,32,'FullName','FIlDescricao',v).
+att_prop_i(2,33,'AUTONUMBER','-1',d).
+att_prop_i(2,33,'AUTONUMBER_START','1',d).
+att_prop_i(2,33,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,33,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,33,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,33,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,33,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,33,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,33,'FullName','CatCodigo',v).
+att_prop_i(2,34,'AUTONUMBER_START','1',d).
+att_prop_i(2,34,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,34,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,34,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,34,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,34,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,34,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,34,'FullName','CatNome',v).
+att_prop_i(2,37,'AUTONUMBER','-1',d).
+att_prop_i(2,37,'AUTONUMBER_START','1',d).
+att_prop_i(2,37,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,37,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,37,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,37,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,37,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,37,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,37,'FullName','MidCodigo',v).
+ 
+tbl_prop_i(2,6,'AllDirSuper',[ [ 2,[ 28 ] ] ],v).
+tbl_prop_i(2,2,'AllDirSuper',[ [ 3,[ 33 ] ] ],v).
+tbl_prop_i(2,6,'DirSuperNull',[ [ 2,[ 28 ] ] ],v).
+tbl_prop_i(2,2,'DirSuperNull',[ [ 3,[ 33 ] ] ],v).
+tbl_prop_i(2,3,'DirSubor',[ [ 2,[ 33 ] ] ],v).
+tbl_prop_i(2,2,'DirSubor',[ [ 6,[ 28 ] ] ],v).
+tbl_prop_i(2,6,'DirSuper',[ [ 2,[ 28 ] ] ],v).
+tbl_prop_i(2,2,'DirSuper',[ [ 3,[ 33 ] ] ],v).
+ 
+tbl_att_prop_i(2,2,28,'AllowNulls',n).
+tbl_att_prop_i(2,2,28,'AUTONUMBER',y).
+tbl_att_prop_i(2,3,33,'AllowNulls',n).
+tbl_att_prop_i(2,3,33,'AUTONUMBER',y).
+tbl_att_prop_i(2,6,37,'AllowNulls',n).
+tbl_att_prop_i(2,6,37,'AUTONUMBER',y).
+ 
+ 
+ 
+ 
+trn_level_i(2,[ [ 28,29,30,31,32,33,34 ],'Filme','Cadastro de Filmes','Filme','',29 ]).
+ 
+ 
+ 
+ 
+pgm_parm_i(web,0,'HGX0020',[ [ int,9,0,0 ] ],[ [ 'V28',out,[] ] ]).
+pgm_parm_i(web,0,'HGX0030',[ [ int,9,0,0 ] ],[ [ 'V33',out,[] ] ]).
+ 
+ 
+ 
+ 
+ 

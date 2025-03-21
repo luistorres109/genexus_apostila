@@ -1,0 +1,1267 @@
+spec_i([ web,7,'Selection List Cadastro de Pessoas','Gx0010',0,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 1,[ [ 1,many ] ],[],[],[ [ [ 1 ],[ 17,20,21,22,15,14,12 ] ] ],[ [ [ 1 ],[] ] ],[ 12 ],'IPESSOA',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [ c([ t(14,2),t('.LIKE.',10),t('Cpescpf',23) ],[ 14 ]),c([ t(15,2),t(>=,10),t('Cpesdatnasc',23) ],[ 15 ]),c([ t(17,2),t('.LIKE.',10),t('Cpesendnumero',23) ],[ 17 ]),c([ t(20,2),t('.LIKE.',10),t('Cpestelefone',23) ],[ 20 ]),c([ t(21,2),t('.LIKE.',10),t('Cpescelular',23) ],[ 21 ]),c([ t(22,2),t(>=,10),t('Cpessituacao',23) ],[ 22 ]) ] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 1,17 ],[ 1,20 ],[ 1,21 ],[ 1,22 ],[ 1,15 ],[ 1,14 ],[ 1,12 ] ] ]).
+ 
+las_i(2,[ [ 'Ppescodigo','Cpescodigo','Cpescpf','Cpesdatnasc','Cpesendnumero','Cpestelefone','Cpescelular','Cpessituacao',17,20,21,22,15,14,12 ] ]).
+ 
+lac_i(2,[ [ 'Cpescodigo','Cpescpf','Cpesdatnasc','Cpesendnumero','Cpestelefone','Cpescelular','Cpessituacao' ] ]).
+ 
+ 
+lits_i('Codigo da Pessoa',5,10).
+lits_i('CPF da Pessoa',5,10).
+lits_i('Data de Nascimento da Pessoa',5,10).
+lits_i('Número do Endereço da Pessoa',5,10).
+lits_i('Telefone Residencial da Pessoa',5,10).
+lits_i('Telefone Celular da Pessoa',5,10).
+lits_i('Situação da Pessoa',5,10).
+ 
+cls_i([ 0,0 ],[ 5,39 ]).
+ 
+pos_i('Cpescodigo',[ 0,0,0 ]).
+pos_i('Cpescpf',[ 0,0,0 ]).
+pos_i('Cpesdatnasc',[ 0,0,0 ]).
+pos_i('Cpesendnumero',[ 0,0,0 ]).
+pos_i('Cpestelefone',[ 0,0,0 ]).
+pos_i('Cpescelular',[ 0,0,0 ]).
+pos_i('Cpessituacao',[ 0,0,0 ]).
+pos_i(12,[ 1,2,0 ]).
+pos_i(14,[ 1,2,10 ]).
+pos_i(15,[ 1,2,25 ]).
+ 
+repeat_i(2,[ 1,2,[ 12,14,15 ],[] ]).
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('NewFormEditor','-1')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('WEB_GEN_MODE','UMPV')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('HTTP_PROTOCOL','UMPV')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('TAG_LANGUAGE','HTML')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','3')).
+rule_i(0,prop('IsPrompt','-1')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('MasterPage','Default')).
+rule_i(0,prop('URLAccess','No')).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme','*None')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','Gx0010')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Refresh"','5' ]) ],[],[],[])).
+rule_i(0,maingen(15)).
+rule_i(0,parm([ 'Ppescodigo' ],[])).
+rule_i(0,parmio([ [ 'Ppescodigo',out ] ])).
+rule_i(0,order([ 12 ])).
+rule_i(0,rule([ a(22,[ '''GXM_first''','''First''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''GXM_previous''','''Previous''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''GXM_next''','''Next''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''GXM_last''','''Last''','' ]) ],[],[],[])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,1,[],[ [],'IPESSOA',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,17).
+v_i(t,o,2,20).
+v_i(t,o,2,21).
+v_i(t,o,2,22).
+v_i(t,o,2,15).
+v_i(t,o,2,14).
+v_i(t,o,2,12).
+ 
+ 
+ 
+ 
+ 
+attri_i(22,[ 'PesSituacao',int,1,0,'9',0,'Situação da Pessoa','',0 ]).
+attri_i(21,[ 'PesCelular',svchar,14,0,'(99) 9999-9999',0,'Telefone Celular da Pessoa','',0 ]).
+attri_i(20,[ 'PesTelefone',svchar,14,0,'(99) 9999-9999',0,'Telefone Residencial da Pessoa','',0 ]).
+attri_i(17,[ 'PesEndNumero',svchar,20,0,'',0,'Número do Endereço da Pessoa','',0 ]).
+attri_i(15,[ 'PesDatNasc',date,8,0,'99/99/99',0,'Data de Nascimento da Pessoa','',0 ]).
+attri_i(14,[ 'PesCPF',svchar,14,0,'999.999.999-99',0,'CPF da Pessoa','',0 ]).
+attri_i(12,[ 'PesCodigo',int,9,0,'ZZZZZZZZ9',0,'Codigo da Pessoa','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',13 ]).
+attri_i('Ppescodigo',[ pPesCodigo,int,9,0,'ZZZZZZZZ9',0,'Codigo da Pessoa','',12 ]).
+attri_i('Cpessituacao',[ cPesSituacao,int,1,0,'9',0,'Situação da Pessoa','',11 ]).
+attri_i('Cpescelular',[ cPesCelular,svchar,14,0,'(99) 9999-9999',0,'Telefone Celular da Pessoa','',10 ]).
+attri_i('Cpestelefone',[ cPesTelefone,svchar,14,0,'(99) 9999-9999',0,'Telefone Residencial da Pessoa','',9 ]).
+attri_i('Cpesendnumero',[ cPesEndNumero,svchar,20,0,'',0,'Número do Endereço da Pessoa','',8 ]).
+attri_i('Cpesdatnasc',[ cPesDatNasc,date,8,0,'99/99/99',0,'Data de Nascimento da Pessoa','',7 ]).
+attri_i('Cpescpf',[ cPesCPF,svchar,14,0,'999.999.999-99',0,'CPF da Pessoa','',6 ]).
+attri_i('Cpescodigo',[ cPesCodigo,int,9,0,'ZZZZZZZZ9',0,'Codigo da Pessoa','',5 ]).
+ 
+table_i(1,[ 'PESSOA',[ 12,14,15,17,20,21,22 ],'Cadastro de Pessoas','Pessoa' ]).
+ 
+index_i(1,[ 'IPESSOA',u,[ 12 ],'IPessoa' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 12,23,'Cpescodigo',>= ] ],many ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[ 12 ],[ [ 12,14,15 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+b_line_i(0,2,1,cmd,0,[ t('',146,0,0),t('Enter',3,0,6) ]).
+b_line_i(2,2,1,cmd,0,[ t('',107,0,0),t('Ppescodigo',23,0,0),t(=,10,0,0),t(12,2,0,0) ]).
+b_line_i(3,2,1,cmd,0,[ t('',118,0,0) ]).
+b_line_i(5,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(7,2,1,cmd,0,[ t('',146,0,0),t('''GXM_first''',3,7,6) ]).
+b_line_i(8,2,1,cmd,0,[ t('',107,0,0),t([ t('Grid1',3,8,5),t('firstpage(',1,8,11) ],31,8,5),t(')',4,0,21) ]).
+b_line_i(9,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(11,2,1,cmd,0,[ t('',146,0,0),t('''GXM_previous''',3,11,6) ]).
+b_line_i(12,2,1,cmd,0,[ t('',107,0,0),t([ t('Grid1',3,12,5),t('previouspage(',1,12,11) ],31,12,5),t(')',4,0,24) ]).
+b_line_i(13,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(15,2,1,cmd,0,[ t('',146,0,0),t('''GXM_next''',3,15,6) ]).
+b_line_i(16,2,1,cmd,0,[ t('',107,0,0),t([ t('Grid1',3,16,5),t('nextpage(',1,16,11) ],31,16,5),t(')',4,0,20) ]).
+b_line_i(17,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(19,2,1,cmd,0,[ t('',146,0,0),t('''GXM_last''',3,19,6) ]).
+b_line_i(20,2,1,cmd,0,[ t('',107,0,0),t([ t('Grid1',3,20,5),t('lastpage(',1,20,11) ],31,20,5),t(')',4,0,20) ]).
+b_line_i(21,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(1000,2,1,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,1,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,1,cmd,0,[ t('',147,0,0) ]).
+ 
+sf_break_i(24,2).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,html('<BODY>')).
+html_i(3,table(3)).
+html_i(33,html('</BODY>')).
+ 
+html_sub_i(3,0,html_i(0,html('<TR>'))).
+html_sub_i(3,0,html_i(1,html('<TD colspan=2>'))).
+html_sub_i(3,4,html_i(2,comp(errview))).
+html_sub_i(3,0,html_i(3,html('</TD>'))).
+html_sub_i(3,0,html_i(4,html('</TR>'))).
+html_sub_i(3,0,html_i(5,html('<TR>'))).
+html_sub_i(3,0,html_i(6,html('<TD colspan=2>'))).
+html_sub_i(5,0,html_i(0,html('<TR>'))).
+html_sub_i(5,0,html_i(1,html('<TD>'))).
+html_sub_i(5,6,html_i(2,t('Codigo da Pessoa',3))).
+html_sub_i(5,0,html_i(3,html('</TD>'))).
+html_sub_i(5,0,html_i(4,html('<TD>'))).
+html_sub_i(5,7,html_i(5,t('Cpescodigo',23))).
+html_sub_i(5,0,html_i(6,html('</TD>'))).
+html_sub_i(5,0,html_i(7,html('<TD>'))).
+html_sub_i(5,0,html_i(8,html('</TD>'))).
+html_sub_i(5,0,html_i(9,html('</TR>'))).
+html_sub_i(5,0,html_i(10,html('<TR>'))).
+html_sub_i(5,0,html_i(11,html('<TD>'))).
+html_sub_i(5,8,html_i(12,t('CPF da Pessoa',3))).
+html_sub_i(5,0,html_i(13,html('</TD>'))).
+html_sub_i(5,0,html_i(14,html('<TD>'))).
+html_sub_i(5,9,html_i(15,t('Cpescpf',23))).
+html_sub_i(5,0,html_i(16,html('</TD>'))).
+html_sub_i(5,0,html_i(17,html('<TD>'))).
+html_sub_i(5,0,html_i(18,html('</TD>'))).
+html_sub_i(5,0,html_i(19,html('</TR>'))).
+html_sub_i(5,0,html_i(20,html('<TR>'))).
+html_sub_i(5,0,html_i(21,html('<TD>'))).
+html_sub_i(5,10,html_i(22,t('Data de Nascimento da Pessoa',3))).
+html_sub_i(5,0,html_i(23,html('</TD>'))).
+html_sub_i(5,0,html_i(24,html('<TD>'))).
+html_sub_i(5,11,html_i(25,t('Cpesdatnasc',23))).
+html_sub_i(5,0,html_i(26,html('</TD>'))).
+html_sub_i(5,0,html_i(27,html('<TD>'))).
+html_sub_i(5,0,html_i(28,html('</TD>'))).
+html_sub_i(5,0,html_i(29,html('</TR>'))).
+html_sub_i(5,0,html_i(30,html('<TR>'))).
+html_sub_i(5,0,html_i(31,html('<TD>'))).
+html_sub_i(5,12,html_i(32,t('Número do Endereço da Pessoa',3))).
+html_sub_i(5,0,html_i(33,html('</TD>'))).
+html_sub_i(5,0,html_i(34,html('<TD>'))).
+html_sub_i(5,13,html_i(35,t('Cpesendnumero',23))).
+html_sub_i(5,0,html_i(36,html('</TD>'))).
+html_sub_i(5,0,html_i(37,html('<TD>'))).
+html_sub_i(5,0,html_i(38,html('</TD>'))).
+html_sub_i(5,0,html_i(39,html('</TR>'))).
+html_sub_i(5,0,html_i(40,html('<TR>'))).
+html_sub_i(5,0,html_i(41,html('<TD>'))).
+html_sub_i(5,14,html_i(42,t('Telefone Residencial da Pessoa',3))).
+html_sub_i(5,0,html_i(43,html('</TD>'))).
+html_sub_i(5,0,html_i(44,html('<TD>'))).
+html_sub_i(5,15,html_i(45,t('Cpestelefone',23))).
+html_sub_i(5,0,html_i(46,html('</TD>'))).
+html_sub_i(5,0,html_i(47,html('<TD>'))).
+html_sub_i(5,0,html_i(48,html('</TD>'))).
+html_sub_i(5,0,html_i(49,html('</TR>'))).
+html_sub_i(5,0,html_i(50,html('<TR>'))).
+html_sub_i(5,0,html_i(51,html('<TD>'))).
+html_sub_i(5,16,html_i(52,t('Telefone Celular da Pessoa',3))).
+html_sub_i(5,0,html_i(53,html('</TD>'))).
+html_sub_i(5,0,html_i(54,html('<TD>'))).
+html_sub_i(5,17,html_i(55,t('Cpescelular',23))).
+html_sub_i(5,0,html_i(56,html('</TD>'))).
+html_sub_i(5,0,html_i(57,html('<TD>'))).
+html_sub_i(5,0,html_i(58,html('</TD>'))).
+html_sub_i(5,0,html_i(59,html('</TR>'))).
+html_sub_i(5,0,html_i(60,html('<TR>'))).
+html_sub_i(5,0,html_i(61,html('<TD>'))).
+html_sub_i(5,18,html_i(62,t('Situação da Pessoa',3))).
+html_sub_i(5,0,html_i(63,html('</TD>'))).
+html_sub_i(5,0,html_i(64,html('<TD>'))).
+html_sub_i(5,19,html_i(65,t('Cpessituacao',23))).
+html_sub_i(5,0,html_i(66,html('</TD>'))).
+html_sub_i(5,0,html_i(67,html('<TD align=right>'))).
+html_sub_i(5,20,html_i(68,button('Refresh'))).
+html_sub_i(5,0,html_i(69,html('</TD>'))).
+html_sub_i(5,0,html_i(70,html('</TR>'))).
+html_sub_i(5,0,html_i(71,html('<TR>'))).
+html_sub_i(5,0,html_i(72,html('<TD colspan=3>'))).
+html_sub_i(5,24,html_i(73,s(24))).
+html_sub_i(5,0,html_i(74,html('</TD>'))).
+html_sub_i(5,0,html_i(75,html('</TR>'))).
+html_sub_i(3,5,html_i(5,table(5))).
+html_sub_i(3,0,html_i(8,html('</TD>'))).
+html_sub_i(3,0,html_i(9,html('</TR>'))).
+html_sub_i(3,0,html_i(10,html('<TR>'))).
+html_sub_i(3,0,html_i(11,html('<TD>'))).
+html_sub_i(3,26,html_i(12,button('''GXM_first'''))).
+html_sub_i(3,27,html_i(13,button('''GXM_previous'''))).
+html_sub_i(3,28,html_i(14,button('''GXM_next'''))).
+html_sub_i(3,29,html_i(15,button('''GXM_last'''))).
+html_sub_i(3,0,html_i(16,html('</TD>'))).
+html_sub_i(3,0,html_i(17,html('<TD align=right>'))).
+html_sub_i(3,30,html_i(18,button('Cancel'))).
+html_sub_i(3,31,html_i(19,button('Help'))).
+html_sub_i(3,0,html_i(20,html('</TD>'))).
+html_sub_i(3,0,html_i(21,html('</TR>'))).
+ 
+html_tags_i(4,'Style','width: 100%').
+html_tags_i(7,'Style','height: 26px; width: 70px').
+html_tags_i(9,'Style','height: 26px; width: 70px').
+html_tags_i(11,'Style','height: 26px; width: 70px').
+html_tags_i(13,'Style','height: 26px; width: 70px').
+html_tags_i(15,'Style','height: 26px; width: 70px').
+html_tags_i(17,'Style','height: 26px; width: 70px').
+html_tags_i(19,'Style','height: 26px; width: 70px').
+html_tags_i(1,'Class','').
+ 
+html_comp_i(4,'Helpkeyword',67,d,[ num ]).
+html_comp_i(4,'Usermode',1,v,[ num ]).
+html_comp_i(4,'Controlname','Ctlerror',v,[ str ]).
+html_comp_i(4,'Class','',v,[ str ]).
+html_comp_i(4,'Displaymode',1,d,[ num ]).
+html_comp_i(4,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(4,'Font',font('MS Sans Serif',10,[]),d,[ font ]).
+html_comp_i(4,'Fill',1,d,[ bool ]).
+html_comp_i(4,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(6,'Helpkeyword',64,d,[ num ]).
+html_comp_i(6,'Usermode',1,v,[ num ]).
+html_comp_i(6,'Caption','Codigo da Pessoa',v,[ str ]).
+html_comp_i(6,'Id','TextBlock1',v,[ str ]).
+html_comp_i(6,'Class','',v,[ str ]).
+html_comp_i(6,'Gxformat',0,d,[ num ]).
+html_comp_i(6,'Fill',1,d,[ bool ]).
+html_comp_i(6,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(6,'Font','',d,[ str ]).
+html_comp_i(6,'Returnonclick',0,d,[ bool ]).
+html_comp_i(7,'Helpkeyword',54,d,[ num ]).
+html_comp_i(7,'Usermode',1,v,[ num ]).
+html_comp_i(7,'Atttype',4,d,[ num ]).
+html_comp_i(7,'Baseatttype',4,d,[ num ]).
+html_comp_i(7,'Attname','&cPesCodigo',d,[ str ]).
+html_comp_i(7,'Fieldspecname','',d,[ str ]).
+html_comp_i(7,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(7,'Gxobjclass',13,d,[ num ]).
+html_comp_i(7,'Isvariable',1,d,[ bool ]).
+html_comp_i(7,'Isattribute',0,d,[ bool ]).
+html_comp_i(7,'Colcount',9,d,[ num ]).
+html_comp_i(7,'Rowcount',1,d,[ num ]).
+html_comp_i(7,'Attid',-5,v,[ num ]).
+html_comp_i(7,'Class','',v,[ str ]).
+html_comp_i(7,'Isenumerated',0,d,[ bool ]).
+html_comp_i(7,'Controltype',2,d,[ num ]).
+html_comp_i(7,'Inputtype',0,d,[ num ]).
+html_comp_i(7,'Editautocomplete',0,d,[ num ]).
+html_comp_i(7,'Controlvalues',[],d,[ values ]).
+html_comp_i(7,'Controldirection',1,d,[ num ]).
+html_comp_i(7,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(7,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(7,'Controlitemvalues',0,d,[ num ]).
+html_comp_i(7,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(7,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(7,'Controlwhere','',d,[ str ]).
+html_comp_i(7,'Filteroperator',0,d,[ num ]).
+html_comp_i(7,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(7,'Casesensitive',0,d,[ bool ]).
+html_comp_i(7,'Maxitems',5,d,[ num ]).
+html_comp_i(7,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(7,'Controlname','&Cpescodigo',d,[ str ]).
+html_comp_i(7,'Rowindex','1',d,[ str ]).
+html_comp_i(7,'Colindex','1',d,[ str ]).
+html_comp_i(7,'Fieldspecifier','',d,[ str ]).
+html_comp_i(7,'Readonly',0,d,[ bool ]).
+html_comp_i(7,'Autocomplete',1,d,[ bool ]).
+html_comp_i(7,'Ispassword',0,d,[ bool ]).
+html_comp_i(7,'Autoresize',1,d,[ bool ]).
+html_comp_i(7,'Width',measure(64,px),d,[ measure ]).
+html_comp_i(7,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(7,'Fill',1,d,[ bool ]).
+html_comp_i(7,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(7,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(7,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(7,'Gxformat',0,d,[ num ]).
+html_comp_i(7,'Borderstyle',2,d,[ num ]).
+html_comp_i(7,'Border','2',d,[ str ]).
+html_comp_i(7,'Title','',d,[ str ]).
+html_comp_i(7,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(7,'Dimension',0,d,[ num ]).
+html_comp_i(7,'Returnonclick',0,d,[ bool ]).
+html_comp_i(8,'Helpkeyword',64,d,[ num ]).
+html_comp_i(8,'Usermode',1,v,[ num ]).
+html_comp_i(8,'Caption','CPF da Pessoa',v,[ str ]).
+html_comp_i(8,'Id','TextBlock2',v,[ str ]).
+html_comp_i(8,'Class','',v,[ str ]).
+html_comp_i(8,'Gxformat',0,d,[ num ]).
+html_comp_i(8,'Fill',1,d,[ bool ]).
+html_comp_i(8,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(8,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(8,'Font','',d,[ str ]).
+html_comp_i(8,'Returnonclick',0,d,[ bool ]).
+html_comp_i(9,'Helpkeyword',54,d,[ num ]).
+html_comp_i(9,'Usermode',1,v,[ num ]).
+html_comp_i(9,'Atttype',13,d,[ num ]).
+html_comp_i(9,'Baseatttype',13,d,[ num ]).
+html_comp_i(9,'Attname','&cPesCPF',d,[ str ]).
+html_comp_i(9,'Fieldspecname','',d,[ str ]).
+html_comp_i(9,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(9,'Gxobjclass',13,d,[ num ]).
+html_comp_i(9,'Isvariable',1,d,[ bool ]).
+html_comp_i(9,'Isattribute',0,d,[ bool ]).
+html_comp_i(9,'Colcount',14,d,[ num ]).
+html_comp_i(9,'Rowcount',1,d,[ num ]).
+html_comp_i(9,'Attid',-6,v,[ num ]).
+html_comp_i(9,'Class','',v,[ str ]).
+html_comp_i(9,'Isenumerated',0,d,[ bool ]).
+html_comp_i(9,'Controltype',2,d,[ num ]).
+html_comp_i(9,'Inputtype',0,d,[ num ]).
+html_comp_i(9,'Editautocomplete',0,d,[ num ]).
+html_comp_i(9,'Controlvalues',[],d,[ values ]).
+html_comp_i(9,'Controldirection',1,d,[ num ]).
+html_comp_i(9,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(9,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(9,'Controlitemvalues',0,d,[ num ]).
+html_comp_i(9,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(9,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(9,'Controlwhere','',d,[ str ]).
+html_comp_i(9,'Filteroperator',0,d,[ num ]).
+html_comp_i(9,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(9,'Casesensitive',0,d,[ bool ]).
+html_comp_i(9,'Maxitems',5,d,[ num ]).
+html_comp_i(9,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(9,'Controlname','&Cpescpf',d,[ str ]).
+html_comp_i(9,'Rowindex','1',d,[ str ]).
+html_comp_i(9,'Colindex','1',d,[ str ]).
+html_comp_i(9,'Fieldspecifier','',d,[ str ]).
+html_comp_i(9,'Readonly',0,d,[ bool ]).
+html_comp_i(9,'Autocomplete',1,d,[ bool ]).
+html_comp_i(9,'Ispassword',0,d,[ bool ]).
+html_comp_i(9,'Autoresize',1,d,[ bool ]).
+html_comp_i(9,'Width',measure(94,px),d,[ measure ]).
+html_comp_i(9,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(9,'Fill',1,d,[ bool ]).
+html_comp_i(9,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(9,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(9,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(9,'Gxformat',0,d,[ num ]).
+html_comp_i(9,'Borderstyle',2,d,[ num ]).
+html_comp_i(9,'Border','2',d,[ str ]).
+html_comp_i(9,'Title','',d,[ str ]).
+html_comp_i(9,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(9,'Dimension',0,d,[ num ]).
+html_comp_i(9,'Returnonclick',0,d,[ bool ]).
+html_comp_i(10,'Helpkeyword',64,d,[ num ]).
+html_comp_i(10,'Usermode',1,v,[ num ]).
+html_comp_i(10,'Caption','Data de Nascimento da Pessoa',v,[ str ]).
+html_comp_i(10,'Id','TextBlock3',v,[ str ]).
+html_comp_i(10,'Class','',v,[ str ]).
+html_comp_i(10,'Gxformat',0,d,[ num ]).
+html_comp_i(10,'Fill',1,d,[ bool ]).
+html_comp_i(10,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(10,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(10,'Font','',d,[ str ]).
+html_comp_i(10,'Returnonclick',0,d,[ bool ]).
+html_comp_i(11,'Helpkeyword',54,d,[ num ]).
+html_comp_i(11,'Usermode',1,v,[ num ]).
+html_comp_i(11,'Atttype',6,d,[ num ]).
+html_comp_i(11,'Baseatttype',6,d,[ num ]).
+html_comp_i(11,'Attname','&cPesDatNasc',d,[ str ]).
+html_comp_i(11,'Fieldspecname','',d,[ str ]).
+html_comp_i(11,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(11,'Gxobjclass',13,d,[ num ]).
+html_comp_i(11,'Isvariable',1,d,[ bool ]).
+html_comp_i(11,'Isattribute',0,d,[ bool ]).
+html_comp_i(11,'Colcount',8,d,[ num ]).
+html_comp_i(11,'Rowcount',1,d,[ num ]).
+html_comp_i(11,'Attid',-7,v,[ num ]).
+html_comp_i(11,'Class','',v,[ str ]).
+html_comp_i(11,'Isenumerated',0,d,[ bool ]).
+html_comp_i(11,'Controltype',2,d,[ num ]).
+html_comp_i(11,'Inputtype',0,d,[ num ]).
+html_comp_i(11,'Editautocomplete',0,d,[ num ]).
+html_comp_i(11,'Controlvalues',[],d,[ values ]).
+html_comp_i(11,'Controldirection',1,d,[ num ]).
+html_comp_i(11,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(11,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(11,'Controlitemvalues',0,d,[ num ]).
+html_comp_i(11,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(11,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(11,'Controlwhere','',d,[ str ]).
+html_comp_i(11,'Filteroperator',0,d,[ num ]).
+html_comp_i(11,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(11,'Casesensitive',0,d,[ bool ]).
+html_comp_i(11,'Maxitems',5,d,[ num ]).
+html_comp_i(11,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(11,'Controlname','&Cpesdatnasc',d,[ str ]).
+html_comp_i(11,'Rowindex','1',d,[ str ]).
+html_comp_i(11,'Colindex','1',d,[ str ]).
+html_comp_i(11,'Fieldspecifier','',d,[ str ]).
+html_comp_i(11,'Readonly',0,d,[ bool ]).
+html_comp_i(11,'Autocomplete',1,d,[ bool ]).
+html_comp_i(11,'Ispassword',0,d,[ bool ]).
+html_comp_i(11,'Autoresize',1,d,[ bool ]).
+html_comp_i(11,'Width',measure(58,px),d,[ measure ]).
+html_comp_i(11,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(11,'Fill',1,d,[ bool ]).
+html_comp_i(11,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(11,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(11,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(11,'Gxformat',0,d,[ num ]).
+html_comp_i(11,'Borderstyle',2,d,[ num ]).
+html_comp_i(11,'Border','2',d,[ str ]).
+html_comp_i(11,'Title','',d,[ str ]).
+html_comp_i(11,'Use_datepicker',1,d,[ bool ]).
+html_comp_i(11,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(11,'Dimension',0,d,[ num ]).
+html_comp_i(11,'Returnonclick',0,d,[ bool ]).
+html_comp_i(12,'Helpkeyword',64,d,[ num ]).
+html_comp_i(12,'Usermode',1,v,[ num ]).
+html_comp_i(12,'Caption','Número do Endereço da Pessoa',v,[ str ]).
+html_comp_i(12,'Id','TextBlock4',v,[ str ]).
+html_comp_i(12,'Class','',v,[ str ]).
+html_comp_i(12,'Gxformat',0,d,[ num ]).
+html_comp_i(12,'Fill',1,d,[ bool ]).
+html_comp_i(12,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(12,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(12,'Font','',d,[ str ]).
+html_comp_i(12,'Returnonclick',0,d,[ bool ]).
+html_comp_i(13,'Helpkeyword',54,d,[ num ]).
+html_comp_i(13,'Usermode',1,v,[ num ]).
+html_comp_i(13,'Atttype',13,d,[ num ]).
+html_comp_i(13,'Baseatttype',13,d,[ num ]).
+html_comp_i(13,'Attname','&cPesEndNumero',d,[ str ]).
+html_comp_i(13,'Fieldspecname','',d,[ str ]).
+html_comp_i(13,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(13,'Gxobjclass',13,d,[ num ]).
+html_comp_i(13,'Isvariable',1,d,[ bool ]).
+html_comp_i(13,'Isattribute',0,d,[ bool ]).
+html_comp_i(13,'Colcount',20,d,[ num ]).
+html_comp_i(13,'Rowcount',1,d,[ num ]).
+html_comp_i(13,'Attid',-8,v,[ num ]).
+html_comp_i(13,'Class','',v,[ str ]).
+html_comp_i(13,'Isenumerated',0,d,[ bool ]).
+html_comp_i(13,'Controltype',2,d,[ num ]).
+html_comp_i(13,'Inputtype',0,d,[ num ]).
+html_comp_i(13,'Editautocomplete',0,d,[ num ]).
+html_comp_i(13,'Controlvalues',[],d,[ values ]).
+html_comp_i(13,'Controldirection',1,d,[ num ]).
+html_comp_i(13,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(13,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(13,'Controlitemvalues',0,d,[ num ]).
+html_comp_i(13,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(13,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(13,'Controlwhere','',d,[ str ]).
+html_comp_i(13,'Filteroperator',0,d,[ num ]).
+html_comp_i(13,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(13,'Casesensitive',0,d,[ bool ]).
+html_comp_i(13,'Maxitems',5,d,[ num ]).
+html_comp_i(13,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(13,'Controlname','&Cpesendnumero',d,[ str ]).
+html_comp_i(13,'Rowindex','1',d,[ str ]).
+html_comp_i(13,'Colindex','1',d,[ str ]).
+html_comp_i(13,'Fieldspecifier','',d,[ str ]).
+html_comp_i(13,'Readonly',0,d,[ bool ]).
+html_comp_i(13,'Autocomplete',1,d,[ bool ]).
+html_comp_i(13,'Ispassword',0,d,[ bool ]).
+html_comp_i(13,'Autoresize',1,d,[ bool ]).
+html_comp_i(13,'Width',measure(130,px),d,[ measure ]).
+html_comp_i(13,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(13,'Fill',1,d,[ bool ]).
+html_comp_i(13,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(13,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(13,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(13,'Gxformat',0,d,[ num ]).
+html_comp_i(13,'Borderstyle',2,d,[ num ]).
+html_comp_i(13,'Border','2',d,[ str ]).
+html_comp_i(13,'Title','',d,[ str ]).
+html_comp_i(13,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(13,'Dimension',0,d,[ num ]).
+html_comp_i(13,'Returnonclick',0,d,[ bool ]).
+html_comp_i(14,'Helpkeyword',64,d,[ num ]).
+html_comp_i(14,'Usermode',1,v,[ num ]).
+html_comp_i(14,'Caption','Telefone Residencial da Pessoa',v,[ str ]).
+html_comp_i(14,'Id','TextBlock5',v,[ str ]).
+html_comp_i(14,'Class','',v,[ str ]).
+html_comp_i(14,'Gxformat',0,d,[ num ]).
+html_comp_i(14,'Fill',1,d,[ bool ]).
+html_comp_i(14,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(14,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(14,'Font','',d,[ str ]).
+html_comp_i(14,'Returnonclick',0,d,[ bool ]).
+html_comp_i(15,'Helpkeyword',54,d,[ num ]).
+html_comp_i(15,'Usermode',1,v,[ num ]).
+html_comp_i(15,'Atttype',13,d,[ num ]).
+html_comp_i(15,'Baseatttype',13,d,[ num ]).
+html_comp_i(15,'Attname','&cPesTelefone',d,[ str ]).
+html_comp_i(15,'Fieldspecname','',d,[ str ]).
+html_comp_i(15,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(15,'Gxobjclass',13,d,[ num ]).
+html_comp_i(15,'Isvariable',1,d,[ bool ]).
+html_comp_i(15,'Isattribute',0,d,[ bool ]).
+html_comp_i(15,'Colcount',15,d,[ num ]).
+html_comp_i(15,'Rowcount',1,d,[ num ]).
+html_comp_i(15,'Attid',-9,v,[ num ]).
+html_comp_i(15,'Class','',v,[ str ]).
+html_comp_i(15,'Isenumerated',0,d,[ bool ]).
+html_comp_i(15,'Controltype',2,d,[ num ]).
+html_comp_i(15,'Inputtype',0,d,[ num ]).
+html_comp_i(15,'Editautocomplete',0,d,[ num ]).
+html_comp_i(15,'Controlvalues',[],d,[ values ]).
+html_comp_i(15,'Controldirection',1,d,[ num ]).
+html_comp_i(15,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(15,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(15,'Controlitemvalues',0,d,[ num ]).
+html_comp_i(15,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(15,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(15,'Controlwhere','',d,[ str ]).
+html_comp_i(15,'Filteroperator',0,d,[ num ]).
+html_comp_i(15,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(15,'Casesensitive',0,d,[ bool ]).
+html_comp_i(15,'Maxitems',5,d,[ num ]).
+html_comp_i(15,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(15,'Controlname','&Cpestelefone',d,[ str ]).
+html_comp_i(15,'Rowindex','1',d,[ str ]).
+html_comp_i(15,'Colindex','1',d,[ str ]).
+html_comp_i(15,'Fieldspecifier','',d,[ str ]).
+html_comp_i(15,'Readonly',0,d,[ bool ]).
+html_comp_i(15,'Autocomplete',1,d,[ bool ]).
+html_comp_i(15,'Ispassword',0,d,[ bool ]).
+html_comp_i(15,'Autoresize',1,d,[ bool ]).
+html_comp_i(15,'Width',measure(100,px),d,[ measure ]).
+html_comp_i(15,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(15,'Fill',1,d,[ bool ]).
+html_comp_i(15,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(15,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(15,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(15,'Gxformat',0,d,[ num ]).
+html_comp_i(15,'Borderstyle',2,d,[ num ]).
+html_comp_i(15,'Border','2',d,[ str ]).
+html_comp_i(15,'Title','',d,[ str ]).
+html_comp_i(15,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(15,'Dimension',0,d,[ num ]).
+html_comp_i(15,'Returnonclick',0,d,[ bool ]).
+html_comp_i(16,'Helpkeyword',64,d,[ num ]).
+html_comp_i(16,'Usermode',1,v,[ num ]).
+html_comp_i(16,'Caption','Telefone Celular da Pessoa',v,[ str ]).
+html_comp_i(16,'Id','TextBlock6',v,[ str ]).
+html_comp_i(16,'Class','',v,[ str ]).
+html_comp_i(16,'Gxformat',0,d,[ num ]).
+html_comp_i(16,'Fill',1,d,[ bool ]).
+html_comp_i(16,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(16,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(16,'Font','',d,[ str ]).
+html_comp_i(16,'Returnonclick',0,d,[ bool ]).
+html_comp_i(17,'Helpkeyword',54,d,[ num ]).
+html_comp_i(17,'Usermode',1,v,[ num ]).
+html_comp_i(17,'Atttype',13,d,[ num ]).
+html_comp_i(17,'Baseatttype',13,d,[ num ]).
+html_comp_i(17,'Attname','&cPesCelular',d,[ str ]).
+html_comp_i(17,'Fieldspecname','',d,[ str ]).
+html_comp_i(17,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(17,'Gxobjclass',13,d,[ num ]).
+html_comp_i(17,'Isvariable',1,d,[ bool ]).
+html_comp_i(17,'Isattribute',0,d,[ bool ]).
+html_comp_i(17,'Colcount',15,d,[ num ]).
+html_comp_i(17,'Rowcount',1,d,[ num ]).
+html_comp_i(17,'Attid',-10,v,[ num ]).
+html_comp_i(17,'Class','',v,[ str ]).
+html_comp_i(17,'Isenumerated',0,d,[ bool ]).
+html_comp_i(17,'Controltype',2,d,[ num ]).
+html_comp_i(17,'Inputtype',0,d,[ num ]).
+html_comp_i(17,'Editautocomplete',0,d,[ num ]).
+html_comp_i(17,'Controlvalues',[],d,[ values ]).
+html_comp_i(17,'Controldirection',1,d,[ num ]).
+html_comp_i(17,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(17,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(17,'Controlitemvalues',0,d,[ num ]).
+html_comp_i(17,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(17,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(17,'Controlwhere','',d,[ str ]).
+html_comp_i(17,'Filteroperator',0,d,[ num ]).
+html_comp_i(17,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(17,'Casesensitive',0,d,[ bool ]).
+html_comp_i(17,'Maxitems',5,d,[ num ]).
+html_comp_i(17,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(17,'Controlname','&Cpescelular',d,[ str ]).
+html_comp_i(17,'Rowindex','1',d,[ str ]).
+html_comp_i(17,'Colindex','1',d,[ str ]).
+html_comp_i(17,'Fieldspecifier','',d,[ str ]).
+html_comp_i(17,'Readonly',0,d,[ bool ]).
+html_comp_i(17,'Autocomplete',1,d,[ bool ]).
+html_comp_i(17,'Ispassword',0,d,[ bool ]).
+html_comp_i(17,'Autoresize',1,d,[ bool ]).
+html_comp_i(17,'Width',measure(100,px),d,[ measure ]).
+html_comp_i(17,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(17,'Fill',1,d,[ bool ]).
+html_comp_i(17,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(17,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(17,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(17,'Gxformat',0,d,[ num ]).
+html_comp_i(17,'Borderstyle',2,d,[ num ]).
+html_comp_i(17,'Border','2',d,[ str ]).
+html_comp_i(17,'Title','',d,[ str ]).
+html_comp_i(17,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(17,'Dimension',0,d,[ num ]).
+html_comp_i(17,'Returnonclick',0,d,[ bool ]).
+html_comp_i(18,'Helpkeyword',64,d,[ num ]).
+html_comp_i(18,'Usermode',1,v,[ num ]).
+html_comp_i(18,'Caption','Situação da Pessoa',v,[ str ]).
+html_comp_i(18,'Id','TextBlock7',v,[ str ]).
+html_comp_i(18,'Class','',v,[ str ]).
+html_comp_i(18,'Gxformat',0,d,[ num ]).
+html_comp_i(18,'Fill',1,d,[ bool ]).
+html_comp_i(18,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(18,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(18,'Font','',d,[ str ]).
+html_comp_i(18,'Returnonclick',0,d,[ bool ]).
+html_comp_i(19,'Helpkeyword',54,d,[ num ]).
+html_comp_i(19,'Usermode',1,v,[ num ]).
+html_comp_i(19,'Atttype',4,d,[ num ]).
+html_comp_i(19,'Baseatttype',4,d,[ num ]).
+html_comp_i(19,'Attname','&cPesSituacao',d,[ str ]).
+html_comp_i(19,'Fieldspecname','',d,[ str ]).
+html_comp_i(19,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(19,'Gxobjclass',13,d,[ num ]).
+html_comp_i(19,'Isvariable',1,d,[ bool ]).
+html_comp_i(19,'Isattribute',0,d,[ bool ]).
+html_comp_i(19,'Colcount',4,d,[ num ]).
+html_comp_i(19,'Rowcount',1,d,[ num ]).
+html_comp_i(19,'Attid',-11,v,[ num ]).
+html_comp_i(19,'Class','',v,[ str ]).
+html_comp_i(19,'Isenumerated',0,d,[ bool ]).
+html_comp_i(19,'Controltype',0,d,[ num ]).
+html_comp_i(19,'Controlvalues',[ [ 'Ativo','1' ],[ 'Inativo','2' ] ],d,[ values ]).
+html_comp_i(19,'Controldirection',1,d,[ num ]).
+html_comp_i(19,'Controlcheckvalue','2',d,[ str ]).
+html_comp_i(19,'Controluncheckvalue','1',d,[ str ]).
+html_comp_i(19,'Controlitemvalues',0,d,[ num ]).
+html_comp_i(19,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(19,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(19,'Controlwhere','',d,[ str ]).
+html_comp_i(19,'Filteroperator',0,d,[ num ]).
+html_comp_i(19,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(19,'Casesensitive',1,d,[ bool ]).
+html_comp_i(19,'Maxitems',5,d,[ num ]).
+html_comp_i(19,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(19,'Controlname','&Cpessituacao',d,[ str ]).
+html_comp_i(19,'Rowindex','1',d,[ str ]).
+html_comp_i(19,'Colindex','1',d,[ str ]).
+html_comp_i(19,'Fieldspecifier','',d,[ str ]).
+html_comp_i(19,'Readonly',0,d,[ bool ]).
+html_comp_i(19,'Ispassword',0,d,[ bool ]).
+html_comp_i(19,'Autoresize',1,d,[ bool ]).
+html_comp_i(19,'Width',measure(33,px),d,[ measure ]).
+html_comp_i(19,'Height',measure(26,px),d,[ measure ]).
+html_comp_i(19,'Fill',1,d,[ bool ]).
+html_comp_i(19,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(19,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(19,'Font',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(19,'Gxformat',2,d,[ num ]).
+html_comp_i(19,'Border','2',d,[ str ]).
+html_comp_i(19,'Title','',d,[ str ]).
+html_comp_i(19,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(19,'Dimension',0,d,[ num ]).
+html_comp_i(19,'Returnonclick',0,d,[ bool ]).
+html_comp_i(20,'Helpkeyword',55,d,[ num ]).
+html_comp_i(20,'Usermode',1,v,[ num ]).
+html_comp_i(20,'Controlname','Btn_refresh',v,[ str ]).
+html_comp_i(20,'Class','',v,[ str ]).
+html_comp_i(20,'Event','Refresh',v,[ str ]).
+html_comp_i(20,'Caption','Search',v,[ str ]).
+html_comp_i(20,'Accesskey','',d,[ str ]).
+html_comp_i(20,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(20,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(20,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(20,'Border','2',d,[ str ]).
+html_comp_i(20,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(20,'Type',0,d,[ num ]).
+html_comp_i(21,'Helpkeyword',58,d,[ num ]).
+html_comp_i(21,'Isenumerated',0,d,[ bool ]).
+html_comp_i(21,'Usermode',1,v,[ num ]).
+html_comp_i(21,'Atttype',4,d,[ num ]).
+html_comp_i(21,'Baseatttype',4,d,[ num ]).
+html_comp_i(21,'Attname','PesCodigo',d,[ str ]).
+html_comp_i(21,'Colextsdtctrlname','',d,[ str ]).
+html_comp_i(21,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(21,'Gxobjclass',13,d,[ num ]).
+html_comp_i(21,'Isvariable',0,d,[ bool ]).
+html_comp_i(21,'Isattribute',1,d,[ bool ]).
+html_comp_i(21,'Colcount',18,d,[ num ]).
+html_comp_i(21,'Rowcount',1,d,[ num ]).
+html_comp_i(21,'Colattid',12,v,[ num ]).
+html_comp_i(21,'Colsdtmember','',d,[ str ]).
+html_comp_i(21,'Colextcolmember','',d,[ str ]).
+html_comp_i(21,'Controlname','Pescodigo',d,[ str ]).
+html_comp_i(21,'Class','',v,[ str ]).
+html_comp_i(21,'Controltype',10,d,[ num ]).
+html_comp_i(21,'Inputtype',0,d,[ num ]).
+html_comp_i(21,'Editautocomplete',0,d,[ num ]).
+html_comp_i(21,'Controlvalues',[],d,[ values ]).
+html_comp_i(21,'Controldirection',1,d,[ num ]).
+html_comp_i(21,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(21,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(21,'Controlitemvalues',12,d,[ num ]).
+html_comp_i(21,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(21,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(21,'Controlwhere','',d,[ str ]).
+html_comp_i(21,'Filteroperator',0,d,[ num ]).
+html_comp_i(21,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(21,'Casesensitive',0,d,[ bool ]).
+html_comp_i(21,'Maxitems',5,d,[ num ]).
+html_comp_i(21,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(21,'Colctrlname','',d,[ str ]).
+html_comp_i(21,'Rowindex','1',d,[ str ]).
+html_comp_i(21,'Colindex','1',d,[ str ]).
+html_comp_i(21,'Colreadonly',1,d,[ bool ]).
+html_comp_i(21,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(21,'Ispassword',0,d,[ bool ]).
+html_comp_i(21,'Colautoresize',1,d,[ bool ]).
+html_comp_i(21,'Colwidth',measure(116,px),d,[ measure ]).
+html_comp_i(21,'Height',measure(17,px),d,[ measure ]).
+html_comp_i(21,'Colposition',0,d,[ num ]).
+html_comp_i(21,'Collinesfont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(21,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(21,'Coltitle','Codigo da Pessoa',d,[ str ]).
+html_comp_i(21,'Coltitlefont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(21,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(21,'Gxformat',0,d,[ num ]).
+html_comp_i(21,'Colvisible',1,d,[ bool ]).
+html_comp_i(21,'Borderstyle',2,d,[ num ]).
+html_comp_i(21,'Border','2',d,[ str ]).
+html_comp_i(21,'Title','',d,[ str ]).
+html_comp_i(21,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(21,'Returnonclick',0,d,[ bool ]).
+html_comp_i(21,'Fill',1,d,[ bool ]).
+html_comp_i(21,'Dimension',0,d,[ num ]).
+html_comp_i(21,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(21,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(22,'Helpkeyword',58,d,[ num ]).
+html_comp_i(22,'Isenumerated',0,d,[ bool ]).
+html_comp_i(22,'Usermode',1,v,[ num ]).
+html_comp_i(22,'Atttype',13,d,[ num ]).
+html_comp_i(22,'Baseatttype',13,d,[ num ]).
+html_comp_i(22,'Attname','PesCPF',d,[ str ]).
+html_comp_i(22,'Colextsdtctrlname','',d,[ str ]).
+html_comp_i(22,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(22,'Gxobjclass',13,d,[ num ]).
+html_comp_i(22,'Isvariable',0,d,[ bool ]).
+html_comp_i(22,'Isattribute',1,d,[ bool ]).
+html_comp_i(22,'Colcount',15,d,[ num ]).
+html_comp_i(22,'Rowcount',1,d,[ num ]).
+html_comp_i(22,'Colattid',14,v,[ num ]).
+html_comp_i(22,'Colsdtmember','',d,[ str ]).
+html_comp_i(22,'Colextcolmember','',d,[ str ]).
+html_comp_i(22,'Controlname','Pescpf',d,[ str ]).
+html_comp_i(22,'Class','',v,[ str ]).
+html_comp_i(22,'Controltype',10,d,[ num ]).
+html_comp_i(22,'Inputtype',0,d,[ num ]).
+html_comp_i(22,'Editautocomplete',0,d,[ num ]).
+html_comp_i(22,'Controlvalues',[],d,[ values ]).
+html_comp_i(22,'Controldirection',1,d,[ num ]).
+html_comp_i(22,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(22,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(22,'Controlitemvalues',14,d,[ num ]).
+html_comp_i(22,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(22,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(22,'Controlwhere','',d,[ str ]).
+html_comp_i(22,'Filteroperator',0,d,[ num ]).
+html_comp_i(22,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(22,'Casesensitive',0,d,[ bool ]).
+html_comp_i(22,'Maxitems',5,d,[ num ]).
+html_comp_i(22,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(22,'Colctrlname','',d,[ str ]).
+html_comp_i(22,'Rowindex','1',d,[ str ]).
+html_comp_i(22,'Colindex','1',d,[ str ]).
+html_comp_i(22,'Colreadonly',1,d,[ bool ]).
+html_comp_i(22,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(22,'Ispassword',0,d,[ bool ]).
+html_comp_i(22,'Colautoresize',1,d,[ bool ]).
+html_comp_i(22,'Colwidth',measure(100,px),d,[ measure ]).
+html_comp_i(22,'Height',measure(17,px),d,[ measure ]).
+html_comp_i(22,'Colposition',0,d,[ num ]).
+html_comp_i(22,'Collinesfont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(22,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(22,'Coltitle','CPF da Pessoa',d,[ str ]).
+html_comp_i(22,'Coltitlefont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(22,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(22,'Gxformat',0,d,[ num ]).
+html_comp_i(22,'Colvisible',1,d,[ bool ]).
+html_comp_i(22,'Borderstyle',2,d,[ num ]).
+html_comp_i(22,'Border','2',d,[ str ]).
+html_comp_i(22,'Title','',d,[ str ]).
+html_comp_i(22,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(22,'Returnonclick',0,d,[ bool ]).
+html_comp_i(22,'Fill',1,d,[ bool ]).
+html_comp_i(22,'Dimension',0,d,[ num ]).
+html_comp_i(22,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(22,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(23,'Helpkeyword',58,d,[ num ]).
+html_comp_i(23,'Isenumerated',0,d,[ bool ]).
+html_comp_i(23,'Usermode',1,v,[ num ]).
+html_comp_i(23,'Atttype',6,d,[ num ]).
+html_comp_i(23,'Baseatttype',6,d,[ num ]).
+html_comp_i(23,'Attname','PesDatNasc',d,[ str ]).
+html_comp_i(23,'Colextsdtctrlname','',d,[ str ]).
+html_comp_i(23,'Attdateformat',idDATEFORMAT_SHORT,d,[ str ]).
+html_comp_i(23,'Gxobjclass',13,d,[ num ]).
+html_comp_i(23,'Isvariable',0,d,[ bool ]).
+html_comp_i(23,'Isattribute',1,d,[ bool ]).
+html_comp_i(23,'Colcount',31,d,[ num ]).
+html_comp_i(23,'Rowcount',1,d,[ num ]).
+html_comp_i(23,'Colattid',15,v,[ num ]).
+html_comp_i(23,'Colsdtmember','',d,[ str ]).
+html_comp_i(23,'Colextcolmember','',d,[ str ]).
+html_comp_i(23,'Controlname','Pesdatnasc',d,[ str ]).
+html_comp_i(23,'Class','',v,[ str ]).
+html_comp_i(23,'Controltype',10,d,[ num ]).
+html_comp_i(23,'Inputtype',0,d,[ num ]).
+html_comp_i(23,'Editautocomplete',0,d,[ num ]).
+html_comp_i(23,'Controlvalues',[],d,[ values ]).
+html_comp_i(23,'Controldirection',1,d,[ num ]).
+html_comp_i(23,'Controlcheckvalue','',d,[ str ]).
+html_comp_i(23,'Controluncheckvalue','',d,[ str ]).
+html_comp_i(23,'Controlitemvalues',15,d,[ num ]).
+html_comp_i(23,'Controlitemdescription',0,d,[ num ]).
+html_comp_i(23,'Controlrestrictedby','',d,[ str ]).
+html_comp_i(23,'Controlwhere','',d,[ str ]).
+html_comp_i(23,'Filteroperator',0,d,[ num ]).
+html_comp_i(23,'Controlsortdescription',1,d,[ bool ]).
+html_comp_i(23,'Casesensitive',0,d,[ bool ]).
+html_comp_i(23,'Maxitems',5,d,[ num ]).
+html_comp_i(23,'Addemptyitem',0,d,[ bool ]).
+html_comp_i(23,'Colctrlname','',d,[ str ]).
+html_comp_i(23,'Rowindex','1',d,[ str ]).
+html_comp_i(23,'Colindex','1',d,[ str ]).
+html_comp_i(23,'Colreadonly',1,d,[ bool ]).
+html_comp_i(23,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(23,'Ispassword',0,d,[ bool ]).
+html_comp_i(23,'Colautoresize',1,d,[ bool ]).
+html_comp_i(23,'Colwidth',measure(195,px),d,[ measure ]).
+html_comp_i(23,'Height',measure(17,px),d,[ measure ]).
+html_comp_i(23,'Colposition',0,d,[ num ]).
+html_comp_i(23,'Collinesfont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(23,'Collinescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(23,'Coltitle','Data de Nascimento da Pessoa',d,[ str ]).
+html_comp_i(23,'Coltitlefont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(23,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(23,'Gxformat',0,d,[ num ]).
+html_comp_i(23,'Colvisible',1,d,[ bool ]).
+html_comp_i(23,'Borderstyle',2,d,[ num ]).
+html_comp_i(23,'Border','2',d,[ str ]).
+html_comp_i(23,'Title','',d,[ str ]).
+html_comp_i(23,'Use_datepicker',1,d,[ bool ]).
+html_comp_i(23,'Flat_datepicker',0,d,[ bool ]).
+html_comp_i(23,'Returnonclick',0,d,[ bool ]).
+html_comp_i(23,'Fill',1,d,[ bool ]).
+html_comp_i(23,'Dimension',0,d,[ num ]).
+html_comp_i(23,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(23,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(24,'Helpkeyword',56,d,[ num ]).
+html_comp_i(24,'Usermode',1,v,[ num ]).
+html_comp_i(24,'Gxobjclass',13,d,[ num ]).
+html_comp_i(24,'Controlname','Grid1',v,[ str ]).
+html_comp_i(24,'Sdtvarbind',0,d,[ num ]).
+html_comp_i(24,'Sdtcmbind','',d,[ str ]).
+html_comp_i(24,'Class','',v,[ str ]).
+html_comp_i(24,'Autoresize',1,d,[ bool ]).
+html_comp_i(24,'Gxwidth',measure(0,px),d,[ measure ]).
+html_comp_i(24,'Gxheight',measure(0,px),d,[ measure ]).
+html_comp_i(24,'Linescolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(24,'Linesfont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(24,'Titlecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(24,'Titlefont',font('Times New Roman',12,[]),d,[ font ]).
+html_comp_i(24,'Backcolorstyle',2,v,[ num ]).
+html_comp_i(24,'Allbackcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(24,'Linesbackcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(24,'Linesbackcolor2',rgb(255,255,255),d,[ color ]).
+html_comp_i(24,'Titlebackcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(24,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(24,'Maxcols',1,d,[ num ]).
+html_comp_i(24,'Maxrows',10,v,[ num ]).
+html_comp_i(24,'Allowcollapsing',0,d,[ bool ]).
+html_comp_i(24,'Collapsed',0,d,[ bool ]).
+html_comp_i(24,'Allowselection',0,d,[ bool ]).
+html_comp_i(24,'Selectioncolor',rgb(128,255,255),d,[ color ]).
+html_comp_i(24,'Allowhover',1,d,[ bool ]).
+html_comp_i(24,'Hovercolor',rgb(0,192,192),d,[ color ]).
+html_comp_i(24,'Title','',d,[ str ]).
+html_comp_i(24,'Align',left,d,[ str ]).
+html_comp_i(24,'Backgroundgx','',d,[ str ]).
+html_comp_i(24,'Border','1',d,[ str ]).
+html_comp_i(24,'Cellpadding','1',d,[ str ]).
+html_comp_i(24,'Cellspacing','0',d,[ str ]).
+html_comp_i(24,'Rules',all,d,[ str ]).
+html_comp_i(5,'Helpkeyword',59,d,[ num ]).
+html_comp_i(5,'Usermode',1,v,[ num ]).
+html_comp_i(5,'Id','Table2',v,[ str ]).
+html_comp_i(5,'Class','',v,[ str ]).
+html_comp_i(5,'Title','',d,[ str ]).
+html_comp_i(5,'Align',left,d,[ str ]).
+html_comp_i(5,'Backgroundgx','',d,[ str ]).
+html_comp_i(5,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(5,'Border','0',d,[ str ]).
+html_comp_i(5,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(5,'Cellpadding','1',d,[ str ]).
+html_comp_i(5,'Cellspacing','2',d,[ str ]).
+html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(5,'Rules',all,d,[ str ]).
+html_comp_i(26,'Helpkeyword',55,d,[ num ]).
+html_comp_i(26,'Usermode',1,v,[ num ]).
+html_comp_i(26,'Controlname','Btn_first',v,[ str ]).
+html_comp_i(26,'Class','',v,[ str ]).
+html_comp_i(26,'Event','''GXM_first''',v,[ str ]).
+html_comp_i(26,'Caption','|<',v,[ str ]).
+html_comp_i(26,'Accesskey','',d,[ str ]).
+html_comp_i(26,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(26,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(26,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(26,'Border','2',d,[ str ]).
+html_comp_i(26,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(26,'Type',0,d,[ num ]).
+html_comp_i(27,'Helpkeyword',55,d,[ num ]).
+html_comp_i(27,'Usermode',1,v,[ num ]).
+html_comp_i(27,'Controlname','Btn_previous',v,[ str ]).
+html_comp_i(27,'Class','',v,[ str ]).
+html_comp_i(27,'Event','''GXM_previous''',v,[ str ]).
+html_comp_i(27,'Caption',<,v,[ str ]).
+html_comp_i(27,'Accesskey','',d,[ str ]).
+html_comp_i(27,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(27,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(27,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(27,'Border','2',d,[ str ]).
+html_comp_i(27,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(27,'Type',0,d,[ num ]).
+html_comp_i(28,'Helpkeyword',55,d,[ num ]).
+html_comp_i(28,'Usermode',1,v,[ num ]).
+html_comp_i(28,'Controlname','Btn_next',v,[ str ]).
+html_comp_i(28,'Class','',v,[ str ]).
+html_comp_i(28,'Event','''GXM_next''',v,[ str ]).
+html_comp_i(28,'Caption',>,v,[ str ]).
+html_comp_i(28,'Accesskey','',d,[ str ]).
+html_comp_i(28,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(28,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(28,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(28,'Border','2',d,[ str ]).
+html_comp_i(28,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(28,'Type',0,d,[ num ]).
+html_comp_i(29,'Helpkeyword',55,d,[ num ]).
+html_comp_i(29,'Usermode',1,v,[ num ]).
+html_comp_i(29,'Controlname','Btn_last',v,[ str ]).
+html_comp_i(29,'Class','',v,[ str ]).
+html_comp_i(29,'Event','''GXM_last''',v,[ str ]).
+html_comp_i(29,'Caption','>|',v,[ str ]).
+html_comp_i(29,'Accesskey','',d,[ str ]).
+html_comp_i(29,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(29,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(29,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(29,'Border','2',d,[ str ]).
+html_comp_i(29,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(29,'Type',0,d,[ num ]).
+html_comp_i(30,'Helpkeyword',55,d,[ num ]).
+html_comp_i(30,'Usermode',1,v,[ num ]).
+html_comp_i(30,'Controlname','Btn_cancel',v,[ str ]).
+html_comp_i(30,'Class','',v,[ str ]).
+html_comp_i(30,'Event','Cancel',v,[ str ]).
+html_comp_i(30,'Caption','Close',d,[ str ]).
+html_comp_i(30,'Accesskey','',d,[ str ]).
+html_comp_i(30,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(30,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(30,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(30,'Border','2',d,[ str ]).
+html_comp_i(30,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(30,'Type',0,d,[ num ]).
+html_comp_i(31,'Helpkeyword',55,d,[ num ]).
+html_comp_i(31,'Usermode',1,v,[ num ]).
+html_comp_i(31,'Controlname','Btn_help',v,[ str ]).
+html_comp_i(31,'Class','',v,[ str ]).
+html_comp_i(31,'Event','Help',v,[ str ]).
+html_comp_i(31,'Caption','Help',d,[ str ]).
+html_comp_i(31,'Accesskey','',d,[ str ]).
+html_comp_i(31,'Font',font('MS Shell Dlg',11,[]),d,[ font ]).
+html_comp_i(31,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(31,'Backcolor',rgb(240,240,240),d,[ color ]).
+html_comp_i(31,'Border','2',d,[ str ]).
+html_comp_i(31,'Bordercolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(31,'Type',0,d,[ num ]).
+html_comp_i(3,'Helpkeyword',59,d,[ num ]).
+html_comp_i(3,'Usermode',1,v,[ num ]).
+html_comp_i(3,'Id','Table1',v,[ str ]).
+html_comp_i(3,'Class','',v,[ str ]).
+html_comp_i(3,'Title','',d,[ str ]).
+html_comp_i(3,'Align',left,d,[ str ]).
+html_comp_i(3,'Backgroundgx','',d,[ str ]).
+html_comp_i(3,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(3,'Border','0',d,[ str ]).
+html_comp_i(3,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(3,'Cellpadding','1',d,[ str ]).
+html_comp_i(3,'Cellspacing','2',d,[ str ]).
+html_comp_i(3,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(3,'Rules',all,d,[ str ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(4,1,comp(errview),[ ctlname('Ctlerror'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(6,1,t('Codigo da Pessoa',3),[ ctlname('Textblock1') ]).
+lit_i(7,1,t('Cpescodigo',23),[ ctlname('&Cpescodigo'),ctrltype(edit,7),pos(7),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(8,1,t('CPF da Pessoa',3),[ ctlname('Textblock2') ]).
+lit_i(9,1,t('Cpescpf',23),[ ctlname('&Cpescpf'),ctrltype(edit,9),pos(9),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(10,1,t('Data de Nascimento da Pessoa',3),[ ctlname('Textblock3') ]).
+lit_i(11,1,t('Cpesdatnasc',23),[ ctlname('&Cpesdatnasc'),ctrltype(edit,11),pos(11),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(12,1,t('Número do Endereço da Pessoa',3),[ ctlname('Textblock4') ]).
+lit_i(13,1,t('Cpesendnumero',23),[ ctlname('&Cpesendnumero'),ctrltype(edit,13),pos(13),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(14,1,t('Telefone Residencial da Pessoa',3),[ ctlname('Textblock5') ]).
+lit_i(15,1,t('Cpestelefone',23),[ ctlname('&Cpestelefone'),ctrltype(edit,15),pos(15),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(16,1,t('Telefone Celular da Pessoa',3),[ ctlname('Textblock6') ]).
+lit_i(17,1,t('Cpescelular',23),[ ctlname('&Cpescelular'),ctrltype(edit,17),pos(17),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(18,1,t('Situação da Pessoa',3),[ ctlname('Textblock7') ]).
+lit_i(19,1,t('Cpessituacao',23),[ ctlname('&Cpessituacao'),ctrltype(combo,19),pos(19),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(20,1,button('Refresh'),[ ctlname('Btn_refresh'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(21,1,s(t(12,2),24),[ ctlname(12),ctrltype(edit,21),pos(21),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(22,1,s(t(14,2),24),[ ctlname(14),ctrltype(edit,22),pos(22),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(23,1,s(t(15,2),24),[ ctlname(15),ctrltype(edit,23),pos(23),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(24,1,s(24),[ ctlname('Grid1'),el([ t(12,2),t(14,2),t(15,2) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(5,1,table(5),[ ctlname('Table2') ]).
+lit_i(26,1,button('''GXM_first'''),[ ctlname('Btn_first'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(27,1,button('''GXM_previous'''),[ ctlname('Btn_previous'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(28,1,button('''GXM_next'''),[ ctlname('Btn_next'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(29,1,button('''GXM_last'''),[ ctlname('Btn_last'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(30,1,button('Cancel'),[ ctlname('Btn_cancel'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(31,1,button('Help'),[ ctlname('Btn_help'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(3,1,table(3),[ ctlname('Table1') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ctrl_info_i(1,19,[ [ [ 'Ativo','1' ],[ 'Inativo','2' ] ],[ '' ] ]).
+ 
+ 
+calling_main_i(4,1).
+ 
+att_prop_i(2,12,'AUTONUMBER','-1',d).
+att_prop_i(2,12,'AUTONUMBER_START','1',d).
+att_prop_i(2,12,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,12,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,12,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,12,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,12,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,12,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,12,'FullName','PesCodigo',v).
+att_prop_i(2,14,'AUTONUMBER_START','1',d).
+att_prop_i(2,14,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,14,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,14,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,14,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,14,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,14,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,14,'FullName','PesCPF',v).
+att_prop_i(2,15,'AUTONUMBER_START','1',d).
+att_prop_i(2,15,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,15,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,15,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,15,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,15,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,15,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,15,'FullName','PesDatNasc',v).
+att_prop_i(2,17,'AUTONUMBER_START','1',d).
+att_prop_i(2,17,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,17,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,17,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,17,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,17,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,17,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,17,'FullName','PesEndNumero',v).
+att_prop_i(2,20,'AUTONUMBER_START','1',d).
+att_prop_i(2,20,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,20,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,20,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,20,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,20,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,20,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,20,'FullName','PesTelefone',v).
+att_prop_i(2,21,'AUTONUMBER_START','1',d).
+att_prop_i(2,21,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,21,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,21,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,21,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,21,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,21,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,21,'FullName','PesCelular',v).
+att_prop_i(2,22,'AUTONUMBER','0',d).
+att_prop_i(2,22,'AUTONUMBER_START','1',d).
+att_prop_i(2,22,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,22,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,22,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,22,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,22,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,22,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,22,'FullName','PesSituacao',v).
+ 
+ 
+tbl_att_prop_i(2,1,12,'AllowNulls',n).
+tbl_att_prop_i(2,1,12,'AUTONUMBER',y).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

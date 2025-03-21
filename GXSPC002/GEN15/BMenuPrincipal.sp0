@@ -1,0 +1,196 @@
+spec_i([ mbr,1,'Menu Principal','MenuPrincipal',0,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ 
+las_i(2,[ [] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+cls_i([ 25,80 ],[ 0,0 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','MenuPrincipal')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Refresh"','5' ]) ],[],[],[])).
+rule_i(0,maingen(15)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t([ t('Menubar',3,1,6),t('Id_categorias',3,1,14) ],29,1,14) ]).
+b_line_i(2,2,1,cmd,1,[ t('',104,1,0),t(o(0,'Categoria'),28,1,4) ]).
+b_line_i(3,2,1,cmd,1,[ t('',147,1,0) ]).
+b_line_i(5,2,1,cmd,1,[ t('',146,1,0),t([ t('Menubar',3,5,6),t('Id_cidades',3,5,14) ],29,5,14) ]).
+b_line_i(6,2,1,cmd,1,[ t('',104,1,0),t(o(0,'Cidade'),28,1,4) ]).
+b_line_i(7,2,1,cmd,1,[ t('',147,1,0) ]).
+b_line_i(9,2,1,cmd,1,[ t('',146,1,0),t([ t('Menubar',3,9,6),t('Id_clientes',3,9,14) ],29,9,14) ]).
+b_line_i(10,2,1,cmd,1,[ t('',104,1,0),t(o(0,'Pessoa'),28,1,4) ]).
+b_line_i(11,2,1,cmd,1,[ t('',147,1,0) ]).
+b_line_i(13,2,1,cmd,1,[ t('',146,1,0),t([ t('Menubar',3,13,6),t('Id_estados',3,13,14) ],29,13,14) ]).
+b_line_i(14,2,1,cmd,1,[ t('',104,1,0),t(o(0,'Estado'),28,1,4) ]).
+b_line_i(15,2,1,cmd,1,[ t('',147,1,0) ]).
+b_line_i(17,2,1,cmd,1,[ t('',146,1,0),t([ t('Menubar',3,17,6),t('Id_mdias',3,17,14) ],29,17,14) ]).
+b_line_i(18,2,1,cmd,1,[ t('',104,1,0),t(o(0,'Midia'),28,1,4) ]).
+b_line_i(19,2,1,cmd,1,[ t('',147,1,0) ]).
+b_line_i(21,2,1,cmd,1,[ t('',146,1,0),t([ t('Menubar',3,21,6),t('Id_filmes',3,21,14) ],29,21,14) ]).
+b_line_i(22,2,1,cmd,1,[ t('',104,1,0),t(o(0,'Filme'),28,1,4) ]).
+b_line_i(23,2,1,cmd,1,[ t('',147,1,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+menu_i(1,0,m,'','',[ popup ]).
+menu_i(2,1,m,'Id_cadastro','Cadastro',[ popup ]).
+menu_i(3,2,m,'Id_estados','Estados',[]).
+menu_i(4,2,m,'Id_cidades','Cidades',[]).
+menu_i(5,2,m,'Id_categorias','Categorias',[]).
+menu_i(6,2,m,'Id_filmes','Filmes',[]).
+menu_i(7,2,m,'Id_mdias','Mídias',[]).
+menu_i(8,2,m,'Id_clientes','Clientes',[]).
+menu_i(9,0,t,'','',[ popup ]).
+menu_i(10,9,t,'Gx_help','',[ tooltip('Help'),bitmap('Help.bmp') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(4,2).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(trn,2,'TFILME',[],[]).
+pgm_parm_i(trn,6,'TMIDIA',[],[]).
+pgm_parm_i(trn,4,'TESTADO',[],[]).
+pgm_parm_i(trn,1,'TPESSOA',[],[]).
+pgm_parm_i(trn,5,'TCIDADE',[],[]).
+pgm_parm_i(trn,3,'TCATEGORIA',[],[]).
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,139 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>0</ObjCls>
+<ObjId>4</ObjId>
+<ObjName>Estado</ObjName>
+<ObjDesc>Cadastro de Estados</ObjDesc>
+<ObjPgmName>TEstado</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>15</GenId>
+<GenName>.NET</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>4</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table></BaseTable>
+<StandAloneRules></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>EstUF</AttriName>
+<Description>UF do Estado</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>EstNome</AttriName>
+<Description>Nome do Estado</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules></StandAloneWithModeRules>
+<Rules></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>EstUF</AttriName>
+<Description>UF do Estado</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>EstNome</AttriName>
+<Description>Nome do Estado</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>EstUF</AttriName>
+<Description>UF do Estado</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>EstNome</AttriName>
+<Description>Nome do Estado</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>5</TableId>
+<TableName>CIDADE</TableName>
+<Description>Cadastro de Cidades</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<Token>HGx0040</Token>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

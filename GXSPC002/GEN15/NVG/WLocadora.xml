@@ -1,0 +1,22 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>2</ObjId>
+<ObjName>Locadora</ObjName>
+<ObjDesc>Cadastro de Locadora</ObjDesc>
+<ObjPgmName>WLocadora</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>nogenspc</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0005</MsgCode>
+<Token>This object cannot be generated on this environment.</Token></Warning></Warnings>
+<Errors></Errors>
+<Main>Yes</Main>
+<Generator>
+<GenId>15</GenId>
+<GenName>.NET</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters></ObjectSpec>
