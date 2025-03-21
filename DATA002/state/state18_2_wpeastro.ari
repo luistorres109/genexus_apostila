@@ -1,0 +1,15 @@
+current_obj_i(2,scr,33).
+ 
+called_tree_i(4,33,0,9).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(wpeastro,[],[ subwpeastro11 ],[],33).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

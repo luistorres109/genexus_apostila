@@ -1,0 +1,14 @@
+current_obj_i(2,proc,1).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(pverpesfunlogin,[],[],[],1).
+ 
+ 
+obj_parms_i([ 'String aP0_PesFunLogin','int aP1_PesCodigo','String aP2_Erro' ],[ [ 58,in ],[ 'Pescodigo',in ],[ 'Erro',out ] ]).
+ 
+ 

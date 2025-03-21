@@ -1,0 +1,17 @@
+current_obj_i(2,scr,28).
+ 
+called_tree_i(4,28,1,2).
+called_tree_i(4,28,4,2).
+ 
+ 
+ij_main_object(ulogin,'Login','','""','').
+ 
+ 
+ 
+ 
+ij_object_dependency(ulogin,[],[],[],28).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

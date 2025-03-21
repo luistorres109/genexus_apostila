@@ -1,0 +1,14 @@
+current_obj_i(2,rpt,17).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(rreltoplistcat,[],[],[ type_SdtSTDCat_STDCatItem,'GxObjectCollection' ],17).
+ 
+ 
+obj_parms_i([ 'DateTime aP0_DatIni','DateTime aP1_DatFin','long aP2_TopN','String aP3_ExibirPor' ],[ [ 'Datini',in ],[ 'Datfin',in ],[ 'Topn',in ],[ 'Exibirpor',in ] ]).
+ 
+ 

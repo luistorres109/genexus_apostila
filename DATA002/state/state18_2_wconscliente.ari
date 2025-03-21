@@ -1,0 +1,14 @@
+current_obj_i(2,scr,31).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(wconscliente,[],[ subwconscliente02 ],[],31).
+ 
+ 
+obj_parms_i([ 'int aP0_PesCodigoRet' ],[ [ 'Pescodigoret',out ] ]).
+ 
+ 

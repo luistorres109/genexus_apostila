@@ -1,0 +1,14 @@
+current_obj_i(2,proc,9).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(pcnflocacao,[],[],[],9).
+ 
+ 
+obj_parms_i([ 'int aP0_LocCliPesCodigo','int aP1_LocCodigo','DateTime aP2_LocDatLocacao','DateTime aP3_LocDatDevolucao','DateTime aP4_LocDatCancelamento','short aP5_LocSituacao','int aP6_LocVenPesCodigo','int aP7_MidCodigo','int aP8_MidLocCodigo' ],[ [ 'Locclipescodigo',in ],[ 'Loccodigo',in ],[ 'Locdatlocacao',in ],[ 'Locdatdevolucao',in ],[ 'Locdatcancelamento',in ],[ 'Locsituacao',in ],[ 'Locvenpescodigo',in ],[ 'Midcodigo',in ],[ 'Midloccodigo',in ] ]).
+ 
+ 

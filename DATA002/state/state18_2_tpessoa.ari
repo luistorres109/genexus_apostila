@@ -1,0 +1,16 @@
+current_obj_i(2,trn,7).
+ 
+called_tree_i(0,7,4,17).
+called_tree_i(0,7,4,15).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(tpessoa,[],[],[],7).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

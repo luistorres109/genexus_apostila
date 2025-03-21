@@ -1,0 +1,21 @@
+current_obj_i(2,trn,11).
+ 
+called_tree_i(0,11,4,31).
+called_tree_i(0,11,4,27).
+called_tree_i(0,11,1,9).
+called_tree_i(0,11,4,47).
+called_tree_i(0,11,4,17).
+called_tree_i(0,11,4,48).
+called_tree_i(0,11,4,16).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(tlocacao,[],[ subtlocacao30 ],[ type_SdtSDTFuncionario,'GxObjectCollection' ],11).
+ 
+ 
+obj_parms_i([],[]).
+ 
+ 

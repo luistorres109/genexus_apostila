@@ -1,0 +1,16 @@
+current_obj_i(2,trn,5).
+ 
+called_tree_i(0,5,4,24).
+called_tree_i(0,5,4,14).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(tcidade,[],[],[],5).
+ 
+ 
+obj_parms_i([ 'int aP0_CidCodigo','String aP1_Gx_mode' ],[ [ 26,in ],[ 'Mode',in ] ]).
+ 
+ 

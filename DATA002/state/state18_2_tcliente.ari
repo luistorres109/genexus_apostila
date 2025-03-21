@@ -1,0 +1,20 @@
+current_obj_i(2,trn,7).
+ 
+called_tree_i(0,7,4,23).
+called_tree_i(0,7,4,31).
+called_tree_i(0,7,4,44).
+called_tree_i(0,7,4,15).
+called_tree_i(0,7,4,35).
+called_tree_i(0,7,4,17).
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(tcliente,[],[ subtcliente46 ],[],7).
+ 
+ 
+obj_parms_i([ 'int aP0_PesCodigo','String aP1_Gx_mode' ],[ [ 12,in ],[ 'Mode',in ] ]).
+ 
+ 

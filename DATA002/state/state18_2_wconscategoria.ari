@@ -1,0 +1,14 @@
+current_obj_i(2,scr,25).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ij_object_dependency(wconscategoria,[],[ subwconscategoria02 ],[],25).
+ 
+ 
+obj_parms_i([ 'int aP0_CatCodigoRet' ],[ [ 'Catcodigoret',out ] ]).
+ 
+ 
