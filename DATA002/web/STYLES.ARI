@@ -1,8 +1,0 @@
-global_style_used_i(8,[ 'background:#0','border-color:#0','border-width:0','color:#0','font-size:12pt','font-style:normal','font-weight:normal' ]).
-global_style_used_i(7,[ 'background:#0','color:#000000','font-family:''Times New Roman''','font-size:12pt','font-style:normal' ]).
-global_style_used_i(6,[ 'background:#FFFFFF','border-color:#0','border-width:2','color:#000000','font-family:''Times New Roman''','font-size:12pt','font-style:normal','font-weight:normal' ]).
-global_style_used_i(5,[ 'background:#FFFFFF','border-color:#0','border-width:0','color:#000000','font-size:12pt','font-style:normal','font-weight:normal' ]).
-global_style_used_i(4,[ 'background:#F0F0F0','border-color:#FFFFFF','border-width:2','color:#000000','font-family:''MS Shell Dlg''','font-size:11pt','font-style:normal','font-weight:normal' ]).
-global_style_used_i(3,[ 'background:#FFFFFF','border-color:#0','border-width:0','color:#000000','font-family:''MS Sans Serif''','font-size:10pt','font-style:normal','font-weight:normal' ]).
-global_style_used_i(2,[ 'background:#0','border-color:#0','border-width:2','color:#000000','font-family:''Times New Roman''','font-size:12pt','font-style:normal','font-weight:normal' ]).
-global_style_used_i(1,[ 'background:#0' ]).
