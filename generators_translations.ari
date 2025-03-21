@@ -1,0 +1,1903 @@
+lng_i(1,[ 'English','English',eng ]).
+lng_i(2,[ 'Italian','Italian',ita ]).
+lng_i(3,[ 'Portuguese','Portuguese',por ]).
+lng_i(4,[ 'SimplifiedChinese','Simplified Chinese',chs ]).
+lng_i(5,[ 'Spanish','Spanish',spa ]).
+lng_i(6,[ 'TraditionalChinese','Traditional Chinese',cht ]).
+ 
+lng_prop_i(1,'ISOLangCode','EN',v).
+lng_prop_i(1,'ISOCountryCode','US',v).
+lng_prop_i(1,'Codepage','1252',v).
+lng_prop_i(1,'LanguageLocalization','',d).
+lng_prop_i(1,'LangDateFormat','ENG',v).
+lng_prop_i(1,'LangTimeFormat','12',v).
+lng_prop_i(1,'LangDecimalPoint','.',v).
+lng_prop_i(2,'ISOLangCode','IT',v).
+lng_prop_i(2,'ISOCountryCode','IT',v).
+lng_prop_i(2,'Codepage','1252',v).
+lng_prop_i(2,'LanguageLocalization','',d).
+lng_prop_i(2,'LangDateFormat','ITA',v).
+lng_prop_i(2,'LangTimeFormat','24',v).
+lng_prop_i(2,'LangDecimalPoint',',',v).
+lng_prop_i(3,'ISOLangCode','PT',v).
+lng_prop_i(3,'ISOCountryCode','BR',v).
+lng_prop_i(3,'Codepage','1252',v).
+lng_prop_i(3,'LanguageLocalization','',d).
+lng_prop_i(3,'LangDateFormat','POR',v).
+lng_prop_i(3,'LangTimeFormat','24',v).
+lng_prop_i(3,'LangDecimalPoint',',',v).
+lng_prop_i(4,'ISOLangCode','ZH',v).
+lng_prop_i(4,'ISOCountryCode','CN',v).
+lng_prop_i(4,'Codepage','936',v).
+lng_prop_i(4,'LanguageLocalization','',d).
+lng_prop_i(4,'LangDateFormat','ANSI',v).
+lng_prop_i(4,'LangTimeFormat','24',v).
+lng_prop_i(4,'LangDecimalPoint','.',v).
+lng_prop_i(5,'ISOLangCode','ES',v).
+lng_prop_i(5,'ISOCountryCode','ES',v).
+lng_prop_i(5,'Codepage','1252',v).
+lng_prop_i(5,'LanguageLocalization','',d).
+lng_prop_i(5,'LangDateFormat','SPA',v).
+lng_prop_i(5,'LangTimeFormat','24',v).
+lng_prop_i(5,'LangDecimalPoint',',',v).
+lng_prop_i(6,'ISOLangCode','ZH',v).
+lng_prop_i(6,'ISOCountryCode','TW',v).
+lng_prop_i(6,'Codepage','950',v).
+lng_prop_i(6,'LanguageLocalization','',d).
+lng_prop_i(6,'LangDateFormat','ANSI',v).
+lng_prop_i(6,'LangTimeFormat','24',v).
+lng_prop_i(6,'LangDecimalPoint','.',v).
+ 
+lit(eng,datefmt,'SET DATE AMERICAN').
+lit(eng,trnrpt,[ '''More Transactions''','''More Reports''','''More Procedures''','''More Work Panels''','''More Menus''' ]).
+lit(eng,mmmainmenu,[ '''Main menu''','''Data Base Administrator Menu''','''Transactions''','''Reports''','''Create data base''','''Rebuild indices''','''Rebuild redundancy''','''Reorganize data base''','''Export application''','''Use interpreter''','''Procedures''','''Work Panels''','''Menus''' ]).
+lit(eng,mmint,[ '''GX Menu Integrator''','''Menus''' ]).
+lit(eng,opt,'''Options''').
+lit(eng,nomenu,'''There are no user menus''').
+lit(eng,keys,'''Esc=Return  F1=Help''').
+lit(eng,prot,'''Prototype''').
+lit(eng,prod,'''Production''').
+lit(eng,idx,'''Reindex data base?''').
+lit(eng,endofproc,'''End of process''').
+lit(eng,mmmain,'''GENEXUS - Menu manager''').
+lit(eng,mmmdlname,'''Model name''').
+lit(eng,mmmdldate,'''Date created''').
+lit(eng,nooptions,'''There are no options for this menu''').
+lit(eng,more,'''More').
+lit(eng,deleinfo,'"Do you really want to delete?"').
+lit(eng,sltlst,'"Selection List"').
+lit(eng,poslst,'"Type all or part of one of the following fields, then press Enter."').
+lit(eng,selopt,[ '"Select one of the following, then press Enter."','"More:"' ]).
+lit(eng,lastrec,'"This is the last matching record"').
+lit(eng,firstrec,'"This is the first matching record"').
+lit(eng,norectobrow,'"There is no matching record"').
+lit(eng,filecrea,'"Creating table %1 %2."').
+lit(eng,fileren,'"Renaming %1 as %2"').
+lit(eng,dbcrea,'''Creating data base''').
+lit(eng,conftrn,'''Confirm transaction?''').
+lit(eng,waschg,'%1 was changed.').
+lit(eng,tlotitle,'"Data transfer to Lotus 1-2-3 (tm)"').
+lit(eng,creaindx,'"Creating index %1 ..."').
+lit(eng,recconv,'"records converted"').
+lit(eng,loaddata,'"Loading data in"').
+lit(eng,nodelete,'"Unable to delete"').
+lit(eng,inex,'"No matching %1"').
+lit(eng,inex_browse,'". BROWSE DATA?"').
+lit(eng,queryok,'"Is query criteria ok?"').
+lit(eng,failequal,'"Record is not accesible"').
+lit(eng,yes,'"Y"').
+lit(eng,no,'"N"').
+lit(eng,date,[ 'MM','DD','YY' ]).
+lit(eng,conf,'"Is data ok? (Y/N)"').
+lit(eng,rtop,'"Send report to printer? (Y/N)"').
+lit(eng,rptques,'"Send report to"').
+lit(eng,rptsel,'"Screen SCR;Printer PRN;File FIL"').
+lit(eng,printing,'"Printing..."').
+lit(eng,canques,'"Cancel program? (Y/N)"').
+lit(eng,canmsg,'"Program canceled due to user request"').
+lit(eng,wait,'"Press Enter key to continue ..."').
+lit(eng,del,'"Invalid delete, related information in %1"').
+lit(eng,delcas,'"Delete all Info for"').
+lit(eng,lock,[ '"Record','in use by another"' ]).
+lit(eng,flock,[ '"Table','in use by another"' ]).
+lit(eng,help,'"Help"').
+lit(eng,noupdate,'"Record already exists"').
+lit(eng,noinsert,'"Record not found"').
+lit(eng,chg,'"Discard modifications? (Y/N)"').
+lit(eng,mlmax,'"Number of lines exceeded').
+lit(eng,rgzlcktb,'"%1. Locking tables to reorganize."').
+lit(eng,rgzdic,'"%1. Dropping referential integrity constraints."').
+lit(eng,rgzdropcol,'"Dropping attributes from table %1."').
+lit(eng,1000,'"Warning: Rename not used. Userid is not ''%1''."').
+lit(eng,1001,'"Dropping index %2, table %1."').
+lit(eng,1002,'"Dropping table %1."').
+lit(eng,1003,'"Setting initial values for attributes in table %1"').
+lit(eng,1004,'"%1 already exists"').
+lit(eng,dropindx,'"Droping index %1 ..."').
+lit(eng,outrange,'"%1 out of range"').
+lit(eng,graph,'"Graph"').
+lit(eng,print,'"Print"').
+lit(eng,strdate,'%2 %3, %1').
+lit(eng,runpgm,'"Running program %1."').
+lit(eng,mbactions,'Actions').
+lit(eng,mbview,'View').
+lit(eng,mbhelp,'Help').
+lit(eng,mbview_first,'First').
+lit(eng,mbview_last,'Last').
+lit(eng,mbview_previous,'Previous').
+lit(eng,mbview_next,'Next').
+lit(eng,mbview_select,'Select').
+lit(eng,mbhelp_cont,'Contents').
+lit(eng,mbdelete,'Delete').
+lit(eng,mbrefresh,'Refresh').
+lit(eng,mbclose,'Close').
+lit(eng,mbconfirm,'Confirm').
+lit(eng,selone,'''Select one of the following. Then press Enter.''').
+lit(eng,selnocor,'Selected menu option is not correct.').
+lit(eng,cmdandopt,'Can not select a menu option and specify a command.').
+lit(eng,cmdlpmpt,'''Command ===>''').
+lit(eng,deltbl,'''Dropping old table %1 and creating new one.''').
+lit(eng,rename,'''Renaming table %1 to %2''').
+lit(eng,confrpt,'''Press Enter to start processing.''').
+lit(eng,nochgmode,'''Cannot change to requested mode.''').
+lit(eng,oneselonly,'''Cannot select more than one item.''').
+lit(eng,eof,'''Beginning/End of data reached.''').
+lit(eng,canctrn,'''Transaction canceled.''').
+lit(eng,confins,'''Inserting data. Press Enter to confirm.''').
+lit(eng,confupd,'''Updating data. Press Enter to confirm.''').
+lit(eng,confdel,'''Deleting data. Press Enter to confirm.''').
+lit(eng,recins,'''Data was inserted.''').
+lit(eng,recupd,'''Data was updated.''').
+lit(eng,recdel,'''Data was deleted.''').
+lit(eng,notsame,'''Data does not belong to the same %1.''').
+lit(eng,faildel,'''Invalid delete. Related info in %1''').
+lit(eng,noexist,'''Could not find %1''').
+lit(eng,noaccept,'''Changes made to %1 ignored.''').
+lit(eng,failbool,'''%1 must be "Y" or "N".''').
+lit(eng,wrongopt,'''Option must be "4" or space''').
+lit(eng,dupkey,'''Data already added by another user.''').
+lit(eng,noprompt,'''Cursor position is not valid for prompt request.''').
+lit(eng,spc,'Specify selection value').
+lit(eng,tcpe,'Type selection criteria, press Enter.').
+lit(eng,spv,'Select an item from list').
+lit(eng,tope,'Type options, press Enter.').
+lit(eng,oeqs,'1=Select').
+lit(eng,datachg,'''Data modified by another user (%1).''').
+lit(eng,icp,'''Cursor position is not valid.''').
+lit(eng,seloptwrong,'''Option is not allowed.''').
+lit(eng,nomnuopt,'''No options for this menu''').
+lit(eng,emptylist,'(List is empty.)').
+lit(eng,callerr,'''Error calling program %1''').
+lit(eng,exist,'''Already existing %1''').
+lit(eng,norecrpt,'There is no data satisfying this report.').
+lit(eng,0,'Enter').
+lit(eng,enter,'Process').
+lit(eng,cancel,'Cancel').
+lit(eng,display,'Display').
+lit(eng,insert,'Insert').
+lit(eng,update,'Update').
+lit(eng,delete,'Delete').
+lit(eng,first,'First').
+lit(eng,next,'Next').
+lit(eng,previous,'Previous').
+lit(eng,prompt,'Prompt').
+lit(eng,select,'Select').
+lit(eng,menu,'Menu bar').
+lit(eng,exit,'Exit').
+lit(eng,refresh,'Refresh').
+lit(eng,retrieve,'Retrieve').
+lit(eng,morekeys,'More keys').
+lit(eng,badkey,'''Key is not valid now.''').
+lit(eng,faildate,'''%1 is not a valid date/time.''').
+lit(eng,nohelp,'No help available.').
+lit(eng,lockrcd,'''Another user locks data of''').
+lit(eng,readerr,[ '''Error (''',''') processing''' ]).
+lit(eng,usrcanc,'''Process terminated by user.''').
+lit(eng,tipe,'Type information, press Enter.').
+lit(eng,actions,'''Actions''').
+lit(eng,view,'''View''').
+lit(eng,rgzctnt,'"%1. Create temporary and new tables."').
+lit(eng,rgzrrpgm,'"%1. Running reorganization programs."').
+lit(eng,rgzrnmtbl,'"%1. Renaming tables."').
+lit(eng,rgzbldidx,'"%1. Building indices and integrity constraints."').
+lit(eng,rgzdroptbl,'"%1. Dropping removed tables."').
+lit(eng,rgztbllck,'"Locking table %1."').
+lit(eng,rgzd1c,'"Dropping integrity constraints on table %1."').
+lit(eng,recdeleted,'"Error - Record was deleted by another user."').
+lit(eng,keynfound,'"Data with the specified key could not be found."').
+lit(eng,unexp,'"An unexpected error has occurred while updating your data. Please try again."').
+lit(eng,sucadded,'"Data has been successfuly added."').
+lit(eng,sucupdated,'"Data has been successfuly updated."').
+lit(eng,sucdeleted,'"Data has been successfuly deleted."').
+lit(eng,captionadd,'"Insert"').
+lit(eng,captionupdate,'"Update"').
+lit(eng,captiondelete,'"Delete"').
+lit(eng,captionconfirm,'"Confirm"').
+lit(eng,getbeforedlt,'"Please ''Get'' data before trying to delete it."').
+lit(eng,getbeforeupd,'"Please ''Get'' data before trying to update it."').
+lit(eng,mustconfirm,'"Please confirm the data."').
+lit(eng,confdelete,'"Confirm deletion."').
+lit(eng,baddatetime,'"%1 is not a valid date and time."').
+lit(eng,badtime,'"%1 is not a valid time."').
+lit(eng,badnum,'"The value is not a valid number."').
+lit(eng,nomatch,'No matching data was found.').
+lit(eng,pmterr,'Could not find prompt program %1').
+lit(eng,refcallerror,'Could not find refcall program %1').
+lit(eng,browse,'Browse').
+lit(eng,setonlr,'Seton Lr').
+lit(eng,badkeyrfr,'Key is not valid now. Refresh pending').
+lit(eng,dateoutr,'%1 out of range (%2-%3).').
+lit(eng,arrayerror,'Index out of range').
+lit(eng,callerror,'Error calling program').
+lit(eng,divideerror,'Divide by 0').
+lit(eng,numericalerror,'Numerical error').
+lit(eng,fileerror,'File error in file').
+lit(eng,code,code).
+lit(eng,index,index).
+lit(eng,ambiguousck,'"%1 is ambiguous"').
+lit(eng,refinterror,'"Unknown Referntial Integrity Error"').
+lit(eng,makdsc,[ 'Main menu' ]).
+lit(eng,dbcr1,'"Data base creation"').
+lit(eng,dbcr2,'"Table creation"').
+lit(eng,dbcr3,'"Index Creation"').
+lit(eng,dbcr4,'"Data transfer"').
+lit(eng,dbcr5,'"Rename Tables"').
+lit(eng,dbcr6,'"Model Update"').
+lit(eng,dbcrtitle,'"GeneXus Database Manager"').
+lit(eng,tblcrea,'"Creating Tables"').
+lit(eng,idxcrea,'"Creating Indices"').
+lit(eng,reocom,'"Reorganization complete"').
+lit(eng,delreo,'"Deleting reorganization specifications"').
+lit(eng,creinpro,'"Database creation in progress ...').
+lit(eng,notcrespc,'"No creation specifications found"').
+lit(eng,notreospc,'"There are no reorganization specifications"').
+lit(eng,asktocre,'"Do you really want to create an empty data base structure?"').
+lit(eng,creok,'"Database Created"').
+lit(eng,asktoreo,'"Do you want to reorganize the data base?"').
+lit(eng,reoinpro,'"Model reorganization in progress ..."').
+lit(eng,okcapt,'"O&K"').
+lit(eng,genwith,'Generated with').
+lit(eng,aboutcapt,'About').
+lit(eng,sysinfo,'"&System Info..."').
+lit(eng,notsysinfo,'System Information Is Unavailable At This Time').
+lit(eng,cnclcapt,'"&Cancel"').
+lit(eng,prtready,'"Is the printer ready? (Y/N)"').
+lit(eng,rwait,'"Enter=Continue  Esc=Return"').
+lit(eng,idate,'"Invalid Date"').
+lit(eng,isdone,'"Done"').
+lit(eng,nnul,'"Null values not allowed"').
+lit(eng,discard,'"Discard modifications"').
+lit(eng,logfull,'"Transaction Log Is Full, must commit or rollback"').
+lit(eng,opna,'"Option not Available"').
+lit(eng,savechanges,'"Do you want to save Changes ?"').
+lit(eng,mnuopts,[ '&File','E&xit','&Edit','Cu&t','&Copy','&Paste','&Delete','&Select All','&View','&Previous','&Next','&First','&Last','&Toolbar','&Status Bar','&Actions','&Select','&Refresh','&Delete Record','&Window','&Cascade','Arrange &Icons','&Help','&Contents','&Search...','&About','&Object','&Expand','Expand &All' ]).
+lit(eng,newmnuopts,[ '&File','&Close','E&xit','&Edit','Cu&t','&Copy','&Paste','&Delete','&Select All','&View','&Previous','&Next','&First','&Last','&Toolbar','&Status Bar','&Actions','&Select','&Refresh','&Delete Record','&Window','&Cascade','Arrange &Icons','&Help','&Contents','&Search...','&About','&Confirm' ]).
+lit(eng,invalid_dir,'''%1 is not a valid directory''').
+lit(eng,gxws_loadingfrom,'''Loading %1 from''').
+lit(eng,captionaddweb,'''Add''').
+lit(eng,captionupdateweb,'''Update''').
+lit(eng,captionconfirmweb,'''Confirm''').
+lit(eng,captiondeleteweb,'''Delete''').
+lit(eng,errtitle,'''Error''').
+lit(eng,err_details,'''&Details''').
+lit(eng,err_quit,'''&Quit''').
+lit(eng,err_retry,'''&Retry''').
+lit(eng,err_login_ldap,'''Invalid user/password''').
+lit(eng,runtimeerr,'''Runtime Application Exception''').
+lit(eng,runtimedb,'''An error ocurred while accessing the database.''').
+lit(eng,runtimeappsrv,'''An error ocurred while accessing the application server.''').
+lit(eng,colordialog,'''Select color''').
+lit(eng,dblogin,'''Server Login''').
+lit(eng,user,'''User name''').
+lit(eng,password,'''Password''').
+lit(eng,enteruser,'''Please type the user name''').
+lit(eng,enterpwd,'''Please type the password''').
+lit(eng,invaliddate,'''Invalid date''').
+lit(eng,reportdest,'''Select destination''').
+lit(eng,reportdest_printer,'''Printer''').
+lit(eng,reportdest_screen,'''Screen''').
+lit(eng,reportdest_file,'''File''').
+lit(eng,button_cancel,'''&Cancel''').
+lit(eng,button_ok,'''&Ok''').
+lit(eng,confirmtitle,'''Confirm''').
+lit(eng,msgtitle,'''Message''').
+lit(eng,yestext,'''Yes''').
+lit(eng,notext,'''No''').
+lit(eng,errconas,'''Error while connecting to Application Server or Database''').
+lit(eng,gxdbm,'''GeneXus Database Manager''').
+lit(eng,gxdbm_reorg,'''GeneXus Database Manager - Reorganization''').
+lit(eng,gxdbm_cpymdl,'''GeneXus Database Manager - Model Update''').
+lit(eng,confirm_cpymdl,'''You chose to update the GeneXus model. Are you sure?''').
+lit(eng,gxdbm_gxdb,'''GeneXus Database Manager - GXDB++ Update''').
+lit(eng,confirmgxdb,'''You chose to just update the GXDB++. Are you sure?''').
+lit(eng,noreorg,'''There are no reorganization specifications.''').
+lit(eng,nosuccess,'''The generation of the reorganization programs wasn''t successful. Try again.''').
+lit(eng,confirmreorg,'''Do you really want to execute the reorganization?''').
+lit(eng,dbnotreorg,'''The database is not reorganized.''').
+lit(eng,reorgpref,'''(Reorganize Server Tables preference = No)''').
+lit(eng,reorgsuccess,'''The reorganization process was successfully completed.''').
+lit(eng,reorgnotsuccess,'''The reorganization process was not successfully completed.''').
+lit(eng,reorgupdgxdb,'''Updating GXDB++ ...''').
+lit(eng,reorgrenre,'''Couldn''t rename reorganization flag''').
+lit(eng,reorgrengx,'''Couldn''t rename GXDB++ specification file''').
+lit(eng,reorgerrupdgxdb,'''Error while trying to update GXDB++ classes''').
+lit(eng,mnufile,'''&File''').
+lit(eng,mnuexit,'''E&xit''').
+lit(eng,mnuedit,'''&Edit''').
+lit(eng,mnucut,'''Cu&t''').
+lit(eng,mnucopy,'''&Copy''').
+lit(eng,mnupaste,'''&Paste''').
+lit(eng,mnudelete,'''&Delete''').
+lit(eng,mnuselectall,'''&Select All''').
+lit(eng,mnuview,'''&View''').
+lit(eng,mnuprev,'''&Previous''').
+lit(eng,mnunext,'''&Next''').
+lit(eng,mnufirst,'''&First''').
+lit(eng,mnulast,'''&Last''').
+lit(eng,mnutoolbar,'''&Toolbar''').
+lit(eng,mnustatusbar,'''&Status Bar''').
+lit(eng,mnuactions,'''&Actions''').
+lit(eng,mnuselect,'''&Select''').
+lit(eng,mnurefresh,'''&Refresh''').
+lit(eng,mnudelrec,'''&Delete Record''').
+lit(eng,mnuwindow,'''&Window''').
+lit(eng,mnuarrange,'''&Tile''').
+lit(eng,mnucascade,'''&Cascade''').
+lit(eng,mnuhelp,'''&Help''').
+lit(eng,mnuindex,'''&Contents''').
+lit(eng,mnusearch,'''&Search...''').
+lit(eng,mnuabout,'''&About''').
+lit(eng,mnuclose,'''&Close''').
+lit(eng,mnuconfirm,'''&Confirm''').
+lit(eng,toolcut,'''Cut''').
+lit(eng,toolcopy,'''Copy''').
+lit(eng,toolpaste,'''Paste''').
+lit(eng,toolrefresh,'''Refresh''').
+lit(eng,toolhelp,'''Help''').
+lit(eng,devmenutrn,'''Transactions''').
+lit(eng,devmenurpt,'''Reports''').
+lit(eng,devmenuproc,'''Procedures''').
+lit(eng,devmenuscr,'''Work Panels''').
+lit(eng,ids_column,'''Reorganization Output''').
+lit(eng,ids_execute,'''&Execute''').
+lit(eng,ids_failed,'''Reorganization Failed.''').
+lit(eng,ids_ok,'''Reorganization completed''').
+lit(eng,ids_title,'''GeneXus Reorganization''').
+lit(eng,ids_close,'''&Close''').
+lit(eng,ids_noneeded,'''No Reorganization Needed''').
+lit(eng,ids_needed,'''Reorganization Needed''').
+lit(eng,ids_run,'''Running...''').
+lit(eng,january,'''January''').
+lit(eng,february,'''February''').
+lit(eng,march,'''March''').
+lit(eng,april,'''April''').
+lit(eng,may,'''May''').
+lit(eng,june,'''June''').
+lit(eng,july,'''July''').
+lit(eng,august,'''August''').
+lit(eng,september,'''September''').
+lit(eng,october,'''October''').
+lit(eng,november,'''November''').
+lit(eng,december,'''December''').
+lit(eng,vsltlst,'"Selection list"').
+lit(eng,toolcalculator,'Calculator').
+lit(eng,toolcalendar,'Calendar').
+lit(eng,toolbrowsedata,'Browse data').
+lit(eng,toolselectall,'&Select All').
+lit(eng,tooldelete,'&Delete').
+lit(eng,mnu_previous,'&Previous').
+lit(eng,mnu_tile,'&Tile').
+lit(eng,mnu_contents,'Contents').
+lit(ita,datefmt,'SET DATE BRITISH').
+lit(ita,trnrpt,[ '''Altre Transazioni''','''Altri Report''','''Altre Procedure''','''Altri Work Panel''','''Altri Menù''' ]).
+lit(ita,mmmainmenu,[ '''Menù principale''','''Menù Base Dati''','''Transazioni''','''Report''','''Creazione Base Dati''','''Ricostruzione indici''','''Ricostruzione ridondanze''','''Riorganizzazione Base Dati''','''Esportazione applicazione''','''Uso interprete''','''Procedure''','''Work Panel''','''Menù''' ]).
+lit(ita,mmint,[ '''Integratore Menù GX''','''Menù''' ]).
+lit(ita,opt,'''Opzioni''').
+lit(ita,nomenu,'''Non esistono menù utente''').
+lit(ita,keys,'''Esc=Ritorno  F1=Aiuto''').
+lit(ita,prot,'''Prototipo''').
+lit(ita,prod,'''Produzione''').
+lit(ita,idx,'''Re-indicizzare la Base Dati?''').
+lit(ita,endofproc,'''Fine elaborazione''').
+lit(ita,mmmain,'''GENEXUS - Gestore di menù''').
+lit(ita,mmmdlname,'''Nome del modello''').
+lit(ita,mmmdldate,'''Data di creazione''').
+lit(ita,nooptions,'''Non esistono voci per questo menù''').
+lit(ita,more,'''Segue').
+lit(ita,deleinfo,'"Si vogliono davvero eliminare i dati?"').
+lit(ita,sltlst,'"Lista di Selezione"').
+lit(ita,poslst,'"Immettere tutti o una parte dei seguenti campi, quindi premere Invio."').
+lit(ita,selopt,[ '"Immettere le opzioni e premere Invio."','"Più:"' ]).
+lit(ita,lastrec,'"Questo è l''ultimo record che soddisfa la condizione"').
+lit(ita,firstrec,'"Questo è il primo record che soddisfa la condizione"').
+lit(ita,norectobrow,'"Non ci sono record che soddisfano la condizione"').
+lit(ita,filecrea,'"Creazione in corso della tabella %1 %2."').
+lit(ita,fileren,'"Ridenominazione in corso di %1; nuovo nome: %2"').
+lit(ita,dbcrea,'''Creazione in corso della Base Dati''').
+lit(ita,conftrn,'''Si conferma la transazione?''').
+lit(ita,waschg,'%1 è stata modificata.').
+lit(ita,tlotitle,'"Trasferimento dati a Lotus 1-2-3 (tm)"').
+lit(ita,creaindx,'"Creazione in corso dell''indice %1 ..."').
+lit(ita,recconv,'"record convertiti"').
+lit(ita,loaddata,'"Caricamento dati in"').
+lit(ita,nodelete,'"Eliminazione impossibile"').
+lit(ita,inex,'"Non trovato %1"').
+lit(ita,inex_browse,'". SI VUOLE VISUALIZZARE?"').
+lit(ita,queryok,'"Il criterio di selezione è corretto?"').
+lit(ita,failequal,'"Impossibile accedere al record"').
+lit(ita,yes,'"S"').
+lit(ita,no,'"N"').
+lit(ita,date,[ 'DD','MM','YY' ]).
+lit(ita,conf,'"I dati sono corretti? (S/N)"').
+lit(ita,rtop,'"Lista su stampante? (S/N)"').
+lit(ita,rptques,'"Lista su"').
+lit(ita,rptsel,'"Screen SCR;Stampante PRN;File FIL"').
+lit(ita,printing,'"Stampa in corso..."').
+lit(ita,canques,'"Annullare il programma? (S/N)"').
+lit(ita,canmsg,'"Programma annullato dall''utente"').
+lit(ita,wait,'"Premere Invio per continuare ..."').
+lit(ita,del,'"Eliminazione non valida. Ci sono informazioni in %1"').
+lit(ita,delcas,'"Eliminare tutte le informazioni in"').
+lit(ita,lock,[ '"Il record','è in fase di utilizzo"' ]).
+lit(ita,flock,[ '"La tabella','è in fase di utilizzo"' ]).
+lit(ita,help,'"Aiuto"').
+lit(ita,noupdate,'"Il record esiste già"').
+lit(ita,noinsert,'"Il record non esiste"').
+lit(ita,chg,'"Ignorare le modifiche? (S/N)"').
+lit(ita,mlmax,'"Il numero di righe supera il limite di').
+lit(ita,rgzlcktb,'"%1. Le tabelle da riorganizzare sono bloccate."').
+lit(ita,rgzdic,'"%1. Eliminazione in corso delle limitazioni di integrità referenziale."').
+lit(ita,rgzdropcol,'"Eliminazione in corso di atributti della tabella %1."').
+lit(ita,1000,'"Attenzione: Non si usa il RENAME. Userid non è ''%1''."').
+lit(ita,1001,'"Eliminazione in corso dell''indice %2, tabella %1."').
+lit(ita,1002,'"Eliminazione in corso della tabella %1."').
+lit(ita,1003,'"Assegnazione in corso dei valori iniziali per gli attributi della tabelle %1."').
+lit(ita,1004,'"%1 esiste già"').
+lit(ita,dropindx,'"Eliminazione in corso dell''indice %1 ..."').
+lit(ita,outrange,'"%1 fuori rango"').
+lit(ita,graph,'"Grafico"').
+lit(ita,print,'"Stampa"').
+lit(ita,strdate,'%3 %2 %1').
+lit(ita,runpgm,'"Esecuzione in corso del programma %1."').
+lit(ita,mbactions,'Scelte').
+lit(ita,mbview,'Visualizza').
+lit(ita,mbhelp,'Aiuto').
+lit(ita,mbview_first,'Primo').
+lit(ita,mbview_last,'Ultimo').
+lit(ita,mbview_previous,'Precedente').
+lit(ita,mbview_next,'Seguente').
+lit(ita,mbview_select,'Selezione').
+lit(ita,mbhelp_cont,'Contenuto').
+lit(ita,mbdelete,'Eliminare').
+lit(ita,mbrefresh,'Aggiornare').
+lit(ita,mbclose,'Uscire').
+lit(ita,mbconfirm,'Confermare').
+lit(ita,selone,'''Scegliere una voce e premere Invio.''').
+lit(ita,selnocor,'Scelta non corretta.').
+lit(ita,cmdandopt,'Non immettere una voce di menù e un comando contemporaneamente.').
+lit(ita,cmdlpmpt,'''Comando ===>''').
+lit(ita,deltbl,'''Eliminazione in corso della vecchia tabella %1 e creazione della nuova.''').
+lit(ita,rename,'''Ridenominazione in corso della tabella %1 in %2.''').
+lit(ita,confrpt,'''Premere Invio per iniziare l''elaborazione.''').
+lit(ita,nochgmode,'''Non è possibile cambiare la modalità richiesta.''').
+lit(ita,oneselonly,'''Non è possibile selezionare più di una entrata.''').
+lit(ita,eof,'''Inizio/fine dati.''').
+lit(ita,canctrn,'''Transazione annullata.''').
+lit(ita,confins,'''Inserimento dati. Premere Invio per confermare.''').
+lit(ita,confupd,'''Variazione dati. Premere Invio per confermare.''').
+lit(ita,confdel,'''Eliminazione in corso della vecchia tabella %1 e creazione della nuova.''').
+lit(ita,recins,'''I dati sono stati inseriti.''').
+lit(ita,recupd,'''I dati sono stati variati.''').
+lit(ita,recdel,'''I dati sono stati eliminati.''').
+lit(ita,notsame,'''I dati non appartengono al medesimo %1.''').
+lit(ita,faildel,'''Eliminaz.impossibile. Ci sono informazioni in %1''').
+lit(ita,noexist,'''Non esiste %1''').
+lit(ita,noaccept,'''Le modifiche apportate a %1 sono ignorate.''').
+lit(ita,failbool,'''%1 deve essere "S" o "N".''').
+lit(ita,wrongopt,'''Opzioni valide: "4" o " "''').
+lit(ita,dupkey,'''Dati già inseriti da altro utente.''').
+lit(ita,noprompt,'''Posizione del cursore non valida per la ricerca.''').
+lit(ita,spc,'Specificare il valore per la scelta').
+lit(ita,tcpe,'Immettere il criterio di scelta e premere Invio.').
+lit(ita,spv,'Scegliere un''entrata della lista').
+lit(ita,tope,'Immettere le opzioni e premere Invio.').
+lit(ita,oeqs,'1=Scegliere').
+lit(ita,datachg,'''Dati già modificati da altro utente (%1).''').
+lit(ita,icp,'''Posizione del cursore non valida.''').
+lit(ita,seloptwrong,'''Opzione non consentita.''').
+lit(ita,nomnuopt,'''Non ci sono voci per questo menù''').
+lit(ita,emptylist,'(La lista è vuota.)').
+lit(ita,callerr,'''Errore richiamo programma %1''').
+lit(ita,exist,'''Esiste già %1''').
+lit(ita,norecrpt,'Non ci sono dati per questo report.').
+lit(ita,0,'Invio').
+lit(ita,enter,'Elaboraz.').
+lit(ita,cancel,'Annullam.').
+lit(ita,display,'Visualizz.').
+lit(ita,insert,'Inserim.').
+lit(ita,update,'Variaz.').
+lit(ita,delete,'Eliminare').
+lit(ita,first,'Inizio').
+lit(ita,next,'Successivo').
+lit(ita,previous,'Precedente').
+lit(ita,prompt,'Ricerca').
+lit(ita,select,'Selezione').
+lit(ita,menu,'Menù').
+lit(ita,exit,'Fine').
+lit(ita,refresh,'Aggiornare').
+lit(ita,retrieve,'Ripresa').
+lit(ita,morekeys,'Altri tasti').
+lit(ita,badkey,'''Tasto di funzione non valido in questo momento.''').
+lit(ita,faildate,'''%1 non è una data/ora valida.''').
+lit(ita,nohelp,'Help non disponibile.').
+lit(ita,lockrcd,'''Un altro utente blocca l''accesso a''').
+lit(ita,readerr,[ '''Errore (''',''') elaborazione in corso...''' ]).
+lit(ita,usrcanc,'''Elaborazione annullata dall''utente.''').
+lit(ita,tipe,'Immettere il dato e premere Invio.').
+lit(ita,actions,'''Scelte''').
+lit(ita,view,'''Visual.''').
+lit(ita,rgzctnt,'"%1. Creazione in corso delle nuove tabelle e di quelle transitorie."').
+lit(ita,rgzrrpgm,'"%1. Esecuzione in corso dei programmi di riorganizzazione."').
+lit(ita,rgzrnmtbl,'"%1. Ridenominazione in corso delle tabelle."').
+lit(ita,rgzbldidx,'"%1. Costruzione in corso degli indici e delle restrizioni di integrità"').
+lit(ita,rgzdroptbl,'"%1. Eliminazione in corso degli attributi di tabelle e tabelle eliminate."').
+lit(ita,rgztbllck,'"Bloccaggio in corso della tabella %1."').
+lit(ita,rgzd1c,'"Eliminazione in corso delle restrizioni di integrità per la tabella %1."').
+lit(ita,recdeleted,'"Errore - Record eliminato da altro utente."').
+lit(ita,keynfound,'"Non si trovano dati con la chiave specificata."').
+lit(ita,unexp,'"Errore inatteso nel tentativo di aggiornare la base dati. Prego, riprovare."').
+lit(ita,sucadded,'"I dati sono stati aggiunti con sucesso."').
+lit(ita,sucupdated,'"I dati sono stati aggiornati."').
+lit(ita,sucdeleted,'"I dati sono stati eliminati."').
+lit(ita,captionadd,'"Inserim."').
+lit(ita,captionupdate,'"Variaz."').
+lit(ita,captiondelete,'"Eliminare"').
+lit(ita,captionconfirm,'"Confermare"').
+lit(ita,getbeforedlt,'"Prego, fare il ''Get'' dei dati prima di eliminarli."').
+lit(ita,getbeforeupd,'"Prego, fare il ''Get'' dei dati prima di aggiornarli."').
+lit(ita,mustconfirm,'"Confermare i dati, prego.."').
+lit(ita,confdelete,'"Confermare l''eliminazione dei dati."').
+lit(ita,baddatetime,'"%1 non è una data/hora valida."').
+lit(ita,badtime,'"%1 non è una hora valida."').
+lit(ita,badnum,'"Il valore non è un numero valido."').
+lit(ita,nomatch,'Nessun dato soddisfa le condizioni richieste.').
+lit(ita,pmterr,'Non esiste il programma per la ricerca %1').
+lit(ita,refcallerror,'Non esiste il programma per refcall %1').
+lit(ita,browse,'Visualizz.').
+lit(ita,setonlr,'Seton LR').
+lit(ita,badkeyrfr,'Tasto di funzione non valido ora: rivisual. in esecuz.').
+lit(ita,dateoutr,'%1 fuori rango (%2-%3).').
+lit(ita,arrayerror,'Indice fuori rango').
+lit(ita,callerror,'Errore richiamo programma').
+lit(ita,divideerror,'Divisione per zero').
+lit(ita,numericalerror,'Errore numerico').
+lit(ita,fileerror,'Errore file nell''archivio').
+lit(ita,code,codice).
+lit(ita,index,indice).
+lit(ita,ambiguousck,'"%1 è ambiguo"').
+lit(ita,refinterror,'"Errore di Integrità Referenziale sconosciuto"').
+lit(ita,makdsc,[ 'Menù principale' ]).
+lit(ita,dbcr1,'"Creazione della base dati"').
+lit(ita,dbcr2,'"Creazione delle tabelle"').
+lit(ita,dbcr3,'"Creazione degli indici"').
+lit(ita,dbcr4,'"Trasferimento dati"').
+lit(ita,dbcr5,'"Ridenominazione tabelle"').
+lit(ita,dbcr6,'"Aggiornamento del Modello"').
+lit(ita,dbcrtitle,'"GeneXus Gestore Base Dati"').
+lit(ita,tblcrea,'"Creazione Tabelle in corso"').
+lit(ita,idxcrea,'"Creazione degli Indici in corso"').
+lit(ita,reocom,'"Riorganizzazione terminata"').
+lit(ita,delreo,'"Eliminaz. specifiche di riorg. in corso di esecuz."').
+lit(ita,creinpro,'"Creazione Base Dati in corso di esecuzione ...').
+lit(ita,notcrespc,'"Non esistono le specifiche di creazione"').
+lit(ita,notreospc,'"Non esistono le specifiche di riorganizzazione"').
+lit(ita,asktocre,'"Si vuole davvero creare una struttura vuota della Base Dati?"').
+lit(ita,creok,'"E'' stata creata la Base Dati"').
+lit(ita,asktoreo,'"Si vuole riorganizzare la Base Dati?"').
+lit(ita,reoinpro,'"Riorganizzazione in corso di esecuzione ..."').
+lit(ita,okcapt,'"O&K"').
+lit(ita,genwith,'Generato con').
+lit(ita,aboutcapt,'About').
+lit(ita,sysinfo,'"&Info. di Sistema..."').
+lit(ita,notsysinfo,'Informazioni de Sistema non disponibile').
+lit(ita,cnclcapt,'"&Uscire"').
+lit(ita,prtready,'"La stampante è pronta? (S/N)"').
+lit(ita,rwait,'"Invio=Continua  Esc=Ritorna"').
+lit(ita,idate,'"Data non valida"').
+lit(ita,isdone,'"Fatto"').
+lit(ita,nnul,'"Non sono consentiti valori nulli"').
+lit(ita,discard,'"Ignorare le modifiche"').
+lit(ita,logfull,'"Transaction Log è pieno, eseguire commit o rollback"').
+lit(ita,opna,'"Non disponibile"').
+lit(ita,savechanges,'"Salvare i cambiamenti?"').
+lit(ita,mnuopts,[ '&File','&Esci','&Modifica','Ta&glia','&Copia','&Incola','&Elimina','Seleziona &Tutto','&Visualizza','&Precedente','&Successivo','&Inizio','&Fine','&Barra degli Strumenti','B&arra di Stato','A&zioni','&Seleziona','&Rivisualizza','&Elimina Record','Fi&nestra','Sovra&pponi','&Disponi icone','&Aiuto','&Contenuto','C&erca ...','Informazioni &su','&Oggetto','&Espandi','Espandi &tutto' ]).
+lit(ita,newmnuopts,[ '&File','&Chiudere','&Esci','&Modifica','Ta&glia','&Copia','&Incola','&Elimina','Seleziona &Tutto','&Visualizza','&Precedente','&Successivo','&Inizio','&Fine','&Barra degli Strumenti','B&arra di Stato','A&zioni','&Seleziona','&Rivisualizza','&Elimina Record','Fi&nestra','Sovra&pponi','&Disponi icone','&Aiuto','&Contenuto','C&erca ...','Informazioni &su','Confir&ma' ]).
+lit(ita,invalid_dir,'''%1 non è una directory valida''').
+lit(ita,gxws_loadingfrom,'''Caricamento di %1 da''').
+lit(ita,captionaddweb,'''Inserisci''').
+lit(ita,captionupdateweb,'''Aggiorna''').
+lit(ita,captionconfirmweb,'''Conferma''').
+lit(ita,captiondeleteweb,'''Elimina''').
+lit(ita,errtitle,'''Errore''').
+lit(ita,err_details,'''&Dettagli''').
+lit(ita,err_quit,'''&Esci''').
+lit(ita,err_retry,'''&Riprova''').
+lit(ita,err_login_ldap,'''Utente/Password non validi''').
+lit(ita,runtimeerr,'''Errore di Esecuzione''').
+lit(ita,runtimedb,'''E'' occorso un errore nell''accedere alla Base Dati.''').
+lit(ita,runtimeappsrv,'''E'' occorso un errore nell''accedere al server delle applicazioni.''').
+lit(ita,colordialog,'''Selezionare un colore''').
+lit(ita,dblogin,'''Connessione al server''').
+lit(ita,user,'''Utente''').
+lit(ita,password,'''Password''').
+lit(ita,enteruser,'''Immettere il nome dell''utente''').
+lit(ita,enterpwd,'''Immettere la password''').
+lit(ita,invaliddate,'''Data non valida.''').
+lit(ita,reportdest,'''Scegliere uscita''').
+lit(ita,reportdest_printer,'''Stampante''').
+lit(ita,reportdest_screen,'''Video''').
+lit(ita,reportdest_file,'''File''').
+lit(ita,button_cancel,'''&Uscire''').
+lit(ita,button_ok,'''&Confermare''').
+lit(ita,confirmtitle,'''Confermare''').
+lit(ita,msgtitle,'''Messaggio''').
+lit(ita,yestext,'''Si''').
+lit(ita,notext,'''No''').
+lit(ita,errconas,'''Non è possibile collegarsi al server delle applicazioni o alla base dati''').
+lit(ita,gxdbm,'''Manutenzione della base dati''').
+lit(ita,gxdbm_reorg,'''Manutenzione della base dati''').
+lit(ita,gxdbm_cpymdl,'''GeneXus Database Manager - Model Update''').
+lit(ita,confirm_cpymdl,'''E'' stato scelto di aggiornare il modello GeneXus. Si conferma?''').
+lit(ita,gxdbm_gxdb,'''Aggiornamento di GXDB++''').
+lit(ita,confirmgxdb,'''Ha selezionatto aggiornar di classi GXDB++. E'' certo?''').
+lit(ita,noreorg,'''Non ci sono specifiche di riorganizzazione.''').
+lit(ita,nosuccess,'''La generazione dei programmi di riorganizzazione non è andata a buon fine. Riprova.''').
+lit(ita,confirmreorg,'''E'' certo che si vuole riorganizzare la base dati?''').
+lit(ita,dbnotreorg,'''La base dati non deve essere riorganizzata.''').
+lit(ita,reorgpref,'''(preference Reorganize Server Tables = No)''').
+lit(ita,reorgsuccess,'''Il processo di riorganizzazione è andato a buon fine.''').
+lit(ita,reorgnotsuccess,'''Il processo di riorganizzazione non è andato a buon fine.''').
+lit(ita,reorgupdgxdb,'''GXDB++ in corso di aggiornamento ...''').
+lit(ita,reorgrenre,'''Non è stato possibile ridenominare il flag di riorganizzazione''').
+lit(ita,reorgrengx,'''Non è stato possibile ridenominare il file di specifica di GXDB++''').
+lit(ita,reorgerrupdgxdb,'''Errore durante l''aggiornamento delle classi GXDB++''').
+lit(ita,mnufile,'''&File''').
+lit(ita,mnuexit,'''&Esci''').
+lit(ita,mnuedit,'''&Modifica''').
+lit(ita,mnucut,'''Ta&glia''').
+lit(ita,mnucopy,'''&Copia''').
+lit(ita,mnupaste,'''&Incola''').
+lit(ita,mnudelete,'''&Elimina''').
+lit(ita,mnuselectall,'''Seleziona &Tutto''').
+lit(ita,mnuview,'''&Visualizza''').
+lit(ita,mnuprev,'''&Precedente''').
+lit(ita,mnunext,'''&Successivo''').
+lit(ita,mnufirst,'''&Inizio''').
+lit(ita,mnulast,'''&Fine''').
+lit(ita,mnutoolbar,'''&Barra degli Strumenti''').
+lit(ita,mnustatusbar,'''B&arra di Stato''').
+lit(ita,mnuactions,'''A&zioni''').
+lit(ita,mnuselect,'''&Seleziona''').
+lit(ita,mnurefresh,'''&Rivisualizza''').
+lit(ita,mnudelrec,'''E&liminare record''').
+lit(ita,mnuwindow,'''Fi&nestra''').
+lit(ita,mnuarrange,'''&Disponi icone''').
+lit(ita,mnucascade,'''Sovra&pponi''').
+lit(ita,mnuhelp,'''&Aiuto''').
+lit(ita,mnuindex,'''&Contenuto''').
+lit(ita,mnusearch,'''C&erca ...''').
+lit(ita,mnuabout,'''Informazioni &su''').
+lit(ita,mnuclose,'''&Chiudere''').
+lit(ita,mnuconfirm,'''Confir&ma''').
+lit(ita,toolcut,'''Taglia''').
+lit(ita,toolcopy,'''Copia''').
+lit(ita,toolpaste,'''Incolla''').
+lit(ita,toolrefresh,'''Aggiornare''').
+lit(ita,toolhelp,'''Aiuto''').
+lit(ita,devmenutrn,'''Transazioni''').
+lit(ita,devmenurpt,'''Report''').
+lit(ita,devmenuproc,'''Procedure''').
+lit(ita,devmenuscr,'''Work Panel''').
+lit(ita,ids_column,'''Risultato della riorganizzazione''').
+lit(ita,ids_execute,'''&Esequire''').
+lit(ita,ids_failed,'''La riorganizzazione non è andata a buon fine.''').
+lit(ita,ids_ok,'''La riorganizzazione è andata a buon fine.''').
+lit(ita,ids_title,'''Riorganizzazione GeneXus''').
+lit(ita,ids_close,'''E&sci''').
+lit(ita,ids_noneeded,'''La riorganizzazione non è necessaria''').
+lit(ita,ids_needed,'''La riorganizzazione è necessaria''').
+lit(ita,ids_run,'''Esecuzione in corso...''').
+lit(ita,january,'''Gennaio''').
+lit(ita,february,'''Febbraio''').
+lit(ita,march,'''Marzo''').
+lit(ita,april,'''Aprile''').
+lit(ita,may,'''Maggio''').
+lit(ita,june,'''Giugno''').
+lit(ita,july,'''Luglio''').
+lit(ita,august,'''Agosto''').
+lit(ita,september,'''Settembre''').
+lit(ita,october,'''Ottobre''').
+lit(ita,november,'''Novembre''').
+lit(ita,december,'''Dicembre''').
+lit(ita,vsltlst,'"Selection list"').
+lit(ita,toolcalculator,'Calcolatrice').
+lit(ita,toolcalendar,'Calendario').
+lit(ita,toolbrowsedata,'Browse data').
+lit(ita,toolselectall,'Seleziona &Tutto').
+lit(ita,tooldelete,'&Elimina').
+lit(ita,mnu_previous,'&Precedente').
+lit(ita,mnu_tile,'&Disponi icone').
+lit(ita,mnu_contents,'Contenuto').
+lit(por,datefmt,'SET DATE BRITISH').
+lit(por,trnrpt,[ '''Outras Transações''','''Outros Relatórios''','''Outros Procedimentos''','''Outros Work Panels''','''Outros Menus''' ]).
+lit(por,mmmainmenu,[ '''Menu principal''','''Menu do banco de dados''','''Transações''','''Relatórios''','''Criar base de dados''','''Recriar índices''','''Recriar redundância''','''Reorganizar base de dados''','''Exportar aplicacação''','''Intérprete''','''Procedimentos''','''Work Panels''','''Menus''' ]).
+lit(por,mmint,[ '''Integrador de Menus GX''','''Menus''' ]).
+lit(por,opt,'''Opções''').
+lit(por,nomenu,'''Não existem menus do usuário''').
+lit(por,keys,'''Esc=Retornar  F1=Ajuda''').
+lit(por,prot,'''Protótipo''').
+lit(por,prod,'''Produção''').
+lit(por,idx,'''Reindexa a base de dados?''').
+lit(por,endofproc,'''Processo terminado''').
+lit(por,mmmain,'''GENEXUS - Gerenciador do menu''').
+lit(por,mmmdlname,'''Nome do modelo''').
+lit(por,mmmdldate,'''Data de criação''').
+lit(por,nooptions,'''Não existem opções para este menu''').
+lit(por,more,'''Outras').
+lit(por,deleinfo,'"Deseja realmente eliminar estes dados?"').
+lit(por,sltlst,'"Lista de Seleção"').
+lit(por,poslst,'"Digite todos ou parte de um dos seguintes campos, depois pressione Enter."').
+lit(por,selopt,[ '"Escolha um dos seguintes, depois pressione Enter."','"Mais:"' ]).
+lit(por,lastrec,'"Este é o último registro que cumpre a condição"').
+lit(por,firstrec,'"Este é o primeiro registro que cumpre a condição"').
+lit(por,norectobrow,'"Não existem registros que cumpram a condição"').
+lit(por,filecrea,'"Criando a tabela %1 %2."').
+lit(por,fileren,'"Renomeando %1 para %2"').
+lit(por,dbcrea,'''Criando a base de dados''').
+lit(por,conftrn,'''Confirma a transação?''').
+lit(por,waschg,'Tabela %1 foi modificada.').
+lit(por,tlotitle,'"Transferência de dados para Lotus 1-2-3 (tm)"').
+lit(por,creaindx,'"Criando o índice %1 ..."').
+lit(por,recconv,'"registros convertidos"').
+lit(por,loaddata,'"Carregando informação em"').
+lit(por,nodelete,'"Não é possível a eliminação"').
+lit(por,inex,'"Não existe %1"').
+lit(por,inex_browse,'". DESEJA VISUALIZAR?"').
+lit(por,queryok,'"O critério de seleção é correto?"').
+lit(por,failequal,'"Não é possível acessar o registro"').
+lit(por,yes,'"S"').
+lit(por,no,'"N"').
+lit(por,date,[ 'DD','MM','YY' ]).
+lit(por,conf,'"Os dados estão corretos? (S/N)"').
+lit(por,rtop,'"Listar na impressora? (S/N)"').
+lit(por,rptques,'"Listar na"').
+lit(por,rptsel,'"Tela SCR;Impressora PRN;Arquivo FIL"').
+lit(por,printing,'"Imprimindo..."').
+lit(por,canques,'"Cancelar o programa? (S/N)"').
+lit(por,canmsg,'"Programa cancelado pelo usuário"').
+lit(por,wait,'"Pressione Enter para continuar ..."').
+lit(por,del,'"Eliminação inválida, existe informação em %1"').
+lit(por,delcas,'"Eliminar toda a informação em"').
+lit(por,lock,[ '"O registro','está sendo utilizado"' ]).
+lit(por,flock,[ '"O arquivo','está sendo utilizado"' ]).
+lit(por,help,'"Ajuda"').
+lit(por,noupdate,'"Já existe o registro"').
+lit(por,noinsert,'"Registro não encontrado"').
+lit(por,chg,'"Rejeita mudanças? (S/N)"').
+lit(por,mlmax,'"Número de linhas excedeu o limite de').
+lit(por,rgzlcktb,'"%1. Tabelas sendo bloqueadas para reorganização."').
+lit(por,rgzdic,'"%1. Eliminando restrições de integridade referencial."').
+lit(por,rgzdropcol,'"Eliminando atributos da tabela %1."').
+lit(por,1000,'"Cuidado: RENAME não usado. Usuário não é ''%1''."').
+lit(por,1001,'"Eliminando índice %2 da tabela %1."').
+lit(por,1002,'"Eliminando tabela %1."').
+lit(por,1003,'"Atualizando os valores iniciais dos atributos da tabela %1."').
+lit(por,1004,'"Já existe %1"').
+lit(por,dropindx,'"Eliminando o índice %1 ..."').
+lit(por,outrange,'"%1 fora da faixa"').
+lit(por,graph,'"Gráfico"').
+lit(por,print,'"Imprimir"').
+lit(por,strdate,'%3 de %2 de %1').
+lit(por,runpgm,'"Rodando programa %1."').
+lit(por,mbactions,'Ações').
+lit(por,mbview,'Ver').
+lit(por,mbhelp,'Ajuda').
+lit(por,mbview_first,'Primeiro').
+lit(por,mbview_last,Último).
+lit(por,mbview_previous,'Anterior').
+lit(por,mbview_next,'Próximo').
+lit(por,mbview_select,'Selecionar').
+lit(por,mbhelp_cont,'Conteúdo').
+lit(por,mbdelete,'Eliminar').
+lit(por,mbrefresh,'Renovar').
+lit(por,mbclose,'Fechar').
+lit(por,mbconfirm,'Confirmar').
+lit(por,selone,'''Selecione uma opção. Tecle Enter.''').
+lit(por,selnocor,'Seleção de menu incorreta.').
+lit(por,cmdandopt,'Não pode selecionar uma opção de menu e especificar comando.').
+lit(por,cmdlpmpt,'''Comando ===>''').
+lit(por,deltbl,'''Eliminando antiga tabela %1 e criando nova.''').
+lit(por,rename,'''Renomeando tabela %1 para %2.''').
+lit(por,confrpt,'''Tecle Enter para começar o processo.''').
+lit(por,nochgmode,'''Não é possivel trocar para a modalidade solicitada.''').
+lit(por,oneselonly,'''Não e possível a seleção de mais de um item da lista.''').
+lit(por,eof,'''Inicio/fim dos dados.''').
+lit(por,canctrn,'''Transação cancelada.''').
+lit(por,confins,'''Inserindo dados. Tecle Enter para confirmar.''').
+lit(por,confupd,'''Modificando dados. Tecle Enter para confirmar.''').
+lit(por,confdel,'''Eliminando dados. Tecle Enter para confirmar.''').
+lit(por,recins,'''Os dados foram inseridos.''').
+lit(por,recupd,'''Os dados foram modificados.''').
+lit(por,recdel,'''Os dados foram eliminados.''').
+lit(por,notsame,'''Os dados não pertencem ao mesmo %1.''').
+lit(por,faildel,'''Eliminação inválida. Existe informação em %1''').
+lit(por,noexist,'''Não existe %1''').
+lit(por,noaccept,'''Alteraçöes em %1 serão ignoradas.''').
+lit(por,failbool,'''%1 válido somente "S" ou "N".''').
+lit(por,wrongopt,'''Opçöes válidas: "4" ou espaço''').
+lit(por,dupkey,'''Dados já inseridos por outro usuário.''').
+lit(por,noprompt,'''Posição do cursor inválida para prompt.''').
+lit(por,spc,'Especificar valor para seleção').
+lit(por,tcpe,'Informe critério de seleção, tecle Enter.').
+lit(por,spv,'Selecionar item da lista').
+lit(por,tope,'Informe opçöes, tecle Enter.').
+lit(por,oeqs,'1=Selecionar').
+lit(por,datachg,'''Dados já modificados por outro usuário (%1).''').
+lit(por,icp,'''Posição do cursor inválida.''').
+lit(por,seloptwrong,'''Opçao não permitida.''').
+lit(por,nomnuopt,'''Não há opçöes neste menu''').
+lit(por,emptylist,'(A lista está vazia.)').
+lit(por,callerr,'''Erro rodando programa %1''').
+lit(por,exist,'''Já existe %1''').
+lit(por,norecrpt,'Não há dados que correspondam ao relatório.').
+lit(por,0,'Enter').
+lit(por,enter,'Processa').
+lit(por,cancel,'Cancela').
+lit(por,display,'Mostrar').
+lit(por,insert,'Insere').
+lit(por,update,'Modifica').
+lit(por,delete,'Eliminar').
+lit(por,first,'Primeiro').
+lit(por,next,'Próximo').
+lit(por,previous,'Anterior').
+lit(por,prompt,'Prompt').
+lit(por,select,'Selecionar').
+lit(por,menu,'Barra de açöes').
+lit(por,exit,'Sair').
+lit(por,refresh,'Renovar').
+lit(por,retrieve,'Recuperar').
+lit(por,morekeys,'Mais teclas').
+lit(por,badkey,'''Tecla de função não é válida neste momento.''').
+lit(por,faildate,'''%1 e uma data/hora inválida.''').
+lit(por,nohelp,'Não tem ajuda disponivel.').
+lit(por,lockrcd,'''Outro usuário bloqueia o acesso a''').
+lit(por,readerr,[ '''Erro (''',''') processando''' ]).
+lit(por,usrcanc,'''Proceso cancelado pelo usuário.''').
+lit(por,tipe,'Indique informação, tecle Enter.').
+lit(por,actions,'''Ações''').
+lit(por,view,'''Ver''').
+lit(por,rgzctnt,'"%1. Criando tabelas novas e temporarias."').
+lit(por,rgzrrpgm,'"%1. Rodando os programas de reorganização."').
+lit(por,rgzrnmtbl,'"%1. Renomeando tabelas."').
+lit(por,rgzbldidx,'"%1. Criando índices e restrições de integridade."').
+lit(por,rgzdroptbl,'"%1. Deletando atributos da estrutura das tabelas e removendo tabelas."').
+lit(por,rgztbllck,'"Tabela %1 sendo bloqueada."').
+lit(por,rgzd1c,'"Eliminando restrições de integridade referencial na tabela %1."').
+lit(por,recdeleted,'"Erro - Registro foi deletado por outro usuário."').
+lit(por,keynfound,'"Dados com a chave específicada não foram encontrados."').
+lit(por,unexp,'"Um erro inesperado foi encontrado enquanto estava atualizando os dados. Por favor, tente novamente."').
+lit(por,sucadded,'"Os dados foram inseridos com sucesso."').
+lit(por,sucupdated,'"Os dados foram atualizados com sucesso."').
+lit(por,sucdeleted,'"Os dados foram deletados com sucesso."').
+lit(por,captionadd,'"Insere"').
+lit(por,captionupdate,'"Modifica"').
+lit(por,captiondelete,'"Eliminar"').
+lit(por,captionconfirm,'"Confirmar"').
+lit(por,getbeforedlt,'"Por favor, carregue os dados antes de tentar deletá-lo."').
+lit(por,getbeforeupd,'"Por favor, carregue os dados antes de tentar atualizá-lo."').
+lit(por,mustconfirm,'"Por favor, confirme os dados."').
+lit(por,confdelete,'"Confirme a eliminação dos dados."').
+lit(por,baddatetime,'"%1 e uma data e hora inválida."').
+lit(por,badtime,'"%1 não é uma hora válida."').
+lit(por,badnum,'"O valor não e um número correto."').
+lit(por,nomatch,'Não há dados que cumpram a condição.').
+lit(por,pmterr,'Não existe o programa para prompt %1').
+lit(por,refcallerror,'Não existe o programa para refcall %1').
+lit(por,browse,'Visualiza').
+lit(por,badkeyrfr,'Tecla não é válida neste momento.Renovação pendente').
+lit(por,dateoutr,'%1 fora de rango (%2-%3).').
+lit(por,arrayerror,'Indice de vetor ou matriz fora da faixa').
+lit(por,callerror,'Erro na chamada ao programa').
+lit(por,divideerror,'Divisão por zero').
+lit(por,numericalerror,'Erro numérico').
+lit(por,fileerror,'Erro de arquivo em').
+lit(por,code,'Código').
+lit(por,index,índice).
+lit(por,ambiguousck,'"%1 é ambíguo"').
+lit(por,refinterror,'"Unknown Referntial Integrity Error"').
+lit(por,makdsc,[ 'Menu principal' ]).
+lit(por,dbcr1,'"Criação da base de dados"').
+lit(por,dbcr2,'"Criação das tabelas"').
+lit(por,dbcr3,'"Criação dos Índices"').
+lit(por,dbcr4,'"Transferência de dados"').
+lit(por,dbcr5,'"Renomear Tabelas"').
+lit(por,dbcr6,'"Atualização do Modelo"').
+lit(por,dbcrtitle,'"Gerenciador GeneXus da Base de Dados"').
+lit(por,tblcrea,'"Criando as Tabelas"').
+lit(por,idxcrea,'"Criando os Índices"').
+lit(por,reocom,'"Reorganização terminada"').
+lit(por,delreo,'"Eliminando as especificações de reorganização"').
+lit(por,creinpro,'"Criação da base de dados em processo ...').
+lit(por,notcrespc,'"Não se encontraram especificações de criação"').
+lit(por,notreospc,'"Não existem especificações de reorganização"').
+lit(por,asktocre,'"Realmente deseja criar uma estrutura vazia?"').
+lit(por,creok,'"Base de Dados Criada"').
+lit(por,asktoreo,'"Reorganiza a base de dados?"').
+lit(por,reoinpro,'"Reorganização em processo ..."').
+lit(por,okcapt,'"O&K"').
+lit(por,genwith,'Gerado por').
+lit(por,aboutcapt,'Sobre').
+lit(por,sysinfo,'"&Info. de Sistema..."').
+lit(por,notsysinfo,'Informação de Sistema não disponível').
+lit(por,cnclcapt,'"&Fechar"').
+lit(por,prtready,'"A impressora está pronta? (S/N)"').
+lit(por,rwait,'"Intro=Continua  Esc=Retorna"').
+lit(por,idate,'"Data inválida"').
+lit(por,isdone,'"Feito"').
+lit(por,nnul,'"Não são permitidos valores nulos"').
+lit(por,discard,'"Rejeitar modificações"').
+lit(por,logfull,'"Transaction Log Is Full, must commit or rollback"').
+lit(por,opna,'"Não disponível"').
+lit(por,savechanges,'"¿Deseja salvar mudanças ?"').
+lit(por,mnuopts,[ '&Arquivo','&Sair','&Editar','Recor&tar','&Copiar','&Incolla','&Apagar','Selecionar &Tudo','&Visualizar','&Anterior','A&vançar','&Primeiro','&Último','&Barra de Ferramentas','&Barra de Status','&Ações','&Selecionar','&Renovar','&Eliminar Registro','&Janela','&Cascata','Organizar &Ícones','&Ajuda','&Conteúdo','&Procurar...','&Sobre','&Objeto','&Expandir','Expand &All' ]).
+lit(por,newmnuopts,[ '&Arquivo','&Fechar','&Sair','&Editar','Recor&tar','&Copiar','&Incolla','&Apagar','Selecionar &Tudo','&Visualizar','&Anterior','A&vançar','&Primeiro','&Último','&Barra de Ferramentas','&Barra de Status','&Ações','&Selecionar','&Renovar','&Eliminar Registro','&Janela','&Cascata','Organizar &Ícones','&Ajuda','&Conteúdo','&Procurar...','&Sobre','Confer&ma' ]).
+lit(por,invalid_dir,'''%1 não é um diretório válido''').
+lit(por,gxws_loadingfrom,'''Carregando %1 desde''').
+lit(por,captionaddweb,'''&Inserir''').
+lit(por,captionupdateweb,'''&Atualizar''').
+lit(por,captionconfirmweb,'''&Confirmar''').
+lit(por,captiondeleteweb,'''&Eliminar''').
+lit(por,errtitle,'''Error''').
+lit(por,err_details,'''&Detalhes''').
+lit(por,err_quit,'''&Sair''').
+lit(por,err_retry,'''&Tentar novamente''').
+lit(por,err_login_ldap,'''Usuário/Senha inválidos''').
+lit(por,runtimeerr,'''Error en tempo de execução''').
+lit(por,runtimedb,'''Ocorreu um erro ao acessar a base de dados.''').
+lit(por,runtimeappsrv,'''Ocorreu um erro ao acessar o servidor de aplicações.''').
+lit(por,colordialog,'''Selecione um cor''').
+lit(por,dblogin,'''Conexão ao servidor''').
+lit(por,user,'''Nome do usuário''').
+lit(por,password,'''Senha''').
+lit(por,enteruser,'''Por favor ingresse o nome do usuário''').
+lit(por,enterpwd,'''Por favor ingresse a senha''').
+lit(por,invaliddate,'''Data inválida.''').
+lit(por,reportdest,'''Selecione destino''').
+lit(por,reportdest_printer,'''Impressora''').
+lit(por,reportdest_screen,'''Tela''').
+lit(por,reportdest_file,'''Arquivo''').
+lit(por,button_cancel,'''&Fechar''').
+lit(por,button_ok,'''&Confirmar''').
+lit(por,confirmtitle,'''Confirmar''').
+lit(por,msgtitle,'''Mensagem''').
+lit(por,yestext,'''Sim''').
+lit(por,notext,'''No''').
+lit(por,errconas,'''Erro durante conexão com o Servidor de Aplicação ou Base de Dados''').
+lit(por,gxdbm,'''Administrador de Base de Dados do GeneXus''').
+lit(por,gxdbm_reorg,'''Administrador de Base de Dados do GeneXus''').
+lit(por,gxdbm_cpymdl,'''Atualização do modelo GeneXus''').
+lit(por,confirm_cpymdl,'''Foi selecionado atualizar o modelo GeneXus. Tem certeza?''').
+lit(por,gxdbm_gxdb,'''Atualização das GXDB++''').
+lit(por,confirmgxdb,'''Foi selecionado atualizar as GXDB++. Tem certeza?''').
+lit(por,noreorg,'''Não existem especifições de reorganização.''').
+lit(por,nosuccess,'''A geração dos programas de reorganização não foi completada com sucesso. Tente novamente.''').
+lit(por,confirmreorg,'''Você realmente quer executar a reorganização?''').
+lit(por,dbnotreorg,'''A base de dados não está reorganizada.''').
+lit(por,reorgpref,'''(Propriedade Reorganizar Tabela do Servidor = No)''').
+lit(por,reorgsuccess,'''O processo de reorganização foi completado com sucesso.''').
+lit(por,reorgnotsuccess,'''O processo de reorganização não foi completado com sucesso.''').
+lit(por,reorgupdgxdb,'''Atualizando GXDB++ ...''').
+lit(por,reorgrenre,'''Não é possível renomear o indicador de reorganização''').
+lit(por,reorgrengx,'''Não é possível renomear o arquivo de especificação GXDB++''').
+lit(por,reorgerrupdgxdb,'''Erro durante tentativa de atualizar as classess do GXDB++''').
+lit(por,mnufile,'''&Arquivo''').
+lit(por,mnuexit,'''&Sair''').
+lit(por,mnuedit,'''&Editar''').
+lit(por,mnucut,'''Recor&tar''').
+lit(por,mnucopy,'''&Copiar''').
+lit(por,mnupaste,'''&Incolla''').
+lit(por,mnudelete,'''&Apagar''').
+lit(por,mnuselectall,'''Selecionar &Tudo''').
+lit(por,mnuview,'''&Visualizar''').
+lit(por,mnuprev,'''&Anterior''').
+lit(por,mnunext,'''A&vançar''').
+lit(por,mnufirst,'''&Primeiro''').
+lit(por,mnulast,'''&Último''').
+lit(por,mnutoolbar,'''&Barra de Ferramentas''').
+lit(por,mnustatusbar,'''&Barra de Status''').
+lit(por,mnuactions,'''&Ações''').
+lit(por,mnuselect,'''&Selecionar''').
+lit(por,mnurefresh,'''&Renovar''').
+lit(por,mnudelrec,'''&Eliminar Registro''').
+lit(por,mnuwindow,'''&Janela''').
+lit(por,mnuarrange,'''Organizar Í&cones''').
+lit(por,mnucascade,'''&Cascata''').
+lit(por,mnuhelp,'''&Ajuda''').
+lit(por,mnuindex,'''&Conteúdo''').
+lit(por,mnusearch,'''&Procurar...''').
+lit(por,mnuabout,'''&Sobre''').
+lit(por,mnuclose,'''&Fechar''').
+lit(por,mnuconfirm,'''Confer&ma''').
+lit(por,toolcut,'''Recortar''').
+lit(por,toolcopy,'''Copiar''').
+lit(por,toolpaste,'''Colar''').
+lit(por,toolrefresh,'''Renovar''').
+lit(por,toolhelp,'''Ajuda''').
+lit(por,devmenutrn,'''Transações''').
+lit(por,devmenurpt,'''Relatórios''').
+lit(por,devmenuproc,'''Procedimentos''').
+lit(por,devmenuscr,'''Work Panels''').
+lit(por,ids_column,'''Resultado da reorganização''').
+lit(por,ids_execute,'''&Executar''').
+lit(por,ids_failed,'''A reorganização não foi completada.''').
+lit(por,ids_ok,'''A reorganização foi completada.''').
+lit(por,ids_title,'''Reorganização GeneXus''').
+lit(por,ids_close,'''&Fechar''').
+lit(por,ids_noneeded,'''Reorganização não é necessária''').
+lit(por,ids_needed,'''Reorganização necessária''').
+lit(por,ids_run,'''Executando...''').
+lit(por,january,'''Janeiro''').
+lit(por,february,'''Fevereiro''').
+lit(por,march,'''Março''').
+lit(por,april,'''Abril''').
+lit(por,may,'''Maio''').
+lit(por,june,'''Junho''').
+lit(por,july,'''Julho''').
+lit(por,august,'''Agosto''').
+lit(por,september,'''Setembro''').
+lit(por,october,'''Outubro''').
+lit(por,november,'''Novembro''').
+lit(por,december,'''Dezembro''').
+lit(por,vsltlst,'"Lista de Seleção"').
+lit(por,toolcalculator,'Calculadora').
+lit(por,toolcalendar,'Calendário').
+lit(por,toolbrowsedata,'Selecionar Dado').
+lit(por,toolselectall,'Selecionar &Tudo').
+lit(por,tooldelete,'&Apagar').
+lit(por,mnu_previous,'&Anterior').
+lit(por,mnu_tile,'Organizar Í&cones').
+lit(por,mnu_contents,'Conteúdo').
+lit(chs,trnrpt,[ '''ÒE?''','''ˆó±E''','''GXM_trnrpt03''','''GXM_trnrpt04''','''GXM_trnrpt05''' ]).
+lit(chs,mmmainmenu,[ '''Ö÷²Ëµ¥''','''"ÒE?''','''"±¨±E''','''"Éú³ÉÊı¾İ¿E''','''ÖØ½¨Ë÷Òı''','''"¸EÂÊı¾İ¿E''','''"Ó¦ÓÃÏµÍ³»ã³E''','''·µ»Ø interpreter''','''GXM_mmmainmenu09''','''GXM_mmmainmenu10''','''GXM_mmmainmenu11''','''GXM_mmmainmenu12''','''GXM_mmmainmenu13''' ]).
+lit(chs,mmint,[ '''GXM_mmint01''','''GXM_mmint02''' ]).
+lit(chs,endofproc,'''´¦Àí½áÊø''').
+lit(chs,mmmain,'''GENEXUS - ²Ëµ¥¹ÜÀíÆ÷''').
+lit(chs,mmmdlname,'''Ä£ĞÍÃû³Æ''').
+lit(chs,mmmdldate,'''ÒÑ½¨Á¢ÈÕÆÚ''').
+lit(chs,nooptions,'''±¾²Ëµ¥Ã»ÓĞ¿ÉÑ¡Ïî''').
+lit(chs,more,¸ü¶à).
+lit(chs,deleinfo,'"È·¶¨Òª„h³ı?"').
+lit(chs,sltlst,'"Ñ¡ÔñÇåµ¥"').
+lit(chs,poslst,'"ÊäÈëÒÔÏÂÈ«²¿»ò²¿·ÖµÄ×Ö¶Îºó£¬°´È·ÈÏ¼ü"').
+lit(chs,selopt,[ '"Ñ¡ÔñÈçÏÂÆäÖĞÖ®Ò», È»ºó°´»Ø³µ."','"½Ï¶E"' ]).
+lit(chs,lastrec,'"×îºóÒ»±Ê·ûºÏ¼ÇÂ¼"').
+lit(chs,firstrec,'"µÚÒ»±Ê·ûºÏ¼ÇÂ¼"').
+lit(chs,norectobrow,'"Ã»ÓĞ·ûºÏ¼ÇÂ¼"').
+lit(chs,filecrea,'"ÕıÔÚ½¨Á¢±í%1%2"').
+lit(chs,fileren,'"ÕıÔÚ½« %1 ¸üÃûÎª %2"').
+lit(chs,dbcrea,'''Êı¾İ¿âÕıÔÚ½¨Á¢ÖĞ''').
+lit(chs,conftrn,'''È·ÈÏ?''').
+lit(chs,waschg,'%1 ÒÑ±»¸ü¸Ä').
+lit(chs,tlotitle,'"Êı¾İ×ª»»µ½ Lotus 1-2-3(tm)"').
+lit(chs,creaindx,'"Ë÷Òı %1 ½¨Á¢ÖĞ..."').
+lit(chs,recconv,'"×ª»»¼ÇÂ¼"').
+lit(chs,loaddata,'"¼ÓÔØÊı¾İ"').
+lit(chs,nodelete,'"²»ÔÊĞí„h³ı"').
+lit(chs,inex,'"Ã»ÓĞ·ûºÏµÄ %1"').
+lit(chs,inex_browse,'". gÓ[Êı¾İ?"').
+lit(chs,queryok,'"ÊÇ·ñÎª²éÑ¯Ìõ¼ş?"').
+lit(chs,failequal,'"¼ÇÂ¼²»¿É´æÈ¡"').
+lit(chs,yes,'"ÊÇ"').
+lit(chs,no,'"·ñ"').
+lit(chs,date,[ ”N,?,“ú ]).
+lit(chs,conf,'"Êı¾İÕıÈ·?(Y/N)"').
+lit(chs,rtop,'"·¢ËÍ±¨±íµ½´òÓ¡»ú?(Y/N)"').
+lit(chs,printing,'"´òÓ¡ÖĞ..."').
+lit(chs,canques,'"ÖĞ¶Ï³ÌÊ½?(Y/N)"').
+lit(chs,canmsg,'"ÓÃ»§ÖĞ¶Ï³ÌÊ½"').
+lit(chs,wait,'"°´È·ÈÏ¼ü¼ÌĞø..."').
+lit(chs,del,'"ÎŞĞ§„h³ı,ÓĞÏà¹ØĞÅÏ¢ÔÚ±í %1"').
+lit(chs,delcas,'"„h³ıËùÓĞĞÅÏ¢"').
+lit(chs,lock,[ '"ÆäËûÓÃ»§ÕıÔÚÊ¹ÓÃ','"' ]).
+lit(chs,flock,[ '" ÆäËûÓÃ»§ÕıÔÚÊ¹ÓÃ±E','"' ]).
+lit(chs,help,'"°ïÖú"').
+lit(chs,noupdate,'"¼ÇÂ¼ÒÑ´æÔÚ"').
+lit(chs,noinsert,'"ÕÒ²»µ½¼ÇÂ¼"').
+lit(chs,chg,'"È¡ÏûĞŞ¸Ä(Y/N)"').
+lit(chs,mlmax,³¬¹ıĞĞÊı).
+lit(chs,rgzlcktb,'"%1. ÓÉÓÚÖØ×é¶øËø¶¨±í"').
+lit(chs,rgzdic,'"%1. É¾³ıÊı¾İ¿â±íµÄÏà¹ØÁªÔ¼Êø"').
+lit(chs,rgzdropcol,'"ÕıÔÚ„h³ı±í %1 µÄ×Ö¶Î"').
+lit(chs,1000,'"¾¯¸æ:²»ÄÜÊ¹ÓÃ¸üÃû,ÓÃ»§´úÂë²»ÊÇ %1"').
+lit(chs,1001,'"ÕıÔÚ„h³ıË÷Òı %2, ±í %1"').
+lit(chs,1002,'"ÕıÔÚ„h³ı±í %1"').
+lit(chs,1003,'"ÕıÔÚÉè¶¨±í %1 µÄ×Ö¶Î³õÊ¼Öµ"').
+lit(chs,1004,'"%1 ÒÑ¾­´æÔÚ"').
+lit(chs,dropindx,'"Ë÷Òı %1 „h³ıÖĞ..."').
+lit(chs,strdate,'%2 %3 %1').
+lit(chs,runpgm,'"ÕıÔÚÔËĞĞ³ÌÊ½ %1"').
+lit(chs,mbhelp,°ïÖú).
+lit(chs,mbview_select,Ñ¡Ôñ).
+lit(chs,mbdelete,„h³ı).
+lit(chs,mbrefresh,Ë¢ĞÂ).
+lit(chs,mbclose,È¡Ïû).
+lit(chs,mbconfirm,È·ÈÏ).
+lit(chs,faildel,'''"ÎŞĞ§µÄE³ı,ÏàêPĞÅÏ¢ÔÚ''').
+lit(chs,datachg,'''"Êı¾İÒÑ±»Áúî»ÓÃ‘ôÊ¹ÓÃ¸EÄÖ?''').
+lit(chs,delete,„h³ı).
+lit(chs,select,Ñ¡Ôñ).
+lit(chs,refresh,Ë¢ĞÂ).
+lit(chs,faildate,'''%1 ÎŞĞ§ÈÕÆÚ/Ê±¼ä''').
+lit(chs,nohelp,Î´°²×°ÇóÖú¹¦ÄÜ).
+lit(chs,readerr,[ '''GXM_readerr01''','''GXM_readerr02''' ]).
+lit(chs,rgzctnt,'"%1. ½¨Á¢ÔİÊ±±í¼°ĞÂ±í"').
+lit(chs,rgzrrpgm,'"%1. ÕıÔÚÔËĞĞ±íÖØ×é³ÌÊ½"').
+lit(chs,rgzrnmtbl,'"%1. ±íÕıÔÚ¸üÃû"').
+lit(chs,rgzbldidx,'"%1. ÕıÔÚ½¨Á¢±íµÄË÷Òı¼°Êı¾İ¿âÏà¹ØÁªÔ¼Êø"').
+lit(chs,rgzdroptbl,'"%1. ÕıÔÚ„h³ı±í"').
+lit(chs,rgztbllck,'"ÕıÔÚËø¶¨±í%1"').
+lit(chs,rgzd1c,'"ÕıÔÚ„h³ı±í %1 µÄÏà¹ØÁªÔ¼Êø"').
+lit(chs,recdeleted,'"¼ÇÂ¼ÒÑ¾­±»ÆäËûÓÃ»§„h³ı"').
+lit(chs,keynfound,'"ÕÒ²»µ½¾ßÓĞKeyµÄÊı¾İ"').
+lit(chs,unexp,'"Ôö¼ÓÊı¾İÊ±·¢ÉúÎ´Öª´íÎó,ÇëÖØÊÔ"').
+lit(chs,sucadded,'"Êı¾İÔö¼Ó³É¹¦"').
+lit(chs,sucupdated,'"Êı¾İ¸üĞÂ³É¹¦"').
+lit(chs,sucdeleted,'"Êı¾İ„h³ı³É¹¦"').
+lit(chs,captionadd,'"Ôö¼Ó(&A)"').
+lit(chs,captionupdate,'"¸üĞÂ(&U)"').
+lit(chs,captiondelete,'"„h³ı"').
+lit(chs,captionconfirm,'"È·ÈÏ"').
+lit(chs,getbeforedlt,'"´íÎó, „h³ıÇ°ÏÈÈ¡µÃÊı¾İ"').
+lit(chs,getbeforeupd,'"Î´¶Áµ½Êı¾İ,ÎŞ·¨¸üĞÂ"').
+lit(chs,mustconfirm,'"È·ÈÏÊı¾İ"').
+lit(chs,confdelete,'"È·¶¨„h³ı"').
+lit(chs,baddatetime,'"%1 ÎŞĞ§ÈÕÆÚ¼°Ê±¼ä"').
+lit(chs,badtime,'"%1 ÎŞĞ§Ê±¼ä"').
+lit(chs,badnum,'"ÎŞĞ§Êı×Ö"').
+lit(chs,ambiguousck,'"%1 ÊÇÄ£ÀâÁ½¿ÉµÄ"').
+lit(chs,refinterror,'"Unknown Referntial Integrity Error"').
+lit(chs,makdsc,[ Ö÷²Ëµ¥ ]).
+lit(chs,dbcr1,'"Êı¾İ¿â½¨Á¢"').
+lit(chs,dbcr2,'"±úÙ¨Á¢"').
+lit(chs,dbcr3,'"Ë÷Òı½¨Á¢"').
+lit(chs,dbcr4,'"Êı¾İ×ª“Q"').
+lit(chs,dbcr5,'""¸EÄ±úßE"').
+lit(chs,dbcr6,'""Ä£½M¸E?"').
+lit(chs,dbcrtitle,'"GeneXusÊı¾İ¿â¹ÜÀúñß"').
+lit(chs,tblcrea,'""½¨Á¢ÖĞµÄ±E"').
+lit(chs,idxcrea,'"½¨Á¢Ë÷Òı"').
+lit(chs,reocom,'""ÖØ½Mß^³ÌÒÑ³É¹¦µÄÍEÉÁ?"').
+lit(chs,delreo,'""E³ıÖØ½M¹æ¸E"').
+lit(chs,creinpro,'"Êı¾İ¿â½¨Á¢ßMĞĞÖĞ ...').
+lit(chs,notcrespc,'""ÕÒ²»µ½½¨Á¢µÄ¹æ¸E"').
+lit(chs,notreospc,'""›]ÓĞÖØ½M¹æ¸E"').
+lit(chs,asktocre,'"ÄãÕæµÄÒªÉú³ÉÒ»?¿ÕµÄÊı¾İ¿â½Y??"').
+lit(chs,creok,'"Êı¾İ¿âÒÑÉú³É"').
+lit(chs,asktoreo,'"ÄúÕæÒªÔËĞĞÊı¾İ¿âÖØ½M?"').
+lit(chs,reoinpro,'"´_¶¨ÒªˆÌĞĞÖØ½M?"').
+lit(chs,okcapt,'"&OK"').
+lit(chs,genwith,±»®aÉúì¶).
+lit(chs,aboutcapt,êPE).
+lit(chs,sysinfo,'"&Ïµ½y?Ï¢..."').
+lit(chs,notsysinfo,'Ïµ½y?Ï¢ÊÇÎŞĞ§µÄÔÚß@?•rég').
+lit(chs,cnclcapt,'"È¡Ïû(&C)"').
+lit(chs,prtready,'"´òÓ¡»úœÊ‚äºÃÁËE (ÊÇ/·E"').
+lit(chs,rwait,'"Enter=¾@ĞEEsc=·µ»Ø"').
+lit(chs,idate,'"²»ÊÇÓĞĞ§µÄÈÕÆÚ/•rég"').
+lit(chs,isdone,'""ÍE?"').
+lit(chs,nnul,'"²»ÔÊĞújullÖµ"').
+lit(chs,discard,'"·ÅÆúÒÑĞŞ¸ÄÄÚÈİ"').
+lit(chs,logfull,'"Transaction Log Is Full, must commit or rollback"').
+lit(chs,opna,'""ÎŞĞ§Ñ¡ÏE"').
+lit(chs,savechanges,'"ĞŞ¸ÄÄÚÈİÊÇ·ñ´æµµ ?"').
+lit(chs,mnuopts,[ 'ÎÄ¼ş(&F)','ÍË³ö(&X)','±à¼­(&E)','¼ôÇĞ(&T)','¸´ÖÆ(&C)','Õ³Ìù(&P)','„h³ı(&D)','È«Ñ¡(&S)','²é¿´(&V)','ÉÏÒ»¸ö(&P)','ÏÂÒ»¸ö(&N)','µÚÒ»¸ö(&F)','×îºóÒ»¸ö(&L)','¹¤¾ßÀ¸(&T)','×´Ì¬À¸(&S)','Ö´ĞĞ(&A)','Ñ¡Ôñ(&S)','Ë¢ĞÂ(&R)','„h³ı(&D)','ÊÓ´°(&W)','²ãµş(&C)','&Æ½?','°ïÖú(&H)','ËµÃ÷Ë÷Òı(&C)','²éÕÒ(&S)...','¹ØÓÚ(&A)','&ÎE?','&Õ¹¿ªÒ»¾¡','&È«²¿Õ¹¿ª' ]).
+lit(chs,newmnuopts,[ 'ÎÄ¼ş(&F)','¹Ø±Õ(&C)','ÍË³ö(&X)','±à¼­(&E)','¼ôÇĞ(&T)','¸´ÖÆ(&C)','Õ³Ìù(&P)','„h³ı(&D)','È«Ñ¡(&S)','²é¿´(&V)','ÉÏÒ»¸ö(&P)','ÏÂÒ»¸ö(&N)','µÚÒ»¸ö(&F)','×îºóÒ»¸ö(&L)','¹¤¾ßÀ¸(&T)','×´Ì¬À¸(&S)','Ö´ĞĞ(&A)','Ñ¡Ôñ(&S)','Ë¢ĞÂ(&R)','„h³ı(&D)','ÊÓ´°(&W)','²ãµş(&C)','&Æ½?','°ïÖú(&H)','ËµÃ÷Ë÷Òı(&C)','²éÕÒ(&S)...','¹ØÓÚ(&A)','È·ÈÏ(&C)' ]).
+lit(chs,invalid_dir,'''%1 ÎŞĞ§µÄÂ·¾¶''').
+lit(chs,gxws_loadingfrom,'''ÖØĞÂ¼ÓÔØ %1''').
+lit(chs,captionaddweb,'''Ôö¼Ó''').
+lit(chs,captionupdateweb,'''¸üĞÂ''').
+lit(chs,captionconfirmweb,'''È·ÈÏ''').
+lit(chs,captiondeleteweb,'''„h³ı''').
+lit(chs,errtitle,'''´íÎó''').
+lit(chs,err_details,'''Ã÷Ï¸(&D)''').
+lit(chs,err_quit,'''ÍË³ö(&Q)''').
+lit(chs,err_retry,'''ÖØÊÔ(&R)''').
+lit(chs,err_login_ldap,'''ÎŞĞ§µÄÓÃ»§/ÃÜÂë''').
+lit(chs,runtimeerr,'''ÔËĞĞÓ¦ÓÃ³ÌĞòÊ±·¢ÉúÒì³£''').
+lit(chs,runtimedb,'''´æÈ¡Êı¾İ¿âÊ±·¢Éú´íÎó''').
+lit(chs,runtimeappsrv,'''´æÈ¡·şÎñÆ÷Ê±·¢Éú´íÎó''').
+lit(chs,colordialog,'''Ñ¡ÔñÑÕÉ«''').
+lit(chs,dblogin,'''µÇÂ¼·şÎñÆ÷''').
+lit(chs,user,'''ÓÃ»§Ãû³Æ''').
+lit(chs,password,'''ÃÜÂë''').
+lit(chs,enteruser,'''ÇëÊäÈëÓÃ»§Ãû³Æ''').
+lit(chs,enterpwd,'''ÇëÊäÈëÃÜÂë''').
+lit(chs,invaliddate,'''ÎŞĞ§ÈÕÆÚ''').
+lit(chs,reportdest,'''Ñ¡ÔñÄ¿µÄ''').
+lit(chs,reportdest_printer,'''´òÓ¡»ú''').
+lit(chs,reportdest_screen,'''ÆÁÄ»''').
+lit(chs,reportdest_file,'''ÎÄ¼ş''').
+lit(chs,button_cancel,'''È¡Ïû(&C)''').
+lit(chs,button_ok,'''È·¶¨(&O)''').
+lit(chs,confirmtitle,'''È·ÈÏ''').
+lit(chs,msgtitle,'''ĞÅÏ¢''').
+lit(chs,yestext,'''ÊÇ''').
+lit(chs,notext,'''·ñ''').
+lit(chs,errconas,'''Á¬½Ó·şÎñÆ÷»òÊı¾İ¿âÊ±·¢Éú´íÎó''').
+lit(chs,gxdbm,'''GeneXus Êı¾İ¿â¹ÜÀíÆ÷''').
+lit(chs,gxdbm_reorg,'''GeneXus Êı¾İ¿â¹ÜÀíÆ÷-ÖØ×é''').
+lit(chs,gxdbm_cpymdl,'''GeneXus Êı¾İ¿â¹ÜÀíÆ÷-Ä£ĞÍ¸üĞÂ''').
+lit(chs,confirm_cpymdl,'''È·¶¨¸üĞÂ GeneXus Ä£ĞÍ?''').
+lit(chs,gxdbm_gxdb,'''¸üĞÂ GeneXus Êı¾İ¿â¹ÜÀíÆ÷ GXDB++''').
+lit(chs,confirmgxdb,'''È·¶¨Ö»¸üĞÂ GXDB++?''').
+lit(chs,noreorg,'''Ã»ÓĞÖØ×é¹æ¸ñ''').
+lit(chs,nosuccess,'''ÖØ×é³ÌÊ½Î´³É¹¦,ÇëÖØÊÔ''').
+lit(chs,confirmreorg,'''È·¶¨Ö´ĞĞÖØ×é?''').
+lit(chs,dbnotreorg,'''Êı¾İ¿âÎ´±»ÖØ×é''').
+lit(chs,reorgpref,'''(ÖØ×éÊôĞÔ=·ñ,²»ÔÊĞíÖØ×é·şÎñÆ÷µÄ±í½á¹¹)''').
+lit(chs,reorgsuccess,'''ÖØ×é´¦Àí³É¹¦''').
+lit(chs,reorgnotsuccess,'''ÖØ×é´¦ÀíÎ´³É¹¦''').
+lit(chs,reorgupdgxdb,'''ÕıÔÚ¸üĞÂ GXDB++ÖĞ...''').
+lit(chs,reorgrenre,'''²»ÄÜÖØĞÂÃüÃûÖØ×é±ê¼Ç''').
+lit(chs,reorgrengx,'''²»ÄÜÖØĞÂÃüÃû GXDB++ ¹æ¸ñµµ''').
+lit(chs,reorgerrupdgxdb,'''³¢ÊÔ¸üĞÂ GXDB++ classes Ê±·¢Éú´íÎó''').
+lit(chs,mnufile,'''ÎÄ¼ş(&F)''').
+lit(chs,mnuexit,'''ÍË³ö(&X)''').
+lit(chs,mnuedit,'''±à¼­(&E)''').
+lit(chs,mnucut,'''¼ôÇĞ(&T)''').
+lit(chs,mnucopy,'''¸´ÖÆ(&C)''').
+lit(chs,mnupaste,'''Õ³Ìù(&P)''').
+lit(chs,mnudelete,'''„h³ı(&D)''').
+lit(chs,mnuselectall,'''È«Ñ¡(&S)''').
+lit(chs,mnuview,'''²é¿´(&V)''').
+lit(chs,mnuprev,'''ÉÏÒ»¸ö(&P)''').
+lit(chs,mnunext,'''ÏÂÒ»¸ö(&N)''').
+lit(chs,mnufirst,'''µÚÒ»¸ö(&F)''').
+lit(chs,mnulast,'''×îºóÒ»¸ö(&L)''').
+lit(chs,mnutoolbar,'''¹¤¾ßÀ¸(&T)''').
+lit(chs,mnustatusbar,'''×´Ì¬À¸(&S)''').
+lit(chs,mnuactions,'''Ö´ĞĞ(&A)''').
+lit(chs,mnuselect,'''Ñ¡Ôñ(&S)''').
+lit(chs,mnurefresh,'''Ë¢ĞÂ(&R)''').
+lit(chs,mnuwindow,'''ÊÓ´°(&W)''').
+lit(chs,mnuarrange,'''Æ½ÆÌ(&T)''').
+lit(chs,mnucascade,'''²ãµş(&C)''').
+lit(chs,mnuhelp,'''°ïÖú(&H)''').
+lit(chs,mnuindex,'''ËµÃ÷Ë÷Òı(&C)''').
+lit(chs,mnusearch,'''²éÕÒ(&S)...''').
+lit(chs,mnuabout,'''¹ØÓÚ(&A)''').
+lit(chs,mnuclose,'''¹Ø±Õ(&C)''').
+lit(chs,mnuconfirm,'''È·ÈÏ(&C)''').
+lit(chs,toolcut,'''¼ôÇĞ''').
+lit(chs,toolcopy,'''¸´ÖÆ''').
+lit(chs,toolpaste,'''Õ³Ìù''').
+lit(chs,toolrefresh,'''Ë¢ĞÂ''').
+lit(chs,toolhelp,'''°ïÖú''').
+lit(chs,devmenutrn,'''Transactions''').
+lit(chs,devmenurpt,'''Reports''').
+lit(chs,devmenuproc,'''Procedures''').
+lit(chs,devmenuscr,'''Work Panels''').
+lit(chs,ids_column,'''ÖØ×éÊä³ö''').
+lit(chs,ids_execute,'''Ö´ĞĞ(&E)''').
+lit(chs,ids_failed,'''ÖØ×éÊ§°Ü''').
+lit(chs,ids_ok,'''ÖØ×é³É¹¦''').
+lit(chs,ids_title,'''GeneXusÖØ×é''').
+lit(chs,ids_close,'''¹Ø±Õ(&C)''').
+lit(chs,ids_noneeded,'''²»ĞèÒªÖØÕû''').
+lit(chs,ids_needed,'''ĞèÒªÖØÕû''').
+lit(chs,ids_run,'''ÔËĞĞÖĞ...''').
+lit(chs,january,'''Ò»ÔÂ''').
+lit(chs,february,'''¶şÔÂ''').
+lit(chs,march,'''ÈıÔÂ''').
+lit(chs,april,'''ËÄÔÂ''').
+lit(chs,may,'''ÎåÔÂ''').
+lit(chs,june,'''ÁùÔÂ''').
+lit(chs,july,'''ÆßÔÂ''').
+lit(chs,august,'''°ËÔÂ''').
+lit(chs,september,'''¾ÅÔÂ''').
+lit(chs,october,'''Ê®ÔÂ''').
+lit(chs,november,'''Ê®Ò»ÔÂ''').
+lit(chs,december,'''Ê®¶şÔÂ''').
+lit(chs,toolcalculator,'Calculator').
+lit(chs,toolcalendar,'Calendar').
+lit(chs,toolbrowsedata,'Browse data').
+lit(chs,toolselectall,'È«Ñ¡(&S)').
+lit(chs,tooldelete,'„h³ı(&D)').
+lit(chs,mnu_previous,'ÉÏÒ»¸ö(&P)').
+lit(chs,mnu_tile,'Æ½ÆÌ(&T)').
+lit(spa,datefmt,'SET DATE BRITISH').
+lit(spa,trnrpt,[ '''Otras Transacciones''','''Otros Informes''','''Otros Procedimientos''','''Otros Work Panels''','''Otros Menues''' ]).
+lit(spa,mmmainmenu,[ '''Menu principal''','''Menu de la base de datos''','''Transacciones''','''Informes''','''Crear base de datos''','''Reconstruir índices''','''Reconstruir redundancia''','''Reorganizar base de datos''','''Exportar aplicación''','''Utilizar interprete''','''Procedimientos''','''Work Panels''','''Menues''' ]).
+lit(spa,mmint,[ '''Integrador de Menues GX''','''Menues''' ]).
+lit(spa,opt,'''Opciones''').
+lit(spa,nomenu,'''No hay menues del usuario''').
+lit(spa,keys,'''Esc=Retornar  F1=Ayuda''').
+lit(spa,prot,'''Prototipo''').
+lit(spa,prod,'''Producción''').
+lit(spa,idx,'''Reindexa la base de datos?''').
+lit(spa,endofproc,'''Proceso terminado''').
+lit(spa,mmmain,'''GENEXUS - Administrador de menues''').
+lit(spa,mmmdlname,'''Nombre del modelo''').
+lit(spa,mmmdldate,'''Fecha creación''').
+lit(spa,nooptions,'''No existen opciones para este menu''').
+lit(spa,more,'''Otras').
+lit(spa,deleinfo,'"Realmente desea eliminar estos datos?"').
+lit(spa,sltlst,'"Lista de Selección"').
+lit(spa,poslst,'"Digite todos o parte de uno de los siguientes campos, luego presione Intro."').
+lit(spa,selopt,[ '"Seleccione uno de los siguientes, luego presione Intro."','"Más:"' ]).
+lit(spa,lastrec,'"Este es el último registro que cumple la condición"').
+lit(spa,firstrec,'"Este es el primer registro que cumple la condición"').
+lit(spa,norectobrow,'"No hay registros que cumplan la condición"').
+lit(spa,filecrea,'"Creando la tabla %1 %2."').
+lit(spa,fileren,'"Renombrando %1 como %2"').
+lit(spa,dbcrea,'''Creando la base de datos''').
+lit(spa,conftrn,'''Confirma la transacción?''').
+lit(spa,waschg,'%1 fue modificada.').
+lit(spa,tlotitle,'"Transferencia de datos para Lotus 1-2-3 (tm)"').
+lit(spa,creaindx,'"Creando el índice %1 ..."').
+lit(spa,recconv,'"registros convertidos"').
+lit(spa,loaddata,'"Cargando información en"').
+lit(spa,nodelete,'"No es posible la eliminación"').
+lit(spa,inex,'"No existe %1"').
+lit(spa,inex_browse,'". DESEA VISUALIZAR?"').
+lit(spa,queryok,'"El criterio de selección es correcto?"').
+lit(spa,failequal,'"No es posible acceder al registro"').
+lit(spa,yes,'"S"').
+lit(spa,no,'"N"').
+lit(spa,date,[ 'DD','MM','YY' ]).
+lit(spa,conf,'"¿Los datos son correctos? (S/N)"').
+lit(spa,rtop,'"¿Listar por impresora? (S/N)"').
+lit(spa,rptques,'"Listar por"').
+lit(spa,rptsel,'"Pantalla SCR;Impresora PRN;Archivo FIL"').
+lit(spa,printing,'"Imprimiendo..."').
+lit(spa,canques,'"¿Cancela el programa? (S/N)"').
+lit(spa,canmsg,'"Programa cancelado por el usuario"').
+lit(spa,wait,'"Oprima Intro para continuar ..."').
+lit(spa,del,'"Eliminación no válida, hay información en %1"').
+lit(spa,delcas,'"Eliminar toda la información en"').
+lit(spa,lock,[ '"Registro','reservado por otro"' ]).
+lit(spa,flock,[ '"Tabla','esta siendo utilizado por otro"' ]).
+lit(spa,help,'"Ayuda"').
+lit(spa,noupdate,'"Ya existe el registro"').
+lit(spa,noinsert,'"No se encontró el registro"').
+lit(spa,chg,'"¿Descarta modificaciones? (S/N)"').
+lit(spa,mlmax,'"Número de lineas excedió el límite de').
+lit(spa,rgzlcktb,'"%1. Bloqueando el uso de tablas a reorganizar."').
+lit(spa,rgzdic,'"%1. Eliminando restricciones de integridad referencial."').
+lit(spa,rgzdropcol,'"Eliminando atributos de la tabla %1."').
+lit(spa,1000,'"Atención: No se utiliza RENAME. Userid no es ''%1''."').
+lit(spa,1001,'"Eliminando índice %2, tabla %1."').
+lit(spa,1002,'"Eliminando tabla %1."').
+lit(spa,1003,'"Estableciendo los valores iniciales para los atributos de la tabla %1"').
+lit(spa,1004,'"Ya existe %1"').
+lit(spa,dropindx,'"Eliminando el índice %1 ..."').
+lit(spa,outrange,'"%1 fuera de rango"').
+lit(spa,graph,'"Gráfico"').
+lit(spa,print,'"Imprimir"').
+lit(spa,strdate,'%3 de %2 de %1').
+lit(spa,runpgm,'"Ejecutando programa %1."').
+lit(spa,mbactions,'Acciones').
+lit(spa,mbview,'Ver').
+lit(spa,mbhelp,'Ayuda').
+lit(spa,mbview_first,'Primero').
+lit(spa,mbview_last,'Ultimo').
+lit(spa,mbview_previous,'Anterior').
+lit(spa,mbview_next,'Siguiente').
+lit(spa,mbview_select,'Seleccionar').
+lit(spa,mbhelp_cont,'Contenido').
+lit(spa,mbdelete,'Eliminar').
+lit(spa,mbrefresh,'Renovar').
+lit(spa,mbclose,'Cerrar').
+lit(spa,mbconfirm,'Confirmar').
+lit(spa,selone,'''Seleccione una de las siguientes opciones. Luego presione Intro.''').
+lit(spa,selnocor,'La selección de menú especificada no es correcta.').
+lit(spa,cmdandopt,'No puede seleccionar una opción de menú y especificar un mandato.').
+lit(spa,cmdlpmpt,'''Mandato ===>''').
+lit(spa,deltbl,'''Eliminando la antigua tabla %1 y creando la nueva.''').
+lit(spa,rename,'''Renombrando la tabla %1 a %2.''').
+lit(spa,confrpt,'''Presione Intro para comenzar el proceso.''').
+lit(spa,nochgmode,'''No es posible cambiar a la modalidad solicitada.''').
+lit(spa,oneselonly,'''No puede seleccionar más de un item de la lista.''').
+lit(spa,eof,'''Se ha alcanzado el principio/fin de datos.''').
+lit(spa,canctrn,'''Transacción cancelada.''').
+lit(spa,confins,'''Agregando datos. Presione Intro para confirmar.''').
+lit(spa,confupd,'''Modificando datos. Presione Intro para confirmar.''').
+lit(spa,confdel,'''Eliminando datos. Presione Intro para confirmar.''').
+lit(spa,recins,'''Los datos fueron agregados.''').
+lit(spa,recupd,'''Los datos fueron modificados.''').
+lit(spa,recdel,'''Los datos fueron eliminados.''').
+lit(spa,notsame,'''Los datos no pertenecen al mismo %1.''').
+lit(spa,faildel,'''Eliminación no válida. Hay información en %1''').
+lit(spa,noexist,'''No existe %1''').
+lit(spa,noaccept,'''Se ignoran los cambios hechos a %1.''').
+lit(spa,failbool,'''%1 debe ser "S" o "N".''').
+lit(spa,wrongopt,'''Opción debe ser "4" o espacio''').
+lit(spa,dupkey,'''Los datos ya fueron agregados por otro usuario.''').
+lit(spa,noprompt,'''Posición del cursor no válida para petición de solicitud.''').
+lit(spa,spc,'Especificar valor a seleccionar').
+lit(spa,tcpe,'Teclee criterio de selección, pulse Intro.').
+lit(spa,spv,'Seleccionar item de lista').
+lit(spa,tope,'Teclee opciones, pulse Intro.').
+lit(spa,oeqs,'1=Seleccionar').
+lit(spa,datachg,'''Los datos fueron modificados por otro usuario (%1).''').
+lit(spa,icp,'''Posición del cursor no válida.''').
+lit(spa,seloptwrong,'''La opción no está permitida.''').
+lit(spa,nomnuopt,'''No hay opciones para este menu''').
+lit(spa,emptylist,'(La lista esta vacia.)').
+lit(spa,callerr,'''Error al llamar a %1''').
+lit(spa,exist,'''Ya existe %1''').
+lit(spa,norecrpt,'No hay datos que satisfagan el informe.').
+lit(spa,0,'Intro').
+lit(spa,enter,'Procesa').
+lit(spa,cancel,'Cancela').
+lit(spa,display,'Visualizar').
+lit(spa,insert,'Agrega').
+lit(spa,update,'Modifica').
+lit(spa,delete,'Eliminar').
+lit(spa,first,'Primero').
+lit(spa,next,'Siguiente').
+lit(spa,previous,'Anterior').
+lit(spa,prompt,'Solicitud').
+lit(spa,select,'Seleccionar').
+lit(spa,menu,'Barra de menu').
+lit(spa,exit,'Salir').
+lit(spa,refresh,'Renovar').
+lit(spa,retrieve,'Recuperar').
+lit(spa,morekeys,'Más teclas').
+lit(spa,badkey,'''Tecla de función no válida en este momento.''').
+lit(spa,faildate,'''%1 no es una fecha/hora válida.''').
+lit(spa,nohelp,'No hay ayuda disponible.').
+lit(spa,lockrcd,'''Otro usuario traba los datos de''').
+lit(spa,readerr,[ '''Error (''',''') procesando''' ]).
+lit(spa,usrcanc,'''Proceso cancelado por el usuario.''').
+lit(spa,tipe,'Teclee información, pulse Intro.').
+lit(spa,actions,'''Acciones''').
+lit(spa,view,'''Ver''').
+lit(spa,rgzctnt,'"%1. Creando tablas nuevas y temporarias."').
+lit(spa,rgzrrpgm,'"%1. Ejecutando programas de reorganización."').
+lit(spa,rgzrnmtbl,'"%1. Renombrando tablas."').
+lit(spa,rgzbldidx,'"%1. Construyendo índices y restricciones de integridad."').
+lit(spa,rgzdroptbl,'"%1. Borrando tablas eliminadas."').
+lit(spa,rgztbllck,'"Bloqueando el uso de la tabla %1."').
+lit(spa,rgzd1c,'"Eliminando restricciones de integridad en la tabla %1."').
+lit(spa,recdeleted,'"Error - Registro eliminado por otro usuario."').
+lit(spa,keynfound,'"No se encontraron datos con la clave especificada."').
+lit(spa,unexp,'"Error inesperado al intentar actualizar la base de datos. Por favor reintente."').
+lit(spa,sucadded,'"Los datos han sido agregados."').
+lit(spa,sucupdated,'"Los datos han sido actualizados."').
+lit(spa,sucdeleted,'"Los datos han sido eliminados."').
+lit(spa,captionadd,'"Agrega"').
+lit(spa,captionupdate,'"Modifica"').
+lit(spa,captiondelete,'"Eliminar"').
+lit(spa,captionconfirm,'"Confirmar"').
+lit(spa,getbeforedlt,'"Por favor haga ''Get'' de los datos antes de eliminarlos."').
+lit(spa,getbeforeupd,'"Por favor haga ''Get'' de los datos antes de actualizarlos."').
+lit(spa,mustconfirm,'"Por favor confirme los datos."').
+lit(spa,confdelete,'"Confirme la eliminación de los datos."').
+lit(spa,baddatetime,'"%1 no es una fecha y hora válida."').
+lit(spa,badtime,'"%1 no es una hora válida."').
+lit(spa,badnum,'"El valor no representa un número correcto."').
+lit(spa,nomatch,'No hay datos que cumplan la condición.').
+lit(spa,pmterr,'No existe el programa para solicitud %1').
+lit(spa,refcallerror,'No existe el programa para refcall %1').
+lit(spa,browse,'Visualiza').
+lit(spa,badkeyrfr,'Tecla no válida en este momento. Renovación pendiente').
+lit(spa,dateoutr,'%1 fuera del rango (%2-%3).').
+lit(spa,arrayerror,'Indice de vector o matriz fuera de rango').
+lit(spa,callerror,'Error en la llamada al programa').
+lit(spa,divideerror,'División por cero').
+lit(spa,numericalerror,'Error numérico').
+lit(spa,fileerror,'Error de archivo en').
+lit(spa,code,código).
+lit(spa,index,índice).
+lit(spa,ambiguousck,'"%1 es ambiguo"').
+lit(spa,refinterror,'"Error desconocido de integridad referencial."').
+lit(spa,makdsc,[ 'Menu principal' ]).
+lit(spa,dbcr1,'"Creación de la base de datos"').
+lit(spa,dbcr2,'"Creación de tablas"').
+lit(spa,dbcr3,'"Creación de Indices"').
+lit(spa,dbcr4,'"Transferencia de datos"').
+lit(spa,dbcr5,'"Renombrar Tablas"').
+lit(spa,dbcr6,'"Actualización del Modelo"').
+lit(spa,dbcrtitle,'"Administrador GeneXus de Base de Datos"').
+lit(spa,tblcrea,'"Creando las Tablas"').
+lit(spa,idxcrea,'"Creando los Indices"').
+lit(spa,reocom,'"Reorganización completa"').
+lit(spa,delreo,'"Eliminando las especificaciones de reorganización"').
+lit(spa,creinpro,'"Creación de la base de datos en proceso ...').
+lit(spa,notcrespc,'"No se encontraron especificaciones de Creación"').
+lit(spa,notreospc,'"No existen especificaciones de reorganización"').
+lit(spa,asktocre,'"¿Realmente desea crear la estructura vacía de la base de datos?"').
+lit(spa,creok,'"Base de Datos Creada"').
+lit(spa,asktoreo,'"¿Reorganiza la base de datos?"').
+lit(spa,reoinpro,'"Reorganización en proceso ..."').
+lit(spa,okcapt,'"&Aceptar"').
+lit(spa,genwith,'Generado por').
+lit(spa,aboutcapt,'Acerca de').
+lit(spa,sysinfo,'"&Info. del Sistema..."').
+lit(spa,notsysinfo,'Información del Sistema no disponible en este momento').
+lit(spa,cnclcapt,'"&Cancelar"').
+lit(spa,prtready,'"¿Está la impresora lista? (S/N)"').
+lit(spa,rwait,'"Intro=Continua  Esc=Retorna"').
+lit(spa,idate,'"Fecha inválida"').
+lit(spa,isdone,'"Hecho"').
+lit(spa,nnul,'"No se permiten valores nulos"').
+lit(spa,discard,'"Descarta modificaciones"').
+lit(spa,logfull,'"Transaction Log Is Full, must commit or rollback"').
+lit(spa,opna,'"Opción no disponible"').
+lit(spa,savechanges,'"¿Desea grabar los cambios ?"').
+lit(spa,mnuopts,[ '&Archivo','&Salir','&Editar','Cor&tar','&Copiar','&Pegar','&Suprimir','Seleccionar &Todo','&Ver','&Anterior','Próximo','&Primero','&Último','&Barra de Herramientas','&Barra de Estados','&Acciones','&Seleccionar','&Renovar','&Eliminar Registro','Ve&ntana','&Cascada','Ordenar &Iconos','&Ayuda','&Contenido','&Buscar...','&Acerca de','&Objeto','&Expandir','Expandir &Todo' ]).
+lit(spa,newmnuopts,[ '&Archivo','Cerrar','&Salir','&Editar','Cor&tar','&Copiar','&Pegar','&Suprimir','Seleccionar &Todo','&Ver','&Anterior','Próximo','&Primero','&Último','&Barra de Herramientas','&Barra de Estados','&Acciones','&Seleccionar','&Renovar','&Eliminar Registro','Ve&ntana','&Cascada','Ordenar &Iconos','&Ayuda','&Contenido','&Buscar...','&Acerca de','Confir&ma' ]).
+lit(spa,invalid_dir,'''%1 no es un nombre de directorio válido''').
+lit(spa,gxws_loadingfrom,'''Cargando %1 desde''').
+lit(spa,captionaddweb,'''Agregar''').
+lit(spa,captionupdateweb,'''Actualizar''').
+lit(spa,captionconfirmweb,'''Confirmar''').
+lit(spa,captiondeleteweb,'''Eliminar''').
+lit(spa,errtitle,'''Error''').
+lit(spa,err_details,'''&Detalles''').
+lit(spa,err_quit,'''&Salir''').
+lit(spa,err_retry,'''&Reintentar''').
+lit(spa,err_login_ldap,'''Usuario/Contraseña inválidos''').
+lit(spa,runtimeerr,'''Error de ejecución''').
+lit(spa,runtimedb,'''Ha ocurrido un error al acceder a la base de datos.''').
+lit(spa,runtimeappsrv,'''Ha ocurrido un error al acceder al servidor de aplicaciones.''').
+lit(spa,colordialog,'''Seleccione un color''').
+lit(spa,dblogin,'''Conexión al servidor''').
+lit(spa,user,'''Usuario''').
+lit(spa,password,'''Contraseña''').
+lit(spa,enteruser,'''Por favor ingrese el nombre de usuario''').
+lit(spa,enterpwd,'''Por favor ingrese la contraseña''').
+lit(spa,invaliddate,'''Fecha inválida''').
+lit(spa,reportdest,'''Seleccione destino''').
+lit(spa,reportdest_printer,'''Impresora''').
+lit(spa,reportdest_screen,'''Pantalla''').
+lit(spa,reportdest_file,'''Archivo''').
+lit(spa,button_cancel,'''&Cancelar''').
+lit(spa,button_ok,'''&Aceptar''').
+lit(spa,confirmtitle,'''Confirmar''').
+lit(spa,msgtitle,'''Mensaje''').
+lit(spa,yestext,'''Si''').
+lit(spa,notext,'''No''').
+lit(spa,errconas,'''No es posible conectarse al servidor de aplicaciones o base de datos''').
+lit(spa,gxdbm,'''Mantenimiento de la base de datos''').
+lit(spa,gxdbm_reorg,'''Mantenimiento de la base de datos''').
+lit(spa,gxdbm_cpymdl,'''Actualización del Modelo GeneXus''').
+lit(spa,confirm_cpymdl,'''Ha elegido actualizar el modelo GeneXus. Está seguro?''').
+lit(spa,gxdbm_gxdb,'''Actualización de las GXDB++''').
+lit(spa,confirmgxdb,'''Ha elegido actualizar las GXDB++. Está seguro?''').
+lit(spa,noreorg,'''No hay especificaciones de reorganización.''').
+lit(spa,nosuccess,'''La generación de los programas de reorganización no fue exitosa. Reintente.''').
+lit(spa,confirmreorg,'''Está seguro que quiere reorganizar la base de datos?''').
+lit(spa,dbnotreorg,'''La base de datos no se reorganiza.''').
+lit(spa,reorgpref,'''(preference Reorganize Server Tables = No)''').
+lit(spa,reorgsuccess,'''El proceso de reorganización ha finalizado con éxito.''').
+lit(spa,reorgnotsuccess,'''El proceso de reorganización no ha sido exitoso.''').
+lit(spa,reorgupdgxdb,'''Actualizando GXDB++ ...''').
+lit(spa,reorgrenre,'''No se pudo renombrar indicador de reorganización''').
+lit(spa,reorgrengx,'''No se pudo renombrar archivo especificador de GXDB++''').
+lit(spa,reorgerrupdgxdb,'''Error al actualizar clases GXDB++''').
+lit(spa,mnufile,'''&Archivo''').
+lit(spa,mnuexit,'''&Salir''').
+lit(spa,mnuedit,'''&Editar''').
+lit(spa,mnucut,'''Cor&tar''').
+lit(spa,mnucopy,'''&Copiar''').
+lit(spa,mnupaste,'''&Pegar''').
+lit(spa,mnudelete,'''&Suprimir''').
+lit(spa,mnuselectall,'''Seleccionar &Todo''').
+lit(spa,mnuview,'''&Ver''').
+lit(spa,mnuprev,'''&Anterior''').
+lit(spa,mnunext,'''Próximo''').
+lit(spa,mnufirst,'''&Primero''').
+lit(spa,mnulast,'''&Último''').
+lit(spa,mnutoolbar,'''&Barra de Herramientas''').
+lit(spa,mnustatusbar,'''&Barra de Estados''').
+lit(spa,mnuactions,'''&Acciones''').
+lit(spa,mnuselect,'''&Seleccionar''').
+lit(spa,mnurefresh,'''&Renovar''').
+lit(spa,mnudelrec,'''Eliminar Registro''').
+lit(spa,mnuwindow,'''Ve&ntana''').
+lit(spa,mnuarrange,'''&Mosaico''').
+lit(spa,mnucascade,'''&Cascada''').
+lit(spa,mnuhelp,'''&Ayuda''').
+lit(spa,mnuindex,'''&Contenido''').
+lit(spa,mnusearch,'''&Buscar...''').
+lit(spa,mnuabout,'''&Acerca de''').
+lit(spa,mnuclose,'''Cerrar''').
+lit(spa,mnuconfirm,'''Confir&ma''').
+lit(spa,toolcut,'''Cortar''').
+lit(spa,toolcopy,'''Copiar''').
+lit(spa,toolpaste,'''Pegar''').
+lit(spa,toolrefresh,'''Renovar''').
+lit(spa,toolhelp,'''Ayuda''').
+lit(spa,devmenutrn,'''Transacciones''').
+lit(spa,devmenurpt,'''Informes''').
+lit(spa,devmenuproc,'''Procedimientos''').
+lit(spa,devmenuscr,'''Work Panels''').
+lit(spa,ids_column,'''Resultado de la reorganización''').
+lit(spa,ids_execute,'''&Ejecutar''').
+lit(spa,ids_failed,'''La reorganización falló''').
+lit(spa,ids_ok,'''Reorganización completada''').
+lit(spa,ids_title,'''Reorganización GeneXus''').
+lit(spa,ids_close,'''&Cerrar''').
+lit(spa,ids_noneeded,'''No es necesario reorganizar''').
+lit(spa,ids_needed,'''Es necesario reorganizar''').
+lit(spa,ids_run,'''Ejecutando...''').
+lit(spa,january,'''Enero''').
+lit(spa,february,'''Febrero''').
+lit(spa,march,'''Marzo''').
+lit(spa,april,'''Abril''').
+lit(spa,may,'''Mayo''').
+lit(spa,june,'''Junio''').
+lit(spa,july,'''Julio''').
+lit(spa,august,'''Agosto''').
+lit(spa,september,'''Setiembre''').
+lit(spa,october,'''Octubre''').
+lit(spa,november,'''Noviembre''').
+lit(spa,december,'''Diciembre''').
+lit(spa,vsltlst,'"Lista de selección"').
+lit(spa,toolcalculator,'Calculadora').
+lit(spa,toolcalendar,'Calendario').
+lit(spa,toolbrowsedata,'Seleccionar dato').
+lit(spa,toolselectall,'Seleccionar &Todo').
+lit(spa,tooldelete,'&Suprimir').
+lit(spa,mnu_previous,'&Anterior').
+lit(spa,mnu_tile,'&Mosaico').
+lit(spa,mnu_contents,'Contenido').
+lit(cht,trnrpt,[ '''GXM_trnrpt01''','''GXM_trnrpt02''','''GXM_trnrpt03''','''GXM_trnrpt04''','''GXM_trnrpt05''' ]).
+lit(cht,mmmainmenu,[ '''GXM_mmmainmenu01''','''GXM_mmmainmenu02''','''GXM_mmmainmenu03''','''GXM_mmmainmenu04''','''GXM_mmmainmenu05''','''GXM_mmmainmenu06''','''GXM_mmmainmenu07''','''GXM_mmmainmenu08''','''GXM_mmmainmenu09''','''GXM_mmmainmenu10''','''GXM_mmmainmenu11''','''GXM_mmmainmenu12''','''GXM_mmmainmenu13''' ]).
+lit(cht,mmint,[ '''GXM_mmint01''','''GXM_mmint02''' ]).
+lit(cht,endofproc,'''³B²zµ²§ô''').
+lit(cht,mmmain,'''GENEXUS-¿ï³æºŞ²z¾¹''').
+lit(cht,mmmdlname,'''¼Ò«¬¦WºÙ''').
+lit(cht,mmmdldate,'''¤w«Ø¥ß¤é´Á''').
+lit(cht,nooptions,'''¥»µe­±¨S¦³¥i¿ï¶µ''').
+lit(cht,more,§ó¦h).
+lit(cht,deleinfo,'"½T©w­n§R°£?"').
+lit(cht,sltlst,'"¿ï¾Ü²M³æ"').
+lit(cht,poslst,'"¿é¤J¥H¤U¥ş³¡©Î³¡¤ÀÄæ¦ì«á,«ö½T»{Áä"').
+lit(cht,selopt,[ '"GXM_selopt01"','"GXM_selopt02"' ]).
+lit(cht,lastrec,'"³Ì«á¤@µ§²Å¦Xªº°O¿ı"').
+lit(cht,firstrec,'"²Ä¤@µ§²Å¦Xªº°O¿ı"').
+lit(cht,norectobrow,'"¨S¦³²Å¦Xªº°O¿ı"').
+lit(cht,filecrea,'"¥¿¦b«Ø¥ßÀÉ®× %1 %2"').
+lit(cht,fileren,'"¥¿¦b±N %1§ó¦W¬° %2"').
+lit(cht,dbcrea,'''¸ê®Æ®w¥¿¦b«Ø¥ß¤¤''').
+lit(cht,conftrn,'''½T»{?''').
+lit(cht,waschg,'%1 ¤w³Q§ó§ï').
+lit(cht,tlotitle,'"¸ê®ÆÂà´«¨ì Lotus 1-2-3(tm)"').
+lit(cht,creaindx,'"¯Á¤Ş %1 «Ø¥ß¤¤..."').
+lit(cht,recconv,'"Âà´«°O¿ı"').
+lit(cht,loaddata,'"¸ü¤J¸ê®Æ"').
+lit(cht,nodelete,'"¤£¤¹³\§R°£"').
+lit(cht,inex,'"Ÿo·ûºÏ %1"').
+lit(cht,inex_browse,'". µÄ ."').
+lit(cht,queryok,'"¬O§_¬°¬d¸ß±ø¥ó?"').
+lit(cht,failequal,'"°O¿ı¤£¥i¦s¨ú"').
+lit(cht,yes,'"ÊÇ"').
+lit(cht,no,'"·ñ"').
+lit(cht,date,[ ÔÂ,ÈÕ,'"ÄE' ]).
+lit(cht,conf,'"¸ê®Æ¥¿½T?(Y/N)"').
+lit(cht,rtop,'"µo°e³øªí¨ì¦Cªí¾÷?(Y/N)"').
+lit(cht,printing,'"¦C¦L¤¤..."').
+lit(cht,canques,'"¤¤Â_µ{¦¡?(Y/N)"').
+lit(cht,canmsg,'"¨Ï¥ÎªÌ¤¤Â_µ{¦¡"').
+lit(cht,wait,'"«ö°õ¦æÁäÄ~Äò..."').
+lit(cht,del,'"µL®Äªº§R°£,¬ÛÃö°T®§¦bÀÉ®× %1"').
+lit(cht,delcas,'"§R°£©Ò¦³°T®§"').
+lit(cht,lock,[ '"','±»ÆäËûÊ¹ÓÃÕßÊ¹ÓÃÖĞ"' ]).
+lit(cht,flock,[ '"ÙYÁÏ±úÍ»ÆäËûÊ¹ÓÃÕßÊ¹ÓÃÖĞ','"' ]).
+lit(cht,help,'"ÕfÃ÷"').
+lit(cht,noupdate,'"°O¿ı¤w¦s¦b"').
+lit(cht,noinsert,'"§ä¤£¨ì°O¿ı"').
+lit(cht,chg,'"¨ú®ø­×§ï(Y/N)"').
+lit(cht,mlmax,¶W¹L¦æ¼Æ).
+lit(cht,rgzlcktb,'"%1. ¥Ñ©ó­«²Õ¦ÓÂê©wÀÉ®×"').
+lit(cht,rgzdic,'"%1. §R°£¸ê®Æ®wÀÉ®×ªº¬ÛÃöÁp­­¨î"').
+lit(cht,rgzdropcol,'"¥¿¦b?°£ÀÉ®× %1 ªºÄæ¦ì"').
+lit(cht,1000,'"Äµ§i:¤£¯à¨Ï¥Î§ó¦W.¨Ï¥ÎªÌ¥N¸¹¤£¬O %1"').
+lit(cht,1001,'"¥¿¦b?°£¯Á¤Ş %2, ÀÉ®× %1"').
+lit(cht,1002,'"¥¿¦b?°£ÀÉ®× %1"').
+lit(cht,1003,'"¥¿¦b³]©wÀÉ®× %1 ªºÄæ¦ìªì©l­È"').
+lit(cht,1004,'"%1 ¤w¸g¦s¦b"').
+lit(cht,dropindx,'"¯Á¤Ş %1 ?°£¤¤..."').
+lit(cht,strdate,'%2 %3 %1').
+lit(cht,runpgm,'"¥¿¦b°õ¦æµ{¦¡ %1"').
+lit(cht,mbhelp,ÕfÃ÷).
+lit(cht,mbview_select,ßx“ñ).
+lit(cht,mbdelete,„h³ı).
+lit(cht,mbrefresh,ÖØĞÂÕûÀí).
+lit(cht,mbclose,È¡Ïû).
+lit(cht,mbconfirm,ˆÌĞĞ).
+lit(cht,datachg,'''"Êı¾İÒÑ±»Áúî»ÓÃ‘ôÊ¹ÓÃ¸EÄÖ?''').
+lit(cht,delete,„h³ı).
+lit(cht,select,ßx“ñ).
+lit(cht,refresh,ÖØĞÂÕûÀí).
+lit(cht,faildate,'''%1 µL®Äªº¤é´Á/®É¶¡''').
+lit(cht,nohelp,Î´°²×°ÇóÖú¹¦ÄÜ).
+lit(cht,readerr,[ '''GXM_readerr01''','''GXM_readerr02''' ]).
+lit(cht,rgzctnt,'"%1. «Ø¥ß¼È®ÉÀÉ®×¤Î·sÀÉ®×"').
+lit(cht,rgzrrpgm,'"%1. ¥¿¦b°õ¦æÀÉ®×­«²Õµ{¦¡"').
+lit(cht,rgzrnmtbl,'"%1. ÀÉ®×¥¿¦b§ó¦W"').
+lit(cht,rgzbldidx,'"%1. ¥¿¦b«Ø¥ßÀÉ®×ªº¯Á¤Ş¤Î¸ê®Æ®w¬ÛÃöÁp­­¨î"').
+lit(cht,rgzdroptbl,'"%1. ¥¿¦b?°£ÀÉ®×"').
+lit(cht,rgztbllck,'"¥¿¦bÂê©wÀÉ®× %1"').
+lit(cht,rgzd1c,'"¥¿¦b?°£ÀÉ®× %1 ªº¬ÛÃöÁp­­¨î"').
+lit(cht,recdeleted,'"°O¿ı¤w¸g³Q¨ä¥L¨Ï¥ÎªÌ§R°£"').
+lit(cht,keynfound,'"§ä¤£¨ì¨ã¦³Keyªº¸ê®Æ"').
+lit(cht,unexp,'"·s¼W¸ê®Æ®Éµo¥Í¥¼ª¾ªº¿ù»~,½Ğ­«¸Õ"').
+lit(cht,sucadded,'"¸ê®Æ·s¼W¦¨¥\"').
+lit(cht,sucupdated,'"¸ê®Æ§ó·s¦¨¥\"').
+lit(cht,sucdeleted,'"¸ê®Æ§R°£¦¨¥\"').
+lit(cht,captionadd,'"·s¼W(&A)"').
+lit(cht,captionupdate,'"§ó·s(&U)"').
+lit(cht,captiondelete,'"„h³ı"').
+lit(cht,captionconfirm,'"ˆÌĞĞ"').
+lit(cht,getbeforedlt,'"¿ù»~, §R°£«e½Ğ¥ı¨ú±o¸ê®Æ"').
+lit(cht,getbeforeupd,'"¥¼Åª¨ì¸ê®Æ,µLªk§ó·s"').
+lit(cht,mustconfirm,'"½T»{¸ê®Æ"').
+lit(cht,confdelete,'"½T©w§R°£"').
+lit(cht,baddatetime,'"%1 µL®Äªº¤é´Á¤Î®É¶¡"').
+lit(cht,badtime,'"%1 µL®Äªº®É¶¡"').
+lit(cht,badnum,'"µL®Äªº¼Æ¦r"').
+lit(cht,ambiguousck,'"%1 ¬O¼ÒÙ±¨â¥iªº"').
+lit(cht,refinterror,'"Unknown Referntial Integrity Error"').
+lit(cht,makdsc,[ 'GXM_makdsc01' ]).
+lit(cht,dbcr1,'"Êı¾İ¿â½¨Á¢"').
+lit(cht,dbcr2,'"±úÙ¨Á¢"').
+lit(cht,dbcr3,'"Ë÷Òı½¨Á¢"').
+lit(cht,dbcr4,'"Êı¾İ×ª“Q"').
+lit(cht,dbcr5,'""¸EÄ±úßE"').
+lit(cht,dbcr6,'""Ä£½M¸E?"').
+lit(cht,dbcrtitle,'"GeneXusÊı¾İ¿â¹ÜÀúñß"').
+lit(cht,tblcrea,'""½¨Á¢ÖĞµÄ±E"').
+lit(cht,idxcrea,'"½¨Á¢Ë÷Òı"').
+lit(cht,reocom,'""ÖØ½Mß^³ÌÒÑ³É¹¦µÄÍEÉÁ?"').
+lit(cht,delreo,'""E³ıÖØ½M¹æ¸E"').
+lit(cht,creinpro,'"Êı¾İ¿â½¨Á¢ßMĞĞÖĞ ...').
+lit(cht,notcrespc,'""ÕÒ²»µ½½¨Á¢µÄ¹æ¸E"').
+lit(cht,notreospc,'"›]ÓĞÖØĞÂ½M?µÄÕfÃE"').
+lit(cht,asktocre,'"ÄãÕæµÄÒªÉú³ÉÒ»?¿ÕµÄÊı¾İ¿â½Y??"').
+lit(cht,creok,'"Êı¾İ¿âÒÑÉú³É"').
+lit(cht,asktoreo,'"ÄúÕæÒªÔËĞĞÊı¾İ¿âÖØ½M?"').
+lit(cht,reoinpro,'"Ä£Ê½ÖØ½MÕıÔÚßMĞĞÖĞ ..."').
+lit(cht,okcapt,'"&OK"').
+lit(cht,genwith,±»®aÉúì¶).
+lit(cht,aboutcapt,êPE).
+lit(cht,sysinfo,'"&Ïµ½y?Ï¢..."').
+lit(cht,notsysinfo,'Ïµ½y?Ï¢ÊÇÎŞĞ§µÄÔÚß@?•rég').
+lit(cht,cnclcapt,'"¨ú®ø(&C)"').
+lit(cht,prtready,'"´òÓ¡»úœÊ‚äºÃÁËE (ÊÇ/·E"').
+lit(cht,rwait,'"Enter=¾@ĞEEsc=·µ»Ø"').
+lit(cht,isdone,'""ÍE?"').
+lit(cht,nnul,'"²»ÔÊĞújullÖµ"').
+lit(cht,discard,'"·ÅÆúÒÑĞŞ¸ÄÄÚÈİ"').
+lit(cht,logfull,'"Transaction Log Is Full, must commit or rollback"').
+lit(cht,opna,'""ÎŞĞ§Ñ¡ÏE"').
+lit(cht,savechanges,'"ĞŞ¸ÄÄÚÈİÊÇ·ñ´æµµ ?"').
+lit(cht,mnuopts,[ '™n°¸(&F)','ëxé_(&X)','¾İ‹(&E)','¼ôÏÂ(&T)','Ñ}Ñu(&C)','ÙNÉÏ(&P)','§R°£(&D)','¥ş¿ï(&S)','™zÒ•(&V)','ÉÏÒ»‚€(&P)','ÏÂÒ»‚€(&N)','µÚÒ»‚€(&F)','×îááÒ»‚€(&L)','¹¤¾ßÁĞ(&T)',' î‘BÁĞ(&S)','ˆÌĞĞ(&A)','ßx“ñ(&S)','ÖØĞÂÕûÀí(&R)','„h³ı(&D)','Ò•´°(&W)','ëAÌİÊ½(&C)','&KÅÅ','ÕfÃ÷(&H)','ƒÈÈİ(&C)','ËÑŒ¤(&S)...','êPì¶(&A)','GXM_mnuopts27','GXM_mnuopts28','GXM_mnuopts29' ]).
+lit(cht,newmnuopts,[ '™n°¸(&F)','Ãö³¬(&C)','ëxé_(&X)','¾İ‹(&E)','¼ôÏÂ(&T)','Ñ}Ñu(&C)','ÙNÉÏ(&P)','§R°£(&D)','¥ş¿ï(&S)','™zÒ•(&V)','ÉÏÒ»‚€(&P)','ÏÂÒ»‚€(&N)','µÚÒ»‚€(&F)','×îááÒ»‚€(&L)','¹¤¾ßÁĞ(&T)',' î‘BÁĞ(&S)','ˆÌĞĞ(&A)','ßx“ñ(&S)','ÖØĞÂÕûÀí(&R)','„h³ı(&D)','Ò•´°(&W)','ëAÌİÊ½(&C)','&KÅÅ','ÕfÃ÷(&H)','ƒÈÈİ(&C)','ËÑŒ¤(&S)...','êPì¶(&A)','´_ÕJ(&C)' ]).
+lit(cht,invalid_dir,'''%1 µL®Äªº¸ô®|''').
+lit(cht,gxws_loadingfrom,'''­«·s¸ü¤J %1''').
+lit(cht,captionaddweb,'''·s¼W''').
+lit(cht,captionupdateweb,'''§ó·s''').
+lit(cht,captionconfirmweb,'''½T»{''').
+lit(cht,captiondeleteweb,'''§R°£''').
+lit(cht,errtitle,'''¿ù»~''').
+lit(cht,err_details,'''©ú²Ó(&D)''').
+lit(cht,err_quit,'''°h¥X(&Q)''').
+lit(cht,err_retry,'''­«¸Õ(&R)''').
+lit(cht,err_login_ldap,'''µL®Äªº¨Ï¥ÎªÌ/±K½X''').
+lit(cht,runtimeerr,'''°õ¦æÀ³¥Îµ{¦¡®Éµo¥Í²§±``''').
+lit(cht,runtimedb,'''¦s¨ú¸ê®Æ®w®Éµo¥Í¿ù»~''').
+lit(cht,runtimeappsrv,'''¦s¨ú¦øªA¾¹®Éµo¥Í¿ù»~''').
+lit(cht,colordialog,'''¿ï¾ÜÃC¦â''').
+lit(cht,dblogin,'''µn¤J¦øªA¾¹''').
+lit(cht,user,'''¨Ï¥ÎªÌ¦WºÙ''').
+lit(cht,password,'''±K½X''').
+lit(cht,enteruser,'''½Ğ¿é¤J¨Ï¥ÎªÌ¦WºÙ''').
+lit(cht,enterpwd,'''½Ğ¿é¤J±K½X''').
+lit(cht,invaliddate,'''µL®Äªº¤é´Á''').
+lit(cht,reportdest,'''¿ï¾Ü¥Øªº''').
+lit(cht,reportdest_printer,'''¦Cªí¾÷''').
+lit(cht,reportdest_screen,'''¿Ã¹õ''').
+lit(cht,reportdest_file,'''ÀÉ®×''').
+lit(cht,button_cancel,'''¨ú®ø(&C)''').
+lit(cht,button_ok,'''½T©w(&O)''').
+lit(cht,confirmtitle,'''ˆÌĞĞ''').
+lit(cht,msgtitle,'''°T®§''').
+lit(cht,yestext,'''ÊÇ''').
+lit(cht,notext,'''·ñ''').
+lit(cht,errconas,'''³s±µ¦øªA¾¹©Î¸ê®Æ®w®Éµo¥Í¿ù»~''').
+lit(cht,gxdbm,'''GeneXus ¸ê®Æ®wºŞ²z¾¹''').
+lit(cht,gxdbm_reorg,'''GeneXus ¸ê®Æ®wºŞ²z¾¹-­«²Õ''').
+lit(cht,gxdbm_cpymdl,'''GeneXus ¸ê®Æ®wºŞ²z¾¹-¼Ò«¬§ó·s''').
+lit(cht,confirm_cpymdl,'''½T©w§ó·s GeneXus ¼Ò«¬?''').
+lit(cht,gxdbm_gxdb,'''§ó·s GeneXus ?Õu?ºŞ²z¾¹ GXDB++''').
+lit(cht,confirmgxdb,'''½T©w¥u§ó·s GXDB++?''').
+lit(cht,noreorg,'''¨S¦³­«²Õ³W®æ''').
+lit(cht,nosuccess,'''­«²Õµ{¦¡¥¼¦¨¥\,½Ğ­«¸Õ''').
+lit(cht,confirmreorg,'''½T©w°õ¦æ­«²Õ?''').
+lit(cht,dbnotreorg,'''¸ê®Æ®w¥¼³Q­«²Õ''').
+lit(cht,reorgpref,'''(­«²ÕÄİ©Ê=§_,¤£¤¹³\­«²Õ¦øªA¾¹ÀÉ®×ªºµ²ºc)''').
+lit(cht,reorgsuccess,'''­«²Õ³B²z¦¨¥\§¹¦¨''').
+lit(cht,reorgnotsuccess,'''­«²Õ³B²z¥¼¦¨¥\''').
+lit(cht,reorgupdgxdb,'''¥¿¦b§ó·s GXDB++¤¤...''').
+lit(cht,reorgrenre,'''¤£¯à­«·s©R¦W­«²Õ¼Ğ°O''').
+lit(cht,reorgrengx,'''¤£¯à­«·s©R¦W GXDB++ ³W®æÀÉ''').
+lit(cht,reorgerrupdgxdb,'''¹Á¸Õ§ó·s GXDB++ classes®Éµo¥Í¿ù»~''').
+lit(cht,mnufile,'''™n°¸(&F)''').
+lit(cht,mnuexit,'''ëxé_(&X)''').
+lit(cht,mnuedit,'''¾İ‹(&E)''').
+lit(cht,mnucut,'''¼ôÏÂ(&T)''').
+lit(cht,mnucopy,'''Ñ}Ñu(&C)''').
+lit(cht,mnupaste,'''ÙNÉÏ(&P)''').
+lit(cht,mnudelete,'''§R°£(&D)''').
+lit(cht,mnuselectall,'''¥ş¿ï(&S)''').
+lit(cht,mnuview,'''™zÒ•(&V)''').
+lit(cht,mnuprev,'''ÉÏÒ»‚€(&P)''').
+lit(cht,mnunext,'''ÏÂÒ»‚€(&N)''').
+lit(cht,mnufirst,'''µÚÒ»‚€(&F)''').
+lit(cht,mnulast,'''×îááÒ»‚€(&L)''').
+lit(cht,mnutoolbar,'''¹¤¾ßÁĞ(&T)''').
+lit(cht,mnustatusbar,''' î‘BÁĞ(&S)''').
+lit(cht,mnuactions,'''ˆÌĞĞ(&A)''').
+lit(cht,mnuselect,'''ßx“ñ(&S)''').
+lit(cht,mnurefresh,'''ÖØĞÂÕûÀí(&R)''').
+lit(cht,mnuwindow,'''Ò•´°(&W)''').
+lit(cht,mnuarrange,'''¿j¶ô¦¡(&T)''').
+lit(cht,mnucascade,'''ëAÌİÊ½(&C)''').
+lit(cht,mnuhelp,'''ÕfÃ÷(&H)''').
+lit(cht,mnuindex,'''ƒÈÈİ(&C)''').
+lit(cht,mnusearch,'''ËÑŒ¤(&S)...''').
+lit(cht,mnuabout,'''êPì¶(&A)''').
+lit(cht,mnuclose,'''Ãö³¬(&C)''').
+lit(cht,mnuconfirm,'''´_ÕJ(&C)''').
+lit(cht,toolcut,'''°Å¤U''').
+lit(cht,toolcopy,'''½Æ»s''').
+lit(cht,toolpaste,'''¶K¤W''').
+lit(cht,toolrefresh,'''ÖØĞÂÕûÀí''').
+lit(cht,toolhelp,'''ÕfÃ÷''').
+lit(cht,devmenutrn,'''Transactions''').
+lit(cht,devmenurpt,'''Reports''').
+lit(cht,devmenuproc,'''Procedures''').
+lit(cht,devmenuscr,'''Work Panels''').
+lit(cht,ids_column,'''­«²Õ¿é¥X''').
+lit(cht,ids_execute,'''°õ¦æ(&E)''').
+lit(cht,ids_failed,'''­«²Õ¥¢±Ñ''').
+lit(cht,ids_ok,'''­«²Õ¦¨¥\''').
+lit(cht,ids_title,'''GeneXus ­«²Õ''').
+lit(cht,ids_close,'''Ãö³¬(&C)''').
+lit(cht,ids_noneeded,'''¤£»İ­n­«¾ã''').
+lit(cht,ids_needed,'''»İ­n­«¾ã''').
+lit(cht,ids_run,'''°õ¦æ¤¤...''').
+lit(cht,january,'''¤@¤ë''').
+lit(cht,february,'''¤G¤ë''').
+lit(cht,march,'''¤T¤ë''').
+lit(cht,april,'''¥|¤ë''').
+lit(cht,may,'''¤­¤ë''').
+lit(cht,june,'''¤»¤ë''').
+lit(cht,july,'''¤C¤ë''').
+lit(cht,august,'''¤K¤ë''').
+lit(cht,september,'''¤E¤ë''').
+lit(cht,october,'''¤Q¤ë''').
+lit(cht,november,'''¤Q¤@¤ë''').
+lit(cht,december,'''¤Q¤G¤ë''').
+lit(cht,toolcalculator,'Calculator').
+lit(cht,toolcalendar,'Calendar').
+lit(cht,toolbrowsedata,'Browse data').
+lit(cht,toolselectall,'¥ş¿ï(&S)').
+lit(cht,tooldelete,'§R°£(&D)').
+lit(cht,mnu_previous,'ÉÏÒ»‚€(&P)').
+lit(cht,mnu_tile,'¿j¶ô¦¡(&T)').
+ 
