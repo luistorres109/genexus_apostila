@@ -1,0 +1,121 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>46</ObjId>
+<ObjName>Gx00C0</ObjName>
+<ObjDesc>Selection List Configurações do Tipo de Mídia</ObjDesc>
+<ObjPgmName>WGx00C0</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pmidtipo</VarId>
+<VarName>&amp;pMidTipo</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pcatcodigo</VarId>
+<VarName>&amp;pCatCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>12</TableId>
+<TableName>CONFTIPMIDIA</TableName>
+<Description>Configurações do Tipo de Mídia</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICONFTIPMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cmidtipo</VarId>
+<VarName>&amp;cMidTipo</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Ccatcodigo</VarId>
+<VarName>&amp;cCatCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>77</AttriId>
+<AttriName>ConfTipoValor</AttriName>
+<Description>Valor da Configuração da Mídia</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cconftipovalor</VarId>
+<VarName>&amp;cConfTipoValor</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>CONFTIPMIDIA</TableName>
+<Description>Configurações do Tipo de Mídia</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>77</AttriId>
+<AttriName>ConfTipoValor</AttriName>
+<Description>Valor da Configuração da Mídia</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

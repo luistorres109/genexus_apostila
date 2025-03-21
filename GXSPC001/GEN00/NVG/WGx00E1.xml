@@ -1,0 +1,114 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>48</ObjId>
+<ObjName>Gx00E1</ObjName>
+<ObjDesc>Selection List Mídia da Locação</ObjDesc>
+<ObjPgmName>WGx00E1</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pmidcodigo</VarId>
+<VarName>&amp;pMidCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ILOCACAOLOCMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>@LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></Condition>
+<Condition>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cmidcodigo</VarId>
+<VarName>&amp;cMidCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>@LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

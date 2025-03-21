@@ -1,0 +1,848 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>0</ObjCls>
+<ObjId>8</ObjId>
+<ObjName>Funcionario</ObjName>
+<ObjDesc>Cadastro de Funcionários</ObjDesc>
+<ObjPgmName>TFuncionario</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Gx_mode</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>7</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table></BaseTable>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>1</Token>
+<Token>OTHERWISE</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>1</Token>
+<Token>OTHERWISE</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>59</AttriId>
+<AttriName>PesDataNasc</AttriName>
+<Description>Data de Nascimento da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>PesEndereco</AttriName>
+<Description>Endereço da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>60</AttriId>
+<AttriName>PesNumero</AttriName>
+<Description>Número da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>PesBairro</AttriName>
+<Description>Bairro da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>PesEmail</AttriName>
+<Description>Email da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>PesTelefone</AttriName>
+<Description>Telefone Residencial da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>PesCelular</AttriName>
+<Description>Telefone Celular da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>51</AttriId>
+<AttriName>PesFunTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PesFunCargo</AttriName>
+<Description>Cargo do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>PesFunSalario</AttriName>
+<Description>Sálario do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>57</AttriId>
+<AttriName>PesFunDataDemissao</AttriName>
+<Description>Data de Demissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>54</AttriId>
+<AttriName>PesFunSenha</AttriName>
+<Description>Senha do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></Into></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>59</AttriId>
+<AttriName>PesDataNasc</AttriName>
+<Description>Data de Nascimento da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>PesEndereco</AttriName>
+<Description>Endereço da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>60</AttriId>
+<AttriName>PesNumero</AttriName>
+<Description>Número da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>PesBairro</AttriName>
+<Description>Bairro da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>PesEmail</AttriName>
+<Description>Email da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>PesTelefone</AttriName>
+<Description>Telefone Residencial da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>PesCelular</AttriName>
+<Description>Telefone Celular da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>51</AttriId>
+<AttriName>PesFunTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PesFunCargo</AttriName>
+<Description>Cargo do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>PesFunSalario</AttriName>
+<Description>Sálario do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>57</AttriId>
+<AttriName>PesFunDataDemissao</AttriName>
+<Description>Data de Demissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>54</AttriId>
+<AttriName>PesFunSenha</AttriName>
+<Description>Senha do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></Into></Action></BaseTableRule>
+<Rules>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Nome deve ser informado!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'CPF deve ser informado!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>5</TableId>
+<TableName>CIDADE</TableName>
+<Description>Cadastro de Cidades</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>5</TableId>
+<TableName>CIDADE</TableName>
+<Description>Cadastro de Cidades</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></AttributeTo>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>27</AttriId>
+<AttriName>CidNome</AttriName>
+<Description>Nome da Cidade</Description></Attribute>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></AttributeTo>
+<Table>
+<TableId>5</TableId>
+<TableName>CIDADE</TableName>
+<Description>Cadastro de Cidades</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>EstUF</AttriName>
+<Description>UF do Estado</Description></Attribute>
+<Attribute>
+<AttriId>25</AttriId>
+<AttriName>EstNome</AttriName>
+<Description>Nome do Estado</Description></Attribute></Into></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Cidade deve ser informada!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Salário deve ser informado!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>PesFunSalario</AttriName>
+<Description>Sálario do Funcionário</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>PesFunSalario</AttriName>
+<Description>Sálario do Funcionário</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Data de admissão deve ser informada!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Token>=</Token>
+<Token>ctod(</Token>
+<Token>'0'</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Login deve ser informado!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<CALL>
+<Object>
+<ObjCls>1</ObjCls>
+<ObjId>1</ObjId>
+<ObjName>VerPesFunLogin</ObjName>
+<ObjPgmName>PVerPesFunLogin</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Parameters>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>,</Token>
+<Variable>
+<VarId>Erro</VarId>
+<VarName>&amp;Erro</VarName></Variable></Parameters>
+<IF>
+<Token>after(</Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Token>.NOT.</Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></IF></CALL></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Login informado ja utilizado!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Token>.NOT.</Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>and</Token>
+<Variable>
+<VarId>Erro</VarId>
+<VarName>&amp;Erro</VarName></Variable>
+<Token>=</Token>
+<Token>'S'</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Senha deve ser informada!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>54</AttriId>
+<AttriName>PesFunSenha</AttriName>
+<Description>Senha do Funcionário</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>54</AttriId>
+<AttriName>PesFunSenha</AttriName>
+<Description>Senha do Funcionário</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>59</AttriId>
+<AttriName>PesDataNasc</AttriName>
+<Description>Data de Nascimento da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>PesEndereco</AttriName>
+<Description>Endereço da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>60</AttriId>
+<AttriName>PesNumero</AttriName>
+<Description>Número da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>PesBairro</AttriName>
+<Description>Bairro da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>PesEmail</AttriName>
+<Description>Email da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>PesTelefone</AttriName>
+<Description>Telefone Residencial da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>PesCelular</AttriName>
+<Description>Telefone Celular da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>51</AttriId>
+<AttriName>PesFunTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PesFunCargo</AttriName>
+<Description>Cargo do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>PesFunSalario</AttriName>
+<Description>Sálario do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>57</AttriId>
+<AttriName>PesFunDataDemissao</AttriName>
+<Description>Data de Demissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>54</AttriId>
+<AttriName>PesFunSenha</AttriName>
+<Description>Senha do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>59</AttriId>
+<AttriName>PesDataNasc</AttriName>
+<Description>Data de Nascimento da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>PesEndereco</AttriName>
+<Description>Endereço da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>60</AttriId>
+<AttriName>PesNumero</AttriName>
+<Description>Número da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>PesBairro</AttriName>
+<Description>Bairro da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>19</AttriId>
+<AttriName>PesEmail</AttriName>
+<Description>Email da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>PesTelefone</AttriName>
+<Description>Telefone Residencial da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>PesCelular</AttriName>
+<Description>Telefone Celular da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>51</AttriId>
+<AttriName>PesFunTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PesFunCargo</AttriName>
+<Description>Cargo do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>55</AttriId>
+<AttriName>PesFunSalario</AttriName>
+<Description>Sálario do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>57</AttriId>
+<AttriName>PesFunDataDemissao</AttriName>
+<Description>Data de Demissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>54</AttriId>
+<AttriName>PesFunSenha</AttriName>
+<Description>Senha do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules>
+<After>binsert</After>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>MsgRule</RuleType>
+<Expression>
+<Token>'Deixe um telefone para contato!'</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>PesTelefone</AttriName>
+<Description>Telefone Residencial da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>MsgRule</RuleType>
+<Expression>
+<Token>'Deixe um celular para contato!'</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>PesCelular</AttriName>
+<Description>Telefone Celular da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules>
+<After>update</After>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>MsgRule</RuleType>
+<Expression>
+<Token>'Informe o endereço!'</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>16</AttriId>
+<AttriName>PesEndereco</AttriName>
+<Description>Endereço da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>MsgRule</RuleType>
+<Expression>
+<Token>'Informe bairro!'</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>PesBairro</AttriName>
+<Description>Bairro da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>MsgRule</RuleType>
+<Expression>
+<Token>'Informe o número da residência!'</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>60</AttriId>
+<AttriName>PesNumero</AttriName>
+<Description>Número da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>5</TableId>
+<TableName>CIDADE</TableName>
+<Description>Cadastro de Cidades</Description></Table>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>15</ObjId>
+<ObjName>Gx0050</ObjName>
+<ObjPgmName>WGx0050</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

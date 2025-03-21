@@ -1,0 +1,120 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>1</ObjCls>
+<ObjId>1</ObjId>
+<ObjName>VerPesFunLogin</ObjName>
+<ObjDesc> Verifica  Login  do 
+Funcionário</ObjDesc>
+<ObjPgmName>PVerPesFunLogin</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Pescodigo</VarId>
+<VarName>&amp;PesCodigo</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Erro</VarId>
+<VarName>&amp;Erro</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPESSOA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>@PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute></Condition>
+<Condition>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>&lt;&gt;</Token>
+<Variable>
+<VarId>Pescodigo</VarId>
+<VarName>&amp;PesCodigo</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>PesTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Token>=</Token>
+<Token>2</Token></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>58</AttriId>
+<AttriName>PesFunLogin</AttriName>
+<Description>Login do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>PesTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

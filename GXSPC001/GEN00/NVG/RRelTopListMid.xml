@@ -1,0 +1,190 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>2</ObjCls>
+<ObjId>18</ObjId>
+<ObjName>RelTopListMid</ObjName>
+<ObjDesc>Relatório Top List de Mídias</ObjDesc>
+<ObjPgmName>RRelTopListMid</ObjPgmName>
+<ObjClsName>Report</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>Screen</Device>
+<Device>Printer</Device></OutputDevices>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Datini</VarId>
+<VarName>&amp;DatIni</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Datfin</VarId>
+<VarName>&amp;DatFin</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Topn</VarId>
+<VarName>&amp;TopN</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Exibirpor</VarId>
+<VarName>&amp;ExibirPor</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>14</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ILOCACAOLOCMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<ConditionalConstraint>
+<Constraint>
+<Variable>
+<VarId>Datfin</VarId>
+<VarName>&amp;DatFin</VarName></Variable>
+<Token>&gt;=</Token>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Token>and</Token>
+<Variable>
+<VarId>Datini</VarId>
+<VarName>&amp;DatIni</VarName></Variable>
+<Token>&lt;=</Token>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute></Constraint>
+<Condition>
+<Variable>
+<VarId>Exibirpor</VarId>
+<VarName>&amp;ExibirPor</VarName></Variable>
+<Token>=</Token>
+<Token>'D'</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Variable>
+<VarId>Datfin</VarId>
+<VarName>&amp;DatFin</VarName></Variable>
+<Token>&gt;=</Token>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Token>and</Token>
+<Variable>
+<VarId>Datini</VarId>
+<VarName>&amp;DatIni</VarName></Variable>
+<Token>&lt;=</Token>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute></Constraint>
+<Condition>
+<Variable>
+<VarId>Exibirpor</VarId>
+<VarName>&amp;ExibirPor</VarName></Variable>
+<Token>=</Token>
+<Token>'C'</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
+<JoinLocation>0</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute></Into>
+<Tables></Tables></Table>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

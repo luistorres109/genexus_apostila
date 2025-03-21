@@ -1,0 +1,102 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>13</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>Gx0050</ObjName>
+<ObjDesc>Selection List Cadastro de Cidades</ObjDesc>
+<ObjPgmName>HGx0050</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pcidcodigo</VarId>
+<VarName>&amp;pCidCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>'GXM_first'</EventName></Event>
+<Event>
+<EventName>'GXM_previous'</EventName></Event>
+<Event>
+<EventName>'GXM_next'</EventName></Event>
+<Event>
+<EventName>'GXM_last'</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>5</TableId>
+<TableName>CIDADE</TableName>
+<Description>Cadastro de Cidades</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICIDADE</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Ccidcodigo</VarId>
+<VarName>&amp;cCidCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cestcodigo</VarId>
+<VarName>&amp;cEstCodigo</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>5</TableId>
+<TableName>CIDADE</TableName>
+<Description>Cadastro de Cidades</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute>
+<Attribute>
+<AttriId>26</AttriId>
+<AttriName>CidCodigo</AttriName>
+<Description>Código da Cidade</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

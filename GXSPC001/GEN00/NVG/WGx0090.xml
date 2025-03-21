@@ -1,0 +1,85 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>36</ObjId>
+<ObjName>Gx0090</ObjName>
+<ObjDesc>Selection List Cadastro de Astros</ObjDesc>
+<ObjPgmName>WGx0090</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pastcodigo</VarId>
+<VarName>&amp;pAstCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IASTROS</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Castcodigo</VarId>
+<VarName>&amp;cAstCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>AstNome</AttriName>
+<Description>Nome do Astro</Description></Attribute>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

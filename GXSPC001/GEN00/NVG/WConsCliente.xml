@@ -1,0 +1,152 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>31</ObjId>
+<ObjName>ConsCliente</ObjName>
+<ObjDesc>Consulta de Clientes</ObjDesc>
+<ObjPgmName>WConsCliente</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pescodigoret</VarId>
+<VarName>&amp;PesCodigoRet</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>PesCodigo.Click</EventName></Event>
+<Event>
+<EventName>Exit</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPESSOA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Token>like</Token>
+<Variable>
+<VarId>Pesnome</VarId>
+<VarName>&amp;PesNome</VarName></Variable></Constraint>
+<Condition>
+<Token>.NOT.</Token>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Pessituacao</VarId>
+<VarName>&amp;PesSituacao</VarName></Variable></Constraint>
+<Condition>
+<Token>.NOT.</Token>
+<Variable>
+<VarId>Pessituacao</VarId>
+<VarName>&amp;PesSituacao</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Pescodigo</VarId>
+<VarName>&amp;PesCodigo</VarName></Variable></Constraint>
+<Condition>
+<Variable>
+<VarId>Pescodigo</VarId>
+<VarName>&amp;PesCodigo</VarName></Variable>
+<Token>&lt;&gt;</Token>
+<Token>0</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>PesTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Token>=</Token>
+<Token>1</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>PesTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>18</AttriId>
+<AttriName>PesBairro</AttriName>
+<Description>Bairro da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

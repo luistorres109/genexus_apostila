@@ -1,0 +1,159 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>17</ObjId>
+<ObjName>Gx0070</ObjName>
+<ObjDesc>Selection List Pessoa</ObjDesc>
+<ObjPgmName>WGx0070</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>0</GenId>
+<GenName>(Default)</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Ppescodigo</VarId>
+<VarName>&amp;pPesCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPESSOA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cpescodigo</VarId>
+<VarName>&amp;cPesCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Token>like</Token>
+<Variable>
+<VarId>Cpescpf</VarId>
+<VarName>&amp;cPesCPF</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>PesDatNasc</AttriName>
+<Description>Data de Nascimento da Pessoa</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cpesdatnasc</VarId>
+<VarName>&amp;cPesDatNasc</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>PesEndNumero</AttriName>
+<Description>Número do Endereço da Pessoa</Description></Attribute>
+<Token>like</Token>
+<Variable>
+<VarId>Cpesendnumero</VarId>
+<VarName>&amp;cPesEndNumero</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>PesTelefone</AttriName>
+<Description>Telefone Residencial da Pessoa</Description></Attribute>
+<Token>like</Token>
+<Variable>
+<VarId>Cpestelefone</VarId>
+<VarName>&amp;cPesTelefone</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>PesCelular</AttriName>
+<Description>Telefone Celular da Pessoa</Description></Attribute>
+<Token>like</Token>
+<Variable>
+<VarId>Cpescelular</VarId>
+<VarName>&amp;cPesCelular</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cpessituacao</VarId>
+<VarName>&amp;cPesSituacao</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>17</AttriId>
+<AttriName>PesEndNumero</AttriName>
+<Description>Número do Endereço da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>20</AttriId>
+<AttriName>PesTelefone</AttriName>
+<Description>Telefone Residencial da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>21</AttriId>
+<AttriName>PesCelular</AttriName>
+<Description>Telefone Celular da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>22</AttriId>
+<AttriName>PesSituacao</AttriName>
+<Description>Situação da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>15</AttriId>
+<AttriName>PesDatNasc</AttriName>
+<Description>Data de Nascimento da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>14</AttriId>
+<AttriName>PesCPF</AttriName>
+<Description>CPF da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>
