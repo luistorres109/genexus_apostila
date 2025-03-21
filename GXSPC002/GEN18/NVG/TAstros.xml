@@ -1,0 +1,291 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>0</ObjCls>
+<ObjId>9</ObjId>
+<ObjName>Astros</ObjName>
+<ObjDesc>Cadastro de Astros</ObjDesc>
+<ObjPgmName>TAstros</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Gx_mode</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>9</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table></BaseTable>
+<StandAloneRules>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>AstNome</AttriName>
+<Description>Nome do Astro</Description></Attribute>
+<Attribute>
+<AttriId>67</AttriId>
+<AttriName>AstDatNasc</AttriName>
+<Description>Data de Nascimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>AstDatFal</AttriName>
+<Description>Data de Falecimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>69</AttriId>
+<AttriName>AstDescricao</AttriName>
+<Description>Descrição do Astro</Description></Attribute></Into></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>65</AttriId>
+<AttriName>AstCodigo</AttriName>
+<Description>Código do Astro</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>AstNome</AttriName>
+<Description>Nome do Astro</Description></Attribute>
+<Attribute>
+<AttriId>67</AttriId>
+<AttriName>AstDatNasc</AttriName>
+<Description>Data de Nascimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>AstDatFal</AttriName>
+<Description>Data de Falecimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>69</AttriId>
+<AttriName>AstDescricao</AttriName>
+<Description>Descrição do Astro</Description></Attribute></Into></Action></BaseTableRule>
+<Rules>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>'Nome deve ser informado!'</Token></Expression>
+<Condition>
+<Token>after(</Token>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>AstNome</AttriName>
+<Description>Nome do Astro</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>AstNome</AttriName>
+<Description>Nome do Astro</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Data de Nascimento do Astro is out of range&quot;</Token>
+<Token>,</Token>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>NOT</Token>
+<Token>(</Token>
+<Attribute>
+<AttriId>67</AttriId>
+<AttriName>AstDatNasc</AttriName>
+<Description>Data de Nascimento do Astro</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>or</Token>
+<Attribute>
+<AttriId>67</AttriId>
+<AttriName>AstDatNasc</AttriName>
+<Description>Data de Nascimento do Astro</Description></Attribute>
+<Token>&gt;=</Token>
+<Token>ymdtod(</Token>
+<Token>1753</Token>
+<Token>,</Token>
+<Token>01</Token>
+<Token>,</Token>
+<Token>01</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Data de Falecimento do Astro is out of range&quot;</Token>
+<Token>,</Token>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>NOT</Token>
+<Token>(</Token>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>AstDatFal</AttriName>
+<Description>Data de Falecimento do Astro</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>or</Token>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>AstDatFal</AttriName>
+<Description>Data de Falecimento do Astro</Description></Attribute>
+<Token>&gt;=</Token>
+<Token>ymdtod(</Token>
+<Token>1753</Token>
+<Token>,</Token>
+<Token>01</Token>
+<Token>,</Token>
+<Token>01</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>AstNome</AttriName>
+<Description>Nome do Astro</Description></Attribute>
+<Attribute>
+<AttriId>67</AttriId>
+<AttriName>AstDatNasc</AttriName>
+<Description>Data de Nascimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>AstDatFal</AttriName>
+<Description>Data de Falecimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>69</AttriId>
+<AttriName>AstDescricao</AttriName>
+<Description>Descrição do Astro</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>66</AttriId>
+<AttriName>AstNome</AttriName>
+<Description>Nome do Astro</Description></Attribute>
+<Attribute>
+<AttriId>67</AttriId>
+<AttriName>AstDatNasc</AttriName>
+<Description>Data de Nascimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>68</AttriId>
+<AttriName>AstDatFal</AttriName>
+<Description>Data de Falecimento do Astro</Description></Attribute>
+<Attribute>
+<AttriId>69</AttriId>
+<AttriName>AstDescricao</AttriName>
+<Description>Descrição do Astro</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete>
+<Table>
+<TableId>11</TableId>
+<TableName>FILMELEVEL2</TableName>
+<Description>Level2</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>73</AttriId>
+<AttriName>FilAtorCodigo</AttriName>
+<Description>Fil Ator Codigo</Description></Attribute></KeyAttributes></Table>
+<Table>
+<TableId>10</TableId>
+<TableName>FILMEDIRETOR</TableName>
+<Description>Diretor</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>FilDiretorCodigo</AttriName>
+<Description>Código do Diretor</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Levels></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Suggests></Suggests></ObjectSpec>

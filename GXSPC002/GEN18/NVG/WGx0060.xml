@@ -1,0 +1,120 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>16</ObjId>
+<ObjName>Gx0060</ObjName>
+<ObjDesc>Selection List Cadastro de Mídias</ObjDesc>
+<ObjPgmName>WGx0060</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pmidcodigo</VarId>
+<VarName>&amp;pMidCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cmidcodigo</VarId>
+<VarName>&amp;cMidCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cmidtipo</VarId>
+<VarName>&amp;cMidTipo</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cmidsituacao</VarId>
+<VarName>&amp;cMidSituacao</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cfilcodigo</VarId>
+<VarName>&amp;cFilCodigo</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

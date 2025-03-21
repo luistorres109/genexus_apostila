@@ -1,0 +1,105 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>1</ObjCls>
+<ObjId>11</ObjId>
+<ObjName>TotDevCan</ObjName>
+<ObjDesc>Total de Devoluções e Cancelamentos</ObjDesc>
+<ObjPgmName>PTotDevCan</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Totcanc</VarId>
+<VarName>&amp;TotCanc</VarName></Variable></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Totdevol</VarId>
+<VarName>&amp;TotDevol</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ILOCACAO1</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>@PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>@PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></ObjectSpec>

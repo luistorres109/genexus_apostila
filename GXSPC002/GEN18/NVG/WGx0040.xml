@@ -1,0 +1,94 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>14</ObjId>
+<ObjName>Gx0040</ObjName>
+<ObjDesc>Selection List Cadastro de Estados</ObjDesc>
+<ObjPgmName>WGx0040</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pestcodigo</VarId>
+<VarName>&amp;pEstCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IESTADO</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cestcodigo</VarId>
+<VarName>&amp;cEstCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>EstUF</AttriName>
+<Description>UF do Estado</Description></Attribute>
+<Token>like</Token>
+<Variable>
+<VarId>Cestuf</VarId>
+<VarName>&amp;cEstUF</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>ESTADO</TableName>
+<Description>Cadastro de Estados</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>24</AttriId>
+<AttriName>EstUF</AttriName>
+<Description>UF do Estado</Description></Attribute>
+<Attribute>
+<AttriId>23</AttriId>
+<AttriName>EstCodigo</AttriName>
+<Description>Código do Estado</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

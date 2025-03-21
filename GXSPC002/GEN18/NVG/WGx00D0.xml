@@ -1,0 +1,159 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>47</ObjId>
+<ObjName>Gx00D0</ObjName>
+<ObjDesc>Selection List Cadastro de Locações</ObjDesc>
+<ObjPgmName>WGx00D0</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Ploccodigo</VarId>
+<VarName>&amp;pLocCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ILOCACAO</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cloccodigo</VarId>
+<VarName>&amp;cLocCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Clocsituacao</VarId>
+<VarName>&amp;cLocSituacao</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Clocdatlocacao</VarId>
+<VarName>&amp;cLocDatLocacao</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Clocdatdevolucao</VarId>
+<VarName>&amp;cLocDatDevolucao</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Clocdatcancelamento</VarId>
+<VarName>&amp;cLocDatCancelamento</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Clocclipescodigo</VarId>
+<VarName>&amp;cLocCliPesCodigo</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Clocvenpescodigo</VarId>
+<VarName>&amp;cLocVenPesCodigo</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

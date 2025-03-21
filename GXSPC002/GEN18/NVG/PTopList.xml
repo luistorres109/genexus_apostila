@@ -1,0 +1,26 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>1</ObjCls>
+<ObjId>12</ObjId>
+<ObjName>TopList</ObjName>
+<ObjDesc>Top List</ObjDesc>
+<ObjPgmName>PTopList</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Sdtfilmes</VarId>
+<VarName>&amp;SDTFilmes</VarName></Variable></Parameter></Parameters>
+<Levels></Levels></ObjectSpec>

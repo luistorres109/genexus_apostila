@@ -1,0 +1,192 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>32</ObjId>
+<ObjName>ConsFuncionario</ObjName>
+<ObjDesc>Consulta de Funcionários</ObjDesc>
+<ObjPgmName>WConsFuncionario</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pescodigoret</VarId>
+<VarName>&amp;PesCodigoRet</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>PesCodigo.Click</EventName></Event>
+<Event>
+<EventName>Exit</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPESSOA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Token>like</Token>
+<Variable>
+<VarId>Pesnome</VarId>
+<VarName>&amp;PesNome</VarName></Variable></Constraint>
+<Condition>
+<Token>.NOT.</Token>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Pescodigo</VarId>
+<VarName>&amp;PesCodigo</VarName></Variable></Constraint>
+<Condition>
+<Variable>
+<VarId>Pescodigo</VarId>
+<VarName>&amp;PesCodigo</VarName></Variable>
+<Token>&lt;&gt;</Token>
+<Token>0</Token>
+<Token>and</Token>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>PesTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Token>=</Token>
+<Token>2</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PesFunCargo</AttriName>
+<Description>Cargo do Funcionário</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Pesfuncargo</VarId>
+<VarName>&amp;PesFunCargo</VarName></Variable></Constraint>
+<Condition>
+<Token>.NOT.</Token>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PesFunCargo</AttriName>
+<Description>Cargo do Funcionário</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Pesfundataadmissao</VarId>
+<VarName>&amp;PesFunDataAdmissao</VarName></Variable></Constraint>
+<Condition>
+<Token>.NOT.</Token>
+<Variable>
+<VarId>Pesfundataadmissao</VarId>
+<VarName>&amp;PesFunDataAdmissao</VarName></Variable>
+<Token>=</Token>
+<Token>ctod(</Token>
+<Token>&quot;0&quot;</Token>
+<Token>)</Token></Condition></ConditionalConstraint>
+<ConditionalConstraint>
+<Constraint>
+<Attribute>
+<AttriId>57</AttriId>
+<AttriName>PesFunDataDemissao</AttriName>
+<Description>Data de Demissão do Funcionário</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Pesfundatademissao</VarId>
+<VarName>&amp;PesFunDataDemissao</VarName></Variable></Constraint>
+<Condition>
+<Variable>
+<VarId>Pesfundatademissaocheck</VarId>
+<VarName>&amp;PesFunDataDemissaoCheck</VarName></Variable>
+<Token>=</Token>
+<Token>1</Token></Condition></ConditionalConstraint></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>39</AttriId>
+<AttriName>PesTipo</AttriName>
+<Description>Tipo de Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>57</AttriId>
+<AttriName>PesFunDataDemissao</AttriName>
+<Description>Data de Demissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>56</AttriId>
+<AttriName>PesFunDataAdmissao</AttriName>
+<Description>Data de Admissão do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>52</AttriId>
+<AttriName>PesFunCargo</AttriName>
+<Description>Cargo do Funcionário</Description></Attribute>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

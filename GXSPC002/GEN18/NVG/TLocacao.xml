@@ -1,0 +1,789 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>0</ObjCls>
+<ObjId>11</ObjId>
+<ObjName>Locacao</ObjName>
+<ObjDesc>Cadastro de Locações</ObjDesc>
+<ObjPgmName>TLocacao</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<NotIncludedRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Variable>
+<VarId>Funcionario</VarId>
+<VarName>&amp;Funcionario</VarName></Variable>
+<Token>.</Token>
+<Token>Pescodigo</Token>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>and</Token>
+<Token>null1(</Token>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Variable>
+<VarId>GxBScreen</VarId>
+<VarName>&amp;Gx_BScreen</VarName></Variable>
+<Token>=</Token>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Variable>
+<VarId>Funcionario</VarId>
+<VarName>&amp;Funcionario</VarName></Variable>
+<Token>.</Token>
+<Token>Pescodigo</Token>
+<Token>IF</Token>
+<Token>after(</Token>
+<Variable>
+<VarId>Locclipescodigo</VarId>
+<VarName>&amp;LocCliPesCodigo</VarName></Variable>
+<Token>)</Token>
+<Token>and</Token>
+<Variable>
+<VarId>Locclipescodigo</VarId>
+<VarName>&amp;LocCliPesCodigo</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;O cliente deve ser informado!&quot;</Token></Expression>
+<Condition>
+<Variable>
+<VarId>Locclipescodigo</VarId>
+<VarName>&amp;LocCliPesCodigo</VarName></Variable>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action></NotIncludedRules>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters></Parameters>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>13</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table></BaseTable>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Variable>
+<VarId>GxBScreen</VarId>
+<VarName>&amp;Gx_BScreen</VarName></Variable></FormulaName>
+<FormulaExpression>
+<Token>0</Token></FormulaExpression></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute></Into></Action></BaseTableRule>
+<StandAloneWithModeRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Token>1</Token>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>and</Token>
+<Token>null1(</Token>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Variable>
+<VarId>GxBScreen</VarId>
+<VarName>&amp;Gx_BScreen</VarName></Variable>
+<Token>=</Token>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Token>today(</Token>
+<Token>)</Token>
+<Token>IF</Token>
+<Token>insert</Token>
+<Token>and</Token>
+<Token>null1(</Token>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Token>)</Token>
+<Token>and</Token>
+<Variable>
+<VarId>GxBScreen</VarId>
+<VarName>&amp;Gx_BScreen</VarName></Variable>
+<Token>=</Token>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Field Data da Locação is out of range&quot;</Token>
+<Token>,</Token>
+<Token>OutOfRange</Token></Expression>
+<Condition>
+<Token>NOT</Token>
+<Token>(</Token>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token>
+<Token>or</Token>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Token>&gt;=</Token>
+<Token>ymdtod(</Token>
+<Token>1753</Token>
+<Token>,</Token>
+<Token>01</Token>
+<Token>,</Token>
+<Token>01</Token>
+<Token>)</Token>
+<Token>)</Token></Condition></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></AttributeTo>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>80</AttriId>
+<AttriName>LocCliPesNome</AttriName>
+<Description>Loc Cli Pes Nome</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></AttributeTo>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>82</AttriId>
+<AttriName>LocVenPesNome</AttriName>
+<Description>Loc Ven Pes Nome</Description></Attribute></Into></Action>
+<NonTriggeredActions>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>87</AttriId>
+<AttriName>LocTotValor</AttriName>
+<Description>Total da Locação</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Token>+</Token>
+<Attribute>
+<AttriId>88</AttriId>
+<AttriName>LocMidValor</AttriName>
+<Description>Valor da Locação da Mídia</Description></Attribute></FormulaExpression></Action></NonTriggeredActions></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Attribute>
+<AttriId>84</AttriId>
+<AttriName>LocDatLocacao</AttriName>
+<Description>Data da Locação</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute>
+<Attribute>
+<AttriId>81</AttriId>
+<AttriName>LocVenPesCodigo</AttriName>
+<Description>Loc Ven Pes Codigo</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels>
+<Level>
+<LevelType>Trn</LevelType>
+<LevelNumber>14</LevelNumber>
+<BaseTable>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table></BaseTable>
+<StandAloneRules>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>88</AttriId>
+<AttriName>LocMidValor</AttriName>
+<Description>Valor da Locação da Mídia</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>89</AttriId>
+<AttriName>MidConfValor</AttriName>
+<Description>Valor da Configuração da Mídia</Description></Attribute>
+<Token>.</Token>
+<Token>Enabled</Token></FormulaName>
+<FormulaExpression>
+<Token>0</Token>
+<Token>;</Token></FormulaExpression></Action></StandAloneRules>
+<BaseTableRule>
+<Action>
+<ActionType>ReadBaseTable</ActionType>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></AttributeFrom></JoinCondition>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></AttributeTo>
+<Table></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into></Into></Action></BaseTableRule>
+<StandAloneWithModeRules></StandAloneWithModeRules>
+<Rules>
+<Action>
+<ActionType>ReadTable</ActionType>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></AttributeTo>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute></Into></Action>
+<Action>
+<ActionType>ReadTable</ActionType>
+<JoinType>Outer</JoinType>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table>
+<JoinConditions>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table>
+<JoinCondition>
+<AttributeTo>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></AttributeTo>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<AttributeFrom>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></AttributeFrom></JoinCondition></JoinConditions>
+<Into>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>FilNome</AttriName>
+<Description>Nome do Filme</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></Into></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>89</AttriId>
+<AttriName>MidConfValor</AttriName>
+<Description>Valor da Configuração da Mídia</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Token>find(</Token>
+<Attribute>
+<AttriId>77</AttriId>
+<AttriName>ConfTipoValor</AttriName>
+<Description>Valor da Configuração da Mídia</Description></Attribute>
+<Token>)</Token>
+<Token>where</Token>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>and</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>88</AttriId>
+<AttriName>LocMidValor</AttriName>
+<Description>Valor da Locação da Mídia</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Attribute>
+<AttriId>89</AttriId>
+<AttriName>MidConfValor</AttriName>
+<Description>Valor da Configuração da Mídia</Description></Attribute></FormulaExpression></Action>
+<Action>
+<ActionType>Formula</ActionType>
+<FormulaName>
+<Attribute>
+<AttriId>87</AttriId>
+<AttriName>LocTotValor</AttriName>
+<Description>Total da Locação</Description></Attribute></FormulaName>
+<FormulaExpression>
+<Token>+</Token>
+<Attribute>
+<AttriId>88</AttriId>
+<AttriName>LocMidValor</AttriName>
+<Description>Valor da Locação da Mídia</Description></Attribute></FormulaExpression></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;A mídia não pode ser cadastrada se o tipo for 1&quot;</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>&lt;&gt;</Token>
+<Token>1</Token></Condition></Action>
+<Action>
+<ActionType>BusinessRule</ActionType>
+<RuleType>ErrorRule</RuleType>
+<Expression>
+<Token>&quot;Pelo menos uma mídia deve ser informada&quot;</Token></Expression>
+<Condition>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute>
+<Token>.</Token>
+<Token>isempty(</Token>
+<Token>)</Token></Condition></Action></Rules>
+<BeforeConfirmRules></BeforeConfirmRules>
+<AfterConfirmRules></AfterConfirmRules>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table>
+<TableAction>insert</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<BeforeInsertRules></BeforeInsertRules>
+<AfterInsertRules></AfterInsertRules>
+<BeforeUpdateRules></BeforeUpdateRules>
+<AfterUpdateRules></AfterUpdateRules>
+<BeforeDeleteRules></BeforeDeleteRules>
+<AfterDeleteRules></AfterDeleteRules>
+<TablesToControlOnDelete></TablesToControlOnDelete>
+<Levels></Levels>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<BeforeTrnRules></BeforeTrnRules>
+<AfterTrnRules></AfterTrnRules>
+<AfterLevelRules></AfterLevelRules></Level></Levels>
+<Prompts>
+<Prompt>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>16</ObjId>
+<ObjName>Gx0060</ObjName>
+<ObjPgmName>WGx0060</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>14</TableId>
+<TableName>LOCACAOLOCMIDIA</TableName>
+<Description>Mídia da Locação</Description></Table>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>48</ObjId>
+<ObjName>Gx00E1</ObjName>
+<ObjPgmName>WGx00E1</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<InputParameters>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description></Table>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>17</ObjId>
+<ObjName>Gx0070</ObjName>
+<ObjPgmName>WGx0070</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>79</AttriId>
+<AttriName>LocCliPesCodigo</AttriName>
+<Description>Loc Cli Pes Codigo</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt>
+<Prompt>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>47</ObjId>
+<ObjName>Gx00D0</ObjName>
+<ObjPgmName>WGx00D0</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<InputParameters></InputParameters>
+<OutputParameters>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></OutputParameters>
+<PromptType>System</PromptType></Prompt></Prompts>
+<Suggests></Suggests></ObjectSpec>

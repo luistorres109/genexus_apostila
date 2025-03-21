@@ -1,0 +1,195 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>42</ObjId>
+<ObjName>ConfTipMidia</ObjName>
+<ObjDesc>Configurações do Tipo de Mídia</ObjDesc>
+<ObjPgmName>WConfTipMidia</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICATEGORIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Level>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>2</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>12</TableId>
+<TableName>CONFTIPMIDIA</TableName>
+<Description>Configurações do Tipo de Mídia</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICONFTIPMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Midtipo</VarId>
+<VarName>&amp;MidTipo</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Catcodigo</VarId>
+<VarName>&amp;CatCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Midtipo</VarId>
+<VarName>&amp;MidTipo</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Catcodigo</VarId>
+<VarName>&amp;CatCodigo</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>12</TableId>
+<TableName>CONFTIPMIDIA</TableName>
+<Description>Configurações do Tipo de Mídia</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>77</AttriId>
+<AttriName>ConfTipoValor</AttriName>
+<Description>Valor da Configuração da Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></Level></ImplicitForEach></Event>
+<Event>
+<EventName>Refresh</EventName></Event>
+<Event>
+<EventName>'Gravar'</EventName>
+<CALL>
+<Object>
+<ObjCls>1</ObjCls>
+<ObjId>8</ObjId>
+<ObjName>GrvConfTipMidia</ObjName>
+<ObjPgmName>PGrvConfTipMidia</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Parameters>
+<Variable>
+<VarId>Midtipo</VarId>
+<VarName>&amp;MidTipo</VarName></Variable>
+<Token>,</Token>
+<Variable>
+<VarId>Catcodigo</VarId>
+<VarName>&amp;CatCodigo</VarName></Variable>
+<Token>,</Token>
+<Variable>
+<VarId>Conftipovalor</VarId>
+<VarName>&amp;ConfTipoValor</VarName></Variable></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'M'</EventName></Event>
+<Event>
+<EventName>'D'</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

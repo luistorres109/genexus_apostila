@@ -1,0 +1,149 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>44</ObjId>
+<ObjName>MovimentosCliente</ObjName>
+<ObjDesc>Movimentos de Clientes</ObjDesc>
+<ObjPgmName>WMovimentosCliente</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName>
+<CALL>
+<Object>
+<ObjCls>1</ObjCls>
+<ObjId>11</ObjId>
+<ObjName>TotDevCan</ObjName>
+<ObjPgmName>PTotDevCan</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Parameters>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>,</Token>
+<Variable>
+<VarId>Totcanc</VarId>
+<VarName>&amp;TotCanc</VarName></Variable>
+<Token>,</Token>
+<Variable>
+<VarId>Totdevol</VarId>
+<VarName>&amp;TotDevol</VarName></Variable></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ICLIENTEDEPENDENTES</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>@PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>@PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute></Into>
+<Tables></Tables></Table>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute></Into>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

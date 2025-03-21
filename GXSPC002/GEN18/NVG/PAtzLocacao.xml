@@ -1,0 +1,439 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>1</ObjCls>
+<ObjId>10</ObjId>
+<ObjName>AtzLocacao</ObjName>
+<ObjDesc>Atualiza Locação</ObjDesc>
+<ObjPgmName>PAtzLocacao</ObjPgmName>
+<ObjClsName>Procedure</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0060</MsgCode>
+<Token>The program may be called by another program and the Commit on Exit property is set to YES</Token></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>None</Device></OutputDevices>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Loccodigo</VarId>
+<VarName>&amp;LocCodigo</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Acao</VarId>
+<VarName>&amp;Acao</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>2</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For First</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ILOCACAO</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Loccodigo</VarId>
+<VarName>&amp;LocCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Loccodigo</VarId>
+<VarName>&amp;LocCodigo</VarName></Variable></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>83</AttriId>
+<AttriName>LocCodigo</AttriName>
+<Description>Código de Locação</Description></Attribute>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>13</TableId>
+<TableName>LOCACAO</TableName>
+<Description>Cadastro de Locações</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>78</AttriId>
+<AttriName>LocSituacao</AttriName>
+<Description>Situação de Locação</Description></Attribute>
+<Attribute>
+<AttriId>85</AttriId>
+<AttriName>LocDatDevolucao</AttriName>
+<Description>Data de Devolução</Description></Attribute>
+<Attribute>
+<AttriId>86</AttriId>
+<AttriName>LocDatCancelamento</AttriName>
+<Description>Data de Cancelamento</Description></Attribute></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations>
+<Optimization>
+<Type>Update</Type></Optimization></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>9</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Loccodigo</VarId>
+<VarName>&amp;LocCodigo</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level>
+<Level>
+<LevelNumber>4</LevelNumber>
+<Optimizations>
+<Optimization>
+<Type>Update</Type></Optimization></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>20</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Loccodigo</VarId>
+<VarName>&amp;LocCodigo</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level>
+<Level>
+<LevelNumber>5</LevelNumber>
+<Optimizations>
+<Optimization>
+<Type>Delete</Type></Optimization></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>29</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Loccodigo</VarId>
+<VarName>&amp;LocCodigo</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<TableAction>delete</TableAction>
+<AttrisToUpdate></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level>
+<Level>
+<LevelNumber>6</LevelNumber>
+<Optimizations>
+<Optimization>
+<Type>Update</Type></Optimization></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>41</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IMIDIA</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Token>=</Token>
+<Variable>
+<VarId>Loccodigo</VarId>
+<VarName>&amp;LocCodigo</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description>
+<Updated>Yes</Updated>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate>
+<TableToUpdate>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<TableAction>update</TableAction>
+<AttrisToUpdate>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute></AttrisToUpdate></TableToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></Level></Levels></ObjectSpec>

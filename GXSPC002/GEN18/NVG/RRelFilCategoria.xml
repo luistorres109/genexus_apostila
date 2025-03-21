@@ -1,0 +1,288 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>2</ObjCls>
+<ObjId>4</ObjId>
+<ObjName>RelFilCategoria</ObjName>
+<ObjDesc>Relatório de Filmes de Categoria</ObjDesc>
+<ObjPgmName>RRelFilCategoria</ObjPgmName>
+<ObjClsName>Report</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0038</MsgCode>
+<Token>There is no index for order </Token>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>FilNome</AttriName>
+<Description>Nome do Filme</Description></Attribute>
+<Token>; poor performance may be noticed</Token>
+<Token> in group starting at line </Token>
+<Token>11</Token>
+<Token></Token>
+<Token>.</Token></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>Screen</Device>
+<Device>Printer</Device></OutputDevices>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Catcodigoini</VarId>
+<VarName>&amp;CatCodigoIni</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Catcodigofin</VarId>
+<VarName>&amp;CatCodigoFin</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Filcodigoini</VarId>
+<VarName>&amp;FilCodigoIni</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Filcodigofin</VarId>
+<VarName>&amp;FilCodigoFin</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>11</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>FilNome</AttriName>
+<Description>Nome do Filme</Description></Attribute></Order>
+<Condition></Condition>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Filcodigoini</VarId>
+<VarName>&amp;FilCodigoIni</VarName></Variable>
+<Token>and</Token>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Token>&lt;=</Token>
+<Variable>
+<VarId>Filcodigofin</VarId>
+<VarName>&amp;FilCodigoFin</VarName></Variable></Condition>
+<Condition>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Catcodigoini</VarId>
+<VarName>&amp;CatCodigoIni</VarName></Variable>
+<Token>and</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>&lt;=</Token>
+<Variable>
+<VarId>Catcodigofin</VarId>
+<VarName>&amp;CatCodigoFin</VarName></Variable></Condition></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>FilOscar</AttriName>
+<Description>Fil Oscar</Description></Attribute>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>FilNome</AttriName>
+<Description>Nome do Filme</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute></Into>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels>
+<Level>
+<LevelNumber>4</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>Break</LevelType>
+<LevelBeginRow>17</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>FilNome</AttriName>
+<Description>Nome do Filme</Description></Attribute></Order>
+<Condition></Condition>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>@CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute>
+<Token>and</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>@CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Attribute>
+<AttriId>70</AttriId>
+<AttriName>FilOscar</AttriName>
+<Description>Fil Oscar</Description></Attribute>
+<Attribute>
+<AttriId>29</AttriId>
+<AttriName>FilNome</AttriName>
+<Description>Nome do Filme</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>3</TableId>
+<TableName>CATEGORIA</TableName>
+<Description>Cadastro de Categorias</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>33</AttriId>
+<AttriName>CatCodigo</AttriName>
+<Description>Código da Categoria</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>34</AttriId>
+<AttriName>CatNome</AttriName>
+<Description>Nome da Categoria</Description></Attribute></Into>
+<JoinType>Outer</JoinType>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></Level></Levels></ObjectSpec>

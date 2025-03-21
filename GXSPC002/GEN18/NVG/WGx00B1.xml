@@ -1,0 +1,127 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>38</ObjId>
+<ObjName>Gx00B1</ObjName>
+<ObjDesc>Selection List Level2</ObjDesc>
+<ObjPgmName>WGx00B1</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></Parameter>
+<Parameter>
+<IO>out</IO>
+<Variable>
+<VarId>Pfilatorcodigo</VarId>
+<VarName>&amp;pFilAtorCodigo</VarName></Variable></Parameter></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Enter</EventName></Event>
+<Event>
+<EventName>Load</EventName>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>1</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>11</TableId>
+<TableName>FILMELEVEL2</TableName>
+<Description>Level2</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>73</AttriId>
+<AttriName>FilAtorCodigo</AttriName>
+<Description>Fil Ator Codigo</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IFILMELEVEL2</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>@FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></Condition>
+<Condition>
+<Attribute>
+<AttriId>73</AttriId>
+<AttriName>FilAtorCodigo</AttriName>
+<Description>Fil Ator Codigo</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cfilatorcodigo</VarId>
+<VarName>&amp;cFilAtorCodigo</VarName></Variable></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>@FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>75</AttriId>
+<AttriName>FIlAstProt</AttriName>
+<Description>Astro Protagonista</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Cfilastprot</VarId>
+<VarName>&amp;cFIlAstProt</VarName></Variable></Condition></NonOptimizedWhere>
+<NavigationTree>
+<Table>
+<TableId>11</TableId>
+<TableName>FILMELEVEL2</TableName>
+<Description>Level2</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Attribute>
+<AttriId>73</AttriId>
+<AttriName>FilAtorCodigo</AttriName>
+<Description>Fil Ator Codigo</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>75</AttriId>
+<AttriName>FIlAstProt</AttriName>
+<Description>Astro Protagonista</Description></Attribute>
+<Attribute>
+<AttriId>73</AttriId>
+<AttriName>FilAtorCodigo</AttriName>
+<Description>Fil Ator Codigo</Description></Attribute></Into>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

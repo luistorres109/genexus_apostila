@@ -1,0 +1,247 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>2</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>RelCliDep</ObjName>
+<ObjDesc>Relatório de Dependentes</ObjDesc>
+<ObjPgmName>RRelCliDep</ObjPgmName>
+<ObjClsName>Report</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings>
+<Warning>
+<MsgCode>spc0038</MsgCode>
+<Token>There is no index for order </Token>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute>
+<Token>, </Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute>
+<Token>; poor performance may be noticed</Token>
+<Token> in group starting at line </Token>
+<Token>9</Token>
+<Token></Token>
+<Token>.</Token></Warning></Warnings>
+<Errors></Errors>
+<OutputDevices>
+<Device>Screen</Device>
+<Device>Printer</Device></OutputDevices>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Pesdepcodigoini</VarId>
+<VarName>&amp;PesDepCodigoIni</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Pesdepcodigofin</VarId>
+<VarName>&amp;PesDepCodigoFin</VarName></Variable></Parameter></Parameters>
+<Levels>
+<Level>
+<LevelNumber>3</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>11</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></Order>
+<Condition></Condition>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere>
+<Condition>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute>
+<Token>&gt;=</Token>
+<Variable>
+<VarId>Pesdepcodigoini</VarId>
+<VarName>&amp;PesDepCodigoIni</VarName></Variable>
+<Token>and</Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute>
+<Token>&lt;=</Token>
+<Variable>
+<VarId>Pesdepcodigofin</VarId>
+<VarName>&amp;PesDepCodigoFin</VarName></Variable></Condition></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></Into>
+<Tables>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>13</AttriId>
+<AttriName>PesNome</AttriName>
+<Description>Nome da Pessoa</Description></Attribute></Into>
+<Tables></Tables></Table>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute></Into>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels>
+<Level>
+<LevelNumber>4</LevelNumber>
+<Optimizations></Optimizations>
+<LevelType>Break</LevelType>
+<LevelBeginRow>15</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute>
+<Token>,</Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></Order>
+<Condition></Condition>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>@PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute>
+<Token>and</Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute>
+<Token>=</Token>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>@PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>8</TableId>
+<TableName>PESDEPENDENTES</TableName>
+<Description>Dependentes</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>PesCodigo</AttriName>
+<Description>Codigo da Pessoa</Description></Attribute>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></KeyAttributes>
+<Into></Into>
+<Tables>
+<Table>
+<TableId>7</TableId>
+<TableName>PESSOA</TableName>
+<Description>Pessoa</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>61</AttriId>
+<AttriName>PesDepCodigo</AttriName>
+<Description>Código do Dependente</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>62</AttriId>
+<AttriName>PesDepNome</AttriName>
+<Description>Nome do Dependente</Description></Attribute></Into>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas>
+<Levels></Levels></Level></Levels></Level></Levels></ObjectSpec>

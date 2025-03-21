@@ -1,0 +1,40 @@
+
+<ObjectSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Object>
+<ObjCls>4</ObjCls>
+<ObjId>40</ObjId>
+<ObjName>RelCliDep</ObjName>
+<ObjDesc>Relatório de Dependentes</ObjDesc>
+<ObjPgmName>WRelCliDep</ObjPgmName>
+<ObjClsName>Work Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>18</GenId>
+<GenName>.NET - Win</GenName></Generator>
+<FormClass>Graphic</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>'Relatório'</EventName>
+<CALL>
+<Object>
+<ObjCls>2</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>RelCliDep</ObjName>
+<ObjPgmName>RRelCliDep</ObjPgmName>
+<ObjClsName>Report</ObjClsName></Object>
+<Parameters>
+<Variable>
+<VarId>Pesdepcodigoini</VarId>
+<VarName>&amp;PesDepCodigoIni</VarName></Variable>
+<Token>,</Token>
+<Variable>
+<VarId>Pesdepcodigofin</VarId>
+<VarName>&amp;PesDepCodigoFin</VarName></Variable></Parameters>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>
