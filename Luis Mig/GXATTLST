@@ -1,0 +1,198 @@
+
+<AttriList>
+<Attribute>
+  <AttriName>LocCliPesCodigo</AttriName>
+  <AttriShortName>LocCliPesCodigo</AttriShortName>
+  <AttriId>79</AttriId>
+  <AttriDesc>Loc Cli Pes Codigo</AttriDesc>
+  <AttriSuper>
+    <Group>
+      <GroupId>4</GroupId>
+      <GroupName>LocCliente</GroupName>
+    </Group>
+    <Attribute>
+      <AttriName>PesCodigo</AttriName>
+      <AttriShortName>PesCodigo</AttriShortName>
+      <AttriId>12</AttriId>
+      <AttriDesc>Codigo da Pessoa</AttriDesc>
+      <Type>N</Type>
+      <TypeStr>N(9)</TypeStr>
+      <Length>9</Length>
+      <Decimals>0</Decimals>
+    </Attribute>
+  </AttriSuper>
+  <Type>N</Type>
+  <TypeStr>N(9)</TypeStr>
+  <Length>9</Length>
+  <Decimals>0</Decimals>
+  <Picture>ZZZZZZZZ9</Picture>
+</Attribute>
+
+   <ControlInfo>
+      <Properties>
+         <Property>
+            <PropertyType>color</PropertyType>
+            <PropertyName>ForeColor</PropertyName>
+            <PropertyValue>
+               <Color>
+                  <ColorValue>RGB(0,0,0)</ColorValue>
+                  <ColorName>Window Text</ColorName>
+               </Color>
+            </PropertyValue>
+         </Property>
+         <Property>
+            <PropertyType>color</PropertyType>
+            <PropertyName>BackColor</PropertyName>
+            <PropertyValue>
+               <Color>
+                  <ColorValue>RGB(255,255,255)</ColorValue>
+                  <ColorName>Window Background</ColorName>
+               </Color>
+            </PropertyValue>
+         </Property>
+         <Property>
+            <PropertyName>CtrlType</PropertyName>
+            <PropertyValue>Edit</PropertyValue>
+         </Property>
+         <Contents>Is Password: No
+Item Descriptions: 
+Item Values: 
+Sorted: Yes
+</Contents>
+      </Properties>
+   </ControlInfo><PropPart>
+</PropPart>
+
+   <AttriXRef>
+      <Objects>
+         <ObjXRef>
+<Object>
+  <ObjCls>7</ObjCls>
+  <ObjId>13</ObjId>
+  <ObjName>Locacao</ObjName>
+  <ObjShortName>Locacao</ObjShortName>
+  <ObjTitle>Cadastro de Locações</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Composition</ObjPart>
+               <ObjPart>System Index</ObjPart>
+            </ObjXRefParts>
+            <Flags>
+            </Flags>
+         </ObjXRef>
+         <ObjXRef>
+<Object>
+  <ObjCls>0</ObjCls>
+  <ObjId>11</ObjId>
+  <ObjName>Locacao</ObjName>
+  <ObjShortName>Locacao</ObjShortName>
+  <ObjTitle>Cadastro de Locações</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Structure</ObjPart>
+            </ObjXRefParts>
+         </ObjXRef>
+         <GroupList>
+<Object>
+  <ObjCls>10</ObjCls>
+  <ObjId>4</ObjId>
+  <ObjName>LocCliente</ObjName>
+  <ObjShortName>LocCliente</ObjShortName>
+  <ObjTitle>Cliente da Locação</ObjTitle>
+</Object>
+
+            <Composition>
+            </Composition>
+         </GroupList>
+         <ObjXRef>
+<Object>
+  <ObjCls>0</ObjCls>
+  <ObjId>11</ObjId>
+  <ObjName>Locacao</ObjName>
+  <ObjShortName>Locacao</ObjShortName>
+  <ObjTitle>Cadastro de Locações</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Form</ObjPart>
+               <ObjPart>Variable</ObjPart>
+            </ObjXRefParts>
+         </ObjXRef>
+         <ObjXRef>
+<Object>
+  <ObjCls>1</ObjCls>
+  <ObjId>9</ObjId>
+  <ObjName>CnfLocacao</ObjName>
+  <ObjShortName>CnfLocacao</ObjShortName>
+  <ObjTitle>Cnf Locacao</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Subroutine</ObjPart>
+               <ObjPart>Print Block</ObjPart>
+               <ObjPart>Variable</ObjPart>
+               <ObjPart>Parm rule</ObjPart>
+            </ObjXRefParts>
+         </ObjXRef>
+         <ObjXRef>
+<Object>
+  <ObjCls>1</ObjCls>
+  <ObjId>11</ObjId>
+  <ObjName>TotDevCan</ObjName>
+  <ObjShortName>TotDevCan</ObjShortName>
+  <ObjTitle>Total de Devoluções e Cancelamentos</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Subroutine</ObjPart>
+            </ObjXRefParts>
+         </ObjXRef>
+         <ObjXRef>
+<Object>
+  <ObjCls>2</ObjCls>
+  <ObjId>15</ObjId>
+  <ObjName>RelTopListCli</ObjName>
+  <ObjShortName>RelTopListCli</ObjShortName>
+  <ObjTitle>Relatório Top List dos Clientes</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Subroutine</ObjPart>
+               <ObjPart>Variable</ObjPart>
+            </ObjXRefParts>
+         </ObjXRef>
+         <ObjXRef>
+<Object>
+  <ObjCls>4</ObjCls>
+  <ObjId>43</ObjId>
+  <ObjName>PeLocacao</ObjName>
+  <ObjShortName>PeLocacao</ObjShortName>
+  <ObjTitle>Cadastro  de  Locações</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Form</ObjPart>
+               <ObjPart>Variable</ObjPart>
+            </ObjXRefParts>
+         </ObjXRef>
+         <ObjXRef>
+<Object>
+  <ObjCls>12</ObjCls>
+  <ObjId>47</ObjId>
+  <ObjName>Gx00D0</ObjName>
+  <ObjShortName>Gx00D0</ObjShortName>
+  <ObjTitle>Selection List Cadastro de Locações</ObjTitle>
+</Object>
+
+            <ObjXRefParts>
+               <ObjPart>Conditions</ObjPart>
+               <ObjPart>Variable</ObjPart>
+            </ObjXRefParts>
+         </ObjXRef>
+      </Objects>
+      <Formulas>
+      </Formulas>
+   </AttriXRef>
+</AttriList>

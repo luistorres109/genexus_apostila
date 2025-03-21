@@ -1,0 +1,148 @@
+
+<TableList>
+   <Table>
+      <TableId>9</TableId>
+      <TableName>Astros</TableName>
+      <TableShortName>Astros</TableShortName>
+      <TableDesc>Cadastro de Astros</TableDesc>
+   </Table>
+   <TblAtts>
+      <TblAtt>
+<Attribute>
+  <AttriName>AstCodigo</AttriName>
+  <AttriShortName>AstCodigo</AttriShortName>
+  <AttriId>65</AttriId>
+  <AttriDesc>Código do Astro</AttriDesc>
+  <Type>N</Type>
+  <TypeStr>N(9)</TypeStr>
+  <Length>9</Length>
+  <Decimals>0</Decimals>
+  <Picture>ZZZZZZZZ9</Picture>
+  <Domain>
+    <Attribute>
+      <AttriName>Codigo</AttriName>
+      <AttriShortName>Codigo</AttriShortName>
+      <AttriId>2</AttriId>
+      <AttriDesc>Código</AttriDesc>
+      <AttriIsDomain/>
+      <Type>N</Type>
+      <TypeStr>N(9)</TypeStr>
+      <Length>9</Length>
+      <Decimals>0</Decimals>
+      <Picture>ZZZZZZZZ9</Picture>
+    </Attribute>
+  </Domain>
+</Attribute>
+
+         <TblAttIsKey></TblAttIsKey>
+      </TblAtt>
+      <TblAtt>
+<Attribute>
+  <AttriName>AstNome</AttriName>
+  <AttriShortName>AstNome</AttriShortName>
+  <AttriId>66</AttriId>
+  <AttriDesc>Nome do Astro</AttriDesc>
+  <Type>V</Type>
+  <TypeStr>V(50)</TypeStr>
+  <MaxLen>50</MaxLen>
+  <AvgLen>0</AvgLen>
+  <Picture>@!</Picture>
+  <Domain>
+    <Attribute>
+      <AttriName>Nome</AttriName>
+      <AttriShortName>Nome</AttriShortName>
+      <AttriId>5</AttriId>
+      <AttriDesc>Nome</AttriDesc>
+      <AttriIsDomain/>
+      <Type>V</Type>
+      <TypeStr>V(50)</TypeStr>
+      <MaxLen>50</MaxLen>
+      <AvgLen>0</AvgLen>
+      <Picture>@!</Picture>
+    </Attribute>
+  </Domain>
+</Attribute>
+
+         <AllowNulls>Yes</AllowNulls>
+      </TblAtt>
+      <TblAtt>
+<Attribute>
+  <AttriName>AstDatNasc</AttriName>
+  <AttriShortName>AstDatNasc</AttriShortName>
+  <AttriId>67</AttriId>
+  <AttriDesc>Data de Nascimento do Astro</AttriDesc>
+  <Type>D</Type>
+  <TypeStr>D(8)</TypeStr>
+  <Picture>99/99/99</Picture>
+  <Domain>
+    <Attribute>
+      <AttriName>Data</AttriName>
+      <AttriShortName>Data</AttriShortName>
+      <AttriId>6</AttriId>
+      <AttriDesc>Data</AttriDesc>
+      <AttriIsDomain/>
+      <Type>D</Type>
+      <TypeStr>D(8)</TypeStr>
+      <Picture>99/99/99</Picture>
+    </Attribute>
+  </Domain>
+</Attribute>
+
+         <AllowNulls>Yes</AllowNulls>
+      </TblAtt>
+      <TblAtt>
+<Attribute>
+  <AttriName>AstDatFal</AttriName>
+  <AttriShortName>AstDatFal</AttriShortName>
+  <AttriId>68</AttriId>
+  <AttriDesc>Data de Falecimento do Astro</AttriDesc>
+  <Type>D</Type>
+  <TypeStr>D(8)</TypeStr>
+  <Picture>99/99/99</Picture>
+  <Domain>
+    <Attribute>
+      <AttriName>Data</AttriName>
+      <AttriShortName>Data</AttriShortName>
+      <AttriId>6</AttriId>
+      <AttriDesc>Data</AttriDesc>
+      <AttriIsDomain/>
+      <Type>D</Type>
+      <TypeStr>D(8)</TypeStr>
+      <Picture>99/99/99</Picture>
+    </Attribute>
+  </Domain>
+</Attribute>
+
+         <AllowNulls>Yes</AllowNulls>
+      </TblAtt>
+      <TblAtt>
+<Attribute>
+  <AttriName>AstDescricao</AttriName>
+  <AttriShortName>AstDescricao</AttriShortName>
+  <AttriId>69</AttriId>
+  <AttriDesc>Descrição do Astro</AttriDesc>
+  <Type>L</Type>
+  <TypeStr>L(800)</TypeStr>
+  <MaxLen>800</MaxLen>
+  <AvgLen>0</AvgLen>
+  <Picture>@!</Picture>
+  <Domain>
+    <Attribute>
+      <AttriName>Descricao</AttriName>
+      <AttriShortName>Descricao</AttriShortName>
+      <AttriId>7</AttriId>
+      <AttriDesc>Descricao</AttriDesc>
+      <AttriIsDomain/>
+      <Type>L</Type>
+      <TypeStr>L(800)</TypeStr>
+      <MaxLen>800</MaxLen>
+      <AvgLen>0</AvgLen>
+      <Picture>@!</Picture>
+    </Attribute>
+  </Domain>
+</Attribute>
+
+         <AllowNulls>Yes</AllowNulls>
+      </TblAtt>
+   </TblAtts>
+</TableList>

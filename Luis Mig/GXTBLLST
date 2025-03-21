@@ -1,0 +1,167 @@
+
+<TableList>
+   <Table>
+      <TableId>3</TableId>
+      <TableName>Categoria</TableName>
+      <TableShortName>Categoria</TableShortName>
+      <TableDesc>Cadastro de Categorias</TableDesc>
+   </Table>
+   <TblAtts>
+      <TblAtt>
+<Attribute>
+  <AttriName>CatCodigo</AttriName>
+  <AttriShortName>CatCodigo</AttriShortName>
+  <AttriId>33</AttriId>
+  <AttriDesc>Código da Categoria</AttriDesc>
+  <Type>N</Type>
+  <TypeStr>N(9)</TypeStr>
+  <Length>9</Length>
+  <Decimals>0</Decimals>
+  <Picture>ZZZZZZZZ9</Picture>
+  <Domain>
+    <Attribute>
+      <AttriName>Codigo</AttriName>
+      <AttriShortName>Codigo</AttriShortName>
+      <AttriId>2</AttriId>
+      <AttriDesc>Código</AttriDesc>
+      <AttriIsDomain/>
+      <Type>N</Type>
+      <TypeStr>N(9)</TypeStr>
+      <Length>9</Length>
+      <Decimals>0</Decimals>
+      <Picture>ZZZZZZZZ9</Picture>
+    </Attribute>
+  </Domain>
+</Attribute>
+
+         <TblAttIsKey></TblAttIsKey>
+      </TblAtt>
+      <TblAtt>
+<Attribute>
+  <AttriName>CatNome</AttriName>
+  <AttriShortName>CatNome</AttriShortName>
+  <AttriId>34</AttriId>
+  <AttriDesc>Nome da Categoria</AttriDesc>
+  <Type>V</Type>
+  <TypeStr>V(50)</TypeStr>
+  <MaxLen>50</MaxLen>
+  <AvgLen>0</AvgLen>
+  <Picture>@!</Picture>
+  <Domain>
+    <Attribute>
+      <AttriName>Nome</AttriName>
+      <AttriShortName>Nome</AttriShortName>
+      <AttriId>5</AttriId>
+      <AttriDesc>Nome</AttriDesc>
+      <AttriIsDomain/>
+      <Type>V</Type>
+      <TypeStr>V(50)</TypeStr>
+      <MaxLen>50</MaxLen>
+      <AvgLen>0</AvgLen>
+      <Picture>@!</Picture>
+    </Attribute>
+  </Domain>
+</Attribute>
+
+         <AllowNulls>Yes</AllowNulls>
+      </TblAtt>
+   </TblAtts>
+   <TblIdxs>
+      <Index>
+         <IdxId>1</IdxId>
+         <IdxName>ICategoria</IdxName>
+         <IdxShortName>ICategoria</IdxShortName>
+         <IdxType>Primary Key</IdxType>
+         <IdxAtts>
+            <IdxAtt>
+<Attribute>
+  <AttriName>CatCodigo</AttriName>
+  <AttriShortName>CatCodigo</AttriShortName>
+  <AttriId>33</AttriId>
+  <AttriDesc>Código da Categoria</AttriDesc>
+  <Type>N</Type>
+  <TypeStr>N(9)</TypeStr>
+  <Length>9</Length>
+  <Decimals>0</Decimals>
+</Attribute>
+
+               <IdxOrder>A</IdxOrder>
+            </IdxAtt>
+         </IdxAtts>
+      </Index>
+   </TblIdxs>
+   <TblCKeys>
+      <CKey>
+<Attribute>
+  <AttriName>CatCodigo</AttriName>
+  <AttriShortName>CatCodigo</AttriShortName>
+  <AttriId>33</AttriId>
+  <AttriDesc>Código da Categoria</AttriDesc>
+  <Type>N</Type>
+  <TypeStr>N(9)</TypeStr>
+  <Length>9</Length>
+  <Decimals>0</Decimals>
+</Attribute>
+
+         <KeyIsPrimary></KeyIsPrimary>
+      </CKey>
+   </TblCKeys>
+   <SupOfTbls>
+      <TblSuper>
+         <Table>
+            <TableId>12</TableId>
+            <TableName>ConfTipMidia</TableName>
+            <TableShortName>ConfTipMidia</TableShortName>
+            <TableDesc>Configurações do Tipo de Mídia</TableDesc>
+         </Table>
+         <TblSupBy>
+<Attribute>
+  <AttriName>CatCodigo</AttriName>
+  <AttriShortName>CatCodigo</AttriShortName>
+  <AttriId>33</AttriId>
+  <AttriDesc>Código da Categoria</AttriDesc>
+  <Type>N</Type>
+  <TypeStr>N(9)</TypeStr>
+  <Length>9</Length>
+  <Decimals>0</Decimals>
+</Attribute>
+
+         </TblSupBy>
+      </TblSuper>
+      <TblSuper>
+         <Table>
+            <TableId>2</TableId>
+            <TableName>Filme</TableName>
+            <TableShortName>Filme</TableShortName>
+            <TableDesc>Cadastro de Filmes</TableDesc>
+         </Table>
+         <TblSupBy>
+<Attribute>
+  <AttriName>CatCodigo</AttriName>
+  <AttriShortName>CatCodigo</AttriShortName>
+  <AttriId>33</AttriId>
+  <AttriDesc>Código da Categoria</AttriDesc>
+  <Type>N</Type>
+  <TypeStr>N(9)</TypeStr>
+  <Length>9</Length>
+  <Decimals>0</Decimals>
+</Attribute>
+
+         </TblSupBy>
+      </TblSuper>
+   </SupOfTbls>
+   <TblPrompts>
+      <TblPrompt>
+<Object>
+  <ObjCls>12</ObjCls>
+  <ObjId>13</ObjId>
+  <ObjName>Gx0030</ObjName>
+  <ObjShortName>Gx0030</ObjShortName>
+  <ObjTitle>Selection List Cadastro de Categorias</ObjTitle>
+</Object>
+
+      </TblPrompt>
+   </TblPrompts><PropPart>
+</PropPart>
+
+</TableList>

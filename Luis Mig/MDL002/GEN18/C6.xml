@@ -1,0 +1,284 @@
+
+<ReorgSpec>
+<SpecVersion>9_0_6-009</SpecVersion>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<ReorgCls>c</ReorgCls>
+<ReorgCode>pk</ReorgCode>
+<ReorgMsg>MIDIA needs conversion</ReorgMsg>
+<ReorgAction>#</ReorgAction>
+<TableAttributes>
+<AttrisInTable>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description>
+<TakesValueFrom>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></FromValue></TakesValueFrom>
+<OnPrimaryKey>Yes</OnPrimaryKey>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>9</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>Yes</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description>
+<TakesValueFrom>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Attribute>
+<AttriId>35</AttriId>
+<AttriName>MidTipo</AttriName>
+<Description>Tipo de Mídia</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>1</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description>
+<TakesValueFrom>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Attribute>
+<AttriId>36</AttriId>
+<AttriName>MidSituacao</AttriName>
+<Description>Situação de Mídia</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>1</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description>
+<TakesValueFrom>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>9</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>Yes</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description>
+<TakesValueFrom>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<FromValue>
+<Token>.</Token>
+<Attribute>
+<AttriId>76</AttriId>
+<AttriName>MidLocCodigo</AttriName>
+<Description>Código da Locação de Mídia</Description></Attribute></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>9</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType></Attribute>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>FilDiretorCodigo</AttriName>
+<Description>Código do Diretor</Description>
+<TakesValueFrom>
+<FromValue>
+<Token>0</Token></FromValue></TakesValueFrom>
+<AttriType>
+<DataType>N</DataType>
+<Presicion>9</Presicion>
+<Scale>0</Scale>
+<Properties>
+<Property>
+<Name>Autonumber</Name>
+<Value>No</Value></Property>
+<Property>
+<Name>AllowNulls</Name>
+<Value>No</Value></Property></Properties></AttriType>
+<AttriChangeType>nv</AttriChangeType></Attribute></AttrisInTable>
+<AttrisNoLongerInTable></AttrisNoLongerInTable>
+<AttrisInManyTables></AttrisInManyTables></TableAttributes>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<TableIndices>
+<Indices>
+<Index>
+<IndexName>IMIDIA</IndexName>
+<IndexType>u</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>37</AttriId>
+<AttriName>MidCodigo</AttriName>
+<Description>Código de Mídia</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>Yes</Clustered></Index></Indices>
+<NewIndices>
+<Index>
+<IndexName>IMIDIA2</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>FilDiretorCodigo</AttriName>
+<Description>Código do Diretor</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></NewIndices>
+<IndicesToDelete>
+<Index>
+<IndexName>IMIDIA1</IndexName>
+<IndexType>d</IndexType>
+<IndexAttris>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></IndexAttris>
+<IndexExistance>AlreadyExist</IndexExistance>
+<Clustered>No</Clustered></Index></IndicesToDelete></TableIndices>
+<FKConstraints>
+<FKConstraint>
+<ChangeType>none</ChangeType>
+<Table>
+<TableId>2</TableId>
+<TableName>FILME</TableName>
+<Description>Cadastro de Filmes</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>new</ChangeType>
+<Table>
+<TableId>10</TableId>
+<TableName>FILMEDIRETOR</TableName>
+<Description>Diretor</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>28</AttriId>
+<AttriName>FilCodigo</AttriName>
+<Description>Código do Filme</Description></Attribute>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>FilDiretorCodigo</AttriName>
+<Description>Código do Diretor</Description></Attribute></Attributes></FKConstraint>
+<FKConstraint>
+<ChangeType>new</ChangeType>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<Attributes>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>FilDiretorCodigo</AttriName>
+<Description>Código do Diretor</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Warnings>
+<Warning>
+<MsgCode>rgz0007</MsgCode>
+<Token>Attribute </Token>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>FilDiretorCodigo</AttriName>
+<Description>Código do Diretor</Description></Attribute>
+<Token> does not allow nulls and has not a Initial Value. An empty default value will be used.</Token></Warning>
+<Warning>
+<MsgCode>rgz0029</MsgCode>
+<Token>Reorganization may fail if table </Token>
+<Table>
+<TableId>6</TableId>
+<TableName>MIDIA</TableName>
+<Description>Cadastro de Mídias</Description></Table>
+<Token> has records and the key value </Token>
+<Attribute>
+<AttriId>71</AttriId>
+<AttriName>FilDiretorCodigo</AttriName>
+<Description>Código do Diretor</Description></Attribute>
+<Token>=</Token>
+<Token>0</Token>
+<Token> does not exist in table </Token>
+<Table>
+<TableId>9</TableId>
+<TableName>ASTROS</TableName>
+<Description>Cadastro de Astros</Description></Table>
+<Token>.</Token></Warning></Warnings>
+<Errors></Errors></ReorgSpec>
