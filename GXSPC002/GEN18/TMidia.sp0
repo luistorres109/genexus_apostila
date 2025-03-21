@@ -1,0 +1,545 @@
+spec_i([ trn,6,'Cadastro de Mídias','Midia',[],eng,'9_0_6-009' ]).
+ 
+struct_i(6,0,[ 37,'Mode' ],[]).
+ 
+level_i(6,[ 6,[ [ 6,many ],[ 2,one ],[ 10,one ],[ 513,one ] ],[ 37 ],[],[],[],[ 37 ],'IMIDIA',[ 6,[ [ [],37,37 ] ] ],[] ]).
+ 
+tw_i(6,[ [ 2,[ [ 6,28,28 ] ] ],[ 10,[ [ 6,28,28 ],[ 6,71,71 ] ] ],[ 513,[ [ 6,71,65 ] ] ] ]).
+ 
+lwi_i(6,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(6,[ [ [ 6,37 ],[ 6,36 ],[ 2,29 ],[ 6,76 ],[ 6,28 ],[ 6,35 ],[ 6,71 ] ] ]).
+ 
+las_i(6,[ [ 37,'Mode','GxBScreen',35,36,28,29,76,71 ] ]).
+ 
+lac_i(6,[ [ 35,36,28,76,71 ] ]).
+ 
+ 
+lits_i('Código de Mídia',2,3).
+lits_i('Tipo de Mídia',3,3).
+lits_i('Situação de Mídia',4,3).
+lits_i('Código do Filme',5,3).
+lits_i('Nome do Filme',6,3).
+lits_i('Código da Locação de Mídia',7,3).
+lits_i('Código do Diretor',8,3).
+ 
+cls_i([ 2,3 ],[ 8,79 ]).
+ 
+pos_i(37,[ 2,2,30 ]).
+pos_i(35,[ 3,3,30 ]).
+pos_i(36,[ 4,4,30 ]).
+pos_i(28,[ 5,5,30 ]).
+pos_i(29,[ 6,6,30 ]).
+pos_i(76,[ 7,7,30 ]).
+pos_i(71,[ 8,8,30 ]).
+ 
+ 
+default_i(e(37,3,1,37)).
+default_i(e(35,4,3,[ t('2',3) ])).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('FIELD_TO_FIELD','UMPV')).
+rule_i(0,prop('MTIER_OPT','Yes')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('AUTOENTER','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('BEEPONERROR','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('WBCHAR','')).
+rule_i(0,prop('WBATTR',none)).
+rule_i(0,prop('WBCOLOR',none)).
+rule_i(0,prop('WNDPOP','NO')).
+rule_i(0,prop('OKBUT','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('DLT_BUTTON','gxconfirm_dlt.gif')).
+rule_i(0,prop('CNF_BUTTON','gxconfirm_cnf.gif')).
+rule_i(0,prop('UPD_BUTTON','gxconfirm_upd.gif')).
+rule_i(0,prop('ADD_BUTTON','gxconfirm_add.gif')).
+rule_i(0,prop('AUTOSCROLL_FORM','UMPV')).
+rule_i(0,prop('SHOW_FRM','UMPV')).
+rule_i(0,prop('MODAL','PARM')).
+rule_i(0,prop('CTRBOX','YES')).
+rule_i(0,prop('ICON','')).
+rule_i(0,prop('S_TASK','YES')).
+rule_i(0,prop('MINBUT','YES')).
+rule_i(0,prop('MAXBUT','YES')).
+rule_i(0,prop('BORSTY','2')).
+rule_i(0,prop('MENUBAR','*Previous')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_LAST','UMPV')).
+rule_i(0,prop('KEY_FIRST','UMPV')).
+rule_i(0,prop('KEY_SELECT','UMPV')).
+rule_i(0,prop('KEY_DISPLAY','UMPV')).
+rule_i(0,prop('KEY_DELETE','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_UPDATE','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_RETRIEVE','UMPV')).
+rule_i(0,prop('KEY_NEXT','UMPV')).
+rule_i(0,prop('KEY_PREVIOUS','UMPV')).
+rule_i(0,prop('KEY_INSERT','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_PROMPT','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_CHECK','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('DKL_ACTIONS','')).
+rule_i(0,prop('DKL_BIG_IMAGE','')).
+rule_i(0,prop('DKL_SMALL_IMAGE','')).
+rule_i(0,prop('DKL_IMAGE','')).
+rule_i(0,prop('DKL_READ_UNCOMMITED_BC','Yes')).
+rule_i(0,prop('DKL_REF_BY_CANDIDATE','0')).
+rule_i(0,prop('DKL_COMMAND_TIMEOUT','30')).
+rule_i(0,prop('DKL_OPTIMISTIC_LOCKTYPE','1')).
+rule_i(0,prop('DKL_CACHE_PRIORITY','2')).
+rule_i(0,prop('DKL_CACHE_FREQUENCY','1')).
+rule_i(0,prop('DKL_PERMISSION_BASE_ID','0')).
+rule_i(0,prop('DKL_VERSION','2100')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_LAYOUT','')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','1')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('DwhTrnType','NA')).
+rule_i(0,prop('IsDwhTrn','0')).
+rule_i(0,prop(idDEST_JNDI_Name,'')).
+rule_i(0,prop(idCON_FACTORY_JNDI_Name,'')).
+rule_i(0,prop(idDEST_Type,idDEST_Type_QUEUE)).
+rule_i(0,prop(idJNDI_Name,'ejb/aMidia')).
+rule_i(0,prop(idTRN_Attribute,idTRN_Attribute_REQUIRED)).
+rule_i(0,prop(idTRN_Type,idTRN_Type_CONTAINER)).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('ExternalNamespace','Curso')).
+rule_i(0,prop('ExternalName','Midia')).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop(idISBCWEBSERVICE,'0')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('USE_ENCRYPTION','UMPV')).
+rule_i(0,prop('MasterPage','Default')).
+rule_i(0,prop('URLAccess','No')).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme','*None')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','Midia')).
+rule_i(0,prop('ObjId','0')).
+rule_i(6,prompt([ 10,[ [ 6,28,28 ],[ 6,71,71 ] ],[ 71 ],[ 28,71 ],[ t(o(4,'Gx00A1'),28),t(28,2),t(',',7),t(71,2) ],[ 28 ],n,[] ])).
+rule_i(6,rule([ a(23,[ [ 28,71 ],[ t(o(4,'Gx00A1'),28),t(28,2),t(',',7),t(71,2) ] ]) ],[],[],[ 28,71 ])).
+rule_i(6,prompt([ 2,[ [ 6,28,28 ] ],[ 28 ],[ 28 ],[ t(o(4,'Gx0020'),28),t(28,2) ],[],n,[] ])).
+rule_i(6,rule([ a(23,[ [ 28 ],[ t(o(4,'Gx0020'),28),t(28,2) ] ]) ],[],[],[ 28 ])).
+rule_i(0,rule([ a(22,[ 'Dlt','"Delete"','' ]) ],[],[],[])).
+rule_i(0,maingen(18)).
+rule_i(0,rule([ a(10,[ 37,'Mode' ]) ],[],[ insert,update,delete ],[])).
+rule_i(0,parmio([ [ 37,in ],[ 'Mode',in ] ])).
+rule_i(6,rule([ a(18,[ [ 28,71 ] ]) ],[],[ insert,update,delete ],[ 28,71 ])).
+rule_i(6,rule([ a(18,[ [ 28 ] ]) ],[],[ insert,update,delete ],[ 28 ])).
+rule_i(6,rule([ a(3,[ t(28,2) ]) ],[ t(update,1) ],[ update ],[ 28 ])).
+rule_i(6,rule([ a(3,[ t(35,2) ]) ],[ t(update,1) ],[ update ],[ 35 ])).
+rule_i(6,rule([ a(3,[ t(36,2) ]) ],[ t(update,1) ],[ update ],[ 36 ])).
+rule_i(6,rule([ a(1,[ t('''Código do filme deve ser informado!''',3) ]) ],[ t('after(',1),t(28,2),t(')',4),t('.AND.',9),t('null(',1),t(28,2),t(')',4) ],[ insert,update,delete ],[ 28 ])).
+rule_i(6,rule([ a(19,[ [ 28 ],msg([ t('"No matching ''Cadastro de Filmes''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 28 ])).
+rule_i(6,rule([ a(19,[ [ 28,71 ],msg([ t('"No matching ''Diretor''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 28,71 ])).
+rule_i(6,rule([ a(19,[ [ 71 ],msg([ t('"No matching ''Diretor de Filme''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 71 ])).
+rule_i(0,rule([ a(22,[ '''Exibir Locação''','''Exibir Locação''','' ]) ],[],[],[])).
+ 
+a_i(1,6,f,[ t(28,2),t('Enabled',3) ],[],[ [ update ],[ t(0,3),t('IF',17),t(update,1),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(2,6,f,[ t(35,2),t('Enabled',3) ],[],[ [ update ],[ t(0,3),t('IF',17),t(update,1),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(3,6,f,[ t(36,2),t('Enabled',3) ],[],[ [ update ],[ t(0,3),t('IF',17),t(update,1),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(4,6,f,35,[],[ [ insert ],[ t('2',3),t('IF',17),t(insert,1),t('AND',9),t('null1(',1),t(35,2),t(')',4),t('AND',9),t('GxBScreen',23),t(=,10),t(0,3),t(';',18) ] ]).
+a_i(5,6,b,3,[],[ [ update ],[ a(3,[ t(28,2) ]) ],[ t(update,1) ] ]).
+a_i(6,6,b,4,[],[ [ update ],[ a(3,[ t(35,2) ]) ],[ t(update,1) ] ]).
+a_i(7,6,b,5,[],[ [ update ],[ a(3,[ t(36,2) ]) ],[ t(update,1) ] ]).
+a_i(8,6,b,6,[],[ [],[ a(1,[ t('''Código do filme deve ser informado!''',3) ]) ],[ t('after(',1),t(28,2),t(')',4),t('.AND.',9),t('null(',1),t(28,2),t(')',4) ] ]).
+a_i(9,6,t,6,[],[ [ [ [],37,37 ] ],'IMIDIA',[] ]).
+a_i(10,6,r,2,[],[ [ [ 6,28,28 ] ],'IFILME',[] ]).
+a_i(11,6,r,10,[],[ [ [ 6,28,28 ],[ 6,71,71 ] ],'IFILMEDIRETOR',[] ]).
+a_i(12,6,r,513,[],[ [ [ 6,71,65 ] ],'IASTROS',[] ]).
+a_i(13,6,f,'GxBScreen',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,[ t(28,2),t('Enabled',3) ]).
+v_i(f,i,2,[]).
+v_i(f,o,2,[ t(35,2),t('Enabled',3) ]).
+v_i(f,i,3,[]).
+v_i(f,o,3,[ t(36,2),t('Enabled',3) ]).
+v_i(f,i,4,'GxBScreen').
+v_i(f,o,4,35).
+v_i(b,i,5,[]).
+v_i(b,o,5,[]).
+v_i(b,i,6,[]).
+v_i(b,o,6,[]).
+v_i(b,i,7,[]).
+v_i(b,o,7,[]).
+v_i(b,i,8,28).
+v_i(b,o,8,[]).
+v_i(t,i,9,37).
+v_i(t,o,9,36).
+v_i(t,o,9,76).
+v_i(t,o,9,28).
+v_i(t,o,9,35).
+v_i(t,o,9,71).
+v_i(r,i,10,28).
+v_i(r,o,10,29).
+v_i(r,i,11,28).
+v_i(r,i,11,71).
+v_i(r,o,11,[]).
+v_i(r,i,12,71).
+v_i(r,o,12,[]).
+v_i(f,i,13,[]).
+v_i(f,o,13,'GxBScreen').
+ 
+ca_i(4,35).
+ 
+tbl_to_delete_i(6,[ 14,[ [ 6,37,37 ] ],c,'ILOCACAOLOCMIDIA1',[ [ 14,37 ] ],[ 83,37 ] ]).
+ 
+ 
+ 
+attri_i(83,[ 'LocCodigo',int,9,0,'ZZZZZZZZ9',0,'Código de Locação','',0 ]).
+attri_i(71,[ 'FilDiretorCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Diretor','',0 ]).
+attri_i(76,[ 'MidLocCodigo',int,9,0,'ZZZZZZZZ9',0,'Código da Locação de Mídia','',0 ]).
+attri_i(29,[ 'FilNome',svchar,50,0,'@!',0,'Nome do Filme','',0 ]).
+attri_i(28,[ 'FilCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Filme','',0 ]).
+attri_i(35,[ 'MidTipo',int,1,0,'9',0,'Tipo de Mídia','',0 ]).
+attri_i(37,[ 'MidCodigo',int,9,0,'ZZZZZZZZ9',0,'Código de Mídia','',0 ]).
+attri_i(65,[ 'AstCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Astro','',0 ]).
+attri_i(36,[ 'MidSituacao',int,1,0,'9',0,'Situação de Mídia','',0 ]).
+attri_i('GxBScreen',[ 'Gx_BScreen',int,1,0,'',0,'','',7 ]).
+attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'GxRemove','',6 ]).
+attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
+ 
+table_i(14,[ 'LOCACAOLOCMIDIA',[ 83,37 ],'Mídia da Locação','LocacaoLocMidia' ]).
+table_i(513,[ 'ASTROS',[ 71 ],'Cadastro de Astros','Astros' ]).
+table_i(10,[ 'FILMEDIRETOR',[ 28,71 ],'Diretor','FilmeDiretor' ]).
+table_i(2,[ 'FILME',[ 28,29 ],'Cadastro de Filmes','Filme' ]).
+table_i(6,[ 'MIDIA',[ 37,35,36,28,76,71 ],'Cadastro de Mídias','Midia' ]).
+ 
+index_i(6,[ 'IMIDIA',u,[ 37 ],'IMidia' ]).
+index_i(2,[ 'IFILME',u,[ 28 ],'IFilme' ]).
+index_i(10,[ 'IFILMEDIRETOR',u,[ 28,71 ],'IFilmeDiretor' ]).
+index_i(513,[ 'IASTROS',u,[ 71 ],'IAstros' ]).
+index_i(14,[ 'ILOCACAOLOCMIDIA',u,[ 83,37 ],'ILocacaoLocMidia' ]).
+index_i(14,[ 'ILOCACAOLOCMIDIA1',d,[ 37 ],'ILocacaoLocMidia1' ]).
+ 
+ 
+ 
+ 
+upd_i(6,6,i,[ [ 36,76,28,35,71 ],[],'IMIDIA',[ [ [],37,37 ] ] ]).
+upd_i(6,6,u,[ [ 36,76,28,35,71 ],[],'IMIDIA',[] ]).
+upd_i(6,6,d,[ [],[],'IMIDIA',[] ]).
+ 
+help_i(trn,6,1,[ t( ,3,1,0) ]).
+ 
+start_i(6,0,0,[ [ [ 37,2,37,= ] ],one ]).
+ 
+end_i(6,0,0,[ [ [ t(37,2),t(=,10),t(37,23) ] ] ]).
+ 
+ 
+map_i(513,a,72,[ 'AstNome' ]).
+map_i(513,a,71,[ 'AstCodigo' ]).
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [ 36 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+b_line_i(0,2,1,cmd,0,[ t('',146,0,0),t('Start',3,0,6) ]).
+b_line_i(1,2,1,cmd,0,[ t('',109,0,0),t(36,2,0,7),t(<>,10,0,19),t('2',3,0,22) ]).
+b_line_i(2,2,1,cmd,0,[ t('',107,0,0),t([ t('Btn_locacao',3,0,0),t('Visible',3,0,0) ],29,0,0),t(=,10,0,0),t('0',3,0,0) ]).
+b_line_i(3,2,1,cmd,0,[ t('',111,0,0) ]).
+b_line_i(4,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(6,2,1,cmd,0,[ t('',146,0,0),t('''Exibir Locação''',3,6,6) ]).
+b_line_i(7,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeLocacao'),28,0,4) ]).
+b_line_i(8,2,1,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(2,1,t(37,2),[ font('Courier New',9,[]),rect(210,48,282,68),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(37),ctrltype(edit,2),ispwd(0),e2n(1) ]).
+lit_i(3,1,t('Código de Mídia',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,48,114,60),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(4,1,t(35,2),[ font('Courier New',9,[]),rect(210,72,277,92),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(35),ctrltype(combo,4),e2n(1) ]).
+lit_i(5,1,t('Tipo de Mídia',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,72,100,84),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(6,1,t(36,2),[ font('Courier New',9,[]),rect(210,96,291,116),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(36),ctrltype(combo,6),e2n(1) ]).
+lit_i(7,1,t('Situação de Mídia',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,96,125,108),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(8,1,t(28,2),[ font('Courier New',9,[]),rect(210,120,282,140),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(28),ctrltype(edit,8),ispwd(0),e2n(1) ]).
+lit_i(9,1,t('Código do Filme',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,120,111,132),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(10,1,t(29,2),[ font('Courier New',9,[]),rect(210,144,569,164),outstyle('3d'),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(29),ctrltype(edit,10),ispwd(0),e2n(1) ]).
+lit_i(11,1,t('Nome do Filme',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,144,104,156),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(12,1,t(76,2),[ font('Courier New',9,[]),rect(210,168,282,188),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(76),ctrltype(edit,12),ispwd(0),e2n(1) ]).
+lit_i(13,1,t('Código da Locação de Mídia',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,168,185,180),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(14,1,t(71,2),[ font('Courier New',9,[]),rect(210,192,282,212),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(71),ctrltype(edit,14),ispwd(0),e2n(1) ]).
+lit_i(15,1,t('Código do Diretor',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,192,120,204),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(16,1,button('First'),[ id(16),title([ '|<' ]),ctlname('Btn_first'),rect(8,2,33,25),font('MS Shell Dlg',8,[]) ]).
+lit_i(17,1,button('Previous'),[ id(17),title([ < ]),ctlname('Btn_previous'),rect(34,2,59,25),font('MS Shell Dlg',8,[]) ]).
+lit_i(18,1,button('Next'),[ id(18),title([ > ]),ctlname('Btn_next'),rect(60,2,85,25),font('MS Shell Dlg',8,[]) ]).
+lit_i(19,1,button('Last'),[ id(19),title([ '>|' ]),ctlname('Btn_last'),rect(86,2,111,25),font('MS Shell Dlg',8,[]) ]).
+lit_i(20,1,button('Select'),[ id(20),title([ 'Select' ]),ctlname('Btn_select'),rect(115,2,203,25),font('MS Shell Dlg',8,[]) ]).
+lit_i(21,1,button('Enter'),[ id(21),title([ 'Confirm' ]),ctlname('Btn_enter'),rect(588,83,676,105),font('MS Shell Dlg',8,[]) ]).
+lit_i(22,1,button('''Exibir Locação'''),[ id(22),title([ 'Exibir Locação' ]),ctlname('Btn_locacao'),rect(588,125,676,147),font('MS Shell Dlg',8,[]) ]).
+lit_i(1,1,window,[ title([]),rect(3,25,698,254),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(2),ctlname('Form'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,24).
+ 
+ 
+popup_offset_i(0,0).
+ 
+form_class_i(1,'Graphic').
+ 
+std_color_i(2,back,5).
+std_color_i(2,fore,8).
+std_color_i(3,fore,8).
+std_color_i(4,back,5).
+std_color_i(4,fore,8).
+std_color_i(5,fore,8).
+std_color_i(6,back,5).
+std_color_i(6,fore,8).
+std_color_i(7,fore,8).
+std_color_i(8,back,5).
+std_color_i(8,fore,8).
+std_color_i(9,fore,8).
+std_color_i(10,back,5).
+std_color_i(10,fore,8).
+std_color_i(11,fore,8).
+std_color_i(12,back,5).
+std_color_i(12,fore,8).
+std_color_i(13,fore,8).
+std_color_i(14,back,5).
+std_color_i(14,fore,8).
+std_color_i(15,fore,8).
+std_color_i(1,back,15).
+std_color_i(1,fore,6).
+ 
+ctrl_info_i(1,4,[ [ [ 'DVD','1' ],[ 'Bluray','2' ],[ 'VHS','3' ],[ 'Box','4' ] ],[ '' ] ]).
+ctrl_info_i(1,6,[ [ [ 'Liberado','1' ],[ 'Locado','2' ] ],[ '' ] ]).
+ 
+ 
+calling_main_i(4,28).
+ 
+att_prop_i(2,36,'AUTONUMBER','0',d).
+att_prop_i(2,36,'AUTONUMBER_START','1',d).
+att_prop_i(2,36,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,36,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,36,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,36,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,36,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,36,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,36,'FullName','MidSituacao',v).
+att_prop_i(2,37,'AUTONUMBER','-1',d).
+att_prop_i(2,37,'AUTONUMBER_START','1',d).
+att_prop_i(2,37,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,37,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,37,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,37,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,37,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,37,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,37,'FullName','MidCodigo',v).
+att_prop_i(2,35,'AUTONUMBER','0',d).
+att_prop_i(2,35,'AUTONUMBER_START','1',d).
+att_prop_i(2,35,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,35,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,35,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,35,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,35,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,35,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,35,'FullName','MidTipo',v).
+att_prop_i(2,28,'AUTONUMBER','-1',d).
+att_prop_i(2,28,'AUTONUMBER_START','1',d).
+att_prop_i(2,28,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,28,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,28,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,28,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,28,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,28,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,28,'FullName','FilCodigo',v).
+att_prop_i(2,29,'AUTONUMBER_START','1',d).
+att_prop_i(2,29,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,29,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,29,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,29,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,29,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,29,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,29,'FullName','FilNome',v).
+att_prop_i(2,76,'AUTONUMBER','0',v).
+att_prop_i(2,76,'AUTONUMBER_START','1',d).
+att_prop_i(2,76,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,76,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,76,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,76,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,76,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,76,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,76,'FullName','MidLocCodigo',v).
+att_prop_i(2,71,'AUTONUMBER','-1',d).
+att_prop_i(2,71,'AUTONUMBER_START','1',d).
+att_prop_i(2,71,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,71,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,71,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,71,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,71,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,71,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,71,'FullName','FilDiretorCodigo',v).
+att_prop_i(2,65,'AUTONUMBER','-1',d).
+att_prop_i(2,65,'AUTONUMBER_START','1',d).
+att_prop_i(2,65,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,65,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,65,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,65,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,65,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,65,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,65,'FullName','AstCodigo',v).
+att_prop_i(2,83,'AUTONUMBER','-1',d).
+att_prop_i(2,83,'AUTONUMBER_START','1',d).
+att_prop_i(2,83,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,83,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,83,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,83,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,83,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,83,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,83,'FullName','LocCodigo',v).
+ 
+tbl_prop_i(2,14,'AllDirSuper',[ [ 6,[ 37 ] ] ],v).
+tbl_prop_i(2,10,'AllDirSuper',[ [ 513,[ 71 ] ],[ 2,[ 28 ] ] ],v).
+tbl_prop_i(2,6,'AllDirSuper',[ [ 10,[ 28,71 ] ],[ 513,[ 71 ] ],[ 2,[ 28 ] ] ],v).
+tbl_prop_i(2,6,'DirSuperNull',[ [ 10,[ 28,71 ] ],[ 2,[ 28 ] ] ],v).
+tbl_prop_i(2,9,'DirSubor',[ [ 10,[ 71 ] ] ],v).
+tbl_prop_i(2,513,'DirSubor',[ [ 10,[ 71 ] ] ],v).
+tbl_prop_i(2,10,'DirSubor',[ [ 6,[ 28,71 ] ] ],v).
+tbl_prop_i(2,2,'DirSubor',[ [ 10,[ 28 ] ] ],v).
+tbl_prop_i(2,6,'DirSubor',[ [ 14,[ 37 ] ] ],v).
+tbl_prop_i(2,14,'DirSuper',[ [ 6,[ 37 ] ] ],v).
+tbl_prop_i(2,10,'DirSuper',[ [ 513,[ 71 ] ],[ 2,[ 28 ] ] ],v).
+tbl_prop_i(2,6,'DirSuper',[ [ 10,[ 28,71 ] ] ],v).
+ 
+tbl_att_prop_i(2,6,37,'AllowNulls',n).
+tbl_att_prop_i(2,6,37,'AUTONUMBER',y).
+tbl_att_prop_i(2,6,76,'AllowNulls',n).
+tbl_att_prop_i(2,6,71,'AllowNulls',n).
+tbl_att_prop_i(2,2,28,'AllowNulls',n).
+tbl_att_prop_i(2,2,28,'AUTONUMBER',y).
+tbl_att_prop_i(2,10,28,'AllowNulls',n).
+tbl_att_prop_i(2,10,71,'AllowNulls',n).
+tbl_att_prop_i(2,513,71,'AllowNulls',n).
+tbl_att_prop_i(2,14,83,'AllowNulls',n).
+tbl_att_prop_i(2,14,37,'AllowNulls',n).
+ 
+ 
+ 
+a_alias_i(71,'FilDiretorCodigo').
+a_alias_i(72,'FIlDiretorNome').
+ 
+trn_level_i(6,[ [ 37,35,36,28,29,76,71 ],'Midia','Cadastro de Mídias','Midia','',0 ]).
+ 
+ 
+ 
+ 
+pgm_parm_i(scr,12,'WGX0020',[ [ int,9,0,0 ] ],[ [ pFilCodigo,out,[] ] ]).
+pgm_parm_i(scr,37,'WGX00A1',[ [ int,9,0,0 ],[ int,9,0,0 ] ],[ [ 'FilCodigo',in,[] ],[ pFilDiretorCodigo,out,[] ] ]).
+pgm_parm_i(scr,43,'WPELOCACAO',[],[]).
+ 
+ 
+ 
+ 
+ 

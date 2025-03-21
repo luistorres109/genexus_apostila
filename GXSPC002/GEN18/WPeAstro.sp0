@@ -1,0 +1,420 @@
+spec_i([ scr,33,'Cadastro de  Astros','PeAstro',0,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 9,[ [ 9,many ] ],[],[],[ [ [ 9 ],[ 69,68,67,66,65 ] ] ],[ [ [ 9 ],[] ] ],[ 65 ],'IASTROS',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [ c([ t('Astdatfalcheck',23),t(=,10),t('0',3),t('.OR.',9),t('(',0),t(68,2),t(<>,10),t('ctod(',1),t('''0''',3),t(')',4),t(')',4) ],[ 68 ]) ] ]).
+ 
+cond_constraint_i(2,[ [ t(65,2),t(=,10),t('Astcodigo',23) ],[ 65 ],[ t('Astcodigo',23),t(<>,10),t('0',3) ],[] ]).
+cond_constraint_i(2,[ [ t(66,2),t('.LIKE.',10),t('Astnome',23) ],[ 66 ],[ t('.NOT.',8),t('null(',1),t('Astnome',23),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(67,2),t(=,10),t('Astdatnasc',23) ],[ 67 ],[ t('Astdatnasc',23),t(<>,10),t('ctod(',1),t('''0''',3),t(')',4) ],[] ]).
+cond_constraint_i(2,[ [ t(69,2),t('.LIKE.',10),t('Astdescricao',23) ],[ 69 ],[ t('.NOT.',8),t('null(',1),t('Astdescricao',23),t(')',4) ],[] ]).
+ 
+ 
+ 
+ta_i(2,[ [ [ 9,69 ],[ 9,68 ],[ 9,67 ],[ 9,66 ],[ 9,65 ] ] ]).
+ 
+las_i(2,[ [ 'Astcodigo','Astdatfalcheck','Astdatnasc','Astdescricao','Astnome',69,68,67,66,65 ] ]).
+ 
+lac_i(2,[ [ 'Astcodigo','Astdatfalcheck','Astdatnasc','Astdescricao','Astnome' ] ]).
+ 
+ 
+lits_i('Código:',0,20).
+lits_i('Nome:',0,37).
+lits_i('Data de Nascimento:',2,20).
+lits_i('Descrição:',4,20).
+lits_i('Código',10,17).
+lits_i('Nome',10,27).
+lits_i('Data de Nascimento',10,78).
+lits_i('Data de Falecimento',10,95).
+lits_i('Descrição',10,114).
+ 
+cls_i([ 0,5 ],[ 12,122 ]).
+ 
+pos_i('Astcodigo',[ 1,1,20 ]).
+pos_i('Astdatfalcheck',[ 3,3,44 ]).
+pos_i('Astdatnasc',[ 3,3,20 ]).
+pos_i('Astdescricao',[ 5,5,20 ]).
+pos_i('Astnome',[ 1,1,37 ]).
+pos_i('Excluir',[ 11,12,5 ]).
+pos_i('Editar',[ 11,12,11 ]).
+pos_i(65,[ 11,12,17 ]).
+pos_i(66,[ 11,12,27 ]).
+pos_i(67,[ 11,12,78 ]).
+pos_i(68,[ 11,12,95 ]).
+pos_i(69,[ 11,12,114 ]).
+ 
+repeat_i(2,[ 11,12,[ 'Excluir','Editar',65,66,67,68,69 ],[] ]).
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('WKP_LOAD_SERVER','No')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('AUTOENTER','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('WBCHAR','')).
+rule_i(0,prop('WBATTR',none)).
+rule_i(0,prop('WBCOLOR',none)).
+rule_i(0,prop('WNDPOP','NO')).
+rule_i(0,prop('OKBUT','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('AUTOSCROLL_FORM','UMPV')).
+rule_i(0,prop('SHOW_FRM','UMPV')).
+rule_i(0,prop('MODAL','PARM')).
+rule_i(0,prop('CTRBOX','YES')).
+rule_i(0,prop('ICON','')).
+rule_i(0,prop('S_TASK','YES')).
+rule_i(0,prop('MINBUT','YES')).
+rule_i(0,prop('MAXBUT','YES')).
+rule_i(0,prop('BORSTY','2')).
+rule_i(0,prop('MENUBAR','Default')).
+rule_i(0,prop('NewFormEditor','0')).
+rule_i(0,prop('SUBFILE_ORDER','UMPV')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('WHENREFRESH','FOCUS')).
+rule_i(0,prop('REFRESH','COND')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('LOAD','YES')).
+rule_i(0,prop('LOADALL','NO')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','2')).
+rule_i(0,prop('IsPrompt','0')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','PeAstro')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Refresh"','5' ]) ],[],[],[])).
+rule_i(0,maingen(18)).
+rule_i(0,rule([ a(22,[ '''Novo''','''Novo''','' ]) ],[],[],[])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,9,[],[ [],'IASTROS',[] ]).
+a_i(3,2,c,0,[],[ c([ t('Astdatfalcheck',23),t(=,10),t('0',3),t('.OR.',9),t('(',0),t(68,2),t(<>,10),t('ctod(',1),t('''0''',3),t(')',4),t(')',4) ],[ 68 ]) ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,69).
+v_i(t,o,2,68).
+v_i(t,o,2,67).
+v_i(t,o,2,66).
+v_i(t,o,2,65).
+v_i(c,i,3,68).
+v_i(c,o,3,[]).
+ 
+ 
+ 
+ 
+ 
+attri_i(69,[ 'AstDescricao',vchar,800,0,'@!',0,'Descrição do Astro','',0 ]).
+attri_i(68,[ 'AstDatFal',date,8,0,'99/99/99',0,'Data de Falecimento do Astro','',0 ]).
+attri_i(67,[ 'AstDatNasc',date,8,0,'99/99/99',0,'Data de Nascimento do Astro','',0 ]).
+attri_i(66,[ 'AstNome',svchar,50,0,'@!',0,'Nome do Astro','',0 ]).
+attri_i(65,[ 'AstCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Astro','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',13 ]).
+attri_i('Astdatfalcheck',[ 'AstDatFalCheck',int,1,0,'9',0,'Ast Dat Fal Check','',12 ]).
+attri_i('Excluir',[ 'Excluir',bits,0,0,'',0,'Excluir','',11 ]).
+attri_i('Editar',[ 'Editar',bits,0,0,'',0,'Editar','',10 ]).
+attri_i('Astnome',[ 'AstNome',svchar,50,0,'@!',0,'Nome do Astro','',9 ]).
+attri_i('Astdescricao',[ 'AstDescricao',vchar,800,0,'@!',0,'Descrição do Astro','',8 ]).
+attri_i('Astdatnasc',[ 'AstDatNasc',date,8,0,'99/99/99',0,'Data de Nascimento do Astro','',7 ]).
+attri_i('Astdatfal',[ 'AstDatFal',date,8,0,'99/99/99',0,'Data de Falecimento do Astro','',6 ]).
+attri_i('Astcodigo',[ 'AstCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Astro','',5 ]).
+ 
+table_i(9,[ 'ASTROS',[ 65,66,67,68,69 ],'Cadastro de Astros','Astros' ]).
+ 
+index_i(9,[ 'IASTROS',u,[ 65 ],'IAstros' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [ 65,66,67,68,69 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+b_line_i(0,2,1,cmd,0,[ t('',146,0,0),t('Load',3,0,6) ]).
+b_line_i(1,2,1,cmd,0,[ t('',107,0,0),t('Excluir',23,0,0),t(=,10,0,0),t('loadbitmap(',1,0,0),t('''deleteIcon.jpg''',3,0,0),t(')',4,0,0) ]).
+b_line_i(2,2,1,cmd,0,[ t('',107,0,0),t('Editar',23,0,0),t(=,10,0,0),t('loadbitmap(',1,0,0),t('''editIcon.jpg''',3,0,0),t(')',4,0,0) ]).
+b_line_i(3,2,1,cmd,0,[ t('',155,0,0) ]).
+b_line_i(3,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(5,2,1,cmd,0,[ t('',146,0,0),t([ t('Editar',23,5,6),t('Click',3,5,14) ],29,5,14) ]).
+b_line_i(6,2,1,cmd,0,[ t('',104,0,0),t(o(0,'Astros'),28,0,4),t(65,2,0,17),t(',',7,0,26),t('''UPD''',3,6,28) ]).
+b_line_i(7,2,1,cmd,0,[ t('',148,0,0) ]).
+b_line_i(8,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(10,2,1,cmd,0,[ t('',146,0,0),t([ t('Excluir',23,10,6),t('Click',3,10,15) ],29,10,15) ]).
+b_line_i(11,2,1,cmd,0,[ t('',104,0,0),t(o(0,'Astros'),28,0,4),t(65,2,0,17),t(',',7,0,26),t('''DLT''',3,11,28) ]).
+b_line_i(12,2,1,cmd,0,[ t('',148,0,0) ]).
+b_line_i(13,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(15,2,1,cmd,0,[ t('',146,0,0),t('''Novo''',3,15,6) ]).
+b_line_i(16,2,1,cmd,0,[ t('',104,0,0),t(o(0,'Astros'),28,0,4),t('0',3,0,17),t(',',7,0,18),t('''INS''',3,16,20) ]).
+b_line_i(17,2,1,cmd,0,[ t('',148,0,0) ]).
+b_line_i(18,2,1,cmd,0,[ t('',147,0,0) ]).
+ 
+sf_break_i(11,2).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+warn_gen_i(msg(spc0053,[ 'Conditional constraint "',[ att(2,68),<>,'ctod(','''0''',')' ],'" cannot be generated',[ ' in grid ''','Gxsf11','''' ],'. Changed to standard constraint.' ])).
+ 
+lit_i(2,1,t('Astcodigo',23),[ font('Courier New',9,[]),rect(143,31,215,51),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Astcodigo'),ctrltype(edit,2),ispwd(0) ]).
+lit_i(3,1,t('Astdatfalcheck',23),[ font('Courier New',9,[]),rect(310,77,568,92),outstyle('3d'),align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Astdatfalcheck'),ctrltype(checkbox,3) ]).
+lit_i(4,1,t('Astdatnasc',23),[ font('Courier New',9,[]),rect(142,76,207,96),outstyle('3d'),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Astdatnasc'),ctrltype(edit,4),ispwd(0) ]).
+lit_i(5,1,t('Astdescricao',23),[ font('Courier New',9,[]),rect(141,132,570,218),outstyle('3d'),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Astdescricao'),ctrltype(edit,5),ispwd(0) ]).
+lit_i(6,1,t('Astnome',23),[ font('Courier New',9,[]),rect(260,31,619,51),outstyle('3d'),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Astnome'),ctrltype(edit,6),ispwd(0) ]).
+lit_i(7,1,t('Código:',3),[ font('MS Sans Serif',8,[ bold ]),rect(142,13,185,25),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(8,1,t('Nome:',3),[ font('MS Sans Serif',8,[ bold ]),rect(260,12,296,24),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(9,1,t('Data de Nascimento:',3),[ font('MS Sans Serif',8,[ bold ]),rect(143,60,262,72),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(10,1,t('Descrição:',3),[ font('MS Sans Serif',8,[ bold ]),rect(144,112,205,124),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(12,1,s(t('Excluir',23),11),[ width(47),pos(0),title([ '' ]),ctlname('&Excluir'),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,12) ]).
+lit_i(13,1,s(t('Editar',23),11),[ width(42),pos(1),title([ '' ]),ctlname('&Editar'),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,13) ]).
+lit_i(14,1,s(t(65,2),11),[ width(67),pos(2),title([ 'Código' ]),ctlname(65),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(192,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,14),e2n(1) ]).
+lit_i(15,1,s(t(66,2),11),[ width(65),pos(3),title([ 'Nome' ]),ctlname(66),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,15),e2n(1) ]).
+lit_i(16,1,s(t(67,2),11),[ width(125),pos(4),title([ 'Data de Nascimento' ]),ctlname(67),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,16),e2n(1) ]).
+lit_i(17,1,s(t(68,2),11),[ width(136),pos(5),title([ 'Data de Falecimento' ]),ctlname(68),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,17),e2n(1) ]).
+lit_i(18,1,s(t(69,2),11),[ width(97),pos(6),title([ 'Descrição' ]),ctlname(69),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,18),e2n(1) ]).
+lit_i(11,1,s(11),[ th(18),height(18),rect(40,254,681,320),back(rgb(240,240,240)),fore(gxcolor([]),rgb(0,0,0)),border(1),ctlname('Gxsf11'),font(font('Courier New',9,[])),titlefont(font('MS Sans Serif',8,[ bold ])),el([ t('Excluir',23),t('Editar',23),t(65,2),t(66,2),t(67,2),t(68,2),t(69,2) ]) ]).
+lit_i(19,1,button('''Novo'''),[ id(19),title([ 'Novo' ]),ctlname(''),rect(310,329,398,351),font('MS Shell Dlg',8,[]) ]).
+lit_i(1,1,window,[ title([]),rect(3,25,739,389),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(2),ctlname('Form'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,24).
+ 
+ 
+popup_offset_i(0,0).
+ 
+form_class_i(1,'Graphic').
+ 
+std_color_i(2,back,5).
+std_color_i(2,fore,8).
+std_color_i(3,back,5).
+std_color_i(3,fore,8).
+std_color_i(4,back,5).
+std_color_i(4,fore,8).
+std_color_i(5,back,5).
+std_color_i(5,fore,8).
+std_color_i(6,back,5).
+std_color_i(6,fore,8).
+std_color_i(7,fore,8).
+std_color_i(8,fore,8).
+std_color_i(9,fore,8).
+std_color_i(10,fore,8).
+std_color_i(12,back,5).
+std_color_i(12,fore,8).
+std_color_i(12,tback,15).
+std_color_i(12,tfore,18).
+std_color_i(13,back,5).
+std_color_i(13,fore,8).
+std_color_i(13,tback,15).
+std_color_i(13,tfore,18).
+std_color_i(14,back,5).
+std_color_i(14,tback,15).
+std_color_i(14,tfore,18).
+std_color_i(15,back,5).
+std_color_i(15,fore,8).
+std_color_i(15,tback,15).
+std_color_i(15,tfore,18).
+std_color_i(16,back,5).
+std_color_i(16,fore,8).
+std_color_i(16,tback,15).
+std_color_i(16,tfore,18).
+std_color_i(17,back,5).
+std_color_i(17,fore,8).
+std_color_i(17,tback,15).
+std_color_i(17,tfore,18).
+std_color_i(18,back,5).
+std_color_i(18,fore,8).
+std_color_i(18,tback,15).
+std_color_i(18,tfore,18).
+std_color_i(11,back,15).
+std_color_i(11,fore,8).
+std_color_i(1,back,15).
+std_color_i(1,fore,6).
+ 
+ctrl_info_i(1,3,[ [ '1','0','Deseja ver só os astros falecidos?' ] ]).
+ctrl_info_i(1,12,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,13,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ 
+form_prop_i(11,'Loadall','NO',d,[ str ]).
+form_prop_i(11,'Load','YES',d,[ str ]).
+form_prop_i(11,'Refresh','COND',d,[ str ]).
+form_prop_i(11,'Whenrefresh','FOCUS',d,[ str ]).
+form_prop_i(11,'Subfile_order','UMPV',d,[ str ]).
+form_prop_i(11,'Refresh_tout','',d,[ str ]).
+form_prop_i(11,'Refresh_tout_trig','ALL',d,[ str ]).
+ 
+calling_main_i(4,28).
+ 
+att_prop_i(2,65,'AUTONUMBER','-1',d).
+att_prop_i(2,65,'AUTONUMBER_START','1',d).
+att_prop_i(2,65,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,65,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,65,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,65,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,65,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,65,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,65,'FullName','AstCodigo',v).
+att_prop_i(2,66,'AUTONUMBER_START','1',d).
+att_prop_i(2,66,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,66,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,66,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,66,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,66,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,66,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,66,'FullName','AstNome',v).
+att_prop_i(2,67,'AUTONUMBER_START','1',d).
+att_prop_i(2,67,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,67,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,67,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,67,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,67,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,67,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,67,'FullName','AstDatNasc',v).
+att_prop_i(2,68,'AUTONUMBER_START','1',d).
+att_prop_i(2,68,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,68,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,68,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,68,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,68,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,68,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,68,'FullName','AstDatFal',v).
+att_prop_i(2,69,'AUTONUMBER_START','1',d).
+att_prop_i(2,69,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,69,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,69,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,69,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,69,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,69,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,69,'FullName','AstDescricao',v).
+ 
+ 
+tbl_att_prop_i(2,9,65,'AllowNulls',n).
+tbl_att_prop_i(2,9,65,'AUTONUMBER',y).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_parm_i(trn,9,'TASTROS',[ [ int,9,0,0 ],[ char,3,0,0 ] ],[ [ 'AstCodigo',in,[] ],[ 'Mode',in,[] ] ]).
+ 
+ 
+ 
+ 
+ 

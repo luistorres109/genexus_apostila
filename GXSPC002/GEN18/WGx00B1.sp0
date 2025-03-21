@@ -1,0 +1,341 @@
+spec_i([ scr,38,'Selection List Level2','Gx00B1',0,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[ 28 ],[]).
+ 
+level_i(2,[ 11,[ [ 11,many ] ],[],[],[ [ [ 11 ],[ 28,75,73 ] ] ],[ [ [ 11 ],[] ] ],[ 28,73 ],'IFILMELEVEL2',[ 11,[ [ [],28,28 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [ c([ t(75,2),t(>=,10),t('Cfilastprot',23) ],[ 75 ]) ] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 11,28 ],[ 11,75 ],[ 11,73 ] ] ]).
+ 
+las_i(2,[ [ 'Pfilatorcodigo','Cfilatorcodigo','Cfilastprot',28,75,73 ] ]).
+ 
+lac_i(2,[ [ 'Cfilatorcodigo','Cfilastprot' ] ]).
+ 
+ 
+lits_i('Código do Filme',1,3).
+lits_i('Fil Ator Codigo',2,3).
+lits_i('Astro Protagonista',3,3).
+lits_i('Fil Ator Codigo',4,3).
+lits_i('Astro Protagonista',4,16).
+ 
+cls_i([ 1,3 ],[ 11,33 ]).
+ 
+pos_i(28,[ 1,1,21 ]).
+pos_i('Cfilatorcodigo',[ 2,2,21 ]).
+pos_i('Cfilastprot',[ 3,3,21 ]).
+pos_i(73,[ 5,11,3 ]).
+pos_i(75,[ 5,11,16 ]).
+ 
+repeat_i(2,[ 5,11,[ 73,75,28 ],[] ]).
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('WKP_LOAD_SERVER','No')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('AUTOENTER','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('WBCHAR','')).
+rule_i(0,prop('WBATTR',none)).
+rule_i(0,prop('WBCOLOR',none)).
+rule_i(0,prop('WNDPOP','NO')).
+rule_i(0,prop('OKBUT','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('AUTOSCROLL_FORM','UMPV')).
+rule_i(0,prop('SHOW_FRM','UMPV')).
+rule_i(0,prop('MODAL','PARM')).
+rule_i(0,prop('CTRBOX','YES')).
+rule_i(0,prop('ICON','')).
+rule_i(0,prop('S_TASK','YES')).
+rule_i(0,prop('MINBUT','YES')).
+rule_i(0,prop('MAXBUT','YES')).
+rule_i(0,prop('BORSTY','2')).
+rule_i(0,prop('MENUBAR','Default')).
+rule_i(0,prop('NewFormEditor','0')).
+rule_i(0,prop('SUBFILE_ORDER','UMPV')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('WHENREFRESH','FOCUS')).
+rule_i(0,prop('REFRESH','COND')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('LOAD','YES')).
+rule_i(0,prop('LOADALL','NO')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','2')).
+rule_i(0,prop('IsPrompt','-1')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','Gx00B1')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Refresh"','5' ]) ],[],[],[])).
+rule_i(0,maingen(18)).
+rule_i(0,parm([ 28,'Pfilatorcodigo' ],[ 28 ])).
+rule_i(0,parmio([ [ 28,in ],[ 'Pfilatorcodigo',out ] ])).
+rule_i(0,order([ 28,73 ])).
+rule_i(0,hidden([ 28 ],[ 28 ])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,11,[],[ [ [ [],28,28 ] ],'IFILMELEVEL2',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,28).
+v_i(t,o,2,75).
+v_i(t,o,2,73).
+ 
+ 
+ 
+ 
+ 
+attri_i(28,[ 'FilCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Filme','',0 ]).
+attri_i(75,[ 'FIlAstProt',int,1,0,'9',0,'Astro Protagonista','',0 ]).
+attri_i(73,[ 'FilAtorCodigo',int,9,0,'ZZZZZZZZ9',0,'Fil Ator Codigo','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',9 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',8 ]).
+attri_i('Pfilatorcodigo',[ pFilAtorCodigo,int,9,0,'ZZZZZZZZ9',0,'Fil Ator Codigo','',7 ]).
+attri_i('Cfilastprot',[ cFIlAstProt,int,1,0,'9',0,'Astro Protagonista','',6 ]).
+attri_i('Cfilatorcodigo',[ cFilAtorCodigo,int,9,0,'ZZZZZZZZ9',0,'Fil Ator Codigo','',5 ]).
+ 
+table_i(11,[ 'FILMELEVEL2',[ 28,73,75 ],'Level2','FilmeLevel2' ]).
+ 
+index_i(11,[ 'IFILMELEVEL2',u,[ 28,73 ],'IFilmeLevel2' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 28,2,28,= ],[ 73,23,'Cfilatorcodigo',>= ] ],many ]).
+ 
+end_i(2,0,0,[ [ [ t(28,2),t(=,10),t(28,23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[ 28,73 ],[ [ 73,75,28 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+b_line_i(0,2,1,cmd,0,[ t('',146,0,0),t('Enter',3,0,6) ]).
+b_line_i(2,2,1,cmd,0,[ t('',107,0,0),t('Pfilatorcodigo',23,0,0),t(=,10,0,0),t(73,2,0,0) ]).
+b_line_i(3,2,1,cmd,0,[ t('',118,0,0) ]).
+b_line_i(5,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(1000,2,1,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,1,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,1,cmd,0,[ t('',147,0,0) ]).
+ 
+sf_break_i(12,2).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(2,1,button('Enter'),[ id(2),title([ 'Confirm' ]),ctlname('Btn_enter'),rect(302,24,390,46),font('MS Shell Dlg',8,[]) ]).
+lit_i(3,1,button('Cancel'),[ id(3),title([ 'Close' ]),ctlname('Btn_cancel'),rect(302,52,390,74),font('MS Shell Dlg',8,[]) ]).
+lit_i(4,1,button('Refresh'),[ id(4),title([ 'Refresh' ]),ctlname('Btn_refresh'),rect(302,80,390,102),font('MS Shell Dlg',8,[]) ]).
+lit_i(5,1,button('Help'),[ id(5),title([ 'Help' ]),ctlname('Btn_help'),rect(302,118,390,140),font('MS Shell Dlg',8,[]) ]).
+lit_i(6,1,t(28,2),[ font('Courier New',9,[]),rect(147,24,219,44),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(28),ctrltype(edit,6),ispwd(0),e2n(1) ]).
+lit_i(7,1,t('Código do Filme',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,24,111,36),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(8,1,t('Cfilatorcodigo',23),[ font('Courier New',9,[]),rect(147,48,219,68),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Cfilatorcodigo'),ctrltype(edit,8),ispwd(0) ]).
+lit_i(9,1,t('Fil Ator Codigo',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,48,104,60),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(10,1,t('Cfilastprot',23),[ font('Courier New',9,[]),rect(147,72,242,92),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Cfilastprot'),ctrltype(combo,10) ]).
+lit_i(11,1,t('Astro Protagonista',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,72,125,84),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(13,1,s(t(73,2),12),[ width(92),pos(0),title([ 'Fil Ator Codigo' ]),ctlname(73),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,13),e2n(1) ]).
+lit_i(14,1,s(t(75,2),12),[ width(113),pos(1),title([ 'Astro Protagonista' ]),ctlname(75),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(combo,14),e2n(1) ]).
+lit_i(12,1,s(12),[ th(18),height(18),rect(21,96,283,288),back(rgb(240,240,240)),fore(gxcolor([]),rgb(0,0,0)),border(1),ctlname('Grd_1'),font(font('Courier New',9,[])),titlefont(font('MS Sans Serif',8,[ bold ])),el([ t(73,2),t(75,2) ]) ]).
+lit_i(1,1,window,[ title([]),rect(0,0,409,305),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(2),ctlname('Form'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,24).
+ 
+ 
+popup_offset_i(0,0).
+ 
+form_class_i(1,'Graphic').
+ 
+std_color_i(6,back,5).
+std_color_i(6,fore,8).
+std_color_i(7,fore,8).
+std_color_i(8,back,5).
+std_color_i(8,fore,8).
+std_color_i(9,fore,8).
+std_color_i(10,back,5).
+std_color_i(10,fore,8).
+std_color_i(11,fore,8).
+std_color_i(13,back,5).
+std_color_i(13,fore,8).
+std_color_i(13,tback,15).
+std_color_i(13,tfore,18).
+std_color_i(14,back,5).
+std_color_i(14,fore,8).
+std_color_i(14,tback,15).
+std_color_i(14,tfore,18).
+std_color_i(12,back,15).
+std_color_i(12,fore,8).
+std_color_i(1,back,15).
+std_color_i(1,fore,6).
+ 
+ctrl_info_i(1,10,[ [ [ 'Marcado','1' ],[ 'Desmarcado','2' ] ],[ '' ] ]).
+ctrl_info_i(1,14,[ [ [ 'Marcado','1' ],[ 'Desmarcado','2' ] ],[ '' ] ]).
+ 
+form_prop_i(12,'Loadall','NO',d,[ str ]).
+form_prop_i(12,'Load','YES',d,[ str ]).
+form_prop_i(12,'Refresh','COND',d,[ str ]).
+form_prop_i(12,'Whenrefresh','FOCUS',d,[ str ]).
+form_prop_i(12,'Subfile_order','UMPV',d,[ str ]).
+form_prop_i(12,'Refresh_tout','',d,[ str ]).
+form_prop_i(12,'Refresh_tout_trig','ALL',d,[ str ]).
+ 
+calling_main_i(4,28).
+ 
+att_prop_i(2,73,'AUTONUMBER','-1',d).
+att_prop_i(2,73,'AUTONUMBER_START','1',d).
+att_prop_i(2,73,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,73,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,73,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,73,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,73,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,73,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,73,'FullName','FilAtorCodigo',v).
+att_prop_i(2,75,'AUTONUMBER','0',d).
+att_prop_i(2,75,'AUTONUMBER_START','1',d).
+att_prop_i(2,75,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,75,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,75,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,75,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,75,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,75,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,75,'FullName','FIlAstProt',v).
+att_prop_i(2,28,'AUTONUMBER','-1',d).
+att_prop_i(2,28,'AUTONUMBER_START','1',d).
+att_prop_i(2,28,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,28,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,28,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,28,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,28,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,28,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,28,'FullName','FilCodigo',v).
+ 
+ 
+tbl_att_prop_i(2,11,28,'AllowNulls',n).
+tbl_att_prop_i(2,11,73,'AllowNulls',n).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

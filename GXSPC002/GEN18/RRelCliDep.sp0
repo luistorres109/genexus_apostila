@@ -1,0 +1,455 @@
+spec_i([ rpt,5,'Relatório de Dependentes','RelCliDep',162,eng,'9_0_6-009' ]).
+ 
+struct_i(3,1,[],[]).
+struct_i(4,3,[ 62,61 ],[]).
+ 
+level_i(3,[ 8,[ [ 8,many ],[ 7,one ],[ 512,one ] ],[],[],[ [ [ 8,7,512 ],[ 62,61,12,13 ] ] ],[ [ [ 8,7,512 ],[] ] ],[ 62,61 ],'',[],[] ]).
+level_i(4,[ 8,[ [ 8,many ],[ 512,one ] ],[],[],[ [ [ 8,512 ],[ 62,61 ] ] ],[ [ [ 8,512 ],[] ] ],[ 62,61 ],'',[ 8,[ [ [],62,62 ],[ [],61,61 ] ] ],[] ]).
+ 
+tw_i(3,[ [ 7,[ [ 8,12,12 ] ] ],[ 512,[ [ 8,61,12 ] ] ] ]).
+tw_i(4,[ [ 512,[ [ 8,61,12 ] ] ] ]).
+ 
+lwi_i(4,[ [] ]).
+lwi_i(3,[ [ c([ t(61,2),t(>=,10),t('Pesdepcodigoini',23),t('.AND.',9),t(61,2),t(<=,10),t('Pesdepcodigofin',23) ],[ 61 ]) ] ]).
+ 
+ 
+ 
+level_option_i(3,usr_condition,y).
+ 
+ta_i(3,[ [ [ 512,62 ],[ 8,61 ],[ 8,12 ],[ 7,13 ] ] ]).
+ta_i(4,[ [ [ 512,62 ],[ 8,61 ] ] ]).
+ 
+las_i(3,[ [ 62,61,12,13 ] ]).
+las_i(4,[ [ 62,61 ] ]).
+ 
+lac_i(3,[ [] ]).
+lac_i(4,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''SCR''')).
+default_i(e('Outdev',2,2,'''N''')).
+default_i(e('Pgmdesc',2,2,'"Relatório de Dependentes"')).
+default_i(e('Time',2,2,'systime(')).
+default_i(e('Today',2,2,'''today''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop(idDEST_JNDI_Name,'')).
+rule_i(0,prop(idCON_FACTORY_JNDI_Name,'')).
+rule_i(0,prop(idDEST_Type,idDEST_Type_QUEUE)).
+rule_i(0,prop(idJNDI_Name,'ejb/aRelCliDep')).
+rule_i(0,prop(idTRN_Attribute,idTRN_Attribute_REQUIRED)).
+rule_i(0,prop(idTRN_Type,idTRN_Type_CONTAINER)).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('SOAP_NAMESPACE','Curso')).
+rule_i(0,prop('SOAP_CANCELERROR','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('OUTPUT','ASK')).
+rule_i(0,prop('DKL_BIG_IMAGE','')).
+rule_i(0,prop('DKL_SMALL_IMAGE','')).
+rule_i(0,prop('DKL_IMAGE','')).
+rule_i(0,prop('DKL_STOREDPROCEDURE','')).
+rule_i(0,prop('DKL_ACTIONS','')).
+rule_i(0,prop('DKL_READ_UNCOMMITED_DP','No')).
+rule_i(0,prop('DKL_DATASET_TOUSE','')).
+rule_i(0,prop('DKL_CACHE_PRIORITY','2')).
+rule_i(0,prop('DKL_COMMAND_TIMEOUT','30')).
+rule_i(0,prop('DKL_CACHE_FREQUENCY','1')).
+rule_i(0,prop('DKL_PERMISSION_BASE_ID','0')).
+rule_i(0,prop('DKL_VERSION','2100')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_LAYOUT','')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','4')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','RelCliDep')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,maingen(18)).
+rule_i(0,parm([ 'Pesdepcodigoini','Pesdepcodigofin' ],[])).
+rule_i(0,parmio([ [ 'Pesdepcodigoini',in ],[ 'Pesdepcodigofin',in ] ])).
+rule_i(0,output('SCR')).
+rule_i(0,output('PRN')).
+rule_i(0,output('ASK')).
+ 
+a_i(1,1,f,'Line',[],[ [],[ t(0,3) ] ]).
+a_i(2,2,f,'Page',[],[ [],[ t('Page',23),t(+,5),t('1',3) ] ]).
+a_i(3,1,f,'Pgmdesc',[],[ [],[ t('"Relatório de Dependentes"',3) ] ]).
+a_i(4,1,f,'Time',[],[ [],[ t('systime(',1),t(')',4) ] ]).
+a_i(5,1,f,'Today',[],[ [],[ t('today(',1),t(')',4) ] ]).
+a_i(6,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(7,4,t,8,[],[ [ [ [],62,62 ],[ [],61,61 ] ],'',[] ]).
+a_i(8,4,r,512,[],[ [ [ 8,61,12 ] ],'IPESSOA',[] ]).
+a_i(9,3,t,8,[],[ [],'',[] ]).
+a_i(10,3,r,7,[],[ [ [ 8,12,12 ] ],'IPESSOA',[] ]).
+a_i(11,3,r,512,[],[ [ [ 8,61,12 ] ],'IPESSOA',[] ]).
+a_i(12,1,f,'Outdev',[],[ [],[ t('ask(',1),t('Outdev',3),t(0,3),t(')',4) ] ]).
+a_i(13,1,f,'Output',[],[ [],[ t('''PRN''',3),t('IF',17),t('Outdev',23),t(=,10),t('"Y"',3),t(';',18),t('''SCR''',3),t('OTHERWISE',19),t(';',18) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Line').
+v_i(f,i,2,'Page').
+v_i(f,o,2,'Page').
+v_i(f,i,3,[]).
+v_i(f,o,3,'Pgmdesc').
+v_i(f,i,4,[]).
+v_i(f,o,4,'Time').
+v_i(f,i,5,[]).
+v_i(f,o,5,'Today').
+v_i(f,i,6,[]).
+v_i(f,o,6,'Err').
+v_i(t,i,7,62).
+v_i(t,i,7,61).
+v_i(t,o,7,[]).
+v_i(r,i,8,61).
+v_i(r,o,8,62).
+v_i(t,i,9,[]).
+v_i(t,o,9,61).
+v_i(t,o,9,12).
+v_i(r,i,10,12).
+v_i(r,o,10,13).
+v_i(r,i,11,61).
+v_i(r,o,11,62).
+v_i(f,i,12,[]).
+v_i(f,o,12,'Outdev').
+v_i(f,i,13,'Outdev').
+v_i(f,o,13,'Output').
+ 
+ca_i(2,'Page').
+ 
+ 
+ 
+ 
+attri_i('Outdev',[ 'Gx_dev',char,1,0,!,1,'','',21 ]).
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',20 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',19 ]).
+attri_i(12,[ 'PesCodigo',int,9,0,'ZZZZZZZZ9',0,'Codigo da Pessoa','',0 ]).
+attri_i(13,[ 'PesNome',svchar,50,0,'@!',0,'Nome da Pessoa','',0 ]).
+attri_i(62,[ 'PesDepNome',svchar,50,0,'@!',0,'Nome do Dependente','',0 ]).
+attri_i(61,[ 'PesDepCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Dependente','',0 ]).
+attri_i('Pgmdesc',[ 'Pgmdesc',char,30,0,'',1,'Program description','',16 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',15 ]).
+attri_i('Time',[ 'Gx_time',char,8,0,'',1,'','',14 ]).
+attri_i('Today',[ 'Gx_date',date,8,0,'99/99/99',1,'','',13 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
+attri_i('Pesdepcodigofin',[ 'PesDepCodigoFin',int,9,0,'ZZZZZZZZ9',0,'Pes Dep Codigo Fin','',10 ]).
+attri_i('Pesdepcodigoini',[ 'PesDepCodigoIni',int,9,0,'ZZZZZZZZ9',0,'Pes Dep Codigo Ini','',9 ]).
+attri_i('Pesdepcodigo',[ 'PesDepCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Dependente','',8 ]).
+ 
+table_i(7,[ 'PESSOA',[ 12,13 ],'Pessoa','Pessoa' ]).
+table_i(8,[ 'PESDEPENDENTES',[ 12,61 ],'Dependentes','PesDependentes' ]).
+table_i(512,[ 'PESSOA',[ 61,62 ],'Pessoa','Pessoa' ]).
+ 
+index_i(8,[ '',a,[ 62,61 ],'' ]).
+index_i(8,[ 'ICLIENTEDEPENDENTES',u,[ 12,61 ],'IClienteDependentes' ]).
+index_i(512,[ 'IPESSOA',u,[ 61 ],'IPessoa' ]).
+index_i(7,[ 'IPESSOA',u,[ 12 ],'IPessoa' ]).
+ 
+ 
+ 
+function_i(1,'Outdev',no,ask,'ask(',[],0,'Outdev',[ '"Send report to printer? (Y/N)"' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+map_i(512,a,62,[ 'PesNome' ]).
+map_i(512,a,61,[ 'PesCodigo' ]).
+ 
+ 
+ 
+ 
+ 
+break_i(2,page,1,[],[ [],[],[] ]).
+break_i(4,nvg,3,[ 61 ],[ [ 61,62 ],[],[] ]).
+break_i(3,nvg,1,[ 62,61 ],[ [ 62,61,13,12 ],[ 61 ],[] ]).
+break_i(5,foot,1,[],[ [],[],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,page,2,0,0).
+b_group_i(2,1,lit,0,1,8).
+b_group_i(1,3,lit,0,9,9).
+b_group_i(1,4,nvg,3,4,4).
+b_group_i(3,1,lit,0,11,12).
+b_group_i(3,2,nvg,4,8,8).
+b_group_i(4,1,lit,0,15,16).
+b_group_i(3,3,lit,0,19,17).
+b_group_i(1,5,lit,0,20,19).
+b_group_i(1,6,foot,5,19,19).
+b_group_i(5,1,lit,0,23,24).
+b_group_i(1,7,lit,0,25,0).
+ 
+b_line_i(1,2,1,pb,1,[ t(a,3,1,4) ]).
+b_line_i([ 1,0 ],2,1,line,1,[ t('Pgmdesc',23,0,61),t('Date:',3,0,145),t('Today',23,0,151) ]).
+b_line_i([ 1,1 ],2,1,line,2,[ t('Time:',3,1,145),t('Time',23,1,151) ]).
+b_line_i([ 1,2 ],2,1,line,3,[ t('Dependentes:',3,2,58),t('Pesdepcodigofin',23,2,71),t(até,3,2,81),t('Pesdepcodigoini',23,2,86),t('Page:',3,2,145),t('Page',23,2,153) ]).
+b_line_i([ 1,6 ],2,1,line,7,[ t('Nome da Pessoa',3,6,1),t('Código do Dependente',3,6,73),t('Nome do Dependente',3,6,93) ]).
+b_line_i(2,2,1,cmd,8,[ t('',122,8,0) ]).
+b_line_i(3,1,3,cmd,9,[]).
+b_line_i(4,3,1,cmd,11,[ t('',121,4,0),t('ORDER',39,4,4),t(62,2,4,10),t(61,2,4,21) ]).
+b_line_i(6,3,1,cmd,11,[ t('',112,11,0),t(12,2,11,15) ]).
+b_line_i(7,3,1,pb,11,[ t(a,3,11,4) ]).
+b_line_i([ 7,0 ],3,1,line,11,[ t(13,2,0,1) ]).
+b_line_i(8,4,1,cmd,15,[ t('',121,8,0),t('',39,8,13),t(61,2,8,13) ]).
+b_line_i(9,4,1,cmd,15,[ t('',112,15,0),t(62,2,15,19) ]).
+b_line_i(10,4,1,cmd,15,[ t('',141,15,0),t('''Lendo dependentes...''',3,10,12),t(',',7,15,34),t('Status',3,15,35),t(')',4,15,41) ]).
+b_line_i(11,4,1,pb,15,[ t(a,3,15,8) ]).
+b_line_i([ 11,0 ],4,1,line,15,[ t(61,2,0,73),t(62,2,0,93) ]).
+b_line_i(12,4,1,cmd,16,[ t('',128,16,0) ]).
+b_line_i(13,3,3,cmd,17,[ t('',128,17,0) ]).
+b_line_i(14,1,5,cmd,19,[ t('',141,19,0),t('''''',3,14,4),t(',',7,19,6),t('Status',3,19,8),t(')',4,19,14) ]).
+b_line_i(15,1,5,cmd,19,[]).
+b_line_i(17,5,1,pb,23,[ t(a,3,23,4) ]).
+b_line_i([ 17,0 ],5,1,line,23,[ t(' ',3,0,0) ]).
+b_line_i(18,5,1,cmd,24,[ t('',122,24,0) ]).
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'Custom Size',17055,16838,0,0,0,0,1 ]).
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+warn_gen_i(msg(spc0038,[ 'There is no index for order ',[ att(2,62),', ',att(2,61) ],'; poor performance may be noticed',[ ' in group starting at line ','9','' ],'.' ])).
+ 
+lit_i(2,1,t('Date:',3),[ font('MS Sans Serif',8,[ bold ]),rect(1018,1,1049,13),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(3,1,t('Today',23),[ font('Courier New',9,[]),rect(1061,0,1116,14),outstyle(none),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Today'),ctrltype(edit,3),ispwd(0) ]).
+lit_i(4,1,t('Time:',3),[ font('MS Sans Serif',8,[ bold ]),rect(1018,16,1049,28),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(5,1,t('Time',23),[ font('Courier New',9,[]),rect(1061,15,1116,29),outstyle(none),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Time'),ctrltype(edit,5),ispwd(0) ]).
+lit_i(6,1,t('Page:',3),[ font('MS Sans Serif',8,[ bold ]),rect(1018,31,1051,43),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(7,1,t('Page',23),[ font('Courier New',9,[]),rect(1075,30,1116,44),outstyle(none),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Page'),ctrltype(edit,7),ispwd(0) ]).
+lit_i(8,1,t('Código do Dependente',3),[ font('MS Sans Serif',8,[ bold ]),rect(513,91,643,103),outstyle(none),align(right),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(9,1,t('Nome do Dependente',3),[ font('MS Sans Serif',8,[ bold ]),rect(653,91,776,103),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(10,1,t('Nome da Pessoa',3),[ font('MS Sans Serif',8,[ bold ]),rect(8,91,103,103),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(11,1,t('Pgmdesc',23),[ font('Courier New',9,[]),rect(430,9,639,23),outstyle(none),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Pgmdesc'),ctrltype(edit,11),ispwd(0) ]).
+lit_i(12,1,t('Dependentes:',3),[ font('MS Sans Serif',8,[ bold ]),rect(412,39,491,51),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(13,1,t('Pesdepcodigofin',23),[ font('Courier New',9,[]),rect(497,39,559,53),outstyle(none),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Pesdepcodigofin'),ctrltype(edit,13),ispwd(0) ]).
+lit_i(14,1,t('Pesdepcodigoini',23),[ font('Courier New',9,[]),rect(606,39,668,53),outstyle(none),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Pesdepcodigoini'),ctrltype(edit,14),ispwd(0) ]).
+lit_i(15,1,t(até,3),[ font('MS Sans Serif',8,[ bold ]),rect(571,39,589,51),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(1,1,window,[ title([]),rect(71,2,1207,105),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(1),ctlname('P_cabecalho'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(17,7,t(13,2),[ font('Courier New',9,[]),rect(7,1,356,15),outstyle(none),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(13),ctrltype(edit,17),ispwd(0),e2n(1) ]).
+lit_i(16,7,window,[ title([]),rect(71,109,1207,124),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(1),ctlname('P_cliente'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(19,11,t(61,2),[ font('Courier New',9,[]),rect(514,0,576,14),outstyle(none),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(61),ctrltype(edit,19),ispwd(0),e2n(1) ]).
+lit_i(20,11,t(62,2),[ font('Courier New',9,[]),rect(653,0,1002,14),outstyle(none),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname(62),ctrltype(edit,20),ispwd(0),e2n(1) ]).
+lit_i(18,11,window,[ title([]),rect(71,133,1207,147),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(1),ctlname('P_dependente'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(21,17,window,[ title([]),rect(71,157,1207,172),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(1),ctlname('P_rodape'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+std_color_i(2,fore,8).
+std_color_i(3,back,5).
+std_color_i(3,fore,8).
+std_color_i(4,fore,8).
+std_color_i(5,back,5).
+std_color_i(5,fore,8).
+std_color_i(6,fore,8).
+std_color_i(7,fore,8).
+std_color_i(8,fore,8).
+std_color_i(9,fore,8).
+std_color_i(10,fore,8).
+std_color_i(11,fore,8).
+std_color_i(12,fore,8).
+std_color_i(13,fore,8).
+std_color_i(14,fore,8).
+std_color_i(15,fore,8).
+std_color_i(1,back,15).
+std_color_i(1,fore,6).
+std_color_i(17,fore,8).
+std_color_i(16,back,15).
+std_color_i(16,fore,6).
+std_color_i(19,fore,8).
+std_color_i(20,fore,8).
+std_color_i(18,back,15).
+std_color_i(18,fore,6).
+std_color_i(21,back,15).
+std_color_i(21,fore,6).
+ 
+ctrl_info_i(1,3,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,5,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,7,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,11,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,13,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,14,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ 
+ 
+calling_main_i(4,28).
+ 
+att_prop_i(2,61,'AUTONUMBER','-1',d).
+att_prop_i(2,61,'AUTONUMBER_START','1',d).
+att_prop_i(2,61,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,61,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,61,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,61,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,61,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,61,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,61,'FullName','PesDepCodigo',v).
+att_prop_i(2,62,'AUTONUMBER_START','1',d).
+att_prop_i(2,62,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,62,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,62,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,62,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,62,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,62,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,62,'FullName','PesDepNome',v).
+att_prop_i(2,13,'AUTONUMBER_START','1',d).
+att_prop_i(2,13,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,13,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,13,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,13,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,13,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,13,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,13,'FullName','PesNome',v).
+att_prop_i(2,12,'AUTONUMBER','-1',d).
+att_prop_i(2,12,'AUTONUMBER_START','1',d).
+att_prop_i(2,12,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,12,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,12,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,12,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,12,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,12,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,12,'FullName','PesCodigo',v).
+ 
+tbl_prop_i(2,8,'AllDirSuper',[ [ 7,[ 12 ] ],[ 512,[ 61 ] ] ],v).
+tbl_prop_i(2,7,'DirSubor',[ [ 8,[ 12 ] ],[ 8,[ 61 ] ] ],v).
+tbl_prop_i(2,512,'DirSubor',[ [ 8,[ 12 ] ],[ 8,[ 61 ] ] ],v).
+tbl_prop_i(2,8,'DirSuper',[ [ 7,[ 12 ] ],[ 512,[ 61 ] ] ],v).
+tbl_prop_i(2,8,'DKL_CHECK_INTEGRITY','UMPV',d).
+tbl_prop_i(2,8,'DKL_EXTERNAL_NAME','',d).
+tbl_prop_i(2,8,'DKL_REF_BY_CANDIDATE','0',d).
+tbl_prop_i(2,8,'CLUSTERIDX','Default',d).
+tbl_prop_i(2,8,'TBLSTOAREA','',d).
+tbl_prop_i(2,8,'TBLIDXSTOAREA','',d).
+tbl_prop_i(2,8,'TBLTXTSTOAREA','',d).
+tbl_prop_i(2,8,'TBLINISIZE','0',d).
+tbl_prop_i(2,8,'TBLFEXTENT','0',d).
+tbl_prop_i(2,8,'TBLNEXTENT','0',d).
+tbl_prop_i(2,8,'TBLMINEXTENT','0',d).
+tbl_prop_i(2,8,'CACHE_LEVEL','0',d).
+ 
+tbl_att_prop_i(2,8,12,'AllowNulls',n).
+tbl_att_prop_i(2,8,61,'AllowNulls',n).
+tbl_att_prop_i(2,512,61,'AllowNulls',n).
+tbl_att_prop_i(2,7,12,'AllowNulls',n).
+tbl_att_prop_i(2,7,12,'AUTONUMBER',y).
+ 
+ 
+ 
+a_alias_i(61,'PesDepCodigo').
+a_alias_i(62,'PesDepNome').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

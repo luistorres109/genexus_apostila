@@ -1,0 +1,311 @@
+spec_i([ mbr,1,'Menu Principal','MenuPrincipal',0,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ 
+las_i(2,[ [] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+cls_i([ 25,80 ],[ 0,0 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','MenuPrincipal')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Refresh"','5' ]) ],[],[],[])).
+rule_i(0,maingen(18)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',4 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',3 ]).
+attri_i('Bloquearpreco',[ 'BloquearPreco',int,1,0,'9',0,'Bloquear Preco','',2 ]).
+attri_i('Funcionario',[ 'Funcionario',o('SDTFuncionario'),0,0,'',0,'Funcionario','',1 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+b_line_i(0,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,0,6),t('Id_estados',3,0,14) ],29,0,14) ]).
+b_line_i(1,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeEstado'),28,0,4) ]).
+b_line_i(2,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(4,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,4,6),t('Id_categorias',3,4,14) ],29,4,14) ]).
+b_line_i(5,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeCategoria'),28,0,4) ]).
+b_line_i(6,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(8,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,8,6),t('Id_cidades',3,8,14) ],29,8,14) ]).
+b_line_i(9,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeCidade'),28,0,4) ]).
+b_line_i(10,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(12,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,12,6),t('Id_clientes',3,12,14) ],29,12,14) ]).
+b_line_i(13,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeCliente'),28,0,4) ]).
+b_line_i(14,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(16,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,16,6),t('Id_precos',3,16,14) ],29,16,14) ]).
+b_line_i(17,2,1,cmd,0,[ t('',104,0,0),t(o(1,'RetFunLogDados'),28,0,4),t('Funcionario',23,0,20) ]).
+b_line_i(19,2,1,cmd,0,[ t('',109,0,0),t([ t('Funcionario',23,19,7),t('Pesfuncargo',3,19,20) ],29,19,20),t(=,10,0,32),t('1',3,0,34),t('.OR.',9,0,36),t([ t('Funcionario',23,19,39),t('Foilogado',3,19,52) ],29,19,52),t(=,10,0,62),t('''N''',3,19,64) ]).
+b_line_i(20,2,1,cmd,0,[ t('',104,0,0),t(o(4,'ConfTipMidia'),28,0,8) ]).
+b_line_i(21,2,1,cmd,0,[ t('',110,0,0) ]).
+b_line_i(22,2,1,cmd,0,[ t('',141,0,0),t('''Apenas gerentes podem acessar este menu!''',3,22,12),t(')',4,0,54) ]).
+b_line_i(23,2,1,cmd,0,[ t('',111,0,0) ]).
+b_line_i(25,2,1,cmd,0,[ t('',107,0,0),t('Bloquearpreco',23,0,0),t(=,10,0,0),t('0',3,0,0) ]).
+b_line_i(26,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(28,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,28,6),t('Id_filmes',3,28,14) ],29,28,14) ]).
+b_line_i(29,2,1,cmd,0,[ t('',104,0,0),t(o(1,'RetFunLogDados'),28,0,4),t('Funcionario',23,0,20) ]).
+b_line_i(31,2,1,cmd,0,[ t('',109,0,0),t([ t('Funcionario',23,31,7),t('Pesfuncargo',3,31,20) ],29,31,20),t(=,10,0,32),t('1',3,0,34),t('.OR.',9,0,36),t([ t('Funcionario',23,31,39),t('Foilogado',3,31,52) ],29,31,52),t(=,10,0,62),t('''N''',3,31,64) ]).
+b_line_i(32,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeFilme'),28,0,8) ]).
+b_line_i(33,2,1,cmd,0,[ t('',110,0,0) ]).
+b_line_i(34,2,1,cmd,0,[ t('',141,0,0),t('''Apenas gerentes podem acessar este menu!''',3,34,12),t(')',4,0,54) ]).
+b_line_i(35,2,1,cmd,0,[ t('',111,0,0) ]).
+b_line_i(37,2,1,cmd,0,[ t('',107,0,0),t('Bloquearpreco',23,0,0),t(=,10,0,0),t('0',3,0,0) ]).
+b_line_i(38,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(40,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,40,6),t('Id_funcionrios',3,40,14) ],29,40,14) ]).
+b_line_i(41,2,1,cmd,0,[ t('',104,0,0),t(o(1,'RetFunLogDados'),28,0,4),t('Funcionario',23,0,20) ]).
+b_line_i(43,2,1,cmd,0,[ t('',109,0,0),t([ t('Funcionario',23,43,7),t('Pesfuncargo',3,43,20) ],29,43,20),t(=,10,0,32),t('1',3,0,34),t('.OR.',9,0,36),t([ t('Funcionario',23,43,39),t('Foilogado',3,43,52) ],29,43,52),t(=,10,0,62),t('''N''',3,43,64) ]).
+b_line_i(44,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeFuncionarios'),28,0,8) ]).
+b_line_i(45,2,1,cmd,0,[ t('',110,0,0) ]).
+b_line_i(46,2,1,cmd,0,[ t('',141,0,0),t('''Apenas gerentes podem acessar este menu!''',3,46,12),t(')',4,0,54) ]).
+b_line_i(47,2,1,cmd,0,[ t('',111,0,0) ]).
+b_line_i(49,2,1,cmd,0,[ t('',107,0,0),t('Bloquearpreco',23,0,0),t(=,10,0,0),t('0',3,0,0) ]).
+b_line_i(50,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(52,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,52,6),t('Id_mdias',3,52,14) ],29,52,14) ]).
+b_line_i(53,2,1,cmd,0,[ t('',104,0,0),t(o(1,'RetFunLogDados'),28,0,4),t('Funcionario',23,0,20) ]).
+b_line_i(55,2,1,cmd,0,[ t('',109,0,0),t([ t('Funcionario',23,55,7),t('Pesfuncargo',3,55,20) ],29,55,20),t(=,10,0,32),t('1',3,0,34),t('.OR.',9,0,36),t([ t('Funcionario',23,55,39),t('Foilogado',3,55,52) ],29,55,52),t(=,10,0,62),t('''N''',3,55,64) ]).
+b_line_i(56,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeMidia'),28,0,8) ]).
+b_line_i(57,2,1,cmd,0,[ t('',110,0,0) ]).
+b_line_i(58,2,1,cmd,0,[ t('',141,0,0),t('''Apenas gerentes podem acessar este menu!''',3,58,12),t(')',4,0,54) ]).
+b_line_i(59,2,1,cmd,0,[ t('',111,0,0) ]).
+b_line_i(61,2,1,cmd,0,[ t('',107,0,0),t('Bloquearpreco',23,0,0),t(=,10,0,0),t('0',3,0,0) ]).
+b_line_i(62,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(64,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,64,6),t('Id_astros',3,64,14) ],29,64,14) ]).
+b_line_i(65,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeAstro'),28,0,4) ]).
+b_line_i(66,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(68,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,68,6),t('Id_movimentao',3,68,14) ],29,68,14) ]).
+b_line_i(69,2,1,cmd,0,[ t('',104,0,0),t(o(4,'PeLocacao'),28,0,4) ]).
+b_line_i(70,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(72,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,72,6),t('Id_fil_cat',3,72,14) ],29,72,14) ]).
+b_line_i(73,2,1,cmd,0,[ t('',104,0,0),t(o(4,'RelFilCategoria'),28,0,4) ]).
+b_line_i(74,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(76,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,76,6),t('Id_cli_depen',3,76,14) ],29,76,14) ]).
+b_line_i(77,2,1,cmd,0,[ t('',104,0,0),t(o(4,'RelCliDep'),28,0,4) ]).
+b_line_i(78,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(80,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,80,6),t('Id_total_mid',3,80,14) ],29,80,14) ]).
+b_line_i(81,2,1,cmd,0,[ t('',104,0,0),t(o(4,'RelMidCat'),28,0,4) ]).
+b_line_i(82,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(84,2,1,cmd,0,[ t('',146,0,0),t([ t('Menubar',3,84,6),t('Id_top_list',3,84,14) ],29,84,14) ]).
+b_line_i(85,2,1,cmd,0,[ t('',104,0,0),t(o(4,'TopListRelatorio'),28,0,4) ]).
+b_line_i(86,2,1,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+menu_i(1,0,m,'','',[ popup ]).
+menu_i(2,1,m,'Id_cadastro','Cadastro',[ popup ]).
+menu_i(3,2,m,'Id_estados','Estados',[]).
+menu_i(4,2,m,'Id_cidades','Cidades',[]).
+menu_i(5,2,m,'Id_categorias','Categorias',[]).
+menu_i(6,2,m,'Id_astros','Astros',[]).
+menu_i(7,2,m,'Id_filmes','Filmes',[]).
+menu_i(8,2,m,'Id_mdias','Mídias',[]).
+menu_i(9,2,m,'Id_clientes','Clientes',[]).
+menu_i(10,2,m,'Id_funcionrios','Funcionários',[]).
+menu_i(11,1,m,'Id_configuracao','Configuração',[ popup ]).
+menu_i(12,11,m,'Id_precos','Configuração de Preços',[]).
+menu_i(13,11,m,'Id_movimentao','Movimentação -  Locação',[]).
+menu_i(14,1,m,'Id_relatorios','Relatórios',[ popup ]).
+menu_i(15,14,m,'Id_fil_cat','Total de Filmes por Categoria',[]).
+menu_i(16,14,m,'Id_cli_depen','Clientes com Dependentes',[]).
+menu_i(17,14,m,'Id_total_mid','Total de Mídias por Categoria/Filme',[]).
+menu_i(18,14,m,'Id_top_list','Top List',[]).
+menu_i(19,0,t,'','',[ popup ]).
+menu_i(20,19,t,'Gx_help','',[ tooltip('Help'),bitmap('Help.bmp') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+calling_main_i(4,28).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,2,0 ],name,'SDTFuncionario').
+struct_dt_i([ 26,2,0 ],'ObjId','0').
+struct_dt_i([ 26,2,0 ],'ObjName','SDTFuncionario').
+struct_dt_i([ 26,2,0 ],'ObjDesc','').
+struct_dt_i([ 26,2,0 ],'ExternalName','SDTFuncionario').
+struct_dt_i([ 26,2,0 ],'ExternalNamespace','Curso').
+struct_dt_i([ 26,2,0 ],namespace,'Curso').
+struct_dt_i([ 26,2,0 ],subid,'0').
+struct_dt_i([ 26,2,0 ],ispublic,'True').
+struct_dt_i([ 26,2,0 ],fullname,'SDTFuncionario').
+ 
+struct_dt_elem_i([ 26,2,0 ],1,name,'Pescodigo').
+struct_dt_elem_i([ 26,2,0 ],1,camelname,'PesCodigo').
+struct_dt_elem_i([ 26,2,0 ],1,basedon,12).
+struct_dt_elem_i([ 26,2,0 ],1,type,[ 4,9,0 ]).
+struct_dt_elem_i([ 26,2,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,2,0 ],1,length,'0').
+struct_dt_elem_i([ 26,2,0 ],1,decimals,'0').
+struct_dt_elem_i([ 26,2,0 ],2,name,'Pesfuncargo').
+struct_dt_elem_i([ 26,2,0 ],2,camelname,'PesFunCargo').
+struct_dt_elem_i([ 26,2,0 ],2,basedon,52).
+struct_dt_elem_i([ 26,2,0 ],2,type,[ 4,1,0 ]).
+struct_dt_elem_i([ 26,2,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,2,0 ],2,length,'0').
+struct_dt_elem_i([ 26,2,0 ],2,decimals,'0').
+struct_dt_elem_i([ 26,2,0 ],3,name,'Pesfunlogin').
+struct_dt_elem_i([ 26,2,0 ],3,camelname,'PesFunLogin').
+struct_dt_elem_i([ 26,2,0 ],3,basedon,58).
+struct_dt_elem_i([ 26,2,0 ],3,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 26,2,0 ],3,collection,'False').
+struct_dt_elem_i([ 26,2,0 ],3,length,'0').
+struct_dt_elem_i([ 26,2,0 ],3,decimals,'0').
+struct_dt_elem_i([ 26,2,0 ],4,name,'Pesfunsenha').
+struct_dt_elem_i([ 26,2,0 ],4,camelname,'PesFunSenha').
+struct_dt_elem_i([ 26,2,0 ],4,basedon,54).
+struct_dt_elem_i([ 26,2,0 ],4,type,[ 13,20,0 ]).
+struct_dt_elem_i([ 26,2,0 ],4,collection,'False').
+struct_dt_elem_i([ 26,2,0 ],4,length,'0').
+struct_dt_elem_i([ 26,2,0 ],4,decimals,'0').
+struct_dt_elem_i([ 26,2,0 ],5,name,'Foilogado').
+struct_dt_elem_i([ 26,2,0 ],5,camelname,'FoiLogado').
+struct_dt_elem_i([ 26,2,0 ],5,type,[ 5,1,0 ]).
+struct_dt_elem_i([ 26,2,0 ],5,collection,'False').
+struct_dt_elem_i([ 26,2,0 ],5,length,'1').
+struct_dt_elem_i([ 26,2,0 ],5,decimals,'0').
+struct_dt_elem_i([ 26,2,0 ],1,pic,'ZZZZZZZZ9').
+struct_dt_elem_i([ 26,2,0 ],2,pic,'9').
+ 
+ 
+pgm_parm_i(scr,45,'WTOPLISTRELATORIO',[],[]).
+pgm_parm_i(scr,41,'WRELMIDCAT',[],[]).
+pgm_parm_i(scr,40,'WRELCLIDEP',[],[]).
+pgm_parm_i(scr,39,'WRELFILCATEGORIA',[],[]).
+pgm_parm_i(scr,43,'WPELOCACAO',[],[]).
+pgm_parm_i(scr,33,'WPEASTRO',[],[]).
+pgm_parm_i(scr,22,'WPEMIDIA',[],[]).
+pgm_parm_i(scr,30,'WPEFUNCIONARIOS',[],[]).
+pgm_parm_i(scr,21,'WPEFILME',[],[]).
+pgm_parm_i(scr,42,'WCONFTIPMIDIA',[],[]).
+pgm_parm_i(proc,7,'PRETFUNLOGDADOS',[ [ o('SDTFuncionario'),0,0,0 ] ],[ [ 'Funcionario',out,[] ] ]).
+pgm_parm_i(scr,29,'WPECLIENTE',[],[]).
+pgm_parm_i(scr,19,'WPECIDADE',[],[]).
+pgm_parm_i(scr,20,'WPECATEGORIA',[],[]).
+pgm_parm_i(scr,18,'WPEESTADO',[],[]).
+ 
+ 
+ 
+ 
+ 

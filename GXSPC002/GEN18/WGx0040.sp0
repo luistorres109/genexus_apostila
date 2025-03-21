@@ -1,0 +1,319 @@
+spec_i([ scr,14,'Selection List Cadastro de Estados','Gx0040',0,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 24,23 ] ] ],[ [ [ 4 ],[] ] ],[ 23 ],'IESTADO',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [ c([ t(24,2),t('.LIKE.',10),t('Cestuf',23) ],[ 24 ]) ] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 4,24 ],[ 4,23 ] ] ]).
+ 
+las_i(2,[ [ 'Pestcodigo','Cestcodigo','Cestuf',24,23 ] ]).
+ 
+lac_i(2,[ [ 'Cestcodigo','Cestuf' ] ]).
+ 
+ 
+lits_i('Código do Estado',1,3).
+lits_i('UF do Estado',2,3).
+lits_i('Código do Estado',3,3).
+lits_i('UF do Estado',3,18).
+ 
+cls_i([ 1,3 ],[ 10,29 ]).
+ 
+pos_i('Cestcodigo',[ 1,1,21 ]).
+pos_i('Cestuf',[ 2,2,21 ]).
+pos_i(23,[ 4,10,3 ]).
+pos_i(24,[ 4,10,18 ]).
+ 
+repeat_i(2,[ 4,10,[ 23,24 ],[] ]).
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('WKP_LOAD_SERVER','No')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('AUTOENTER','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('WBCHAR','')).
+rule_i(0,prop('WBATTR',none)).
+rule_i(0,prop('WBCOLOR',none)).
+rule_i(0,prop('WNDPOP','NO')).
+rule_i(0,prop('OKBUT','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('AUTOSCROLL_FORM','UMPV')).
+rule_i(0,prop('SHOW_FRM','UMPV')).
+rule_i(0,prop('MODAL','PARM')).
+rule_i(0,prop('CTRBOX','YES')).
+rule_i(0,prop('ICON','')).
+rule_i(0,prop('S_TASK','YES')).
+rule_i(0,prop('MINBUT','YES')).
+rule_i(0,prop('MAXBUT','YES')).
+rule_i(0,prop('BORSTY','2')).
+rule_i(0,prop('MENUBAR','Default')).
+rule_i(0,prop('NewFormEditor','0')).
+rule_i(0,prop('SUBFILE_ORDER','UMPV')).
+rule_i(0,prop('KEY_MOREKEYS','UMPV')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_MENU','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_EXIT','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('CFMTRN','No')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('WHENREFRESH','FOCUS')).
+rule_i(0,prop('REFRESH','COND')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('LOAD','YES')).
+rule_i(0,prop('LOADALL','NO')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','2')).
+rule_i(0,prop('IsPrompt','-1')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','Gx0040')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,rule([ a(22,[ 'Rfr','"Refresh"','5' ]) ],[],[],[])).
+rule_i(0,maingen(18)).
+rule_i(0,parm([ 'Pestcodigo' ],[])).
+rule_i(0,parmio([ [ 'Pestcodigo',out ] ])).
+rule_i(0,order([ 23 ])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,4,[],[ [],'IESTADO',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,24).
+v_i(t,o,2,23).
+ 
+ 
+ 
+ 
+ 
+attri_i(24,[ 'EstUF',char,2,0,'@!',0,'UF do Estado','',0 ]).
+attri_i(23,[ 'EstCodigo',int,9,0,'ZZZZZZZZ9',0,'Código do Estado','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',9 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',8 ]).
+attri_i('Pestcodigo',[ pEstCodigo,int,9,0,'ZZZZZZZZ9',0,'Código do Estado','',7 ]).
+attri_i('Cestuf',[ cEstUF,char,2,0,'@!',0,'UF do Estado','',6 ]).
+attri_i('Cestcodigo',[ cEstCodigo,int,9,0,'ZZZZZZZZ9',0,'Código do Estado','',5 ]).
+ 
+table_i(4,[ 'ESTADO',[ 23,24 ],'Cadastro de Estados','Estado' ]).
+ 
+index_i(4,[ 'IESTADO',u,[ 23 ],'IEstado' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+start_i(2,0,0,[ [ [ 23,23,'Cestcodigo',>= ] ],many ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[ 23 ],[ [ 23,24 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,0).
+ 
+b_line_i(0,2,1,cmd,0,[ t('',146,0,0),t('Enter',3,0,6) ]).
+b_line_i(2,2,1,cmd,0,[ t('',107,0,0),t('Pestcodigo',23,0,0),t(=,10,0,0),t(23,2,0,0) ]).
+b_line_i(3,2,1,cmd,0,[ t('',118,0,0) ]).
+b_line_i(5,2,1,cmd,0,[ t('',147,0,0) ]).
+b_line_i(1000,2,1,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,1,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,1,cmd,0,[ t('',147,0,0) ]).
+ 
+sf_break_i(10,2).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(2,1,button('Enter'),[ id(2),title([ 'Confirm' ]),ctlname('Btn_enter'),rect(292,24,380,46),font('MS Shell Dlg',8,[]) ]).
+lit_i(3,1,button('Cancel'),[ id(3),title([ 'Close' ]),ctlname('Btn_cancel'),rect(292,52,380,74),font('MS Shell Dlg',8,[]) ]).
+lit_i(4,1,button('Refresh'),[ id(4),title([ 'Refresh' ]),ctlname('Btn_refresh'),rect(292,80,380,102),font('MS Shell Dlg',8,[]) ]).
+lit_i(5,1,button('Help'),[ id(5),title([ 'Help' ]),ctlname('Btn_help'),rect(292,118,380,140),font('MS Shell Dlg',8,[]) ]).
+lit_i(6,1,t('Cestcodigo',23),[ font('Courier New',9,[]),rect(147,24,219,44),outstyle('3d'),fill,align(right),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Cestcodigo'),ctrltype(edit,6),ispwd(0) ]).
+lit_i(7,1,t('Código do Estado',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,24,121,36),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(8,1,t('Cestuf',23),[ font('Courier New',9,[]),rect(147,48,170,68),outstyle('3d'),fill,align(left),noclip,back(rgb(255,255,255)),fore(rgb(0,0,0)),gxcolor('BLK','WHT+'),border(1),ctlname('&Cestuf'),ctrltype(edit,8),ispwd(0) ]).
+lit_i(9,1,t('UF do Estado',3),[ font('MS Sans Serif',8,[ bold ]),rect(21,48,98,60),outstyle(none),align(left),noclip,fore(rgb(0,0,0)),border(1),ctlname(''),gxcolor('BLK','WHT+') ]).
+lit_i(11,1,s(t(23,2),10),[ width(109),pos(0),title([ 'Código do Estado' ]),ctlname(23),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,11),e2n(1) ]).
+lit_i(12,1,s(t(24,2),10),[ width(86),pos(1),title([ 'UF do Estado' ]),ctlname(24),pic([]),titgxcolor([]),gxcolor([]),back(rgb(255,255,255)),fore(rgb(0,0,0)),tback(rgb(240,240,240)),tfore(rgb(0,0,0)),ctrltype(edit,12),e2n(0) ]).
+lit_i(10,1,s(10),[ th(18),height(18),rect(21,72,273,264),back(rgb(240,240,240)),fore(gxcolor([]),rgb(0,0,0)),border(1),ctlname('Grd_1'),font(font('Courier New',9,[])),titlefont(font('MS Sans Serif',8,[ bold ])),el([ t(23,2),t(24,2) ]) ]).
+lit_i(1,1,window,[ title([]),rect(0,0,399,281),outstyle(single),fill,graph,back(rgb(240,240,240)),fore(rgb(100,100,100)),border(2),ctlname('Form'),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,24).
+ 
+ 
+popup_offset_i(0,0).
+ 
+form_class_i(1,'Graphic').
+ 
+std_color_i(6,back,5).
+std_color_i(6,fore,8).
+std_color_i(7,fore,8).
+std_color_i(8,back,5).
+std_color_i(8,fore,8).
+std_color_i(9,fore,8).
+std_color_i(11,back,5).
+std_color_i(11,fore,8).
+std_color_i(11,tback,15).
+std_color_i(11,tfore,18).
+std_color_i(12,back,5).
+std_color_i(12,fore,8).
+std_color_i(12,tback,15).
+std_color_i(12,tfore,18).
+std_color_i(10,back,15).
+std_color_i(10,fore,8).
+std_color_i(1,back,15).
+std_color_i(1,fore,6).
+ 
+ 
+form_prop_i(10,'Loadall','NO',d,[ str ]).
+form_prop_i(10,'Load','YES',d,[ str ]).
+form_prop_i(10,'Refresh','COND',d,[ str ]).
+form_prop_i(10,'Whenrefresh','FOCUS',d,[ str ]).
+form_prop_i(10,'Subfile_order','UMPV',d,[ str ]).
+form_prop_i(10,'Refresh_tout','',d,[ str ]).
+form_prop_i(10,'Refresh_tout_trig','ALL',d,[ str ]).
+ 
+calling_main_i(4,28).
+ 
+att_prop_i(2,23,'AUTONUMBER','-1',d).
+att_prop_i(2,23,'AUTONUMBER_START','1',d).
+att_prop_i(2,23,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,23,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,23,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,23,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,23,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,23,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,23,'FullName','EstCodigo',v).
+att_prop_i(2,24,'AUTONUMBER_START','1',d).
+att_prop_i(2,24,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,24,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,24,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,24,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,24,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,24,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,24,'FullName','EstUF',v).
+ 
+ 
+tbl_att_prop_i(2,4,23,'AllowNulls',n).
+tbl_att_prop_i(2,4,23,'AUTONUMBER',y).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

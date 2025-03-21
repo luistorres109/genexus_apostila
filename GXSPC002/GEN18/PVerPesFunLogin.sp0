@@ -1,0 +1,293 @@
+spec_i([ proc,1,' Verifica  Login  do 
+Funcionário','VerPesFunLogin',96,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[ 58 ],[]).
+ 
+level_i(2,[ 7,[ [ 7,many ] ],[],[],[ [ [ 7 ],[ 58,39,12 ] ] ],[ [ [ 7 ],[] ] ],[ 12 ],'IPESSOA',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [ c([ t(58,2),t(=,10),t(58,23) ],[ 58 ]),c([ t(12,2),t(<>,10),t('Pescodigo',23) ],[ 12 ]),c([ t(39,2),t(=,10),t('2',3) ],[ 39 ]) ] ]).
+ 
+ 
+ 
+level_option_i(2,usr_condition,y).
+ 
+ta_i(2,[ [ [ 7,58 ],[ 7,39 ],[ 7,12 ] ] ]).
+ 
+las_i(2,[ [ 58,39,12 ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''SCR''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop(idDEST_JNDI_Name,'')).
+rule_i(0,prop(idCON_FACTORY_JNDI_Name,'')).
+rule_i(0,prop(idDEST_Type,idDEST_Type_QUEUE)).
+rule_i(0,prop(idJNDI_Name,'ejb/aVerPesFunLogin')).
+rule_i(0,prop(idTRN_Attribute,idTRN_Attribute_REQUIRED)).
+rule_i(0,prop(idTRN_Type,idTRN_Type_CONTAINER)).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('SOAP_NAMESPACE','Curso')).
+rule_i(0,prop('SOAP_CANCELERROR','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('OUTPUT','ASK')).
+rule_i(0,prop('DKL_BIG_IMAGE','')).
+rule_i(0,prop('DKL_SMALL_IMAGE','')).
+rule_i(0,prop('DKL_IMAGE','')).
+rule_i(0,prop('DKL_STOREDPROCEDURE','')).
+rule_i(0,prop('DKL_ACTIONS','')).
+rule_i(0,prop('DKL_READ_UNCOMMITED_DP','No')).
+rule_i(0,prop('DKL_DATASET_TOUSE','')).
+rule_i(0,prop('DKL_PERMISSION_BASE_ID','0')).
+rule_i(0,prop('DKL_VERSION','2100')).
+rule_i(0,prop('DKL_REF_BY_CANDIDATE','0')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_LAYOUT','')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','5')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','VerPesFunLogin')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,maingen(18)).
+rule_i(0,parm([ 58,'Pescodigo','Erro' ],[ 58 ])).
+rule_i(0,parmio([ [ 58,in ],[ 'Pescodigo',in ],[ 'Erro',out ] ])).
+rule_i(0,output('SCR')).
+rule_i(0,output('PRN')).
+rule_i(0,output('ASK')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,7,[],[ [],'IPESSOA',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,58).
+v_i(t,o,2,39).
+v_i(t,o,2,12).
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',14 ]).
+attri_i(39,[ 'PesTipo',int,1,0,'9',0,'Tipo de Pessoa','',0 ]).
+attri_i(58,[ 'PesFunLogin',svchar,20,0,'',0,'Login do Funcionário','',0 ]).
+attri_i(12,[ 'PesCodigo',int,9,0,'ZZZZZZZZ9',0,'Codigo da Pessoa','',0 ]).
+attri_i('GXLvl0',[ 'GXLvl0',int,1,0,'',0,'',[],13 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
+attri_i('Erro',[ 'Erro',svchar,1,0,'',0,'Erro','',10 ]).
+attri_i('Pescodigo',[ 'PesCodigo',int,9,0,'ZZZZZZZZ9',0,'Pes Codigo','',9 ]).
+attri_i('Pesfunlogin',[ 'PesFunLogin',svchar,20,0,'',0,'Pes Fun Login','',8 ]).
+ 
+table_i(7,[ 'PESSOA',[ 12,39,58 ],'Pessoa','Pessoa' ]).
+ 
+index_i(7,[ 'IPESSOA',u,[ 12 ],'IPessoa' ]).
+ 
+ 
+ 
+ 
+ 
+help_i(proc,1,1,[ t( ,3,1,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[ 12 ],[ [ 12 ],[ 12,39 ],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,nvg,2,0,0).
+b_group_i(2,1,lit,0,1,1).
+b_group_i(1,3,lit,0,6,0).
+ 
+b_line_i([ 0,0 ],1,1,cmd,0,[ t('',107,0,0),t('GXLvl0',23,0,0),t(=,10,0,0),t('0',3,0,0) ]).
+b_line_i(0,2,1,cmd,1,[ t('',121,0,0),t('ORDER',39,0,4),t(12,2,0,10) ]).
+b_line_i([ 0,1 ],2,1,cmd,0,[ t('',107,0,0),t('GXLvl0',23,0,0),t(=,10,0,0),t('1',3,0,0) ]).
+b_line_i(3,2,1,cmd,1,[ t('',107,1,0),t('Erro',23,1,0),t(=,10,1,0),t('''S''',3,1,0) ]).
+b_line_i(4,2,1,cmd,1,[ t('',139,1,0) ]).
+b_line_i(5,2,1,cmd,1,[ t('',128,1,0) ]).
+b_line_i([ 5,1 ],1,3,cmd,5,[ t('',109,5,0),t('GXLvl0',23,5,0),t(=,10,5,0),t('0',3,5,0) ]).
+b_line_i(6,1,3,cmd,6,[ t('',107,6,0),t('Erro',23,6,0),t(=,10,6,0),t('''N''',3,6,0) ]).
+b_line_i(7,1,3,cmd,6,[ t('',111,6,0) ]).
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,9,'A4',11906,16838,0,0,0,0,1 ]).
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(4,28).
+ 
+att_prop_i(2,12,'AUTONUMBER','-1',d).
+att_prop_i(2,12,'AUTONUMBER_START','1',d).
+att_prop_i(2,12,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,12,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,12,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,12,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,12,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,12,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,12,'FullName','PesCodigo',v).
+att_prop_i(2,58,'AUTONUMBER_START','1',d).
+att_prop_i(2,58,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,58,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,58,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,58,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,58,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,58,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,58,'FullName','PesFunLogin',v).
+att_prop_i(2,39,'AUTONUMBER','0',d).
+att_prop_i(2,39,'AUTONUMBER_START','1',d).
+att_prop_i(2,39,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,39,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,39,'ATT_INITIAL_VALUE','1',v).
+att_prop_i(2,39,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,39,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,39,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,39,'FullName','PesTipo',v).
+ 
+ 
+tbl_att_prop_i(2,7,12,'AllowNulls',n).
+tbl_att_prop_i(2,7,12,'AUTONUMBER',y).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+optimize_i(2,0,[ maxrows(1) ]).
+ 
+ 

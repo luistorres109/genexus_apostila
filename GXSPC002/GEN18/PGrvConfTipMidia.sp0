@@ -1,0 +1,310 @@
+spec_i([ proc,8,'Gravar','GrvConfTipMidia',96,eng,'9_0_6-009' ]).
+ 
+struct_i(2,1,[],[]).
+struct_i(3,2,[],[]).
+ 
+level_i(2,[ 12,[ [ 12,many ] ],[],[],[ [ [ 12 ],[ 33,35,77 ] ] ],[ [ [ 12 ],[] ] ],[ 35,33 ],'ICONFTIPMIDIA',[],[] ]).
+level_i(3,[ 12,[ [ 12,many ] ],[],[],[ [ [ 12 ],[ 35,33,77 ] ] ],[ [ [ 12 ],[] ] ],[ 35,33 ],'ICONFTIPMIDIA',[ 12,[ [ [],35,35 ],[ [],33,33 ] ] ],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[]).
+ 
+lwi_i(2,[ [] ]).
+lwi_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 12,33 ],[ 12,35 ],[ 12,77 ] ] ]).
+ta_i(3,[ [ [ 12,35 ],[ 12,33 ],[ 12,77 ] ] ]).
+ 
+las_i(2,[ [ 33,35,77 ] ]).
+las_i(3,[ [ 35,33,77 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''SCR''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop(idDEST_JNDI_Name,'')).
+rule_i(0,prop(idCON_FACTORY_JNDI_Name,'')).
+rule_i(0,prop(idDEST_Type,idDEST_Type_QUEUE)).
+rule_i(0,prop(idJNDI_Name,'ejb/aGrvConfTipMidia')).
+rule_i(0,prop(idTRN_Attribute,idTRN_Attribute_REQUIRED)).
+rule_i(0,prop(idTRN_Type,idTRN_Type_CONTAINER)).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('SOAP_NAMESPACE','Curso')).
+rule_i(0,prop('SOAP_CANCELERROR','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('OUTPUT','ASK')).
+rule_i(0,prop('DKL_BIG_IMAGE','')).
+rule_i(0,prop('DKL_SMALL_IMAGE','')).
+rule_i(0,prop('DKL_IMAGE','')).
+rule_i(0,prop('DKL_STOREDPROCEDURE','')).
+rule_i(0,prop('DKL_ACTIONS','')).
+rule_i(0,prop('DKL_READ_UNCOMMITED_DP','No')).
+rule_i(0,prop('DKL_DATASET_TOUSE','')).
+rule_i(0,prop('DKL_PERMISSION_BASE_ID','0')).
+rule_i(0,prop('DKL_VERSION','2100')).
+rule_i(0,prop('DKL_REF_BY_CANDIDATE','0')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_LAYOUT','')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','5')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','GrvConfTipMidia')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,maingen(18)).
+rule_i(0,parm([ 'Midtipo','Catcodigo','Conftipovalor' ],[])).
+rule_i(0,parmio([ [ 'Midtipo',in ],[ 'Catcodigo',in ],[ 'Conftipovalor',in ] ])).
+rule_i(0,output('SCR')).
+rule_i(0,output('PRN')).
+rule_i(0,output('ASK')).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,3,t,12,[],[ [ [ [],35,35 ],[ [],33,33 ] ],'ICONFTIPMIDIA',[] ]).
+a_i(3,2,t,12,[],[ [],'ICONFTIPMIDIA',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,35).
+v_i(t,i,2,33).
+v_i(t,o,2,77).
+v_i(t,i,3,[]).
+v_i(t,o,3,33).
+v_i(t,o,3,35).
+v_i(t,o,3,77).
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',15 ]).
+attri_i(35,[ 'MidTipo',int,1,0,'9',0,'Tipo de Mídia','',0 ]).
+attri_i(33,[ 'CatCodigo',int,9,0,'ZZZZZZZZ9',0,'Código da Categoria','',0 ]).
+attri_i(77,[ 'ConfTipoValor',int,12,2,'ZZZ,ZZZ,ZZ9.99',0,'Valor da Configuração da Mídia','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',13 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',12 ]).
+attri_i('Conftipovalor',[ 'ConfTipoValor',int,12,2,'ZZZ,ZZZ,ZZ9.99',0,'Conf Tipo Valor','',11 ]).
+attri_i('Midtipo',[ 'MidTipo',int,1,0,'9',0,'Mid Tipo','',10 ]).
+attri_i('Catcodigo',[ 'CatCodigo',int,9,0,'ZZZZZZZZ9',0,'Cat Codigo','',9 ]).
+attri_i('Conftipvalor',[ 'ConfTipValor',int,12,2,'ZZZ,ZZZ,ZZ9.99',0,'Conf Tip Valor','',8 ]).
+ 
+table_i(12,[ 'CONFTIPMIDIA',[ 35,33,77 ],'Configurações do Tipo de Mídia','ConfTipMidia' ]).
+ 
+index_i(12,[ 'ICONFTIPMIDIA',u,[ 35,33 ],'IConfTipMidia' ]).
+ 
+ 
+ 
+ 
+upd_i(3,12,u,[ [ 77 ],[],'ICONFTIPMIDIA',[] ]).
+upd_i(2,12,i,[ [ 35,33,77 ],[],'ICONFTIPMIDIA',[ [ [],35,35 ],[ [],33,33 ] ] ]).
+ 
+ 
+start_i(3,0,0,[ [ [ 35,2,35,= ],[ 33,2,33,= ] ],one ]).
+ 
+end_i(3,0,0,[ [ [ t(35,2),t(=,10),t(35,23) ],[ t(33,2),t(=,10),t(33,23) ] ] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(3,nvg,2,[],[ [ 77 ],[],[] ]).
+break_i(2,ins,1,[],[ [ 77,33,35 ],[],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+b_group_i(1,2,ins,2,0,0).
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,nvg,3,5,5).
+b_group_i(3,1,lit,0,6,6).
+b_group_i(2,3,lit,0,8,4).
+b_group_i(1,3,lit,0,9,0).
+ 
+b_line_i(0,2,1,cmd,1,[ t('',117,0,0) ]).
+b_line_i(1,2,1,cmd,1,[ t('',107,1,0),t(35,2,1,0),t(=,10,1,0),t('Midtipo',23,1,0) ]).
+b_line_i(2,2,1,cmd,1,[ t('',107,1,0),t(33,2,1,0),t(=,10,1,0),t('Catcodigo',23,1,0) ]).
+b_line_i(3,2,1,cmd,1,[ t('',107,1,0),t(77,2,1,0),t(=,10,1,0),t('Conftipovalor',23,1,0) ]).
+b_line_i(4,2,1,cmd,1,[ t('',129,1,0) ]).
+b_line_i(5,3,1,cmd,6,[ t('',121,5,0) ]).
+b_line_i(6,3,1,cmd,6,[ t('',107,6,0),t(77,2,6,0),t(=,10,6,0),t('Conftipovalor',23,6,0) ]).
+b_line_i(7,3,1,cmd,6,[ t('',128,6,0) ]).
+b_line_i(8,2,3,cmd,4,[ t('',127,4,0) ]).
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,9,'A4',11906,16838,0,0,0,0,1 ]).
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+warn_gen_i(msg(spc0060,[ 'The program may be called by another program and the Commit on Exit property is set to YES' ])).
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(4,28).
+ 
+att_prop_i(2,77,'AUTONUMBER','0',d).
+att_prop_i(2,77,'AUTONUMBER_START','1',d).
+att_prop_i(2,77,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,77,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,77,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,77,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,77,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,77,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,77,'FullName','ConfTipoValor',v).
+att_prop_i(2,33,'AUTONUMBER','-1',d).
+att_prop_i(2,33,'AUTONUMBER_START','1',d).
+att_prop_i(2,33,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,33,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,33,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,33,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,33,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,33,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,33,'FullName','CatCodigo',v).
+att_prop_i(2,35,'AUTONUMBER','0',d).
+att_prop_i(2,35,'AUTONUMBER_START','1',d).
+att_prop_i(2,35,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,35,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,35,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,35,'AUTOGENERATE_GUID','0',d).
+att_prop_i(2,35,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,35,idHOURFORMAT,idHOURFORMAT_HOURMIN,d).
+att_prop_i(2,35,'FullName','MidTipo',v).
+ 
+ 
+tbl_att_prop_i(2,12,35,'AllowNulls',n).
+tbl_att_prop_i(2,12,33,'AllowNulls',n).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

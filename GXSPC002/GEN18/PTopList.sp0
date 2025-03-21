@@ -1,0 +1,298 @@
+spec_i([ proc,12,'Top List','TopList',71,eng,'9_0_6-009' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''SCR''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','9')).
+rule_i(0,datastore(1,'DB_NLS_SUPPORT','No')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','No')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'CC_USER_PASS','')).
+rule_i(0,datastore(1,'CC_USER_ID','')).
+rule_i(0,datastore(1,'CC_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CC_DBNAME','Projeto')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','DESKTOP-5HBNL34\SQLEXPRESS')).
+rule_i(0,datastore(1,'CS_DBNAME','Projeto')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','com.inet.tds.TdsDriver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','23')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop('NULLS_BEHAVIOR','CURRENT')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('BEEPONMSG','UMPV')).
+rule_i(0,prop('PRT_DDS','UMPV')).
+rule_i(0,prop('TRNCMT','YES')).
+rule_i(0,prop('EnhancedFindNavigation','UMPV')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED',spc0096)).
+rule_i(0,prop('STD_FUNC_OBJECT','UMPV')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop(idDEST_JNDI_Name,'')).
+rule_i(0,prop(idCON_FACTORY_JNDI_Name,'')).
+rule_i(0,prop(idDEST_Type,idDEST_Type_QUEUE)).
+rule_i(0,prop(idJNDI_Name,'ejb/aTopList')).
+rule_i(0,prop(idTRN_Attribute,idTRN_Attribute_REQUIRED)).
+rule_i(0,prop(idTRN_Type,idTRN_Type_CONTAINER)).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('SOAP_NAMESPACE','Curso')).
+rule_i(0,prop('SOAP_CANCELERROR','YES')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('OUTPUT','ASK')).
+rule_i(0,prop('DKL_BIG_IMAGE','')).
+rule_i(0,prop('DKL_SMALL_IMAGE','')).
+rule_i(0,prop('DKL_IMAGE','')).
+rule_i(0,prop('DKL_STOREDPROCEDURE','')).
+rule_i(0,prop('DKL_ACTIONS','')).
+rule_i(0,prop('DKL_READ_UNCOMMITED_DP','No')).
+rule_i(0,prop('DKL_DATASET_TOUSE','')).
+rule_i(0,prop('DKL_PERMISSION_BASE_ID','0')).
+rule_i(0,prop('DKL_VERSION','2100')).
+rule_i(0,prop('DKL_REF_BY_CANDIDATE','0')).
+rule_i(0,prop('DKL_BUILTIN_PROPERTIES','')).
+rule_i(0,prop('DKL_ROLES','')).
+rule_i(0,prop('DKL_CUSTOM_PROPERTIES','')).
+rule_i(0,prop('USER_METADATA','')).
+rule_i(0,prop('WORKFLOW_METADATA','')).
+rule_i(0,prop('DEKLARIT_TYPE','-1')).
+rule_i(0,prop('DKL_LAYOUT','')).
+rule_i(0,prop('DKL_DEPENDENCIES_PROPS','')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('DEKLARIT_METADATA','')).
+rule_i(0,prop('HelpKeyword','5')).
+rule_i(0,prop('ObjPurpose','')).
+rule_i(0,prop('ObjBuyer','')).
+rule_i(0,prop('ObjCopyright','')).
+rule_i(0,prop('ObjIsPrivate','0')).
+rule_i(0,prop('ObjAlreadyPrivate','0')).
+rule_i(0,prop('AppGenerator','Default')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('CALL_PROTOCOL','INTERNAL')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(idISBCEJB,'0')).
+rule_i(0,prop('ObjStyle','Default')).
+rule_i(0,prop('ObjFolder','Default')).
+rule_i(0,prop('ObjIsStyle','0')).
+rule_i(0,prop('ObjDesc','')).
+rule_i(0,prop('ObjName','TopList')).
+rule_i(0,prop('ObjId','0')).
+rule_i(0,maingen(18)).
+rule_i(0,parm([ 'Sdtfilmes' ],[])).
+rule_i(0,parmio([ [ 'Sdtfilmes',in ] ])).
+rule_i(0,output('SCR')).
+rule_i(0,output('PRN')).
+rule_i(0,output('ASK')).
+ 
+a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,3,[]).
+v_i(f,o,3,'Err').
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',18 ]).
+attri_i('GXV1',[ 'GXV1',int,8,0,'',0,'',[],17 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',16 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',15 ]).
+attri_i('Achou',[ 'Achou',char,1,0,'',0,'Achou','',14 ]).
+attri_i('Filnome',[ 'FilNome',svchar,50,0,'@!',0,'Fil Nome','',13 ]).
+attri_i('Filcodigo',[ 'FilCodigo',int,9,0,'ZZZZZZZZ9',0,'Fil Codigo','',12 ]).
+attri_i('Totalmidias',[ 'TotalMidias',int,10,0,'ZZZZZZZZZ9',0,'Total Midias','',11 ]).
+attri_i('Filme',[ 'Filme',o('SDTFilmes.SDTFilmesItem'),0,0,'',0,'Filme','',10 ]).
+attri_i('Sdtfilmes',[ 'SDTFilmes',o(objectcollection('SDTFilmes.SDTFilmesItem')),0,0,'',0,'SDTFilmes','',9 ]).
+attri_i('Listatoplist',[ 'ListaTopList',o(queue),0,0,'',0,'Lista Top List','',8 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(0,1,1,cmd,0,[ t('',107,0,0),t([ t('Sdtfilmes',23,0,0),t('sort(',1,0,11) ],31,0,0),t('''FilCodigo''',3,0,16),t(')',4,0,27) ]).
+b_line_i(1,1,1,cmd,0,[]).
+b_line_i(2,1,1,cmd,0,[ t('',107,0,0),t('Achou',23,0,0),t(=,10,0,0),t('''N''',3,0,0) ]).
+b_line_i(3,1,1,cmd,0,[ t('',107,0,0),t('GXV1',23,0,0),t(=,10,0,0),t(1,3,0,0) ]).
+b_line_i([ 3,2 ],1,1,cmd,0,[ t('',114,0,0),t('GXV1',23,0,0),t(<=,10,0,0),t([ t('Sdtfilmes',23,3,14),t('Count',3,3,0) ],29,3,0) ]).
+b_line_i([ 3,3 ],1,1,cmd,0,[ t('',107,0,0),t('Filme',23,0,0),t(=,10,0,0),t([ t('Sdtfilmes',23,0,0),t('item(',1,0,0) ],31,0,0),t('GXV1',23,0,0),t(')',4,0,0) ]).
+b_line_i(4,1,1,cmd,1,[ t('',109,1,0),t([ t('Filme',23,4,7),t('Filcodigo',3,4,14) ],29,4,14),t(=,10,1,24),t('Filcodigo',23,1,26) ]).
+b_line_i(5,1,1,cmd,1,[ t('',107,1,0),t([ t('Filme',23,1,0),t('Totalmidias',3,1,0) ],29,1,0),t(=,10,1,0),t([ t('Filme',23,1,0),t('Totalmidias',3,1,0) ],29,1,0),t(+,5,1,0),t('Totalmidias',23,1,0) ]).
+b_line_i(6,1,1,cmd,1,[ t('',107,1,0),t('Achou',23,1,0),t(=,10,1,0),t('''S''',3,1,0) ]).
+b_line_i(7,1,1,cmd,1,[ t('',140,1,0) ]).
+b_line_i(8,1,1,cmd,1,[ t('',111,1,0) ]).
+b_line_i([ 9,1 ],1,1,cmd,1,[ t('',107,1,0),t('GXV1',23,1,0),t(=,10,1,0),t('GXV1',23,1,0),t(+,5,1,0),t(1,3,1,0) ]).
+b_line_i([ 9,2 ],1,1,cmd,1,[ t('',115,1,0) ]).
+b_line_i(10,1,1,cmd,2,[]).
+b_line_i(11,1,1,cmd,2,[ t('',109,2,0),t('Achou',23,2,3),t(=,10,2,10),t('''N''',3,11,12) ]).
+b_line_i(12,1,1,cmd,2,[ t('',107,2,0),t('Filme',23,2,0),t(=,10,2,0),t([ 'SDTFilmes.SDTFilmesItem',[ t('(',0,12,29),t(')',4,12,30) ] ],46,2,0) ]).
+b_line_i(13,1,1,cmd,2,[ t('',107,2,0),t([ t('Filme',23,2,0),t('Filnome',3,2,0) ],29,2,0),t(=,10,2,0),t('Filnome',23,2,0) ]).
+b_line_i(14,1,1,cmd,2,[ t('',107,2,0),t([ t('Filme',23,2,0),t('Filcodigo',3,2,0) ],29,2,0),t(=,10,2,0),t('Filcodigo',23,2,0) ]).
+b_line_i(15,1,1,cmd,2,[ t('',107,2,0),t([ t('Filme',23,2,0),t('Totalmidias',3,2,0) ],29,2,0),t(=,10,2,0),t('Totalmidias',23,2,0) ]).
+b_line_i(16,1,1,cmd,2,[ t('',107,2,0),t([ t('Sdtfilmes',23,16,4),t('add(',1,16,15) ],31,16,4),t('Filme',23,2,19),t(')',4,2,25) ]).
+b_line_i(17,1,1,cmd,2,[ t('',111,2,0) ]).
+b_line_i(18,1,1,cmd,2,[]).
+b_line_i(19,1,1,cmd,2,[ t('',107,2,0),t([ t('Sdtfilmes',23,19,0),t('clear(',1,19,11) ],31,19,0),t(')',4,2,17) ]).
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,9,'A4',11906,16838,0,0,0,0,1 ]).
+ 
+ppi_i([ 96,96 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+struct_dt_i([ 26,3,0 ],name,'SDTFilmes').
+struct_dt_i([ 26,3,0 ],'ObjId','0').
+struct_dt_i([ 26,3,0 ],'ObjName','SDTFilmes').
+struct_dt_i([ 26,3,0 ],'ObjDesc','').
+struct_dt_i([ 26,3,0 ],'ExternalName','SDTFilmes').
+struct_dt_i([ 26,3,0 ],'ExternalNamespace','Curso').
+struct_dt_i([ 26,3,0 ],namespace,'Curso').
+struct_dt_i([ 26,3,0 ],subid,'0').
+struct_dt_i([ 26,3,0 ],collection,'True').
+struct_dt_i([ 26,3,0 ],ispublic,'True').
+struct_dt_i([ 26,3,0 ],datatype,[ 26,3,1 ]).
+struct_dt_i([ 26,3,1 ],name,'SDTFilmesItem').
+struct_dt_i([ 26,3,1 ],namespace,'Curso.SDTFilmes').
+struct_dt_i([ 26,3,1 ],subid,'1').
+struct_dt_i([ 26,3,1 ],ispublic,'True').
+struct_dt_i([ 26,3,0 ],fullname,'SDTFilmes').
+struct_dt_i([ 26,3,1 ],fullname,'SDTFilmes.SDTFilmesItem').
+ 
+struct_dt_elem_i([ 26,3,1 ],1,name,'Filcodigo').
+struct_dt_elem_i([ 26,3,1 ],1,camelname,'FilCodigo').
+struct_dt_elem_i([ 26,3,1 ],1,basedon,28).
+struct_dt_elem_i([ 26,3,1 ],1,type,[ 4,9,0 ]).
+struct_dt_elem_i([ 26,3,1 ],1,collection,'False').
+struct_dt_elem_i([ 26,3,1 ],1,length,'0').
+struct_dt_elem_i([ 26,3,1 ],1,decimals,'0').
+struct_dt_elem_i([ 26,3,1 ],2,name,'Filnome').
+struct_dt_elem_i([ 26,3,1 ],2,camelname,'FilNome').
+struct_dt_elem_i([ 26,3,1 ],2,basedon,29).
+struct_dt_elem_i([ 26,3,1 ],2,type,[ 13,50,0 ]).
+struct_dt_elem_i([ 26,3,1 ],2,collection,'False').
+struct_dt_elem_i([ 26,3,1 ],2,length,'0').
+struct_dt_elem_i([ 26,3,1 ],2,decimals,'0').
+struct_dt_elem_i([ 26,3,1 ],3,name,'Totalmidias').
+struct_dt_elem_i([ 26,3,1 ],3,camelname,'TotalMidias').
+struct_dt_elem_i([ 26,3,1 ],3,type,[ 4,10,0 ]).
+struct_dt_elem_i([ 26,3,1 ],3,collection,'False').
+struct_dt_elem_i([ 26,3,1 ],3,length,'10').
+struct_dt_elem_i([ 26,3,1 ],3,decimals,'0').
+struct_dt_elem_i([ 26,3,1 ],1,pic,'ZZZZZZZZ9').
+struct_dt_elem_i([ 26,3,1 ],2,pic,'@!').
+struct_dt_elem_i([ 26,3,1 ],1,pic,'ZZZZZZZZ9').
+struct_dt_elem_i([ 26,3,1 ],2,pic,'@!').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
