@@ -24,4 +24,4 @@ Registrar meu progresso e aprendizado com a ferramenta GeneXus, simulando funcio
 
 ## 📌 Observações
 
-Este projeto não possui integração com banco ou `deploy` público — é um repositório de estudos.
+Este projeto não possui integração com banco ou *deploy* público — é um repositório de estudos.
